@@ -104,7 +104,7 @@ conda activate isaac-sim
 
 SimReady 下载方式与 Isaac Sim 类似，在Omniverse Launch里下载，具体名称为 Isaac Sim Assets Pack，共四个包：
 
-![img](https://vamchexq4re.feishu.cn/space/api/box/stream/download/asynccode/?code=N2IxNjE1NmY2OGI3NmVhNjc3ZDIzZjM4YTU2NTYyMTNfYlFMa2x1VnVHbmJWa0xaWHlNa2xPRmIzSDJDYWx2aGpfVG9rZW46TDVpZWJDTjlHbzNvUTV4Rk9KMWNza21abmhmXzE3MjA0OTYxMjY6MTcyMDQ5OTcyNl9WNA)
+![img](https://img-blog.csdnimg.cn/direct/0d3d8bfbc1204d2a9881ed8266afcbfb.png)
 
 ### 4 简单使用 Isaac-sim
 
