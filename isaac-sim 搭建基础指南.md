@@ -106,6 +106,12 @@ SimReady 下载方式与 Isaac Sim 类似，在Omniverse Launch里下载，具�
 
 ![img](https://img-blog.csdnimg.cn/direct/0d3d8bfbc1204d2a9881ed8266afcbfb.png)
 
+- 以下网盘链接可获取资产
+
+  链接：https://pan.quark.cn/s/a8ff48afa378
+
+  提取码：yE2V
+
 ### 4 简单使用 Isaac-sim
 
 在 **LIBRARY** 中找到 Isaac Sim，点击 **Launch** 启动，按照默认选项，点击 **START** 继续启动：
