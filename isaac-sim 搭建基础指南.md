@@ -9,8 +9,8 @@ Isaac Sim 对硬件要求很高，具体如下：
 
 | Element | Minimum Spec                              | Good                                      | Ideal                                                        |
 | ------- | ----------------------------------------- | ----------------------------------------- | ------------------------------------------------------------ |
-| OS      | Ubuntu 20.04/22.04 Windows 10/11          | Ubuntu 20.04/22.04 Windows 10/11          | Ubuntu 20.04/22.04 Windows 10/11                             |
-| CPU     | Intel Core i7 (7th Generation)AMD Ryzen 5 | Intel Core i7 (9th Generation)AMD Ryzen 7 | Intel Core i9, X-series or higherAMD Ryzen 9, Threadripper or higher |
+| OS      | Ubuntu 20.04/22.04  Windows 10/11          | Ubuntu 20.04/22.04  Windows 10/11          | Ubuntu 20.04/22.04  Windows 10/11                             |
+| CPU     | Intel Core i7 (7th Generation)  AMD Ryzen 5 | Intel Core i7 (9th Generation)  AMD Ryzen 7 | Intel Core i9, X-series or higher  AMD Ryzen 9, Threadripper or higher |
 | Cores   | 4                                         | 8                                         | 16                                                           |
 | RAM     | 32GB*                                     | 64GB*                                     | 64GB*                                                        |
 | Storage | 50GB SSD                                  | 500GB SSD                                 | 1TB NVMe SSD                                                 |
