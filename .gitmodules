@@ -1,0 +1,3 @@
+[submodule "simulator/reconstruct_scene/SuGaR"]
+	path = simulator/reconstruct_scene/SuGaR
+	url = https://github.com/Anttwo/SuGaR.git
