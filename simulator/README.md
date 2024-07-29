@@ -1,5 +1,19 @@
 # Embodied AI Simulator
 
-## only can use `EmbodiedAI\simulator\tests\isaac-sim_test.py` as test
 
-## API document will release soon
+
+## test version
+
+You can run `EmbodiedAI\simulator\tests\isaac-sim_test.py` for easy test.
+
+
+
+### TODO LIST
+
+- [ ] API Documents
+
+- [ ] Run Base Module
+
+- [ ] More Module and Test
+
+
