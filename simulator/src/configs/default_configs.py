@@ -2,23 +2,30 @@ from .base_config import BaseConfig
 from typing import List, Optional, Union
 from register import register
 import numpy as np
+import yaml
 
 #TODO add more configs and complete some configs
+@register.register_config()
 class ObjectConfig(BaseConfig):
     pass
 
+@register.register_config()
 class NPCConfig(BaseConfig):
     pass
 
+@register.register_config()
 class MetricConfig(BaseConfig):
     pass
 
+@register.register_config()
 class ControllerConfig(BaseConfig):
     pass
 
+@register.register_config()
 class SensorConfig(BaseConfig):
     pass
 
+@register.register_config()
 class RobotConfig(BaseConfig):
     # meta info
     name: str
@@ -35,6 +42,7 @@ class RobotConfig(BaseConfig):
     controller: Optional[List[ControllerConfig]] = None
     sensor: Optional[List[SensorConfig]] = None
 
+@register.register_config()
 class SceneConfig(BaseConfig):
     """
     Scene Config
@@ -45,6 +53,7 @@ class SceneConfig(BaseConfig):
     use_sky_box: Optional[bool] = True
 
 
+@register.register_config()
 class TaskConfig(BaseConfig):
     """
     Task Config
@@ -55,6 +64,7 @@ class TaskConfig(BaseConfig):
     objects: Optional[List[Object]] = [] # Task revelant objects
     metrics: Optional[List[MetricConfig]] = []
 
+@register.register_config()
 class SimulatorConfig(BaseConfig):
     """
     SimulationApp and World Config
@@ -67,7 +77,7 @@ class SimulatorConfig(BaseConfig):
     rendering_dt: Optional[float | str] = None
     rendering_interval: Optional[int] = None
 
-
+@register.register_config()
 class Config(BaseConfig):
     """
     Config
@@ -77,10 +87,11 @@ class Config(BaseConfig):
     task: List[TaskConfig]
     npc: List[NPCConfig]=[]
 
-
+@register.register_config()
 class EnvConfig():
     """
     Env Config
     """
     def __init__(self, path:str):
         self.config_path = path
+
