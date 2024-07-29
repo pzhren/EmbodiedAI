@@ -1,0 +1,8 @@
+name: simulator
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - defaults
+dependencies:
+  - pip==23.3.1
+  - python==3.10.18
+
