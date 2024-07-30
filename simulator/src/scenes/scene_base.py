@@ -24,7 +24,6 @@ class BaseScene(OmniBaseScene, ABC):
         self._use_sky_box = config.use_sky_box
         self.config = config
         
-    
     def _load_scene(self):
 
         raise NotImplementedError

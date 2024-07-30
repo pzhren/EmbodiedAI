@@ -15,7 +15,6 @@ class Logger(object):
             self.log.addHandler(self._file_handler)
             
 
-log = Logger(
-    log_level=logging.ERROR,
-    log_file=None
-).log
+
+def create_module_log(name:str, log_level:int=logging.DEBUG):
+    return Logger(log_level,log_file=name).log

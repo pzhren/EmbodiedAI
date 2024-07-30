@@ -79,7 +79,8 @@ class BaseTask(ABC):
             NotImplementedError: this must be overridden.
         """
         raise NotImplementedError
-
+    
+    @abstractmethod
     def individual_reset(self):
         """
         reload this task individually without reloading whole world.
