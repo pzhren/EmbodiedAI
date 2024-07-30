@@ -8,7 +8,7 @@ You can run `\simulator\tests\isaac-sim_test.py` for easy test.
 
 
 
-### TODO LIST
+## TODO LIST
 
 - [ ] API Documents
 
@@ -17,7 +17,7 @@ You can run `\simulator\tests\isaac-sim_test.py` for easy test.
 - [ ] More Module and Test
 
 
-### Install
+## Install
 
 1. [Install Isaac Sim 4.0](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/index.html)
 
@@ -51,7 +51,7 @@ python \simulator\tests\isaac-sim_test.py
 It will create a playroom contains a robot, you can use keyboard to control the robot.
 play_room.usd can be found in [here](https://embodied-ai-lab.oss-cn-beijing.aliyuncs.com/refined_mesh/playroom/playroom.usd?Expires=1722360664&OSSAccessKeyId=TMP.3KjfBpJKQjQYtou6pEXUxQosAMKsqpC1ZD36aaquhRyFvThQChyZ2FgVaUSq5GmbBVL7Xpa57kWTWw1dw2dx56mYFYFzBu&Signature=gQL6%2FJLkz71%2BYsL0dtGWOP6K%2FBA%3D)
 
-5. Docker Set up
+#### Docker Set up
 will coming soon.
 
 
