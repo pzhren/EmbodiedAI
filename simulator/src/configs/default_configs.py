@@ -2,7 +2,17 @@ from .base_config import BaseConfig
 from typing import List, Optional, Union
 from register import register
 import numpy as np
+from utils.log_utils import create_module_log
 import yaml
+
+log = create_module_log(name=__name__)
+
+CONFIG_MODULE=
+{
+    "sim",
+    "scene",
+    
+}
 
 #TODO add more configs and complete some configs
 @register.register_config()
@@ -28,7 +38,6 @@ class SensorConfig(BaseConfig):
 @register.register_config()
 class RobotConfig(BaseConfig):
     # meta info
-    name: str
     type: str
     prim_path: str
     create_robot: bool = True
@@ -58,10 +67,9 @@ class TaskConfig(BaseConfig):
     """
     Task Config
     """
-    name: str
     offset: Optional[np.ndarray]
     robots: Optional[List[RobotConfig]] = []
-    objects: Optional[List[Object]] = [] # Task revelant objects
+    objects: Optional[List[ObjectConfig]] = [] # Task revelant objects
     metrics: Optional[List[MetricConfig]] = []
 
 @register.register_config()
@@ -88,10 +96,34 @@ class Config(BaseConfig):
     npc: List[NPCConfig]=[]
 
 @register.register_config()
-class EnvConfig():
+class EnvConfig(BaseConfig):
     """
     Env Config
     """
     def __init__(self, path:str):
         self.config_path = path
+        self.config = Config()
+        self.config_dict = None
 
+    def load_config(self, path):
+        if self.config_path is None:
+            log.error('config path is None')
+            raise ValueError("Config path is None")
+        if not self.config_path.endswith('.yaml') or \
+                    self.config_path.endswith('.yml'):
+                log.error('Config file not end with .yaml or .yml')
+                raise FileNotFoundError('Config file not end with .yaml or .yml')
+        if not os.path.exists(self.config_path):
+            raise ValueError("Config path does not exist")
+
+        with open(self.config_path, 'r') as f:
+            self.config_dict = yaml.load(f.read(), yaml.FullLoader)
+    
+    def verfiy_config(self):
+
+        self.config_dict = 
+
+    
+
+    
+        

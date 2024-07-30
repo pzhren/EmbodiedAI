@@ -48,28 +48,71 @@ class Register(type):
         else:
             self._check_register(target, assert_type)
             return _register(target)
+
+    @classmethod
     def register_task(cls, to_register, *, name:Optional[str] = None):
         return cls._register_impl("tasks", to_register, name, assert_type=BaseTask)
-        
+
+    @classmethod
     def register_object(cls, to_register, *, name:Optional[str] = None):
         return cls._register_impl("objects", to_register, name, assert_type=BaseObject)
-
+    
+    @classmethod
     def register_sensor(cls, to_register, *, name:Optional[str] = None):
         return cls._register_impl("sensors", to_register, name, assert_type=BaseSensor)
     
+    @classmethod
     def register_device(cls, to_register, *, name:Optional[str] = None):
         return cls._register_impl("devices", to_register, name, assert_type=BaseDevice)
     
+    @classmethod
     def register_metric(cls,to_register, *, name:Optional[str] = None):
         return cls._register_impl("metrics", to_register, name, assert_type=BaseMetric)
     
+    @classmethod
     def register_robot(cls, to_register, *, name:Optional[str] = None):
         return cls._register_impl("robots", to_register, name, assert_type=BaseRobot)
-
+    
+    @classmethod
     def register_config(cls, to_register, *, name:Optional[str] = None):
         return cls._register_impl("configs", to_register, name, assert_type=BaseConfig)
+    
+    @classmethod
     def modules(cls):
         return cls.mapping
+    
+    @classmethod
+    def _get_impl(cls, _type: str, name: str) -> Type:
+        return cls.mapping[_type].get(name, None)
+
+    @classmethod
+    def get_device(cls, name: str) -> Type:
+        return cls._get_impl("devices", name)
+
+    @classmethod
+    def get_task(cls, name: str) -> Type:
+        return cls._get_impl("tasks", name)
+    
+    @classmethod
+    def get_robots(cls, name: str) -> Type:
+        return cls._get_impl("robots", name)
+    
+    @classmethod
+    def get_object(cls, name: str) -> Type:
+        return cls._get_impl("objects", name)
+    
+    @classmethod
+    def get_sensor(cls, name: str) -> Type:
+        return cls._get_impl("sensors", name)
+
+    @classmethod
+    def get_metric(cls, name: str) -> Type:
+        return cls._get_impl("metrics", name)
+    
+    @classmethod
+    def get_configs(cls, name:str) -> Type:
+        return cls._get_impl("configs", name)
+    
     
 
 registry = Registry()
