@@ -1,3 +1,6 @@
 [submodule "simulator/reconstruct_scene/SuGaR"]
 	path = simulator/reconstruct_scene/SuGaR
 	url = https://github.com/Anttwo/SuGaR.git
+[submodule "simulator/OpenUSD"]
+	path = simulator/OpenUSD
+	url = https://github.com/PixarAnimationStudios/OpenUSD
