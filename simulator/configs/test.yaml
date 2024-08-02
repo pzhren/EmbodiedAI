@@ -1,0 +1,21 @@
+sim:
+  device: 0
+  physics_frequency: 60
+  render_frequency: 60
+  hide_ui: False
+
+scene:
+  scene_file: "D://MMLM_Robot//Grasp_Nav//code//EmbodiedAI//simulator//tests//test_scene//test_scene.json"
+
+task:
+  type: dummy_task
+  robots:
+    - type: "jetbot"
+      prim_path: "/World/Robot_0"
+      create_robot: True
+      position: [1.0, 0.5, 1.0]
+      scale: [5.0, 5.0, 5.0]
+      controller:
+        - type: dd_controller
+          input_limit: default
+          out_limit: default

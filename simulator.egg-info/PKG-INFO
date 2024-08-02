@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: simulator
+Version: 0.0.1
+Summary: EmbodiedAI Simulator
+Home-page: 
+Author: EmbodiedAI-Lab
+Author-email: 
+Classifier: Programming Language ::Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# EmbodiedAI
