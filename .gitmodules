@@ -4,6 +4,3 @@
 [submodule "simulator/OpenUSD"]
 	path = simulator/OpenUSD
 	url = https://github.com/PixarAnimationStudios/OpenUSD
-[submodule "TripoSr"]
-	path = TripoSr
-	url = https://github.com/IuvenisSapiens/TripoSR.git
