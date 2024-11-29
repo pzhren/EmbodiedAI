@@ -8,10 +8,14 @@ from simulator.core.device import Device
 # from utils.transform_utils import rotation_matrix
 import carb
 import omni
+from simulator.utils.transfrom_utils import euler2quaternion
 
 class Keyboard(Device):
     def __init__(self):
-        self.command = np.array([.0, .0,])
+        self.command = (np.array([.0, .0, .0]),np.array([.0, .0, .0, .0]))
+        self.move_delta = 0.1
+        # self.rot_delta = [0 ,0.05
+        self.rot_delta = 5
     
     def start_control(self):
         pass        
@@ -30,18 +34,43 @@ class Keyboard(Device):
     def _sub_keyboard_event(self, event, *args, **kwargs):
         """subscribe to keyboard events, map to str"""
         # yapf: disable
-        if (event.type == carb.input.KeyboardEventType.KEY_PRESS or
-                event.type == carb.input.KeyboardEventType.KEY_REPEAT):
+        # if (event.type == carb.input.KeyboardEventType.KEY_PRESS or
+        #         event.type == carb.input.KeyboardEventType.KEY_REPEAT):
+        #     if event.input == carb.input.KeyboardInput.W:
+        #         self.command = np.array([1.0, 0.0])
+        #     if event.input == carb.input.KeyboardInput.S:
+        #         self.command = np.array([-1.0, 0.0])
+        #     if event.input == carb.input.KeyboardInput.A:
+        #         self.command = np.array([0.0, np.pi/2])
+        #     if event.input == carb.input.KeyboardInput.D:
+        #         self.command = np.array([0.0, -np.pi/2])
+
+        # if event.type == carb.input.KeyboardEventType.KEY_RELEASE:
+        #     self.command = np.array([0.0, 0.0])
+        if (event.type == carb.input.KeyboardEventType.KEY_PRESS or 
+         event.type == carb.input.KeyboardEventType.KEY_REPEAT):
             if event.input == carb.input.KeyboardInput.W:
-                self.command = np.array([1.0, 0.0])
+                self.command = (np.array([self.move_delta, .0, .0 ]),np.array([.0, .0, .0, .0]))
             if event.input == carb.input.KeyboardInput.S:
-                self.command = np.array([-1.0, 0.0])
-            if event.input == carb.input.KeyboardInput.A:
-                self.command = np.array([0.0, np.pi/2])
+                self.command = (np.array([-self.move_delta, .0, .0]),np.array([.0, .0, .0, .0]))
             if event.input == carb.input.KeyboardInput.D:
-                self.command = np.array([0.0, -np.pi/2])
+                 self.command = (np.array([.0, self.move_delta, .0]),np.array([.0, .0, .0, .0]))
+               
+            if event.input == carb.input.KeyboardInput.A:
+                self.command = (np.array([.0, -self.move_delta, .0]),np.array([.0, .0, .0, .0]))
+                
+            if event.input == carb.input.KeyboardInput.Q:
+                self.command = (np.array([.0, .0, self.move_delta]),np.array([.0, .0, .0, .0]))
+            if event.input == carb.input.KeyboardInput.E:
+                self.command = (np.array([.0, .0, -self.move_delta]),np.array([.0, .0, .0, .0]))
+            
+            if event.input == carb.input.KeyboardInput.L:
+                self.command = (np.array([.0, .0, .0]), euler2quaternion([.0, .0, self.rotate_delta]))
+            if event.input == carb.input.KeyboardInput.J:
+                self.command = (np.array([.0, .0, .0]), euler2quaternion([.0, .0, -self.rotate_delta]))
+
         if event.type == carb.input.KeyboardEventType.KEY_RELEASE:
-            self.command = np.array([0.0, 0.0])
+            self.command = (np.array([.0, 0, .0]),np.array([.0, .0, .0, .0]))
 
 
 # class Keyboard(Device):

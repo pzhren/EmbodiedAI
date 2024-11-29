@@ -63,6 +63,7 @@ class Simulator():
         self._world = World(physics_dt=self.phy_dt, rendering_dt=self.render_dt, stage_units_in_meters=1.0)
         self._scene = self._world.scene
         self._stage = self._world.stage
+        self._warm_up()
 
     def _warm_up(self, steps=10, render=True):
         """
@@ -79,11 +80,19 @@ class Simulator():
         self._world.reset()
         self._warm_up()
     
+    def import_scene(self, scene):
+        assert self.is_running==False
+        assert isinstance(scene,BaseScene)
+
+        scene.load_scene(self)
+    def play(self):
+        return self._simulation_app.play()
+    
     def step(self, render:bool=True) -> dict[str, Any]:
         return self._world.step(render=render)
 
     def reset(self):
-        pass
+        self._world.reset()
 
     def close(self):
         self._simulation_app.close()
@@ -91,6 +100,10 @@ class Simulator():
     @property
     def current_tasks(self) -> dict[str, BaseTask]:
         return self._world._current_tasks
+
+    @property
+    def is_running(self) -> bool:
+        return self._simulation_app.is_running
 
    
     

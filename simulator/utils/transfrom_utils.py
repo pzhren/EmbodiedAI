@@ -3,6 +3,7 @@
 """
 import math
 import numpy as np
+from scipy.spatial.transform import Rotation as R
 
 def rotation_matrix(angle, direction, point=None):
     """
@@ -135,3 +136,11 @@ def euler2mat(euler):
     mat[..., 0, 1] = cj * si
     mat[..., 0, 0] = cj * ci
     return mat
+
+from scipy.spatial.transform import Rotation as R
+ 
+def euler2quaternion(euler):
+    r = R.from_euler('xyz', euler, degrees=True)
+    quaternion = r.as_quat()
+    return quaternion
+ 
