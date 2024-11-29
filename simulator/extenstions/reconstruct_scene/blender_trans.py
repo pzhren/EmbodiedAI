@@ -1,12 +1,12 @@
 
-#cmd使用blender脚本需要前置 "D:\Program Files\Blender Foundation\Blender 4.1\blender.exe"（）
+#cmd使用blender脚本需要前置 "D:\Program Files\Blender Foundation\Blender 4.1\blender.exe"
 import sys
 import bpy
 import time
 import argparse
 
 input_path = "D://MMLM_Robot//Grasp_Nav//Simulator//refined_mesh//playroom//sugarfine_3Dgs7000_sdfestim02_sdfnorm02_level03_decim1000000_normalconsistency01_gaussperface1.obj"
-output_path = "D://MMLM_Robot//Grasp_Nav//code\simulator//reconstruct_scene//scene_usd//playroom.usd"
+output_path = "D://MMLM_Robot//Grasp_Nav//code//reconstruct_scene//playroom.usd"
 obj_filePath = input_path
 
 

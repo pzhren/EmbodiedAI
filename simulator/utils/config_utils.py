@@ -1,11 +1,5 @@
 import numpy as np
 
-MAIN_MODULE=[
-    "sim",
-    "scene",
-    "tasks",
-    "npcs",
-    "scene"]
 def merge_config(base_dict, extra_dict, inplace=True, verbose=False):
     """
     Iteratively updates @base_dict with values from @extra_dict.
@@ -40,3 +34,6 @@ def merge_config(base_dict, extra_dict, inplace=True, verbose=False):
 
 # Return new dict
     return base_dict
+
+
+def create_class_from_registry_and_config()
