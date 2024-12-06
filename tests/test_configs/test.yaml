@@ -2,10 +2,11 @@ sim:
   device: 0
   physics_frequency: 60
   render_frequency: 60
-  headless: False
-  hide_ui: False
+  headless: True
+  hide_ui: True
 
 scene:
+  type: "Interactive_Scene"
   scene_file: "D://MMLM_Robot//Grasp_Nav//code//EmbodiedAI//simulator//tests//test_scene//test_scene.json"
 
 task:

@@ -36,4 +36,4 @@ def merge_config(base_dict, extra_dict, inplace=True, verbose=False):
     return base_dict
 
 
-def create_class_from_registry_and_config()
+# def create_class_from_registry_and_config():

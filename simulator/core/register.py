@@ -1,10 +1,10 @@
-from typing import Optional, Callable, Type, DefaultDict, Any
+from typing import Optional, Callable, Type, DefaultDict, Any, Dict
 import collections
 from simulator.core.task import BaseTask, BaseMetric
-from simulator.core.s import BaseSensor
-from simulator.core.devices import Device
-from simulator.core.robots import BaseRobot
-from simulator.core.scene import BaseScene, BaseObject
+from simulator.core.device import BaseDevice
+from simulator.core.robot import BaseRobot, BaseSensor
+from simulator.core.scene import BaseScene
+from simulator.core.prim import BasePrim
 
 MODULE={
     "tasks",
@@ -14,8 +14,17 @@ MODULE={
     "robots",
     "scenes"
 }
+class Singleton(type):
+    _instances: Dict["Singleton", "Singleton"] = {}
 
-class Register(type):
+    def __call__(cls, *args, **kwargs):
+        if cls not in cls._instances:
+            cls._instances[cls] = super(Singleton, cls).__call__(
+                *args, **kwargs
+            )
+        return cls._instances[cls]
+
+class Registry(metaclass=Singleton):
     """
     Register class for registering objects, tasks, sensors, devices, metrics, and controllers.
     """
@@ -26,7 +35,7 @@ class Register(type):
         if not callable(target):
             raise Exception(f"Error:{target} must be callable!")
         register_name = target.__name__.lower()  if name is None else name
-        if register_name in self.mapping[_type] :
+        if register_name in cls.mapping[_type] :
             raise Exception(f"Error: {target} already registered!")
         if assert_type is not None:
                 assert issubclass(
@@ -38,14 +47,14 @@ class Register(type):
     @classmethod
     def _register_impl(cls, _type:str, target, name:str, assert_type:Optional[Type]=None) -> Callable:
         def _register(target):
-            register_name = to_register.__name__ if name is None else name
-            cls.mapping[_type][register_name] = to_register
-            return to_register
+            register_name = target.__name__ if name is None else name
+            cls.mapping[_type][register_name] = target
+            return target
         
         if target is None:
-            return _register
+            return _register()
         else:
-            self._check_register(target, assert_type)
+            cls._check_register(target=target, _type=_type, name=name, assert_type=assert_type)
             return _register(target)
 
     @classmethod
@@ -71,6 +80,10 @@ class Register(type):
     @classmethod
     def register_robot(cls, to_register, *, name:Optional[str] = None):
         return cls._register_impl("robots", to_register, name, assert_type=BaseRobot)
+    
+    @classmethod
+    def register_scene(cls, to_register, *, name:Optional[str] = None):
+        return cls._register_impl("scenes", to_register, name, assert_type=BaseScene)
     
     @classmethod
     def modules(cls):
@@ -108,6 +121,9 @@ class Register(type):
     def get_configs(cls, name:str) -> Type:
         return cls._get_impl("configs", name)
     
+    @classmethod
+    def get_scene(cls, name:str) ->Type:
+        return cls._get_impl("scenes", name)
     
-
+    
 registry = Registry()

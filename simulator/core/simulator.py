@@ -2,12 +2,15 @@ import isaacsim
 import carb
 from omni.isaac.kit import SimulationApp
 from typing import Any, Callable, Dict, List, Optional
-from simulator.core.config import  SimulatorConfig
+from simulator.core.config import SimulatorConfig, PrimConfig
 from simulator.utils.log_utils import create_module_log
-from simulator.core.task import BaseTask
+from simulator.core.robot import BaseRobot
+
 from lazyimport import lazyimport
 lazyimport(globals(), """
     from omni.isaac.core import World
+    import omni.isaac.core.utils.prims as prim_utils
+    from omni.isaac.nucleus import get_assets_root_path
   """
 )
 
@@ -63,16 +66,18 @@ class Simulator():
         self._world = World(physics_dt=self.phy_dt, rendering_dt=self.render_dt, stage_units_in_meters=1.0)
         self._scene = self._world.scene
         self._stage = self._world.stage
+        self._resource_path = "./resource"
         self._warm_up()
+        self.is_running = self._world.is_playing()
 
-    def _warm_up(self, steps=10, render=True):
+    def _warm_up(self, steps=20, render=True):
         """
         Warm up the simulator.
         """
         for _ in range(steps):
             self._world.step(render=render)
     
-    def add_tasks(self, tasks:list[BaseTask]):
+    def add_tasks(self, tasks):
         for config in configs:
             task = create_task(config, self._scene)
             self._world.add_task(task)
@@ -80,13 +85,35 @@ class Simulator():
         self._world.reset()
         self._warm_up()
     
+    def import_robot(self, robot):
+        assert self.is_running==False
+        assert isinstance(robot, BaseRobot)
+
+        pass
+
     def import_scene(self, scene):
         assert self.is_running==False
-        assert isinstance(scene,BaseScene)
+        assert isinstance(scene, BaseScene)
 
-        scene.load_scene(self)
+        if scene._use_floor_plane:
+            assets_root_path = get_assets_root_path()
+            self._world.scene.add_default_ground_plane()
+            if not scene._floor_plane_visible:
+                prim_utils.set_visibility(prim_path="/World/defaultGroundPlane", visible=False)
+        if scene._use_sky_box:
+            prim_utils.create_prim(
+                prim_path="/World/defaultSky",
+                prim_type = "DomeLight",
+                attributes={
+                    "inputs:intensity": 1500,
+                    "inputs:radius":1.0,
+                    "inputs:texture:file": f"{self._resource_path}/background/sky/sky.jpg"
+                }
+            )
+        for k,v in scene.scene_prim_dict.items():
+            pass
     def play(self):
-        return self._simulation_app.play()
+        return self._world.play()
     
     def step(self, render:bool=True) -> dict[str, Any]:
         return self._world.step(render=render)
