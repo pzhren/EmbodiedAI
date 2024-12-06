@@ -1,6 +1,6 @@
 import abc
 
-class Device(metaclass=abc.ABCMeta):
+class BaseDevice(metaclass=abc.ABCMeta):
     """
     Base class for all robot controllers.
     Defines basic interface for all controllers to adhere to.

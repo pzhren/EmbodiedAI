@@ -131,6 +131,7 @@ light_1 = prim_utils.create_prim(
         "inputs:radius": 0.5,
         "inputs:intensity": 1e5,
         "inputs:color": (1.0, 1.0, 1.0)
+        
     }
 )
 my_world.scene.add_default_ground_plane()

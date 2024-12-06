@@ -42,8 +42,9 @@
 #             reset_needed = False
 from simulator.core.config import EnvConfig
 from simulator.core.env import BaseEnv
+from simulator.scenes import Interactive_Scene
 
-config_file= "D:\MMLM_Robot\Grasp_Nav\code\EmbodiedAI//tests//test_configs//test.yaml"
+config_file= "/data1/linmin/EmbodiedAI/tests/test_configs/test.yaml"
 cfg = EnvConfig(config_file)
 print(cfg.config)
 env = BaseEnv(cfg)

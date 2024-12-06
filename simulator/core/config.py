@@ -20,13 +20,8 @@ class BaseConfig(BaseModel):
     name: Optional[str]=None
     pass
 
-class ObjectConfig(BaseConfig):
-    pass
-
-
 class NPCConfig(BaseConfig):
     pass
-
 
 class MetricConfig(BaseConfig):
     pass
@@ -41,12 +36,29 @@ class SensorConfig(BaseConfig):
     type: str
     pass
 
+class PrimConfig(BaseConfig):
+    type: str
+    prim_path: Optional[str] = None
+    prim_type: Optional[str] = None
+    usd_path: Optional[str] = None
+    translation: Optional[np.ndarray]=[.0, .0, .0]
+    orientation: Optional[np.ndarray]=[.0, .0, .0, 1.0]
+    scale: Optional[np.ndarray]=[1.0, 1.0, 1.0]
+    attributes: Optional[dict] = None
+
+class ObjectConfig(PrimConfig):
+    state: Optional[str] = None
+    pass
+
+
 class RobotConfig(BaseConfig):
     # meta info
     type: str
-    prim_path: str
+    name: str = None
+    usd_path: str
+    prim_path: Optional[str] = None
     create_robot: bool = True
-
+    init_joints: Optional[List[float]] = None
     # common config
     position: Optional[List[float]] = [.0, .0, .0]
     orientation: Optional[List[float]] = [.0, .0, .0, 1.0]
@@ -60,6 +72,7 @@ class SceneConfig(BaseConfig):
     """
     Scene Config
     """
+    type: Optional[str]=""
     scene_file: str|None
     use_floor_plane: Optional[bool] = True
     floor_plane_visible: Optional[bool] = True
@@ -94,6 +107,7 @@ class Config(BaseConfig):
     """
     Config
     """
+    env_num: Optional[int] = 1
     sim: Optional[SimulatorConfig]
     scene: SceneConfig
     task: TaskConfig
@@ -114,11 +128,11 @@ class EnvConfig():
     Env Config
     """
     def __init__(self, path:str, multi_env:bool=False):
-        self._env_num = 1
         self._offset_size = None
         self.config_path = path
         self.config_dict = None
         self.load_config(path)
+        self._env_num = self.config_dict.get('env_num', 1)
         self.config_dict = merge_config(
             self.default_config.dict(), 
             self.config_dict,
@@ -126,7 +140,7 @@ class EnvConfig():
             verbose = True
         )
         print(self.config_dict)
-        self.config = Config(**self.config_dict)
+        self.config = Config(**self.config_dict) if not multi_env else [Config(**self.config_dict) for _ in range(self._env_num)]
 
     def load_config(self, path):
         if self.config_path is None:
