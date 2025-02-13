@@ -71,22 +71,19 @@ class Stretch(BaseRobot):
     
     def apply_action(self, action_instruct):
         if action_instruct == "Forward":
-            self.isaac_robot.apply_action("Forward")
+            self.controllers.apply_action("Forward")
             
         elif action_instruct == "Backward":
-            self.isaac_robot.apply_action("Backward")
+            self.controllers.apply_action("Backward")
             
         elif action_instruct == "Turn left":
-            self.isaac_robot.apply_action("Turn left")
+            self.controllers.apply_action("Turn left")
             
         elif action_instruct == "Turn right":
-            self.isaac_robot.apply_action("Turn right")
+            self.controllers.apply_action("Turn right")
             
         elif action_instruct == "Stop":
-            self.isaac_robot.apply_action("Stop")
-            
-        else:
-            pass
+            self.controllers.apply_action("Stop")
 
 
     def reset(self):
@@ -101,9 +98,8 @@ class Stretch(BaseRobot):
         pass
     
 
-    # position control
     def move_to_target(self, target):
-        pass
+        self.controllers.move_to_target(target)
     
     
     
