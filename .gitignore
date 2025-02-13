@@ -1,0 +1,77 @@
+# ----------------------------
+# Operating System Files
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# IDE/Editor Files
+# ----------------------------
+# IntelliJ IDEA / WebStorm / PyCharm
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Eclipse
+.project
+.classpath
+.settings/
+*.launch
+
+# NetBeans
+nbproject/
+
+# ----------------------------
+# Node.js / JavaScript
+# ----------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+
+# ----------------------------
+# Logs
+# ----------------------------
+*.log
+*.out
+*.err
+
+# ----------------------------
+# Build and Dependency Files
+# ----------------------------
+dist/
+build/
+target/
+*.lock
+*.zip
+*.tar.gz
+
+# ----------------------------
+# Temporary Files
+# ----------------------------
+*.tmp
+*.swp
+*.swo
+*.bak
+*.tmp
+~$*
+
+# ----------------------------
+# System-specific Files
+# ----------------------------
+*.~undo-tree
+*.~undo-tree~
+*~
