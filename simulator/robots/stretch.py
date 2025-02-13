@@ -17,12 +17,14 @@ class Stretch(BaseRobot):
         '''
         return "Stretch"
     
+    
     @property
     def robot_type(self) -> str:
         '''
         robot's type, e.g. "Wheel", "Leg", "Arm", "Drone"
         '''
         return "Wheel"
+    
     
     @property
     def observation(self):
@@ -31,12 +33,14 @@ class Stretch(BaseRobot):
         '''
         pass
     
+    
     @property
-    def state(self):
+    def get_world_pose(self):
         '''
-        Get the state of the robot, e.g. position, pose
+        Get the state of the robot, position, pose
         '''
-        pass
+        return self.isaac_robot.get_world_pose()
+    
     
     @property
     def get_wheel_names(self) -> list[str]:
@@ -44,6 +48,7 @@ class Stretch(BaseRobot):
         Get the name of the Stretch's wheels
         '''
         return ["joint_left_wheel", "joint_right_wheel"]
+    
     
     @property
     def get_arm_names(self) -> list[str]:
@@ -64,32 +69,40 @@ class Stretch(BaseRobot):
         pass
     
     
-    def apply_action(self, action_instuct):
-        if action_instuct == "Forward":
-            pass
-        elif action_instuct == "Backward":
-            pass
-        elif action_instuct == "Turn left":
-            pass
-        elif action_instuct == "Turn right":
-            pass
-        elif action_instuct == "Stop":
-            pass
+    def apply_action(self, action_instruct):
+        if action_instruct == "Forward":
+            self.isaac_robot.apply_action("Forward")
+            
+        elif action_instruct == "Backward":
+            self.isaac_robot.apply_action("Backward")
+            
+        elif action_instruct == "Turn left":
+            self.isaac_robot.apply_action("Turn left")
+            
+        elif action_instruct == "Turn right":
+            self.isaac_robot.apply_action("Turn right")
+            
+        elif action_instruct == "Stop":
+            self.isaac_robot.apply_action("Stop")
+            
         else:
             pass
 
+
     def reset(self):
         pass
-    
+
+
     def obj_grasp(self):
         pass
+    
     
     def obj_release(self):
         pass
     
 
     # position control
-    def move_to_target_velocity(self, target):
+    def move_to_target(self, target):
         pass
     
     
