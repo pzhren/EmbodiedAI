@@ -20,6 +20,7 @@ class BaseScene(ABC):
         self._scene_file = config.scene_file
         self._use_floor_plane = config.use_floor_plane
         self._floor_plane_visible = config.floor_plane_visible
+        self._add_wall = config.add_wall
         self._use_sky_box = config.use_sky_box
         self.config = config
         # self._load_usd = config.load_usd_scene
@@ -49,7 +50,7 @@ class BaseScene(ABC):
             
         return self.scene_prim_dict
     
-    def _add_object(self, obj:BaseObject):
+    def _add_object(self, obj):
         """
         add object to scene
         """

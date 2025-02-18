@@ -1,10 +1,5 @@
 from typing import Optional, Callable, Type, DefaultDict, Any, Dict
 import collections
-from simulator.core.task import BaseTask, BaseMetric
-from simulator.core.device import BaseDevice
-from simulator.core.robot import BaseRobot, BaseSensor
-from simulator.core.scene import BaseScene
-from simulator.core.prim import BasePrim
 
 MODULE={
     "tasks",
@@ -13,6 +8,8 @@ MODULE={
     "devices",
     "robots",
     "scenes"
+    "controllers",
+    "metrics"
 }
 class Singleton(type):
     _instances: Dict["Singleton", "Singleton"] = {}
@@ -59,32 +56,44 @@ class Registry(metaclass=Singleton):
 
     @classmethod
     def register_task(cls, to_register, *, name:Optional[str] = None):
+        from simulator.core.task import BaseTask
         return cls._register_impl("tasks", to_register, name, assert_type=BaseTask)
 
     @classmethod
     def register_object(cls, to_register, *, name:Optional[str] = None):
+        from simulator.core.prim import BaseObject
         return cls._register_impl("objects", to_register, name, assert_type=BaseObject)
     
     @classmethod
     def register_sensor(cls, to_register, *, name:Optional[str] = None):
+        from simulator.core.sensor import BaseSensor
         return cls._register_impl("sensors", to_register, name, assert_type=BaseSensor)
     
     @classmethod
     def register_device(cls, to_register, *, name:Optional[str] = None):
+        from simulator.core.device import BaseDevice
         return cls._register_impl("devices", to_register, name, assert_type=BaseDevice)
     
     @classmethod
     def register_metric(cls,to_register, *, name:Optional[str] = None):
+        from simulator.core.task import BaseMetric
         return cls._register_impl("metrics", to_register, name, assert_type=BaseMetric)
     
     @classmethod
     def register_robot(cls, to_register, *, name:Optional[str] = None):
+        from simulator.core.robot import BaseRobot
         return cls._register_impl("robots", to_register, name, assert_type=BaseRobot)
     
     @classmethod
     def register_scene(cls, to_register, *, name:Optional[str] = None):
+        from simulator.core.scene import BaseScene
         return cls._register_impl("scenes", to_register, name, assert_type=BaseScene)
     
+    @classmethod
+    def register_controller(cls, to_register, *, name:Optional[str] = None):
+        from simulator.core.robot import BaseController
+        return cls._register_impl("controllers", to_register, name, assert_type=BaseController)
+
     @classmethod
     def modules(cls):
         return cls.mapping
@@ -102,7 +111,7 @@ class Registry(metaclass=Singleton):
         return cls._get_impl("tasks", name)
     
     @classmethod
-    def get_robots(cls, name: str) -> Type:
+    def get_robot(cls, name: str) -> Type:
         return cls._get_impl("robots", name)
     
     @classmethod
@@ -124,6 +133,9 @@ class Registry(metaclass=Singleton):
     @classmethod
     def get_scene(cls, name:str) ->Type:
         return cls._get_impl("scenes", name)
-    
+
+    @classmethod
+    def get_controller(cls, name:str) -> Type:
+        return cls._get_impl("controllers", name)
     
 registry = Registry()

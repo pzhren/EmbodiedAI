@@ -1,5 +1,5 @@
 import os
-from typing import List, Optional, Union
+from typing import List, Optional, Union, Tuple
 from pydantic import BaseModel
 from simulator.utils.log_utils import create_module_log
 import yaml
@@ -34,6 +34,14 @@ class ControllerConfig(BaseConfig):
 
 class SensorConfig(BaseConfig):
     type: str
+    modals: Optional[List[str]] = []
+    resolution: Optional[Tuple[int,int]] = (1280, 720)
+    position: Optional[List] = [.0, .0, .0]
+    orientation: Optional[List] = [.0, .0, .0, 1.0]
+    fov: Optional[float] = 90
+    frequency: Optional[int] = 20
+    prim_path: Optional[str] = None
+
     pass
 
 class PrimConfig(BaseConfig):
@@ -41,9 +49,9 @@ class PrimConfig(BaseConfig):
     prim_path: Optional[str] = None
     prim_type: Optional[str] = None
     usd_path: Optional[str] = None
-    translation: Optional[np.ndarray]=[.0, .0, .0]
-    orientation: Optional[np.ndarray]=[.0, .0, .0, 1.0]
-    scale: Optional[np.ndarray]=[1.0, 1.0, 1.0]
+    translation: Optional[List]=[.0, .0, .0]
+    orientation: Optional[List]=[.0, .0, .0, 1.0]
+    scale: Optional[List]=[1.0, 1.0, 1.0]
     attributes: Optional[dict] = None
 
 class ObjectConfig(PrimConfig):
@@ -65,8 +73,8 @@ class RobotConfig(BaseConfig):
     scale: Optional[List[float]] = [1.0, 1.0, 1.0]
 
     # Parameters
-    controller: Optional[List[ControllerConfig]] = None
-    sensor: Optional[List[SensorConfig]] = None
+    controllers: Optional[List[ControllerConfig]] = None
+    sensors: Optional[List[SensorConfig]] = None
 
 class SceneConfig(BaseConfig):
     """
@@ -77,6 +85,7 @@ class SceneConfig(BaseConfig):
     use_floor_plane: Optional[bool] = True
     floor_plane_visible: Optional[bool] = True
     use_sky_box: Optional[bool] = True
+    add_wall: Optional[bool] = False
 
 
 class TaskConfig(BaseConfig):

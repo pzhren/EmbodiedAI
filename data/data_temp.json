@@ -1,0 +1,6 @@
+{
+    "instruction":"",
+    "scene_path":".usd",
+    "goal":"object or somewhere",
+    "init_pos":"robot init pose"
+}

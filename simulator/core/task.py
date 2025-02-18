@@ -3,7 +3,7 @@ import isaacsim
 from typing import Dict, Any
 from simulator.utils.log_utils import create_module_log
 from simulator.core.config import TaskConfig
-
+from simulator.core.metric import create_metric
 from lazyimport import lazyimport
 lazyimport(
     globals(),
@@ -54,17 +54,7 @@ class BaseTask(ABC):
         Return:
             Dict[str, Any]: observation of robots in this task
         """
-        if not self.work:
-            return {}
         obs = {}
-        for robot_name, robot in self.robots.items():
-            try:
-                obs[robot_name] = robot.get_obs()
-            except Exception as e:
-                log.ERROR(self.name)
-                log.ERROR(e)
-                traceback.print_exc()
-                return {}
         return obs
 
     def update_metrics(self):
@@ -77,6 +67,10 @@ class BaseTask(ABC):
             metrics_res[name] = metric.calculate()
 
         return metrics_res
+    
+    def init(self, robots, objects):
+        self.robots = robots
+        self.objects = objects
 
     def _reset_variables(self, env):
         """

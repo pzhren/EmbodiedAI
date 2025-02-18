@@ -2,7 +2,7 @@ from simulator.core.robot import BaseRobot
 from simulator.core.config import RobotConfig
 from simulator.core.register import registry
 
-@registry.register_robot(name="Gen3_robotiq85")
+@registry.register_robot
 class Gen3_robotiq85(BaseRobot):
     def __init__(self, robot_config:RobotConfig):
         super.__init__(robot_config)
