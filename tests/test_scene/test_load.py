@@ -48,3 +48,6 @@ config_file= "/data1/linmin/EmbodiedAI/tests/test_configs/test.yaml"
 cfg = EnvConfig(config_file)
 print(cfg.config)
 env = BaseEnv(cfg)
+
+while env.is_running():
+    env.step()

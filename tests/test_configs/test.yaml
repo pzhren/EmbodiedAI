@@ -5,19 +5,28 @@ sim:
   headless: True
   hide_ui: True
 
+
+
 scene:
   type: "Interactive_Scene"
   scene_file: "D://MMLM_Robot//Grasp_Nav//code//EmbodiedAI//simulator//tests//test_scene//test_scene.json"
-
+  use_floor_plane: False
+  
 task:
   type: dummy_task
   robots:
-    - type: "jetbot"
+    - type: "Stretch"
       prim_path: "/World/Robot_0"
+      usd_path: "/data1/linmin/EmbodiedAI/resource/robot/stretch/stretch_pos.usd"
       create_robot: True
       position: [1.0, 0.5, 1.0]
       scale: [5.0, 5.0, 5.0]
-      controller:
-        - type: dd_controller
-          input_limit: default
-          out_limit: default
+      # controller:
+      #   - type: dd_controller
+      #     input_limit: default
+      #     out_limit: default
+      sensors:
+        - type: "VisionSensor"
+          prim_path: "/World/Robot_0/camera_color_frame/rgb_camera"
+          modals: ["rgb","depth"]
+

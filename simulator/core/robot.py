@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from simulator.core.config import RobotConfig, SensorConfig, ControllerConfig
+from simulator.core.config import RobotConfig
 import numpy as np
 from lazyimport import lazyimport
 from simulator.controllers import make_controller
@@ -11,20 +11,6 @@ lazyimport(
     from omni.isaac.core.robots import Robot as OmniBaseRobot
     """
 )
-class BaseController(ABC):
-    def __init__(self, config: dict):
-        self.config = config
-        self.type = config.type
-    @abstractmethod
-    def get_action(self) -> np.ndarray:
-        pass
-
-class BaseSensor(ABC):
-    def __init__(self):
-        pass
-    @abstractmethod
-    def get_observation(self) -> np.ndarray:
-        pass
 
 class BaseRobot(ABC):
     def __init__(self, robot_config: RobotConfig):
@@ -32,15 +18,16 @@ class BaseRobot(ABC):
         self.prim_path = robot_config.prim_path
         self.usd_path = robot_config.usd_path
         self.name = robot_config.name
-        self.isaac_robot = OmniBaseRobot(prim_path=self.prim_path, 
-                        name=self.name, 
-                        usd_path=self.usd_path, **kwargs)
-        
-        self.joints = config.joints
-        self.joint_names = [joint.name for joint in self.joints]
-        
-        self.controllers = [make_controller(controller.type, controller) for controller in robot_config.controllers]
-        self.sensors = [make_sensor(sensor.type, sensor) for sensor in robot_config.sensors]
+        self.position = robot_config.position
+        self.orientation = robot_config.orientation
+        self.scale = robot_config.scale
+        self.init_joints = robot_config.init_joints
+        if robot_config.controllers is not None:
+            # self.controllers = []
+            self.controllers = [make_controller(controller.type, controller) for controller in robot_config.controllers if controller is not None]
+        if robot_config.sensors is not None:
+            # self.sensors = []
+            self.sensors = [make_sensor(sensor.type, sensor) for sensor in robot_config.sensors if sensor is not None]
     def apply_action(self, action):
         return self.isaac_robot.apply_action(action)
     
@@ -54,5 +41,6 @@ class BaseRobot(ABC):
         """
         Initialize the robot
         """
+        self.isaac_robot = OmniBaseRobot(prim_path=self.prim_path, name=self.name)
         pass
 
