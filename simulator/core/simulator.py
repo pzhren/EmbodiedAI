@@ -7,6 +7,19 @@ from simulator.utils.log_utils import create_module_log
 from simulator.core.robot import BaseRobot
 from simulator.core.scene import BaseScene
 
+
+from omni.isaac.dynamic_control import _dynamic_control
+from transformations import euler_from_quaternion,quaternion_from_euler
+from omni.isaac.core.prims import XFormPrim
+from omni.isaac.core.robots import Robot
+import math
+import time
+import numpy as np
+import matplotlib.pyplot as plt
+from keyboard_interact import KeyboardController
+
+
+
 from lazyimport import lazyimport
 lazyimport(globals(), """
     from omni.isaac.core import World
@@ -139,6 +152,57 @@ class Simulator():
             pass
     def play(self):
         return self._world.play()
+    
+    def position_control(self, target, world,orientation=True):
+        """
+        Move the robot to a target position and orientation.
+        :param target: Target position (x, y) and orientation (w) in radians.
+        :param world: Simulation world.
+        :param orientation: Whether to adjust the final orientation.
+        """
+        # get current position and yaw
+        pos, roll, pitch, yaw = self.trans_pos()
+        x1, y1, _ = pos
+        x2, y2, w2 = target
+        angle_to_target = math.atan2(y2 - y1, x2 - x1)
+        angle_diff = self.trans2pi(angle_to_target - yaw)
+        
+        # Turn
+        while abs(angle_diff) > self.error_ang:
+            euler2q = quaternion_from_euler(roll, pitch, yaw + self.angular_velocity * angle_diff / abs(angle_diff) )
+            self.prim.set_world_pose(orientation=np.array(euler2q),position=np.array([x1, y1, self.z]))
+            # get process image
+            _, _, _, yaw = self.trans_pos()
+            angle_diff = self.trans2pi(angle_to_target - yaw)
+            world.step(render=True)
+
+        
+        # Move 
+        while math.sqrt((x2 - x1)**2 + (y2 - y1)**2) > self.error_dis: 
+            dx = x2 - x1
+            dy = y2 - y1
+            self.prim.set_world_pose(position=np.array([x1 + self.linear_velocity*dx/math.sqrt(dx**2 + dy**2),y1 + self.linear_velocity*dy/math.sqrt(dx**2 + dy**2), self.z]))
+            world.step(render=True)
+        
+            pos, roll, pitch, yaw = self.trans_pos()
+            x1, y1 = pos[0], pos[1]
+
+
+        # Final turn to target orientation
+        if orientation:
+            final_angle_diff = w2 - yaw
+            final_angle_diff = self.trans2pi(final_angle_diff)
+    
+            while abs(final_angle_diff) >self.error_ang:
+                euler2q = quaternion_from_euler(roll, pitch, yaw+self.angular_velocity*final_angle_diff/abs(final_angle_diff))
+                self.prim.set_world_pose(orientation=np.array(euler2q))
+                
+                pos, roll, pitch, yaw = self.trans_pos()
+                final_angle_diff = self.trans2pi(w2 - yaw)
+                world.step(render=True)
+                
+        print("current_pos:",pos)
+    
     
     def step(self, render:bool=True) -> dict[str, Any]:
         return self._world.step(render=render)
