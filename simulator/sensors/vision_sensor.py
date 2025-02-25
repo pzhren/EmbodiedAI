@@ -13,7 +13,7 @@ lazyimport(globals(), """
 @registry.register_sensor
 class VisionSensor(BaseSensor):
     def __init__(self, config:SensorConfig):
-        super().__init__()
+        super().__init__(config)
         self.config = config
         self.name = config.name
         self.type = config.type
@@ -24,13 +24,17 @@ class VisionSensor(BaseSensor):
         for modal in self.modals:
             assert modal in ["rgb", "depth", None], f"{modal} is not supported"
         
-    def init(self):
+    def init(self, offset):
         """
         Create the sensor object in isaacsim
         """
+        if self.on_robot:
+            position = self.config.position
+        else:
+            position =  [x + y for x, y in zip(self.config.position, offset)]
         self.camera = Camera(
             prim_path=self.config.prim_path,
-            position=self.config.position,
+            position=position,
             orientation=self.config.orientation,
             resolution=self.resolution,
             # fov=self.fov,
@@ -44,7 +48,7 @@ class VisionSensor(BaseSensor):
         self.camera.add_distance_to_image_plane_to_frame()
         pass
 
-    def get_observation(self) -> Dict:
+    def update(self) -> Dict:
         obs = {}
         camera_data = self.camera.get_current_frame()
         if camera_data is not None:
@@ -55,6 +59,6 @@ class VisionSensor(BaseSensor):
                 obs["rgb"] = rgb
             if "depth" in self.modals:
                 obs["depth"] = camera_data["distance_to_image_plane"]
-        return obs
+        self.data = obs 
 
     

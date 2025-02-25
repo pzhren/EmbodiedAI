@@ -49,5 +49,5 @@ cfg = EnvConfig(config_file)
 print(cfg.config)
 env = BaseEnv(cfg)
 
-while env.is_running():
-    env.step()
+while env.is_running:
+        obs = env.step(["w"])

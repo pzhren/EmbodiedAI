@@ -1,3 +1,4 @@
+env_num: 1
 sim:
   device: 0
   physics_frequency: 60
@@ -5,28 +6,34 @@ sim:
   headless: True
   hide_ui: True
 
-
-
 scene:
   type: "Interactive_Scene"
-  scene_file: "D://MMLM_Robot//Grasp_Nav//code//EmbodiedAI//simulator//tests//test_scene//test_scene.json"
+  scene_file: "/data1/linmin/EmbodiedAI/tests/test_scene/102344022/102344022.usd"
   use_floor_plane: False
+  add_wall: True
   
 task:
-  type: dummy_task
+  type: NavigateTask
   robots:
     - type: "Stretch"
+      name: "robot"
+      use_position: True
       prim_path: "/World/Robot_0"
       usd_path: "/data1/linmin/EmbodiedAI/resource/robot/stretch/stretch_pos.usd"
       create_robot: True
       position: [1.0, 0.5, 1.0]
-      scale: [5.0, 5.0, 5.0]
+      controllers:
+        - type: "PositionController"
       # controller:
       #   - type: dd_controller
       #     input_limit: default
       #     out_limit: default
       sensors:
         - type: "VisionSensor"
+          on_robot: True
           prim_path: "/World/Robot_0/camera_color_frame/rgb_camera"
           modals: ["rgb","depth"]
+  goal_point: [0,0,0]
+  max_steps: 1000
+  goal_threshold: 1
 

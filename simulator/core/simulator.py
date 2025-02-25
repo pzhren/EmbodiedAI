@@ -12,6 +12,8 @@ lazyimport(globals(), """
     from omni.isaac.core import World
     import omni.isaac.core.utils.prims as prim_utils
     from omni.isaac.nucleus import get_assets_root_path
+    from simulator.utils.scene_utils import add_boundary_walls
+    from simulator.utils.scene_utils import compute_enclosing_square
   """
 )
 
@@ -86,7 +88,7 @@ class Simulator():
         self._world.reset()
         self._warm_up()
     
-    def import_robot(self, robot):
+    def import_robot(self, robot, offset=[0,0,0]):
         assert self.is_playing==False
         assert isinstance(robot, BaseRobot)
         # prim_utils
@@ -94,9 +96,10 @@ class Simulator():
             prim_type = "Xform",
             prim_path = robot.prim_path,
             usd_path = robot.usd_path,
-            translation = robot.position,
+            translation = [x + y for x, y in zip(robot.position, offset)],
             orientation = robot.orientation,
             scale = robot.scale,
+            semantic_label = robot.name
             # orientation=[0.70711,0.0,0.0,-0.70711]
             )
         pass
@@ -114,7 +117,7 @@ class Simulator():
 
     #     return sensor
 
-    def import_scene(self, scene):
+    def import_scene(self, scene, offset=[0,0,0], scene_id=0):
         assert self.is_playing==False
         assert isinstance(scene, BaseScene)
 
@@ -134,12 +137,20 @@ class Simulator():
                     "inputs:texture:file": f"{self._resource_path}/background/sky/sky.jpg"
                 }
             )
-        
+
         for k,v in scene.scene_prim_dict.items():
-            pass
+            # pass
+           v.init()
+
+        if scene._add_wall:
+            scene_prim = scene.scene_prim_dict["Scene"]
+            scene_aabb = scene_prim.get_aabb()
+            center,width,height = compute_enclosing_square(scene_aabb)
+            add_boundary_walls(width=width, height=height, wall_height=5, wall_thickness=0.5,center=center, env_id=scene_id)
+
     def play(self):
         return self._world.play()
-    
+
     def step(self, render:bool=True) -> dict[str, Any]:
         return self._world.step(render=render)
 
