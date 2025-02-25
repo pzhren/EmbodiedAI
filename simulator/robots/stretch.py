@@ -9,7 +9,10 @@ class Stretch(BaseRobot):
         super().__init__(robot_config)
 
         self.prim_path = "/World/Robot/Stretch" if self.prim_path==None else robot_config.prim_path
+<<<<<<< HEAD
         self.use_position = robot_config.use_position if robot_config.use_position is not None else False
+=======
+>>>>>>> d7d1a005321578f09e54e794486662dcbcd08924
         pass
     
     
