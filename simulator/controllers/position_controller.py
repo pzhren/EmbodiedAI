@@ -3,7 +3,14 @@ from simulator.core.register import registry
 from simulator.core.controller import BaseController
 
 from transformations import euler_from_quaternion, quaternion_from_euler
-from omni.isaac.core.robots import Robot
+from lazyimport import lazyimport
+
+lazyimport(
+    globals(),
+    """
+    from omni.isaac.core.robots import Robot
+    """
+)
 
 import math
 import numpy as np
@@ -11,17 +18,14 @@ import numpy as np
 
 @registry.register_controller
 class PositionController(BaseController):
-    type: str = "position"
-    input_limit: str = "default"
-    output_limit: str = "default"
-    name: str = "position_controller"
-    
     
     def __init__(self, config:ControllerConfig):
         super().__init__(config)
+        self.forward_m = config.forward_m if config.forward_m is not None else 0.02
+        self.angle_yaw = config.angle_yaw if config.angle_yaw is not None else 0.02
     
 
-    def get_action(self, command: str, length=0.02, angle_yaw=0.02) -> np.ndarray:
+    def get_action(self, command: str, robot=None) -> np.ndarray:
         """
         Generate action based on movement command.
         
@@ -33,7 +37,9 @@ class PositionController(BaseController):
         Returns:
             np.ndarray: Target position and yaw angle
         """
-        position, _, _, yaw = self.trans_pos()
+        length = self.forward_m
+        angle_yaw = self.angle_yaw
+        position, roll, pitch, yaw = self.trans_pos(robot)
         x_dir = np.array([math.cos(yaw), math.sin(yaw), 0])
         
         if command == 'w':
@@ -48,8 +54,9 @@ class PositionController(BaseController):
             new_yaw = (yaw - angle_yaw) % (2 * math.pi)
         elif command == 'd':
             new_yaw = (yaw + angle_yaw) % (2 * math.pi)
-
-        return np.array([target_pos, new_yaw])
+        
+        euler = quaternion_from_euler(roll, pitch, new_yaw)
+        return target_pos, euler
     
     
     def trans_pos(self, robot)-> tuple:
@@ -85,6 +92,13 @@ class PositionController(BaseController):
             else:
                 angle -= 2*math.pi
         return angle
-    
-    
-    
+
+    @property
+    def action_dim(self) -> int:
+        """
+        Get action dimension.
+        
+        Returns:
+            int: Action dimension
+        """
+        return 1
