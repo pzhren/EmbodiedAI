@@ -44,10 +44,10 @@ from simulator.core.config import EnvConfig
 from simulator.core.env import BaseEnv
 from simulator.scenes import Interactive_Scene
 
-config_file= "/data1/linmin/EmbodiedAI/tests/test_configs/test.yaml"
+config_file= "/data1/lfwj/linmin_embodiedAI/EmbodiedAI/tests/test_configs/test.yaml"
 cfg = EnvConfig(config_file)
 print(cfg.config)
 env = BaseEnv(cfg)
 
-while env.is_running():
-    env.step()
+while env.is_running:
+        obs = env.step(["w"])

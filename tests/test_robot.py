@@ -38,11 +38,32 @@ import omni.kit.viewport.utility as vu
 
 my_world = World(stage_units_in_meters=1.0)
 
-robot = Robot(prim_path="/World/robot",usd_path="/data1/linmin/EmbodiedAI/tests/stretch/model/stretch.usd")
+light_1 = prim_utils.create_prim(
+    "/World/Light_1",
+    "DomeLight",
+    # position=np.array([0.0, 0.0, 3.5]),
+    position=np.array([0.5, 0.6, 4.2]),
+    attributes={
+        "inputs:intensity": 1e5,
+        "inputs:color": (1.0, 1.0, 1.0)
+        
+    }
+)
 
+prim_utils.create_prim(
+    prim_path="/World/robot",
+    prim_type="Xform",
+    translation=np.array([1.0, 0.5, 0.0]),
+    orientation=np.array([1., 0., 0., 0.]),
+    usd_path="/data1/linmin/EmbodiedAI/tests/stretch/model/stretch.usd"
+)
+robot = Robot(prim_path="/World/robot")
+# robot.disable_gravity()
 my_world.scene.add(robot)
+# my_world.scene.add_default_ground_plane()
 my_world.reset()
-
+i=0
+reset_needed = False
 while simulation_app.is_running():
     my_world.step(render=True)
     if my_world.is_stopped() and not reset_needed:
@@ -50,5 +71,13 @@ while simulation_app.is_running():
     if my_world.is_playing():
         if reset_needed:
             my_world.reset()
+        robot.set_local_pose(translation=np.array([1.0, 0.5, 0.0]), orientation=np.array([1., 0., 0., 0.]))
+        if i>100 and i<200:
+            robot.set_local_pose(translation=np.array([2.0, 1.5, 0.0]), orientation=np.array([1., 0., 0., 0.]))
+        if i>200:
+            robot.set_local_pose(translation=np.array([1.0, 1.5, 0.0]), orientation=np.array([1., 0., 0., 0.]))
+    print(i)
+    print(robot.get_local_pose())
+    i+=1
         
 simulation_app.close()

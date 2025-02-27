@@ -1,15 +1,17 @@
-from simulator.core.tasks import BaseTask
-from simulator.core.configs import TaskConfig
+from simulator.core.task import BaseTask
+from simulator.core.config import TaskConfig
+from simulator.core.register import registry
 
+@registry.register_task
 class NavigateTask(BaseTask):
-    def __init__(self,config:TaskConfig,Scene):
-        super().__init__(config,None)
+    def __init__(self, config:TaskConfig):
+        super().__init__(config)
         # 获取任务的config, 任务的config是一个字典，包含了任务的所有信息, 例如任务的名字，任务的目标物体的名字，任务的目标物体的ID等
         self.task_config = config
         
         # 导航任务独有属性
-        self.start_point = config.start_points
-        self.goal_point = config.goal_points
+        self.start_points = config.start_points
+        self.goal_points = config.goal_points
         self.reached_goal = False
         self.max_steps = config.max_steps
         self.goal_threshold = config.goal_threshold
@@ -49,33 +51,36 @@ class NavigateTask(BaseTask):
         '''
         return self.task_config["robot_name"]
     
-    
+    def get_observations(self):
+        obs = []
+        for robot in self.robots:
+            for sensor in robot.sensors:
+                obs.append(sensor.data)
+        return obs
+
     def step(self):
         """
-        导航任务的每一步操作
+        return obs reward done info
         """
         super().step()
-        # 获取机器人的观测
         observations = self.get_observations()
-        # 这里可以添加机器人的导航控制逻辑
-        self.robot.navigate(observations[self.get_robot_name], self.goal_point)
-        # 更新指标
         self.update_metrics()
-        # 检查任务是否完成
-        if self.is_done() and self._success:
-            return True
+        self.steps+=1
+        # self.is_done()
+        return observations, self.metrics, self._success
 
     def is_done(self) -> bool:
         """
         检查导航任务是否完成
         """
-        robot_position = self.robot.get_position()
+        for robot_id in range(len(self.robots)):
+            robot_position = self.robots[robot_id].get_world_pose()
         # 检查机器人是否到达目标点
-        if self._is_at_goal(robot_position):
-            self.reached_goal = True
-            self._done = True
-            self._success = True
-            return True
+            if self._is_at_goal(robot_position):
+                self.reached_goal = True
+                self._done = True
+                self._success = True
+                return True
         else:
             self.reached_goal = False
             self._done = False
@@ -87,10 +92,11 @@ class NavigateTask(BaseTask):
             return False
 
 
-    def _is_at_goal(self, position, goal_threshold=0.8):
+    def _is_at_goal(self, position, id, goal_threshold=0.8):
         """
         检查机器人是否到达目标点
         """
+
         distance = ((position[0] - self.goal_point[0]) ** 2 +
                     (position[1] - self.goal_point[1]) ** 2) ** 0.5
         return distance < self.goal_threshold
@@ -116,7 +122,3 @@ class NavigateTask(BaseTask):
                     (robot_position[1] - self.goal_point[1]) ** 2) ** 0.5
         distances[self.get_robot_name()] = distance
         return distances
-    
-    
-    
-    
