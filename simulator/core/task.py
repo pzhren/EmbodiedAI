@@ -3,7 +3,7 @@ import isaacsim
 from typing import Dict, Any
 from simulator.utils.log_utils import create_module_log
 from simulator.core.config import TaskConfig
-from simulator.core.metric import create_metric
+from simulator.metrics import make_metric
 from lazyimport import lazyimport
 lazyimport(
     globals(),
@@ -16,9 +16,9 @@ lazyimport(
 class BaseMetric(ABC):
     def __init__(self):
         pass
-
     def calculate(self, task, observations) -> float:
         raise NotImplementedError
+
 
 class BaseTask(ABC):
     """
@@ -28,21 +28,19 @@ class BaseTask(ABC):
     * contains robots
     """
     tasks = {}
-
     def __init__(self, config: TaskConfig):
         self.objects = None
         self.robots = None
-        name = config.name
-        offset = config.offset
-        super().__init__(name=name, offset=offset)
+        self.name = config.name
+        self.offset = config.offset
         self.config = config
-
         self.metrics: dict[str, BaseMetric] = {}
         self.steps = 0
         self.work = True
+        self._success = False
 
         for metric_config in config.metrics:
-            self.metrics[metric_config.name] = create_metric(metric_config)
+            self.metrics[metric_config.name] = make_metric(metric_config)
 
     def step(self):
         pass 
@@ -65,7 +63,6 @@ class BaseTask(ABC):
         metrics_res = {}
         for name, metric in self.metrics.items():
             metrics_res[name] = metric.calculate()
-
         return metrics_res
     
     def init(self, robots, objects):

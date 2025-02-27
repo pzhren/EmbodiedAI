@@ -91,7 +91,7 @@ class Registry(metaclass=Singleton):
     
     @classmethod
     def register_controller(cls, to_register, *, name:Optional[str] = None):
-        from simulator.core.robot import BaseController
+        from simulator.core.controller import BaseController
         return cls._register_impl("controllers", to_register, name, assert_type=BaseController)
 
     @classmethod

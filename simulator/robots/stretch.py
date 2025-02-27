@@ -9,6 +9,7 @@ class Stretch(BaseRobot):
         super().__init__(robot_config)
 
         self.prim_path = "/World/Robot/Stretch" if self.prim_path==None else robot_config.prim_path
+        self.use_position = robot_config.use_position if robot_config.use_position is not None else False
         pass
     
     
@@ -60,25 +61,20 @@ class Stretch(BaseRobot):
         
     
     def init(self):
+        super().init()
         pass
     
     
     def apply_action(self, action_instruct):
-        if action_instruct == "Forward":
-            self.controllers.apply_action("Forward")
-            
-        elif action_instruct == "Backward":
-            self.controllers.apply_action("Backward")
-            
-        elif action_instruct == "Turn left":
-            self.controllers.apply_action("Turn left")
-            
-        elif action_instruct == "Turn right":
-            self.controllers.apply_action("Turn right")
-            
-        elif action_instruct == "Stop":
-            self.controllers.apply_action("Stop")
-
+        id = 0
+        for controller in self.controllers:
+            dim = controller.action_dim
+            command = controller.get_action(action_instruct[id:id+dim], robot=self.prim_path)
+            id+=dim 
+        if self.use_position:
+            self.Xform.set_world_pose(position = command[0],orientation = command[1])
+        else:
+            self.isaac_robot.apply_action(command)
 
     def reset(self):
         pass

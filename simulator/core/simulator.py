@@ -7,24 +7,13 @@ from simulator.utils.log_utils import create_module_log
 from simulator.core.robot import BaseRobot
 from simulator.core.scene import BaseScene
 
-
-from omni.isaac.dynamic_control import _dynamic_control
-from transformations import euler_from_quaternion,quaternion_from_euler
-from omni.isaac.core.prims import XFormPrim
-from omni.isaac.core.robots import Robot
-import math
-import time
-import numpy as np
-import matplotlib.pyplot as plt
-from keyboard_interact import KeyboardController
-
-
-
 from lazyimport import lazyimport
 lazyimport(globals(), """
     from omni.isaac.core import World
     import omni.isaac.core.utils.prims as prim_utils
     from omni.isaac.nucleus import get_assets_root_path
+    from simulator.utils.scene_utils import add_boundary_walls
+    from simulator.utils.scene_utils import compute_enclosing_square
   """
 )
 
@@ -99,7 +88,7 @@ class Simulator():
         self._world.reset()
         self._warm_up()
     
-    def import_robot(self, robot):
+    def import_robot(self, robot, offset=[0,0,0]):
         assert self.is_playing==False
         assert isinstance(robot, BaseRobot)
         # prim_utils
@@ -107,9 +96,10 @@ class Simulator():
             prim_type = "Xform",
             prim_path = robot.prim_path,
             usd_path = robot.usd_path,
-            translation = robot.position,
+            translation = [x + y for x, y in zip(robot.position, offset)],
             orientation = robot.orientation,
             scale = robot.scale,
+            semantic_label = robot.name
             # orientation=[0.70711,0.0,0.0,-0.70711]
             )
         pass
@@ -127,7 +117,7 @@ class Simulator():
 
     #     return sensor
 
-    def import_scene(self, scene):
+    def import_scene(self, scene, offset=[0,0,0], scene_id=0):
         assert self.is_playing==False
         assert isinstance(scene, BaseScene)
 
@@ -147,63 +137,20 @@ class Simulator():
                     "inputs:texture:file": f"{self._resource_path}/background/sky/sky.jpg"
                 }
             )
-        
+
         for k,v in scene.scene_prim_dict.items():
-            pass
+            # pass
+           v.init()
+
+        if scene._add_wall:
+            scene_prim = scene.scene_prim_dict["Scene"]
+            scene_aabb = scene_prim.get_aabb()
+            center,width,height = compute_enclosing_square(scene_aabb)
+            add_boundary_walls(width=width, height=height, wall_height=5, wall_thickness=0.5,center=center, env_id=scene_id)
+
     def play(self):
         return self._world.play()
-    
-    def position_control(self, target, world,orientation=True):
-        """
-        Move the robot to a target position and orientation.
-        :param target: Target position (x, y) and orientation (w) in radians.
-        :param world: Simulation world.
-        :param orientation: Whether to adjust the final orientation.
-        """
-        # get current position and yaw
-        pos, roll, pitch, yaw = self.trans_pos()
-        x1, y1, _ = pos
-        x2, y2, w2 = target
-        angle_to_target = math.atan2(y2 - y1, x2 - x1)
-        angle_diff = self.trans2pi(angle_to_target - yaw)
-        
-        # Turn
-        while abs(angle_diff) > self.error_ang:
-            euler2q = quaternion_from_euler(roll, pitch, yaw + self.angular_velocity * angle_diff / abs(angle_diff) )
-            self.prim.set_world_pose(orientation=np.array(euler2q),position=np.array([x1, y1, self.z]))
-            # get process image
-            _, _, _, yaw = self.trans_pos()
-            angle_diff = self.trans2pi(angle_to_target - yaw)
-            world.step(render=True)
 
-        
-        # Move 
-        while math.sqrt((x2 - x1)**2 + (y2 - y1)**2) > self.error_dis: 
-            dx = x2 - x1
-            dy = y2 - y1
-            self.prim.set_world_pose(position=np.array([x1 + self.linear_velocity*dx/math.sqrt(dx**2 + dy**2),y1 + self.linear_velocity*dy/math.sqrt(dx**2 + dy**2), self.z]))
-            world.step(render=True)
-        
-            pos, roll, pitch, yaw = self.trans_pos()
-            x1, y1 = pos[0], pos[1]
-
-
-        # Final turn to target orientation
-        if orientation:
-            final_angle_diff = w2 - yaw
-            final_angle_diff = self.trans2pi(final_angle_diff)
-    
-            while abs(final_angle_diff) >self.error_ang:
-                euler2q = quaternion_from_euler(roll, pitch, yaw+self.angular_velocity*final_angle_diff/abs(final_angle_diff))
-                self.prim.set_world_pose(orientation=np.array(euler2q))
-                
-                pos, roll, pitch, yaw = self.trans_pos()
-                final_angle_diff = self.trans2pi(w2 - yaw)
-                world.step(render=True)
-                
-        print("current_pos:",pos)
-    
-    
     def step(self, render:bool=True) -> dict[str, Any]:
         return self._world.step(render=render)
 

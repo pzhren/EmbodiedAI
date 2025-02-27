@@ -23,13 +23,18 @@ class BaseConfig(BaseModel):
 class NPCConfig(BaseConfig):
     pass
 
+
 class MetricConfig(BaseConfig):
     pass
+
 
 class ControllerConfig(BaseConfig):
     type: str
     input_limit: Optional[str|List] = "default"
     output_limit: Optional[str|List] = "default"
+    forward_m: Optional[float] = 0.02
+    angle_yaw: Optional[float] = 0.02
+
     pass
 
 class SensorConfig(BaseConfig):
@@ -41,11 +46,12 @@ class SensorConfig(BaseConfig):
     fov: Optional[float] = 90
     frequency: Optional[int] = 20
     prim_path: Optional[str] = None
+    on_robot: Optional[bool] = False
 
     pass
 
 class PrimConfig(BaseConfig):
-    type: str
+    type: Optional[str] = None
     prim_path: Optional[str] = None
     prim_type: Optional[str] = None
     usd_path: Optional[str] = None
@@ -53,6 +59,7 @@ class PrimConfig(BaseConfig):
     orientation: Optional[List]=[.0, .0, .0, 1.0]
     scale: Optional[List]=[1.0, 1.0, 1.0]
     attributes: Optional[dict] = None
+    collision: Optional[bool] = True
 
 class ObjectConfig(PrimConfig):
     state: Optional[str] = None
@@ -75,6 +82,8 @@ class RobotConfig(BaseConfig):
     # Parameters
     controllers: Optional[List[ControllerConfig]] = None
     sensors: Optional[List[SensorConfig]] = None
+    use_position: Optional[bool] = False
+
 
 class SceneConfig(BaseConfig):
     """
@@ -93,11 +102,17 @@ class TaskConfig(BaseConfig):
     Task Config
     """
     type: Optional[str] ="default"
-    
     robots: Optional[List[RobotConfig]] = []
     objects: Optional[List[ObjectConfig]] = [] # Task revelant objects
     metrics: Optional[List[MetricConfig]] = []
     offset: Optional[List[float]] = None
+
+    ### Navigate
+    start_points: Optional[List[float]] = [.0, .0, .0]
+    goal_points: Optional[List[float]] = [.0, .0, .0]
+    max_steps: Optional[int] = 1000
+    goal_threshold: Optional[float] = 0.8 # m
+
 
 class SimulatorConfig(BaseConfig):
     """
@@ -112,6 +127,7 @@ class SimulatorConfig(BaseConfig):
     headless: Optional[bool] = True
     hide_ui: Optional[bool] = True
 
+
 class Config(BaseConfig):
     """
     Config
@@ -121,6 +137,7 @@ class Config(BaseConfig):
     scene: SceneConfig
     task: TaskConfig
     npcs: List[NPCConfig]=[]
+    offset: Optional[List[int]] = [0, 0, 0]
 
 # class MultiConfig(BaseConfig):
 #     """

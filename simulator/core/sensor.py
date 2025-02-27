@@ -4,11 +4,16 @@ from simulator.core.config import SensorConfig
 import numpy as np
 
 class BaseSensor(ABC):
-    def __init__(self):
-        self.type = None
+    def __init__(self, config: SensorConfig):
+        self.type = config.type
+        self.on_robot = config.on_robot
+        self.data = None
         pass
     @abstractmethod
-    def get_observation(self) -> np.ndarray:
+    def update(self) -> np.ndarray:
+        """
+        update sensor data
+        """
         pass
     
     @abstractmethod

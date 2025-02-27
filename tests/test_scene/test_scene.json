@@ -1,44 +1,43 @@
 {
- "playroom":[
-    {"type": "scene",
-     "assetPosition":
-    {
-        "x": 0,
-        "y": 0,
-        "z": 0 
-    },
-    "assetOrientation":
-    {
-        "x":0.19885,
-        "y":0.98,
-        "z":0.0,
-        "w":0.0
-    },
-    "assetScale":
-    {
-        "x": 0.5,
-        "y": 0.5,
-        "z": 0.5
-    },
-    "assetPath": "D://MMLM_Robot//Grasp_Nav//Simulator//refined_mesh//playroom//playroom.usd"
-    
-}
- ],
- "light":[
-    {
-        "type":"SpecularLight",
-        "attributes":
+    "playroom": [
         {
-            "inputs:radius": 0.5,
-            "inputs:intensity": 1e5,
-            "inputs:color": [1.0, 1.0, 1.0]
-        },
-        "assetPosition":
-        {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 3.5
+            "type": "scene",
+            "assetPosition": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "assetOrientation": {
+                "x": 0.19885,
+                "y": 0.98,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "assetScale": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 0.5
+            },
+            "assetPath": "D://MMLM_Robot//Grasp_Nav//Simulator//refined_mesh//playroom//playroom.usd"
         }
-    }
- ]
+    ],
+    "light": [
+        {
+            "type": "SpecularLight",
+            "attributes": {
+                "inputs:radius": 0.5,
+                "inputs:intensity": 1e5,
+                "inputs:color": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "assetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 3.5
+            }
+        }
+    ]
 }
