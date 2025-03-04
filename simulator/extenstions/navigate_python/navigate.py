@@ -5,7 +5,7 @@ import os
 import pickle
 import matplotlib.pyplot as plt
 import numpy as np
-from dstar_lite import DStarLite, euclidean_distance
+from .dstar_lite import DStarLite, euclidean_distance
 
 
 class Navigator:

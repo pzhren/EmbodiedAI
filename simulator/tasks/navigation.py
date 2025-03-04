@@ -1,7 +1,15 @@
 from simulator.core.task import BaseTask
 from simulator.core.config import TaskConfig
 from simulator.core.register import registry
-
+from simulator.extenstions.navigate_python.map_show import *
+from simulator.extenstions.navigate_python.navigate import *
+from simulator.extenstions.navigate_python.dstar_lite import *
+from simulator.extenstions.navigate_python.discretize_map import *
+from lazyimport import lazyimport
+lazyimport(globals(), """
+    from omni.isaac.core.prims import XFormPrim
+  """
+)
 @registry.register_task
 class NavigateTask(BaseTask):
     def __init__(self, config:TaskConfig):
@@ -15,6 +23,7 @@ class NavigateTask(BaseTask):
         self.reached_goal = False
         self.max_steps = config.max_steps
         self.goal_threshold = config.goal_threshold
+        self.object_ids = config.object_ids
     
     
     def get_task_type(self):
@@ -122,3 +131,27 @@ class NavigateTask(BaseTask):
                     (robot_position[1] - self.goal_point[1]) ** 2) ** 0.5
         distances[self.get_robot_name()] = distance
         return distances
+    
+
+    def get_distance(self, map_path, goal_pos):
+        '''
+        根据机器人位置和物品位置计算规划路径距离
+        robot_pos和goal_pos都是isaacsim的世界坐标
+        '''
+        hm = HeightMap(map_path)
+        xy_range = hm.compute_range()
+        hm.make_map()
+        hm_map = hm.get_map()
+
+        navigator = Navigator(area_range=xy_range, map=hm_map, scale_ratio=1)
+        navigator.planner.compute_cost_map()
+        # show_map_(navigator.planner.cost_map)
+        print(self.task_config.robots)
+        robot_xform = XFormPrim(self.task_config.robots[0].prim_path)
+        robot_pos,_ = robot_xform.get_world_pose()[:2]
+        path, _ = navigator.navigate(goal_pos, robot_pos)
+        # 计算路径总距离，使用 zip 将相邻点配对
+        total_distance = sum(math.hypot(x2 - x1, y2 - y1)for (x1, y1), (x2, y2) in zip(path, path[1:]))
+        
+        return total_distance
+    

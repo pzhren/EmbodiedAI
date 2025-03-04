@@ -3,7 +3,7 @@ sim:
   device: 0
   physics_frequency: 60
   render_frequency: 60
-  headless: True
+  headless: False
   hide_ui: False
 
 scene:
@@ -36,4 +36,5 @@ task:
   goal_point: [0,0,0]
   max_steps: 1000
   goal_threshold: 1
+  object_ids: ["ca1f1a0a2e87b15b5159e98547d7d2ca8f4020c7", "af102d5ce3df9cc58b991eb618a86f66c5901efe"]
 
