@@ -48,6 +48,11 @@ config_file= "/data1/lfwj/linmin_embodiedAI/EmbodiedAI/tests/test_configs/test.y
 cfg = EnvConfig(config_file)
 print(cfg.config)
 env = BaseEnv(cfg)
-
+map_path = "/data1/lfwj/hssd_scenes/final_selected_usd/102344022/w_350h_453r_0.050000X_-20.575000381469728Y_-4.875000095367431.png"
 while env.is_running:
         obs = env.step(["w"])
+        objs_xformprim = env.sim.find_object_by_id(env.scenes[0], cfg.config.task.object_ids)
+        goal_pos1, _ = objs_xformprim[0].get_world_pose()
+        goal_pose1 = [goal_pos1[0], goal_pos1[1]]
+        
+        print(env.task.get_distance(map_path, goal_pose1))

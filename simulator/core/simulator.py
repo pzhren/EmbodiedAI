@@ -1,16 +1,20 @@
 import isaacsim
 import carb
+import math
 from omni.isaac.kit import SimulationApp
 from typing import Any, Callable, Dict, List, Optional
 from simulator.core.config import SimulatorConfig, PrimConfig
 from simulator.utils.log_utils import create_module_log
 from simulator.core.robot import BaseRobot
 from simulator.core.scene import BaseScene
+from transformations import quaternion_from_euler
+
 
 from lazyimport import lazyimport
 lazyimport(globals(), """
     from omni.isaac.core import World
     import omni.isaac.core.utils.prims as prim_utils
+    from omni.isaac.core.prims import XFormPrim
     from omni.isaac.nucleus import get_assets_root_path
     from simulator.utils.scene_utils import add_boundary_walls
     from simulator.utils.scene_utils import compute_enclosing_square
@@ -147,7 +151,57 @@ class Simulator():
             scene_aabb = scene_prim.get_aabb()
             center,width,height = compute_enclosing_square(scene_aabb)
             add_boundary_walls(width=width, height=height, wall_height=5, wall_thickness=0.5,center=center, env_id=scene_id)
+        
 
+
+    def find_object_by_id(self, scene, objs_id):
+        root_path ="/Scene0/floorplan/furniture/"
+        # 获取scene的prim_path
+        for _, scene_item in scene.scene_prim_dict.items():
+            # 获取场景的所有物品名字，prim_dict的键为prim名字，值为对应的prim
+            child = prim_utils.get_prim_children(scene_item.prim)
+            child = prim_utils.get_prim_children(child[0])
+            prim_list = []
+            prim_dict = {}
+            for prim in child:
+                prim_list.extend(prim_utils.get_prim_children(prim))
+            for prim in prim_list:
+                prim_dict[prim.GetName()]=prim
+            
+            xform_prims = []
+            for obj_id in objs_id:
+                # 检查原始ID是否存在，否则尝试添加下划线前缀
+                modified_id = obj_id
+                if modified_id not in prim_dict:
+                    modified_id = "_" + modified_id[1:]
+
+                # 构造完整路径
+                obj_path = root_path + modified_id
+                
+                # 获取对象属性
+                obj_attrs = {}
+                for attr in prim_dict[modified_id].GetAttributes():
+                    obj_attrs[attr.GetName()] = attr.Get()
+
+                r, p, y = obj_attrs["xformOp:rotateXYZ"]
+                
+                quaternion = quaternion_from_euler(
+                    math.radians(r),
+                    math.radians(p),
+                    math.radians(y)
+                )
+                
+                # 创建XFormPrim并添加到列表
+                xform_prim = XFormPrim(
+                    prim_path=obj_path,
+                    translation=obj_attrs["xformOp:translate"],
+                    orientation=quaternion
+                )
+                xform_prims.append(xform_prim)
+
+            return xform_prims
+
+                
     def play(self):
         return self._world.play()
 

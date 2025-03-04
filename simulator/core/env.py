@@ -45,12 +45,13 @@ class BaseEnv:
 
         return robots
     
-    def load_object(self, offset):
-        objects = []
-        for obj in self.task_config.objects:
-            obj = make_object(obj.type, obj)
-            objects.append(obj)
-            self.sim.import_object(obj, offset)
+    def load_object(self, scene_id, offset=None):
+        # 根据物品ID找到prim路径，并实例化为Xformprim,以列表形式返回
+        objects = self.sim.find_object_by_id(self.scenes[scene_id], self.task_config.object_ids)
+        # for obj in self.task_config.object_ids:
+        #     obj = make_object(obj.type, obj)
+        #     objects.append(obj)
+        #     self.sim.import_object(obj, offset)
         
         return objects
     
@@ -58,7 +59,7 @@ class BaseEnv:
         self.task = make_task(self.task_config.type, self.task_config)
         offset = self.scene_id2offset[scene_id]
         self.robots.append(self.load_robot(offset))
-        self.task_objects.append(self.load_object(offset))
+        self.task_objects.append(self.load_object(scene_id, offset))
         self.task.init(self.robots[scene_id], self.task_objects[scene_id])
         
         pass

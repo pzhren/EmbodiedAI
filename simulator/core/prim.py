@@ -42,6 +42,6 @@ class BasePrim(ABC):
             attributes=self.attributes,
         )
         if self.collision:
-            self.prim = GeometryPrim(self.prim_path, collision=True)
+            self.prim_collision = GeometryPrim(self.prim_path, collision=True)
         
         pass

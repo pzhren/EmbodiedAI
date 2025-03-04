@@ -112,6 +112,7 @@ class TaskConfig(BaseConfig):
     goal_points: Optional[List[float]] = [.0, .0, .0]
     max_steps: Optional[int] = 1000
     goal_threshold: Optional[float] = 0.8 # m
+    object_ids: Optional[List[str]] = [] # 任务涉及的物品对象id
 
 
 class SimulatorConfig(BaseConfig):
