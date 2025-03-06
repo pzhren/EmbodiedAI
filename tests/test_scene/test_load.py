@@ -49,10 +49,28 @@ cfg = EnvConfig(config_file)
 print(cfg.config)
 env = BaseEnv(cfg)
 map_path = "/data1/lfwj/hssd_scenes/final_selected_usd/102344022/w_350h_453r_0.050000X_-20.575000381469728Y_-4.875000095367431.png"
+i = 0
 while env.is_running:
-        obs = env.step(["w"])
         objs_xformprim = env.sim.find_object_by_id(env.scenes[0], cfg.config.task.object_ids)
         goal_pos1, _ = objs_xformprim[0].get_world_pose()
-        goal_pose1 = [goal_pos1[0], goal_pos1[1]]
+        print("goal_pos1", goal_pos1)
+        # 这里很奇怪，要全部加负号才正常
+        goal_pose1 = [-goal_pos1[0], -goal_pos1[1]]
+        distance, action = env.task.get_distance(goal_pose1)
+        print("distance, action", distance, action)
+        obs = env.step([action])
+        # 把obs的观测数据按照图片保存下来
+        rgb1 = obs[0][0][0]["rgb"]
+        rgb2 = obs[0][0][1]["rgb"]
+        rgb3 = obs[0][0][2]["rgb"]
         
-        print(env.task.get_distance(map_path, goal_pose1))
+        # depth1 = obs[0][0][0]["depth"]
+        # depth2 = obs[0][0][1]["depth"]
+        # depth3 = obs[0][0][2]["depth"]
+        
+        # 将这些图片保存下来，利用Pillow库
+        from PIL import Image
+        Image.fromarray(rgb1).save(f"/data1/lfwj/linmin_embodiedAI/EmbodiedAI/tests/obs/lf_2/rgb1_{i}.png")
+        Image.fromarray(rgb2).save(f"/data1/lfwj/linmin_embodiedAI/EmbodiedAI/tests/obs/lf_2/rgb2_{i}.png")
+        Image.fromarray(rgb3).save(f"/data1/lfwj/linmin_embodiedAI/EmbodiedAI/tests/obs/lf_2/rgb3_{i}.png")
+        i+=1
