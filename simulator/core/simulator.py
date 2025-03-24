@@ -223,26 +223,46 @@ class Simulator():
     def find_object_around(self, scene, pos):
         self.hssd_item = ItemLookup("...\semantics_objects.csv")
         for _, scene_item in scene.scene_prim_dict.items():
+            # # 获取场景的所有物品名字，prim_dict的键为prim名字，值为对应的prim
+            # child = prim_utils.get_prim_children(scene_item.prim)
+            # child = prim_utils.get_prim_children(child[0])
+            # prim_list = []
+            # prim_dict = {}
+            # for prim in child:
+            #     prim_list.extend(prim_utils.get_prim_children(prim))
+            # for prim in prim_list:
+            #     prim_dict[prim.GetName()]=prim
+            
             # 获取场景的所有物品名字，prim_dict的键为prim名字，值为对应的prim
-            child = prim_utils.get_prim_children(scene_item.prim)
-            child = prim_utils.get_prim_children(child[0])
-            prim_list = []
+            children = prim_utils.get_prim_children(scene_item.prim)
+            if not children:
+                continue
+            grandchildren = prim_utils.get_prim_children(children[0])
+            
             prim_dict = {}
-            for prim in child:
-                prim_list.extend(prim_utils.get_prim_children(prim))
-            for prim in prim_list:
-                prim_dict[prim.GetName()]=prim
+            for prim in grandchildren:
+                for child_prim in prim_utils.get_prim_children(prim):
+                    prim_dict[child_prim.GetName()] = child_prim
+        
                 
             
-            # 对所有物品都进行计算位置
-            all_obj_dict = {}
-            for every_id in prim_dict.keys():
-                every_obj_dict = {}
-                for attr in prim_dict[every_id].GetAttributes(): 
-                    every_obj_dict[attr.GetName()] = attr.Get()
-                if "xformOp:translate" in every_obj_dict:
-                    all_obj_dict[every_id] = every_obj_dict["xformOp:translate"]
+            # # 对所有物品都进行计算位置
+            # all_obj_dict = {}
+            # for every_id in prim_dict.keys():
+            #     every_obj_dict = {}
+            #     for attr in prim_dict[every_id].GetAttributes(): 
+            #         every_obj_dict[attr.GetName()] = attr.Get()
+            #     if "xformOp:translate" in every_obj_dict:
+            #         all_obj_dict[every_id] = every_obj_dict["xformOp:translate"]
             
+             # 对所有物品都进行计算位置
+            all_obj_dict = {
+                every_id: attr.Get()
+                for every_id, prim in prim_dict.items()
+                for attr in prim.GetAttributes()
+                if attr.GetName() == "xformOp:translate"
+            }
+        
             around_set = set()
             # 输出当前位置2m范围内的所有物品
             for Id in  all_obj_dict.keys():
@@ -253,14 +273,8 @@ class Simulator():
                         around_set.add(name)
             
             # 将集合转换为列表
-            around_list = list(around_set)
-            return around_list
-                                
-                                
-                
-        
-        
-        pass
+            return list(around_set)
+
 
                 
     def play(self):
