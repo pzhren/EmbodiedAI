@@ -51,9 +51,9 @@ class PositionController(BaseController):
         
         new_yaw = yaw
         if command == 'a':
-            new_yaw = (yaw - angle_yaw) % (2 * math.pi)
-        elif command == 'd':
             new_yaw = (yaw + angle_yaw) % (2 * math.pi)
+        elif command == 'd':
+            new_yaw = (yaw - angle_yaw) % (2 * math.pi)
         
         euler = quaternion_from_euler(roll, pitch, new_yaw)
         return target_pos, euler

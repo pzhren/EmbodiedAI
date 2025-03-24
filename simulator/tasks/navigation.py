@@ -5,9 +5,12 @@ from simulator.extenstions.navigate_python.map_show import *
 from simulator.extenstions.navigate_python.navigate import *
 from simulator.extenstions.navigate_python.dstar_lite import *
 from simulator.extenstions.navigate_python.discretize_map import *
+import json
 from lazyimport import lazyimport
 lazyimport(globals(), """
     from omni.isaac.core.prims import XFormPrim
+    from omni.isaac.core.robots import Robot
+    from transformations import euler_from_quaternion,quaternion_from_euler
   """
 )
 @registry.register_task
@@ -23,7 +26,25 @@ class NavigateTask(BaseTask):
         self.reached_goal = False
         self.max_steps = config.max_steps
         self.goal_threshold = config.goal_threshold
-        self.object_ids = config.object_ids
+        self.object_ids = self.extract_target_ids(config.task_path)
+        self.map_path = config.map_path[0]
+        self.get_map(self.map_path)
+        
+        
+    def extract_target_ids(self, json_path):
+        """
+        Reads the JSON file from the given path and returns a list of target IDs.
+        
+        :param json_path: Path to the JSON file.
+        :return: List of target IDs.
+        """
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # 获取 "Target" 字段中的所有子项，提取每个子项的第一个元素
+        target_ids = [item[0] for item in data.get("Target", []) if item]
+        return target_ids
+    
     
     
     def get_task_type(self):
@@ -132,26 +153,85 @@ class NavigateTask(BaseTask):
         distances[self.get_robot_name()] = distance
         return distances
     
+    def trans2pi(self,num):
+        '''
+        将角度差转换到-pi到pi的区间内
+        '''
+        while num <-math.pi or num > math.pi:
+            if num < -math.pi:
+                num += 2*math.pi
+            else:
+                num -= 2*math.pi
+        return num
+    
+    def trans_pos(self):
+        '''
+        获取机器位置
+        '''
+        stretch_baselink_pos = Robot(self.task_config.robots[0].prim_path)
+        position, quaternion  = stretch_baselink_pos.get_world_pose()
+        roll, pitch, yaw = euler_from_quaternion(quaternion)
+        return position, roll, pitch, yaw
+    
 
-    def get_distance(self, map_path, goal_pos):
-        '''
-        根据机器人位置和物品位置计算规划路径距离
-        robot_pos和goal_pos都是isaacsim的世界坐标
-        '''
+    def get_map(self, map_path):
+        self.map_path = map_path
         hm = HeightMap(map_path)
         xy_range = hm.compute_range()
         hm.make_map()
         hm_map = hm.get_map()
 
-        navigator = Navigator(area_range=xy_range, map=hm_map, scale_ratio=1)
-        navigator.planner.compute_cost_map()
+        self.navigator = Navigator(area_range=xy_range, map=hm_map, scale_ratio=1)
+        self.navigator.planner.compute_cost_map()
+        return self.navigator
+
+    def get_distance(self, goal_pos):
+        '''
+        根据机器人位置和物品位置计算规划路径距离
+        robot_pos和goal_pos都是isaacsim的世界坐标
+        '''
+        # 如果地图路径发生变化，则重新获取地图
+        # if self.map_path != map_path:
+        #     self.get_map(map_path)
+        #     # hm = HeightMap(map_path)
+        #     # xy_range = hm.compute_range()
+        #     # hm.make_map()
+        #     # hm_map = hm.get_map()
+
+        #     # navigator = Navigator(area_range=xy_range, map=hm_map, scale_ratio=1)
+        #     # navigator.planner.compute_cost_map()
+        
         # show_map_(navigator.planner.cost_map)
-        print(self.task_config.robots)
-        robot_xform = XFormPrim(self.task_config.robots[0].prim_path)
-        robot_pos,_ = robot_xform.get_world_pose()[:2]
-        path, _ = navigator.navigate(goal_pos, robot_pos)
+        robot_form = XFormPrim(self.task_config.robots[0].prim_path)
+        robot_pos,_ = robot_form.get_world_pose()
+        robot_pos = [robot_pos[0], robot_pos[1]]
+        
+        path, map_nav_path = self.navigator.navigate(goal_pos, robot_pos)
+        # map_goal_pos = self.navigator.planner.real2map(goal_pos)
+        # show_map_(self.navigator.planner.cost_map, map_nav_path, map_goal_pos)
+
         # 计算路径总距离，使用 zip 将相邻点配对
         total_distance = sum(math.hypot(x2 - x1, y2 - y1)for (x1, y1), (x2, y2) in zip(path, path[1:]))
         
-        return total_distance
+        # 根据路径算出下一步应该采取什么动作
+        if len(path) > 1:
+            next_path_point = path[1]
+        else:
+            next_path_point = path[0]
+        
+        # 通过计算向量的角度，得到下一步应该采取的方向
+        angle_diff = math.atan2(next_path_point[1] - robot_pos[1], next_path_point[0] - robot_pos[0])
+        angle_diff = self.trans2pi(angle_diff)
+        _, _, _, yaw  = self.trans_pos()
+        print("yaw", yaw)
+        final_angle_diff = self.trans2pi(angle_diff - yaw)
+        print("final_angle_diff", final_angle_diff)
+        if -0.015 < final_angle_diff < 0.015:
+            action = "w"
+        elif final_angle_diff > 0:
+            action = "a" 
+        elif final_angle_diff < 0: 
+            action = "d"
+        
+        return total_distance, action
     
