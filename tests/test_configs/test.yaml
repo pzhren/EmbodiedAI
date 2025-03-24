@@ -53,5 +53,5 @@ task:
   max_steps: 1000
   goal_threshold: 1
   map_path: ["/data1/lfwj/hssd_scenes/final_selected_usd/102344022/w_350h_453r_0.050000X_-20.575000381469728Y_-4.875000095367431.png"]
-  tasK_path: ["/data1/lfwj/npc/selected_task2/102344022/1/config.json"]
+  task_path: ["/data1/lfwj/npc/selected_task2/102344022/1/config.json"]
 

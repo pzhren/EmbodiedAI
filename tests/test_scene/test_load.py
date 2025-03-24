@@ -43,21 +43,34 @@
 from simulator.core.config import EnvConfig
 from simulator.core.env import BaseEnv
 from simulator.scenes import Interactive_Scene
+from lazyimport import lazyimport
+lazyimport(globals(), """
+    from omni.isaac.core.prims import XFormPrim
+    from omni.isaac.core.robots import Robot
+    from transformations import euler_from_quaternion,quaternion_from_euler
+  """
+)
+
 
 config_file= "/data1/lfwj/linmin_embodiedAI/EmbodiedAI/tests/test_configs/test.yaml"
 cfg = EnvConfig(config_file)
 print(cfg.config)
 env = BaseEnv(cfg)
-# map_path = "/data1/lfwj/hssd_scenes/final_selected_usd/102344022/w_350h_453r_0.050000X_-20.575000381469728Y_-4.875000095367431.png"
 i = 0
 while env.is_running:
-        objs_xformprim = env.sim.find_object_by_id(env.scenes[0], cfg.config.task.task_path)
+        # print(cfg.config.task.task_path)
+        target_ids = env.sim.extract_target_ids(cfg.config.task.task_path[0])
+        objs_xformprim = env.sim.find_object_by_id(env.scenes[0], target_ids)
         
         # 获取当前的机器人的位置
-        current_pos,_ = env.robots[0].get_world_pose()
+        robot_form = XFormPrim(cfg.config.task.robots[0].prim_path)
+        current_pos,_ = robot_form.get_world_pose()
+
         current_pos = current_pos[:2]
         
         around_objects = env.sim.find_object_around(env.scenes[0], current_pos)
+        print("around_objects", around_objects)
+
         goal_pos1, _ = objs_xformprim[0].get_world_pose()
         
         print("goal_pos1", goal_pos1)
