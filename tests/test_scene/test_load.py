@@ -48,10 +48,10 @@ config_file= "/data1/lfwj/linmin_embodiedAI/EmbodiedAI/tests/test_configs/test.y
 cfg = EnvConfig(config_file)
 print(cfg.config)
 env = BaseEnv(cfg)
-map_path = "/data1/lfwj/hssd_scenes/final_selected_usd/102344022/w_350h_453r_0.050000X_-20.575000381469728Y_-4.875000095367431.png"
+# map_path = "/data1/lfwj/hssd_scenes/final_selected_usd/102344022/w_350h_453r_0.050000X_-20.575000381469728Y_-4.875000095367431.png"
 i = 0
 while env.is_running:
-        objs_xformprim = env.sim.find_object_by_id(env.scenes[0], cfg.config.task.object_ids)
+        objs_xformprim = env.sim.find_object_by_id(env.scenes[0], cfg.config.task.task_path)
         goal_pos1, _ = objs_xformprim[0].get_world_pose()
         print("goal_pos1", goal_pos1)
         # 这里很奇怪，要全部加负号才正常

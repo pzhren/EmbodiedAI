@@ -8,6 +8,7 @@ from simulator.utils.log_utils import create_module_log
 from simulator.core.robot import BaseRobot
 from simulator.core.scene import BaseScene
 from transformations import quaternion_from_euler
+import json
 
 
 from lazyimport import lazyimport
@@ -153,8 +154,22 @@ class Simulator():
             add_boundary_walls(width=width, height=height, wall_height=5, wall_thickness=0.5,center=center, env_id=scene_id)
         
 
+    def extract_target_ids(self, json_path):
+        """
+        Reads the JSON file from the given path and returns a list of target IDs.
+        
+        :param json_path: Path to the JSON file.
+        :return: List of target IDs.
+        """
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # 获取 "Target" 字段中的所有子项，提取每个子项的第一个元素
+        target_ids = [item[0] for item in data.get("Target", []) if item]
+        return target_ids
+    
 
-    def find_object_by_id(self, scene, objs_id):
+    def find_object_by_id(self, scene, task_path):
         root_path ="/Scene0/floorplan/furniture/"
         # 获取scene的prim_path
         for _, scene_item in scene.scene_prim_dict.items():
@@ -169,6 +184,8 @@ class Simulator():
                 prim_dict[prim.GetName()]=prim
             
             xform_prims = []
+            objs_id = self.extract_target_ids(task_path)
+            
             for obj_id in objs_id:
                 # 检查原始ID是否存在，否则尝试添加下划线前缀
                 modified_id = obj_id
