@@ -9,7 +9,7 @@ from simulator.core.robot import BaseRobot
 from simulator.core.scene import BaseScene
 from transformations import quaternion_from_euler
 import json
-from itemlookup import ItemLookup
+
 
 
 from lazyimport import lazyimport
@@ -20,6 +20,7 @@ lazyimport(globals(), """
     from omni.isaac.nucleus import get_assets_root_path
     from simulator.utils.scene_utils import add_boundary_walls
     from simulator.utils.scene_utils import compute_enclosing_square
+    from simulator.core.itemlookup import ItemLookup
   """
 )
 
@@ -170,7 +171,7 @@ class Simulator():
         return target_ids
     
 
-    def find_object_by_id(self, scene, task_path):
+    def find_object_by_id(self, scene, objs_id):
         root_path ="/Scene0/floorplan/furniture/"
         # 获取scene的prim_path
         for _, scene_item in scene.scene_prim_dict.items():
@@ -185,7 +186,6 @@ class Simulator():
                 prim_dict[prim.GetName()]=prim
             
             xform_prims = []
-            objs_id = self.extract_target_ids(task_path)
             
             for obj_id in objs_id:
                 # 检查原始ID是否存在，否则尝试添加下划线前缀
@@ -221,19 +221,8 @@ class Simulator():
         
     
     def find_object_around(self, scene, pos):
-        self.hssd_item = ItemLookup("...\semantics_objects.csv")
+        self.hssd_item = ItemLookup("/data1/lfwj/linmin_embodiedAI/semantics_objects.csv")
         for _, scene_item in scene.scene_prim_dict.items():
-            # # 获取场景的所有物品名字，prim_dict的键为prim名字，值为对应的prim
-            # child = prim_utils.get_prim_children(scene_item.prim)
-            # child = prim_utils.get_prim_children(child[0])
-            # prim_list = []
-            # prim_dict = {}
-            # for prim in child:
-            #     prim_list.extend(prim_utils.get_prim_children(prim))
-            # for prim in prim_list:
-            #     prim_dict[prim.GetName()]=prim
-            
-            # 获取场景的所有物品名字，prim_dict的键为prim名字，值为对应的prim
             children = prim_utils.get_prim_children(scene_item.prim)
             if not children:
                 continue
@@ -244,17 +233,6 @@ class Simulator():
                 for child_prim in prim_utils.get_prim_children(prim):
                     prim_dict[child_prim.GetName()] = child_prim
         
-                
-            
-            # # 对所有物品都进行计算位置
-            # all_obj_dict = {}
-            # for every_id in prim_dict.keys():
-            #     every_obj_dict = {}
-            #     for attr in prim_dict[every_id].GetAttributes(): 
-            #         every_obj_dict[attr.GetName()] = attr.Get()
-            #     if "xformOp:translate" in every_obj_dict:
-            #         all_obj_dict[every_id] = every_obj_dict["xformOp:translate"]
-            
              # 对所有物品都进行计算位置
             all_obj_dict = {
                 every_id: attr.Get()
@@ -266,7 +244,6 @@ class Simulator():
             around_set = set()
             # 输出当前位置2m范围内的所有物品
             for Id in  all_obj_dict.keys():
-                # print("all_obj_dict[Id],tmp", all_obj_dict[Id], tmp)
                 if math.dist([all_obj_dict[Id][0], all_obj_dict[Id][2]],pos) < 2:
                     name = self.hssd_item.get_item_name_by_id(Id)
                     if name!='':

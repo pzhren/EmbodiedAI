@@ -5,8 +5,8 @@ from simulator.extenstions.navigate_python.map_show import *
 from simulator.extenstions.navigate_python.navigate import *
 from simulator.extenstions.navigate_python.dstar_lite import *
 from simulator.extenstions.navigate_python.discretize_map import *
-import json
 from lazyimport import lazyimport
+import json
 lazyimport(globals(), """
     from omni.isaac.core.prims import XFormPrim
     from omni.isaac.core.robots import Robot
@@ -26,11 +26,11 @@ class NavigateTask(BaseTask):
         self.reached_goal = False
         self.max_steps = config.max_steps
         self.goal_threshold = config.goal_threshold
-        self.object_ids = self.extract_target_ids(config.task_path)
+        self.object_ids = self.extract_target_ids(config.task_path[0])
         self.map_path = config.map_path[0]
         self.get_map(self.map_path)
-        
-        
+    
+    
     def extract_target_ids(self, json_path):
         """
         Reads the JSON file from the given path and returns a list of target IDs.
@@ -44,8 +44,6 @@ class NavigateTask(BaseTask):
         # 获取 "Target" 字段中的所有子项，提取每个子项的第一个元素
         target_ids = [item[0] for item in data.get("Target", []) if item]
         return target_ids
-    
-    
     
     def get_task_type(self):
         '''
