@@ -9,6 +9,7 @@ from simulator.core.robot import BaseRobot
 from simulator.core.scene import BaseScene
 from transformations import quaternion_from_euler
 import json
+from itemlookup import ItemLookup
 
 
 from lazyimport import lazyimport
@@ -217,6 +218,49 @@ class Simulator():
                 xform_prims.append(xform_prim)
 
             return xform_prims
+        
+    
+    def find_object_around(self, scene, pos):
+        self.hssd_item = ItemLookup("...\semantics_objects.csv")
+        for _, scene_item in scene.scene_prim_dict.items():
+            # 获取场景的所有物品名字，prim_dict的键为prim名字，值为对应的prim
+            child = prim_utils.get_prim_children(scene_item.prim)
+            child = prim_utils.get_prim_children(child[0])
+            prim_list = []
+            prim_dict = {}
+            for prim in child:
+                prim_list.extend(prim_utils.get_prim_children(prim))
+            for prim in prim_list:
+                prim_dict[prim.GetName()]=prim
+                
+            
+            # 对所有物品都进行计算位置
+            all_obj_dict = {}
+            for every_id in prim_dict.keys():
+                every_obj_dict = {}
+                for attr in prim_dict[every_id].GetAttributes(): 
+                    every_obj_dict[attr.GetName()] = attr.Get()
+                if "xformOp:translate" in every_obj_dict:
+                    all_obj_dict[every_id] = every_obj_dict["xformOp:translate"]
+            
+            around_set = set()
+            # 输出当前位置2m范围内的所有物品
+            for Id in  all_obj_dict.keys():
+                # print("all_obj_dict[Id],tmp", all_obj_dict[Id], tmp)
+                if math.dist([all_obj_dict[Id][0], all_obj_dict[Id][2]],pos) < 2:
+                    name = self.hssd_item.get_item_name_by_id(Id)
+                    if name!='':
+                        around_set.add(name)
+            
+            # 将集合转换为列表
+            around_list = list(around_set)
+            return around_list
+                                
+                                
+                
+        
+        
+        pass
 
                 
     def play(self):

@@ -52,7 +52,14 @@ env = BaseEnv(cfg)
 i = 0
 while env.is_running:
         objs_xformprim = env.sim.find_object_by_id(env.scenes[0], cfg.config.task.task_path)
+        
+        # 获取当前的机器人的位置
+        current_pos,_ = env.robots[0].get_world_pose()
+        current_pos = current_pos[:2]
+        
+        around_objects = env.sim.find_object_around(env.scenes[0], current_pos)
         goal_pos1, _ = objs_xformprim[0].get_world_pose()
+        
         print("goal_pos1", goal_pos1)
         # 这里很奇怪，要全部加负号才正常
         goal_pose1 = [-goal_pos1[0], -goal_pos1[1]]
