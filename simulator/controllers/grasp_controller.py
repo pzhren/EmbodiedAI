@@ -32,17 +32,22 @@ class StretchGraspController(BaseController):
     
     def reset(self):
         self.obj_prim = None
-        
+
     def get_action(self, command: List, robot=None) -> np.ndarray:
         if command != None:
-            if command[0] == "grasp":
                 self.obj_prim = command[1]
                 target_obj = self.obj_prim.get_world_pose()
-
-        return command
+                # self.release_by_target(robot, self.obj_prim.get_world_pose(), world)
+                return command[0], target_obj
+        else:
+                return None, None
     
     def step(self, robot, world, command: str):
         command = self.get_action(command, robot)
+        if command[0] == "grasp"
+            self.grasp_by_target(robot, command[1], world)
+        elif command[0] == "release":
+            self.release_by_target(robot, command[1], world)
     
 
     def grasp_by_target(self, robot, target, world):
