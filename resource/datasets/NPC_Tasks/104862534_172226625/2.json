@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Could you please move the stool from the kitchen to the desk in the office",
+        "Subtask list": [
+            "Move_to('\"Jolly Three\" Step Stool_kitchen')",
+            "Grab('\"Jolly Three\" Step Stool')",
+            "Move_to('Leahy Splayed Leg Desk_office')",
+            "Release('\"Jolly Three\" Step Stool')"
+        ],
+        "Scene": "104862534_172226625",
+        "Target": [
+            [
+                "f6063bea0305f452aaaf33c0e8d6f671a71b765b",
+                "\"Jolly Three\" Step Stool",
+                "kitchen"
+            ],
+            [
+                "bb034d375833247e8539a25b7075afb01e908507",
+                "Leahy Splayed Leg Desk",
+                "office"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Take the pen pot in the office to the easy chair in the living room",
+        "Subtask list": [
+            "Move_to('Frosted pen pot_office')",
+            "Grab('Frosted pen pot')",
+            "Move_to('IKEA STOCKHOLM easy chair_living room')",
+            "Release('Frosted pen pot')"
+        ],
+        "Scene": "104862534_172226625",
+        "Target": [
+            [
+                "24dcf1f353b54d43bf12bcf17266f2685091318d",
+                "Frosted pen pot",
+                "office"
+            ],
+            [
+                "5f414e6759858beb19086b77e40b260e0a700eff",
+                "IKEA STOCKHOLM easy chair",
+                "living room"
+            ]
+        ]
+    }
+]

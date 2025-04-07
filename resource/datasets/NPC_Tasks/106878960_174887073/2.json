@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Take the black Venetian mirror from the bedroom and place it on the coffee table in the living room",
+        "Subtask list": [
+            "Move_to('Lola Black Venetian Mirror_bedroom')",
+            "Grab('Lola Black Venetian Mirror')",
+            "Move_to('Madison Park Signature Bordeaux Coffee Table_living room')",
+            "Release('Lola Black Venetian Mirror')"
+        ],
+        "Scene": "106878960_174887073",
+        "Target": [
+            [
+                "09cb03f0708756554d3f79334fb2a87e854b97d2",
+                "Lola Black Venetian Mirror",
+                "bedroom"
+            ],
+            [
+                "24948d656ee551402efa257e451d587431a972b3",
+                "Madison Park Signature Bordeaux Coffee Table",
+                "living room"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Please take the Black Chinoiserie Mirror from the bedroom and place it on the desk in the office",
+        "Subtask list": [
+            "Move_to('Gold Chinoiserie Mirror_bedroom')",
+            "Grab('Gold Chinoiserie Mirror')",
+            "Move_to('Sadie Desk_office')",
+            "Release('Gold Chinoiserie Mirror')"
+        ],
+        "Scene": "106878960_174887073",
+        "Target": [
+            [
+                "b6841ebeda34eddf68c66baa380583ffd6bf83fe",
+                "Gold Chinoiserie Mirror",
+                "bedroom"
+            ],
+            [
+                "215e08aaca7f96eb917fb32b11a459b2271a31f0",
+                "Sadie Desk",
+                "office"
+            ]
+        ]
+    }
+]

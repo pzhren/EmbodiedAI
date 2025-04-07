@@ -4,7 +4,7 @@ import numpy as np
 from lazyimport import lazyimport
 from simulator.controllers import make_controller
 from simulator.sensors import make_sensor
-
+from pathlib import Path
 lazyimport(
     globals(), 
     """
@@ -17,7 +17,7 @@ class BaseRobot(ABC):
     def __init__(self, robot_config: RobotConfig):
         self.robot_config = robot_config
         self.prim_path = robot_config.prim_path
-        self.usd_path = robot_config.usd_path
+        self.usd_path = str(Path(robot_config.usd_path).resolve())
         self.name = robot_config.name
         self.position = robot_config.position
         self.orientation = robot_config.orientation
@@ -40,6 +40,18 @@ class BaseRobot(ABC):
     
     def get_joint_positions(self) -> np.ndarray:
         return np.array([joint.get_position() for joint in self.joints])
+    
+    def get_world_pose(self) -> np.ndarray:
+        """
+        Get the world pose of the robot
+        """
+        return self.Xform.get_world_pose()
+    
+    def reset(self):
+        """
+        Reset the robot
+        """
+        pass
 
     def init(self):
         """
@@ -48,4 +60,6 @@ class BaseRobot(ABC):
         self.isaac_robot = OmniBaseRobot(prim_path=self.prim_path, name=self.name)
         self.Xform = XFormPrim(self.prim_path)
         pass
+
+
 

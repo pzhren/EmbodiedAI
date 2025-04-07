@@ -1,5 +1,5 @@
 from .dummy_task import DummyTask
-from .navigation import NavigateTask
+from .navigation_task import NavigateTask
 from simulator.core.register import registry
 
 def make_task(id_task,*args):

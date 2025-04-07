@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Take the mustard throw blanket from the shared bedroom and living room area to the Maisie stool in the bedroom",
+        "Subtask list": [
+            "Move_to('Mustard Throw Blanket_bedroom,living room')",
+            "Grab('Mustard Throw Blanket')",
+            "Move_to('Maisie Stool_bedroom')",
+            "Release('Mustard Throw Blanket')"
+        ],
+        "Scene": "108294573_176710113",
+        "Target": [
+            [
+                "1deb8fb234f678ac5e06b4f967011c09eb8714ce",
+                "Mustard Throw Blanket",
+                "bedroom,living room"
+            ],
+            [
+                "5562de4568952a7f72318fff93085d7f5e98aba9",
+                "Maisie Stool",
+                "bedroom"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Take the potted faux succulent from the living room and place it on the dressing table in the bedroom",
+        "Subtask list": [
+            "Move_to('Potted Faux Succulent White Pot 14\"_living room')",
+            "Grab('Potted Faux Succulent White Pot 14\"')",
+            "Move_to('Dressing table mirror - antique white_bedroom')",
+            "Release('Potted Faux Succulent White Pot 14\"')"
+        ],
+        "Scene": "108294573_176710113",
+        "Target": [
+            [
+                "3c163391afeb4130eadacb6ef9b6e5930329a32b",
+                "Potted Faux Succulent White Pot 14\"",
+                "living room"
+            ],
+            [
+                "5ef3aefc0163cdab3a805b1adac07c0ae89af7d2",
+                "Dressing table mirror - antique white",
+                "bedroom"
+            ]
+        ]
+    }
+]

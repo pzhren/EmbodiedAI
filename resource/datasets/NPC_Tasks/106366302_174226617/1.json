@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Could you take the laptop table from the living room and place it near the queen bed in the bedroom",
+        "Subtask list": [
+            "Move_to('Laptop Table_living room')",
+            "Grab('Laptop Table')",
+            "Move_to('Briggs Queen Upholstered Bed With Storage and USB_bedroom')",
+            "Release('Laptop Table')"
+        ],
+        "Scene": "106366302_174226617",
+        "Target": [
+            [
+                "e1d51fa2fae90a92cbb8876689336c9ae07cb5a9",
+                "Laptop Table",
+                "living room"
+            ],
+            [
+                "32f2febf923c24a6076d2f861d13347a0913c492",
+                "Briggs Queen Upholstered Bed With Storage and USB",
+                "bedroom"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Could you please take the shoe rack from the bedroom and place it near the storage console table in the living room",
+        "Subtask list": [
+            "Move_to('Extending Shoe Rack_bedroom')",
+            "Grab('Extending Shoe Rack')",
+            "Move_to('Evans Black and Gold Storage Console Table by HomeDepot_living room')",
+            "Release('Extending Shoe Rack')"
+        ],
+        "Scene": "106366302_174226617",
+        "Target": [
+            [
+                "ac699faed7efa37f5b22c3dde720756e71dbf3b1",
+                "Extending Shoe Rack",
+                "bedroom"
+            ],
+            [
+                "01b65339d622bb9f89eb8fdd753a76cffc7eb8d6",
+                "Evans Black and Gold Storage Console Table by HomeDepot",
+                "living room"
+            ]
+        ]
+    }
+]

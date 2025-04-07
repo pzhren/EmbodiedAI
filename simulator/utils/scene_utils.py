@@ -1,11 +1,27 @@
 from lazyimport import lazyimport
 import numpy as np
 import math
-
+import json
 lazyimport(globals(), """
     import omni.isaac.core.utils.prims as prim_utils
   """
 )
+
+def extract_target_ids(json_path):
+    """
+    Reads the JSON file from the given path and returns a list of target IDs.
+    
+    :param json_path: Path to the JSON file.
+    :return: List of target IDs.
+    """
+    with open(json_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    
+    # 获取 "Target" 字段中的所有子项，提取每个子项的第一个元素
+    target_ids = [item[0] for item in data.get("Target", []) if item]
+    return target_ids
+
+
 def add_boundary_walls(width=80, height=60, wall_height=5, wall_thickness=1, center=(0, 0), env_id=0):
         """
         To add walls and ground around the boundaries of the scene and allow adjusting the center position of the walls.
@@ -90,3 +106,5 @@ def compute_enclosing_square(aabb):
     adjusted_side_height = math.ceil(height/5)*5
 
     return (x_center, y_center), adjusted_side_width, adjusted_side_height
+
+

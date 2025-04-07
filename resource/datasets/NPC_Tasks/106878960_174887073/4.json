@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Please take the Cedar Shoe Rack from the bedroom to the Eucalyptus in Cylinder Vase in the living room",
+        "Subtask list": [
+            "Move_to('Cedar Shoe Rack_bedroom')",
+            "Grab('Cedar Shoe Rack')",
+            "Move_to('Eucalyptus in Cylinder Vase_living room')",
+            "Release('Cedar Shoe Rack')"
+        ],
+        "Scene": "106878960_174887073",
+        "Target": [
+            [
+                "482351496548bc89258838f6630d0c73afe3a158",
+                "Cedar Shoe Rack",
+                "bedroom"
+            ],
+            [
+                "e2f0531cba31ce0f40c15ecff463e9e7f5f606ef",
+                "Eucalyptus in Cylinder Vase",
+                "living room"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Please take the Black Chinoiserie Mirror from the bedroom and place it on the desk in the office",
+        "Subtask list": [
+            "Move_to('Gold Chinoiserie Mirror_bedroom')",
+            "Grab('Gold Chinoiserie Mirror')",
+            "Move_to('Sadie Desk_office')",
+            "Release('Gold Chinoiserie Mirror')"
+        ],
+        "Scene": "106878960_174887073",
+        "Target": [
+            [
+                "b6841ebeda34eddf68c66baa380583ffd6bf83fe",
+                "Gold Chinoiserie Mirror",
+                "bedroom"
+            ],
+            [
+                "215e08aaca7f96eb917fb32b11a459b2271a31f0",
+                "Sadie Desk",
+                "office"
+            ]
+        ]
+    }
+]

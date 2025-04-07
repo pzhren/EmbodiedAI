@@ -3,12 +3,12 @@ sim:
   device: 0
   physics_frequency: 60
   render_frequency: 60
-  headless: False
+  headless: True
   hide_ui: False
 
 scene:
   type: "Interactive_Scene"
-  scene_file: "/data1/lfwj/hssd_scenes/final_selected_usd/102344022/102344022.usd"
+  scene_file: "/data1/linmin/NPC/hssd_test_scene/102344022/102344022.usd"
   use_floor_plane: False
   add_wall: True
   
@@ -19,7 +19,7 @@ task:
       name: "robot"
       use_position: True
       prim_path: "/World/Robot_0"
-      usd_path: "/data1/lfwj/npc/stretch_linmin/stretch_pos.usd"
+      usd_path: "resource/robot/stretch/stretch_pos.usd"
       create_robot: True
       # position: [1.0, 0.5, 1.0]
       position: [0.0, 0.0, 1.0]
@@ -48,10 +48,43 @@ task:
           modals: ["rgb","depth"]
           orientation: [0.707, 0, 0, -0.707]
           position: [0, 0, 0.8]
+    - type: "Stretch"
+      name: "robot"
+      use_position: True
+      prim_path: "/World/Robot_1"
+      usd_path: "resource/robot/stretch/stretch_pos.usd"
+      create_robot: True
+      # position: [1.0, 0.5, 1.0]
+      position: [0.0, 0.0, 1.0]
+      controllers:
+        - type: "PositionController"
+      # controller:
+      #   - type: dd_controller
+      #     input_limit: default
+      #     out_limit: default
+      sensors:
+        - type: "VisionSensor"
+          on_robot: True
+          prim_path: "/World/Robot_1/camera_color_frame/rgb_camera"
+          modals: ["rgb","depth"]
+          orientation: [1, 0, 0, 0]
+          position: [0, 0, 0.8]
+        - type: "VisionSensor"
+          on_robot: True
+          prim_path: "/World/Robot_1/camera_color_frame/rgb_camera_l"
+          modals: ["rgb","depth"]
+          orientation: [0.707, 0, 0, 0.707]
+          position: [0, 0, 0.8]
+        - type: "VisionSensor"
+          on_robot: True
+          prim_path: "/World/Robot_1/camera_color_frame/rgb_camera_r"
+          modals: ["rgb","depth"]
+          orientation: [0.707, 0, 0, -0.707]
+          position: [0, 0, 0.8]
 
   goal_point: [0,0,0]
   max_steps: 1000
   goal_threshold: 1
-  map_path: ["/data1/lfwj/hssd_scenes/final_selected_usd/102344022/w_350h_453r_0.050000X_-20.575000381469728Y_-4.875000095367431.png"]
-  task_path: ["/data1/lfwj/npc/selected_task2/102344022/1/config.json"]
+  map_path: "/data1/linmin/NPC/hssd_test_scene/102344022/w_350h_453r_0.050000X_-20.575000381469728Y_-4.875000095367431.png"
+  task_path: "/data1/linmin/NPC/final_selected_task/102344022/1/config.json"
 

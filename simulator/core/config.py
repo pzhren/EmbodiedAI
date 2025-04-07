@@ -5,7 +5,7 @@ from simulator.utils.log_utils import create_module_log
 import yaml
 from copy import deepcopy
 import numpy as np
-
+from pathlib import Path
 from simulator.utils.config_utils import merge_config
 log = create_module_log(name=__name__)
 
@@ -112,8 +112,8 @@ class TaskConfig(BaseConfig):
     goal_points: Optional[List[float]] = [.0, .0, .0]
     max_steps: Optional[int] = 1000
     goal_threshold: Optional[float] = 0.8 # m
-    task_path: Optional[List[str]] = [] # 任务的json路径，可以拿来获取物品ID
-    map_path:Optional[List[str]] = [] # 地图文件路径
+    task_path: Optional[str] = "" # 任务的json路径，可以拿来获取物品ID
+    map_path: Optional[str] = "" # 地图文件路径
 
 
 class SimulatorConfig(BaseConfig):
@@ -151,15 +151,16 @@ class Config(BaseConfig):
 #     tasks: List[List[TaskConfig]]
 #     npcs: List[List[NPCConfig]] = [[]]
 
+
 class EnvConfig():
     """
     Env Config
     """
     def __init__(self, path:str, multi_env:bool=False):
         self._offset_size = None
-        self.config_path = path
+        self.config_path = str(Path(path).resolve())
         self.config_dict = None
-        self.load_config(path)
+        self.load_config()
         self._env_num = self.config_dict.get('env_num', 1)
         self.config_dict = merge_config(
             self.default_config.dict(), 
@@ -170,7 +171,8 @@ class EnvConfig():
         print(self.config_dict)
         self.config = Config(**self.config_dict) if not multi_env else [Config(**self.config_dict) for _ in range(self._env_num)]
 
-    def load_config(self, path):
+    def load_config(self):
+        
         if self.config_path is None:
             log.error('config path is None')
             raise ValueError("Config path is None")

@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Take the Gwen mirror from the bedroom and place it on the CB Desk in the office",
+        "Subtask list": [
+            "Move_to('Gwennie Mirror_bedroom')",
+            "Grab('Gwennie Mirror')",
+            "Move_to('CB Desk_office')",
+            "Release('Gwennie Mirror')"
+        ],
+        "Scene": "104348028_171512877",
+        "Target": [
+            [
+                "afe773ff0423115a55e49defb4c62bf5e20cf172",
+                "Gwennie Mirror",
+                "bedroom"
+            ],
+            [
+                "6b63013dfa25cabaa2ef3d0830c19c823e6b1f7d",
+                "CB Desk",
+                "office"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Take the Gold Lacquer Coasters from the kitchen or dining room and place them on the Calypso TV Unit in the living room",
+        "Subtask list": [
+            "Move_to('Gold Lacquer Coasters_kitchen,dining room')",
+            "Grab('Gold Lacquer Coasters')",
+            "Move_to('Calypso TV Unit_living room')",
+            "Release('Gold Lacquer Coasters')"
+        ],
+        "Scene": "104348028_171512877",
+        "Target": [
+            [
+                "0af34cda233e590a19b3448a06ac6cb33be17f2f",
+                "Gold Lacquer Coasters",
+                "kitchen,dining room"
+            ],
+            [
+                "c70ef2f552fd561ae25806cfe63d5d7e07ac6f76",
+                "Calypso TV Unit",
+                "living room"
+            ]
+        ]
+    }
+]

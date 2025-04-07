@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Pick up the CUBO Rectangular from the bedroom or living room and place it on the Concrete Top Cocktail Table in the living room",
+        "Subtask list": [
+            "Move_to('CUBO Rectangular_bedroom,living room')",
+            "Grab('CUBO Rectangular')",
+            "Move_to('Concrete Top Cocktail Table_living room')",
+            "Release('CUBO Rectangular')"
+        ],
+        "Scene": "102344280",
+        "Target": [
+            [
+                "920a88649c59e1e7ee3f6210a7e0907d214f6442",
+                "CUBO Rectangular",
+                "bedroom,living room"
+            ],
+            [
+                "c800ff5b3c40d93b26a1934a64c5fd4009c5cea2",
+                "Concrete Top Cocktail Table",
+                "living room"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Please take the succulent plant from the living room and place it on the white 3 drawer accent chest located in the bedroom, living room area",
+        "Subtask list": [
+            "Move_to('Succulent Plant- 23x9x11 cms_living room')",
+            "Grab('Succulent Plant- 23x9x11 cms')",
+            "Move_to('White 3 Drawer Accent Chest_bedroom,living room')",
+            "Release('Succulent Plant- 23x9x11 cms')"
+        ],
+        "Scene": "102344280",
+        "Target": [
+            [
+                "14bdc1398760aef6d8757e2dd6a1c674d7851e66",
+                "Succulent Plant- 23x9x11 cms",
+                "living room"
+            ],
+            [
+                "61d4155613cdff2e36558a2c210452232eea676f",
+                "White 3 Drawer Accent Chest",
+                "bedroom,living room"
+            ]
+        ]
+    }
+]

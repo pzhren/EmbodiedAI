@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Move the Memo Pads from the office to the Ranunculus & Poppy Watergarden in the living room",
+        "Subtask list": [
+            "Move_to('Memo Pads_office')",
+            "Grab('Memo Pads')",
+            "Move_to('Ranunculus & Poppy Watergarden_living room')",
+            "Release('Memo Pads')"
+        ],
+        "Scene": "105515448_173104512",
+        "Target": [
+            [
+                "7e5d517c0e402fc5133a808a26157694583502da",
+                "Memo Pads",
+                "office"
+            ],
+            [
+                "93c9fbe7c9aba71343022e816dc5cfe1ce9edf7d",
+                "Ranunculus & Poppy Watergarden",
+                "living room"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Please take the stool from the bedroom and place it by the blackboard in the office",
+        "Subtask list": [
+            "Move_to('Devon Stool_bedroom')",
+            "Grab('Devon Stool')",
+            "Move_to('Note To Self Huge Blackboard_office')",
+            "Release('Devon Stool')"
+        ],
+        "Scene": "105515448_173104512",
+        "Target": [
+            [
+                "c3bfe9d9969b21fac01b8bb7b9399a0047feef73",
+                "Devon Stool",
+                "bedroom"
+            ],
+            [
+                "7c2940a68cdeac64c0e2d2ccae0905316118076e",
+                "Note To Self Huge Blackboard",
+                "office"
+            ]
+        ]
+    }
+]

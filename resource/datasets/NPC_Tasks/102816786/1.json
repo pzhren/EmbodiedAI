@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Could you please move the Calla Lily Bouquet from the living room to the Brighton Queen Upholstered Bed in the bedroom",
+        "Subtask list": [
+            "Move_to('CALLA LILY BOUQUET IN GLASS_living room')",
+            "Grab('CALLA LILY BOUQUET IN GLASS')",
+            "Move_to('Brighton Queen Upholstered Platform Bed By Nate Berkus And Jeremiah Brent_bedroom')",
+            "Release('CALLA LILY BOUQUET IN GLASS')"
+        ],
+        "Scene": "102816786",
+        "Target": [
+            [
+                "fd99e8af0aab94cafa5ec73787d55cfb330623fa",
+                "CALLA LILY BOUQUET IN GLASS",
+                "living room"
+            ],
+            [
+                "cb88813ef78001887105294c74675cc7438c8e17",
+                "Brighton Queen Upholstered Platform Bed By Nate Berkus And Jeremiah Brent",
+                "bedroom"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Could you please take the Azule Bar Cart from the living room and move it to the dining room",
+        "Subtask list": [
+            "Move_to('Azule Bar Cart_living room')",
+            "Grab('Azule Bar Cart')",
+            "Move_to('Revolve Freedom Dining Table, Striped Marble Top with Stainless Steel Base_living room,dining room')",
+            "Release('Azule Bar Cart')"
+        ],
+        "Scene": "102816786",
+        "Target": [
+            [
+                "4c08cdfed62696b0d20013c08a9131286450788e",
+                "Azule Bar Cart",
+                "living room"
+            ],
+            [
+                "fd8e82f013bf0b3cbeac233a43db84f119e5e431",
+                "Revolve Freedom Dining Table, Striped Marble Top with Stainless Steel Base",
+                "living room,dining room"
+            ]
+        ]
+    }
+]

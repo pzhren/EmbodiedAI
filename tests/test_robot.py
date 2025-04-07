@@ -11,7 +11,7 @@ from omni.isaac.kit import SimulationApp
 config = {
      "width": "1280",
      "height": "720",
-     "headless": False,
+     "headless": True,
 }
 simulation_app = SimulationApp(config)
 

@@ -100,22 +100,5 @@ class BaseTask(ABC):
         """
         raise NotImplementedError
 
-    def pre_step(self, time_step_index: int, simulation_time: float) -> None:
-        """called before stepping the physics simulation.
-
-        Args:
-            time_step_index (int): [description]
-            simulation_time (float): [description]
-        """
-        self.steps += 1
-        return
-
-    def post_reset(self) -> None:
-        """Calls while doing a .reset() on the world."""
-        self.steps = 0
-        for robot in self.robots.values():
-            robot.post_reset()
-        return
-
 
 

@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Could you please take a book from the bookcase with glass-doors in the living room and place it on one of the tall cabinets in the kitchen",
+        "Subtask list": [
+            "Move_to('Bookcase with glass-doors BILLY, Beige_living room')",
+            "Grab('book')",
+            "Move_to('Sektion Kitchen Tall Cabinet_kitchen')",
+            "Release('book')"
+        ],
+        "Scene": "102344307",
+        "Target": [
+            [
+                "4ff59e8070d5ea9934152438923cccb3c0a94c20",
+                "Bookcase with glass-doors BILLY, Beige",
+                "living room"
+            ],
+            [
+                "5ca9a18202d7cd7fe7568cc7ac588705b4ae4afa",
+                "Sektion Kitchen Tall Cabinet",
+                "kitchen"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Please take the Tropical Plant from the living room and place it near the Washer Dryer in the kitchen",
+        "Subtask list": [
+            "Move_to('Tropical Plant_living room')",
+            "Grab('Tropical Plant')",
+            "Move_to('Hotpoint WDF740A Satin Aluminium Washer Dryer._kitchen')",
+            "Release('Tropical Plant')"
+        ],
+        "Scene": "102344307",
+        "Target": [
+            [
+                "4e476e157b3837870de19ceccd0179841269143b",
+                "Tropical Plant",
+                "living room"
+            ],
+            [
+                "00b285ed70673826ccb6941929a64abfaf5f9239",
+                "Hotpoint WDF740A Satin Aluminium Washer Dryer.",
+                "kitchen"
+            ]
+        ]
+    }
+]

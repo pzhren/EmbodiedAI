@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Pick up the rolled-up towel in the bathroom and place it on the kitchen island in the kitchen",
+        "Subtask list": [
+            "Move_to('Rolled Up Towel_bathroom')",
+            "Grab('Rolled Up Towel')",
+            "Move_to('Kitchen island_kitchen')",
+            "Release('Rolled Up Towel')"
+        ],
+        "Scene": "104348028_171512877",
+        "Target": [
+            [
+                "6ece1a15f0f508aab2371808d58eefa8420cf725",
+                "Rolled Up Towel",
+                "bathroom"
+            ],
+            [
+                "af102d5ce3df9cc58b991eb618a86f66c5901efe",
+                "Kitchen island",
+                "kitchen"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Take the Gold Lacquer Coasters from the kitchen or dining room and place them on the Calypso TV Unit in the living room",
+        "Subtask list": [
+            "Move_to('Gold Lacquer Coasters_kitchen,dining room')",
+            "Grab('Gold Lacquer Coasters')",
+            "Move_to('Calypso TV Unit_living room')",
+            "Release('Gold Lacquer Coasters')"
+        ],
+        "Scene": "104348028_171512877",
+        "Target": [
+            [
+                "0af34cda233e590a19b3448a06ac6cb33be17f2f",
+                "Gold Lacquer Coasters",
+                "kitchen,dining room"
+            ],
+            [
+                "c70ef2f552fd561ae25806cfe63d5d7e07ac6f76",
+                "Calypso TV Unit",
+                "living room"
+            ]
+        ]
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Could you please take the soap dish from the bathroom and place it on the kitchen island in the kitchen",
+        "Subtask list": [
+            "Move_to('Chancery Soap Dish, Rose Gold_bathroom')",
+            "Grab('Chancery Soap Dish, Rose Gold')",
+            "Move_to('YOO OH Kitchen Island_kitchen')",
+            "Release('Chancery Soap Dish, Rose Gold')"
+        ],
+        "Scene": "102344307",
+        "Target": [
+            [
+                "84092984ce8a7cd7ad7aec05eb95d2612d3cd209",
+                "Chancery Soap Dish, Rose Gold",
+                "bathroom"
+            ],
+            [
+                "27903d5a77d900067dd9031caf2f229776d800d4",
+                "YOO OH Kitchen Island",
+                "kitchen"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Could you please take a book from the bookcase with glass-doors in the living room and place it on one of the tall cabinets in the kitchen",
+        "Subtask list": [
+            "Move_to('Bookcase with glass-doors BILLY, Beige_living room')",
+            "Grab('book')",
+            "Move_to('Sektion Kitchen Tall Cabinet_kitchen')",
+            "Release('book')"
+        ],
+        "Scene": "102344307",
+        "Target": [
+            [
+                "4ff59e8070d5ea9934152438923cccb3c0a94c20",
+                "Bookcase with glass-doors BILLY, Beige",
+                "living room"
+            ],
+            [
+                "5ca9a18202d7cd7fe7568cc7ac588705b4ae4afa",
+                "Sektion Kitchen Tall Cabinet",
+                "kitchen"
+            ]
+        ]
+    }
+]

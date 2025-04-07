@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Please take the Dualit Cream Pro Blender from the kitchen and place it on the Kase 66 Inch Executive Desk in the office",
+        "Subtask list": [
+            "Move_to('Dualit Cream Pro Blender 1.5L_kitchen')",
+            "Grab('Dualit Cream Pro Blender 1.5L')",
+            "Move_to('Kase 66 Inch Executive Desk_office')",
+            "Release('Dualit Cream Pro Blender 1.5L')"
+        ],
+        "Scene": "106366134_174226362",
+        "Target": [
+            [
+                "6be4d96de50b8749ae932608719b2290a585f9ce",
+                "Dualit Cream Pro Blender 1.5L",
+                "kitchen"
+            ],
+            [
+                "1619e2e6a18d5d374963a3a4280f7a6d76356079",
+                "Kase 66 Inch Executive Desk",
+                "office"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Could you take the rolled-up towel from the bathroom to the sofa in the living room",
+        "Subtask list": [
+            "Move_to('Rolled Up Towel_bathroom')",
+            "Grab('Rolled Up Towel')",
+            "Move_to('Vivian Sofa_living room')",
+            "Release('Rolled Up Towel')"
+        ],
+        "Scene": "106366134_174226362",
+        "Target": [
+            [
+                "6ece1a15f0f508aab2371808d58eefa8420cf725",
+                "Rolled Up Towel",
+                "bathroom"
+            ],
+            [
+                "dcb1a1b641a5441628a79be4811dcb71f4640a19",
+                "Vivian Sofa",
+                "living room"
+            ]
+        ]
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Please take the Cedar Shoe Rack from the bedroom to the Eucalyptus in Cylinder Vase in the living room",
+        "Subtask list": [
+            "Move_to('Cedar Shoe Rack_bedroom')",
+            "Grab('Cedar Shoe Rack')",
+            "Move_to('Eucalyptus in Cylinder Vase_living room')",
+            "Release('Cedar Shoe Rack')"
+        ],
+        "Scene": "106878960_174887073",
+        "Target": [
+            [
+                "482351496548bc89258838f6630d0c73afe3a158",
+                "Cedar Shoe Rack",
+                "bedroom"
+            ],
+            [
+                "e2f0531cba31ce0f40c15ecff463e9e7f5f606ef",
+                "Eucalyptus in Cylinder Vase",
+                "living room"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Could you please take the black tapered candle holder set from the living room to the nightstand in the bedroom",
+        "Subtask list": [
+            "Move_to('Allis Black Taper Candle Holders Set Of 3_living room')",
+            "Grab('Allis Black Taper Candle Holders Set Of 3')",
+            "Move_to('Ashlyn Nightstand, Black_bedroom')",
+            "Release('Allis Black Taper Candle Holders Set Of 3')"
+        ],
+        "Scene": "106878960_174887073",
+        "Target": [
+            [
+                "bea1b3b9578d9e11486a9728976f34474ef3e671",
+                "Allis Black Taper Candle Holders Set Of 3",
+                "living room"
+            ],
+            [
+                "6c80f089f60961936c04cbc4ef61d2563eb40062",
+                "Ashlyn Nightstand, Black",
+                "bedroom"
+            ]
+        ]
+    }
+]
