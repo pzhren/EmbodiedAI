@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Take the Gwen mirror from the bedroom and place it on the CB Desk in the office",
+        "Subtask list": [
+            "Move_to('Gwennie Mirror_bedroom')",
+            "Grab('Gwennie Mirror')",
+            "Move_to('CB Desk_office')",
+            "Release('Gwennie Mirror')"
+        ],
+        "Scene": "104348028_171512877",
+        "Target": [
+            [
+                "afe773ff0423115a55e49defb4c62bf5e20cf172",
+                "Gwennie Mirror",
+                "bedroom"
+            ],
+            [
+                "6b63013dfa25cabaa2ef3d0830c19c823e6b1f7d",
+                "CB Desk",
+                "office"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Could you take the SERVE oil and vinegar set from the kitchen and move it to the TILT DINING CHAIR in the dining room",
+        "Subtask list": [
+            "Move_to('SERVE oil and vinegar set_kitchen')",
+            "Grab('SERVE oil and vinegar set')",
+            "Move_to('TILT DINING CHAIR_dining room')",
+            "Release('SERVE oil and vinegar set')"
+        ],
+        "Scene": "104348028_171512877",
+        "Target": [
+            [
+                "345d3d2b0045fec71c7d31be7836b8001a56edf1",
+                "SERVE oil and vinegar set",
+                "kitchen"
+            ],
+            [
+                "79ad3c2f9e40b87e3a22d82bec28cbfb4f0ab627",
+                "TILT DINING CHAIR",
+                "dining room"
+            ]
+        ]
+    }
+]

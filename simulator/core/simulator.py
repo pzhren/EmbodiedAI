@@ -20,7 +20,7 @@ lazyimport(globals(), """
     from omni.isaac.nucleus import get_assets_root_path
     from simulator.utils.scene_utils import add_boundary_walls
     from simulator.utils.scene_utils import compute_enclosing_square
-    from simulator.core.itemlookup import ItemLookup
+    from simulator.utils.semantic_utils import ItemLookup
   """
 )
 
@@ -109,6 +109,7 @@ class Simulator():
             semantic_label = robot.name
             # orientation=[0.70711,0.0,0.0,-0.70711]
             )
+        self._world.scene.add(robot.isaac_robot)
         pass
 
     # def import_sensor(self, sensor):
@@ -171,8 +172,8 @@ class Simulator():
         return target_ids
     
 
-    def find_object_by_id(self, scene, objs_id):
-        root_path ="/Scene0/floorplan/furniture/"
+    def find_object_by_id(self, scene, objs_id, scene_id="0"):
+        root_path ="/Scene"+scene_id+"/floorplan/furniture/"
         # 获取scene的prim_path
         for _, scene_item in scene.scene_prim_dict.items():
             # 获取场景的所有物品名字，prim_dict的键为prim名字，值为对应的prim
@@ -218,10 +219,8 @@ class Simulator():
                 xform_prims.append(xform_prim)
 
             return xform_prims
-        
     
-    def find_object_around(self, scene, pos):
-        self.hssd_item = ItemLookup("/data1/lfwj/linmin_embodiedAI/semantics_objects.csv")
+    def get_all_objects(self, scene):
         for _, scene_item in scene.scene_prim_dict.items():
             children = prim_utils.get_prim_children(scene_item.prim)
             if not children:
@@ -240,25 +239,37 @@ class Simulator():
                 for attr in prim.GetAttributes()
                 if attr.GetName() == "xformOp:translate"
             }
+        return all_obj_dict
+    
+    def get_item_lookup(self):
+        assert os.path.exists(os.path.join(self._resource_path, "semantic", "semantics_objects.csv")), "Error: semantics_objects.csv not found!"
+        hssd_item = ItemLookup(os.path.join(self._resource_path, "semantic", "semantics_objects.csv"))
+        return hssd_item
         
-            around_set = set()
-            # 输出当前位置2m范围内的所有物品
-            for Id in  all_obj_dict.keys():
-                if math.dist([all_obj_dict[Id][0], all_obj_dict[Id][2]],pos) < 2:
-                    name = self.hssd_item.get_item_name_by_id(Id)
-                    if name!='':
-                        around_set.add(name)
-            
-            # 将集合转换为列表
-            return list(around_set)
-
-
+    def find_object_around(self, scene, pos):
+        self.hssd_item = self.get_item_lookup()
+        all_obj_dict = self.get_all_objects(scene)
+        
+        around_set = set()
+        # 输出当前位置2m范围内的所有物品
+        for Id in  all_obj_dict.keys():
+            if math.dist([all_obj_dict[Id][0], all_obj_dict[Id][2]],pos) < 2:
+                name = self.hssd_item.get_item_name_by_id(Id)
+                if name!='':
+                    around_set.add(name)
+        break
+        # 将集合转换为列表
+        return list(around_set)
                 
     def play(self):
         return self._world.play()
 
     def step(self, render:bool=True) -> dict[str, Any]:
         return self._world.step(render=render)
+
+    def physics_step(self, robot: BaseRobot, action: np.ndarray):
+        robot.apply_action(action, self._world)
+        pass
 
     def reset(self):
         self._world.reset()

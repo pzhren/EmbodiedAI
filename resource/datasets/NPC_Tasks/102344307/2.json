@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Could you please take the soap dish from the bathroom and place it on the kitchen island in the kitchen",
+        "Subtask list": [
+            "Move_to('Chancery Soap Dish, Rose Gold_bathroom')",
+            "Grab('Chancery Soap Dish, Rose Gold')",
+            "Move_to('YOO OH Kitchen Island_kitchen')",
+            "Release('Chancery Soap Dish, Rose Gold')"
+        ],
+        "Scene": "102344307",
+        "Target": [
+            [
+                "84092984ce8a7cd7ad7aec05eb95d2612d3cd209",
+                "Chancery Soap Dish, Rose Gold",
+                "bathroom"
+            ],
+            [
+                "27903d5a77d900067dd9031caf2f229776d800d4",
+                "YOO OH Kitchen Island",
+                "kitchen"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Please take the dishwasher from the kitchen and place it near the Montauk Dresser which is located between the bedroom and living room",
+        "Subtask list": [
+            "Move_to('Dishwasher_kitchen')",
+            "Grab('Dishwasher')",
+            "Move_to('Montauk Dresser_bedroom,living room')",
+            "Release('Dishwasher')"
+        ],
+        "Scene": "102344307",
+        "Target": [
+            [
+                "43b7ea81b8b10840845f7d2551599c5a6d96e3d4",
+                "Dishwasher",
+                "kitchen"
+            ],
+            [
+                "2c69bff136e6399bfc19cfdd8af1d9e5bcbc7843",
+                "Montauk Dresser",
+                "bedroom,living room"
+            ]
+        ]
+    }
+]

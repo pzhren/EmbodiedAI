@@ -59,6 +59,6 @@ class VisionSensor(BaseSensor):
                 obs["rgb"] = rgb
             if "depth" in self.modals:
                 obs["depth"] = camera_data["distance_to_image_plane"]
-        self.data = obs 
+        self.data = {self.name:obs} 
 
     

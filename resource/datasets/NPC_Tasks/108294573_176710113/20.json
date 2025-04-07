@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Take the small set of candles from the living room and place them on top of the toilet in the bathroom",
+        "Subtask list": [
+            "Move_to('baltic pillar candle, set of 2_living room')",
+            "Grab('baltic pillar candle, set of 2')",
+            "Move_to('Toilette/toilette Casual_bathroom')",
+            "Release('baltic pillar candle, set of 2')"
+        ],
+        "Scene": "108294573_176710113",
+        "Target": [
+            [
+                "52b86c8bfd1804c6bed56b1d51c0d95e2f6ae285",
+                "baltic pillar candle, set of 2",
+                "living room"
+            ],
+            [
+                "5368e6e4bb682ba841fb69dc471f5c048a33fa48",
+                "Toilette/toilette Casual",
+                "bathroom"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Take the black and gold vanity from the shared bedroom-living room space and place it on the table in the living room",
+        "Subtask list": [
+            "Move_to('Black + Gold Vanity_bedroom,living room')",
+            "Grab('Black + Gold Vanity')",
+            "Move_to('Rowan Sofa Table_living room')",
+            "Release('Black + Gold Vanity')"
+        ],
+        "Scene": "108294573_176710113",
+        "Target": [
+            [
+                "467413f215daba3f0a88b154b17ccd1fb7ecb48d",
+                "Black + Gold Vanity",
+                "bedroom,living room"
+            ],
+            [
+                "4a43310877336ce42f4e18c88b4effb3e7a5b7f4",
+                "Rowan Sofa Table",
+                "living room"
+            ]
+        ]
+    }
+]

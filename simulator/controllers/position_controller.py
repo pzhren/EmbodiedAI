@@ -58,6 +58,15 @@ class PositionController(BaseController):
         euler = quaternion_from_euler(roll, pitch, new_yaw)
         return target_pos, euler
     
+    def step(self, robot, world, command, grasped_object):
+        target_pos, euler = self.get_action(command, robot)
+        robot.Xform.set_world_pose(position = target_pos, orientation = euler)
+        if grasped_object is not None:
+            for k,v in grasped_object:
+                target_pos, euler = self.get_action(command, v)
+                v.set_world_pose(position = target_pos, orientation = euler)
+        world.step(render=True)
+        return 1
     
     def trans_pos(self, robot)-> tuple:
         """
@@ -69,8 +78,7 @@ class PositionController(BaseController):
         Returns:
             tuple: (position, roll, pitch, yaw)
         """
-        robot_pos = Robot(robot)
-        position, quaternion  = robot_pos.get_world_pose()
+        position, quaternion  = robot.get_world_pose()
         roll, pitch, yaw = euler_from_quaternion(quaternion)
         return position, roll, pitch, yaw 
     

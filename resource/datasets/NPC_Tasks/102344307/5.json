@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Could you please take a book from the bookcase with glass-doors in the living room and place it on one of the tall cabinets in the kitchen",
+        "Subtask list": [
+            "Move_to('Bookcase with glass-doors BILLY, Beige_living room')",
+            "Grab('book')",
+            "Move_to('Sektion Kitchen Tall Cabinet_kitchen')",
+            "Release('book')"
+        ],
+        "Scene": "102344307",
+        "Target": [
+            [
+                "4ff59e8070d5ea9934152438923cccb3c0a94c20",
+                "Bookcase with glass-doors BILLY, Beige",
+                "living room"
+            ],
+            [
+                "5ca9a18202d7cd7fe7568cc7ac588705b4ae4afa",
+                "Sektion Kitchen Tall Cabinet",
+                "kitchen"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Please take the dishwasher from the kitchen and place it near the Montauk Dresser which is located between the bedroom and living room",
+        "Subtask list": [
+            "Move_to('Dishwasher_kitchen')",
+            "Grab('Dishwasher')",
+            "Move_to('Montauk Dresser_bedroom,living room')",
+            "Release('Dishwasher')"
+        ],
+        "Scene": "102344307",
+        "Target": [
+            [
+                "43b7ea81b8b10840845f7d2551599c5a6d96e3d4",
+                "Dishwasher",
+                "kitchen"
+            ],
+            [
+                "2c69bff136e6399bfc19cfdd8af1d9e5bcbc7843",
+                "Montauk Dresser",
+                "bedroom,living room"
+            ]
+        ]
+    }
+]

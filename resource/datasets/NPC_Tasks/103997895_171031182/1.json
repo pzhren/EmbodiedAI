@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Pick up the AquaVive shower curtain from the bathroom and bring it to place beside the Paxton Round Wall Clock in the living room",
+        "Subtask list": [
+            "Move_to('AquaVive douchegordijn Cubes grijs 180 x 200cm_bathroom')",
+            "Grab('AquaVive douchegordijn Cubes grijs 180 x 200cm')",
+            "Move_to('Paxton Round Wall Clock_living room')",
+            "Release('AquaVive douchegordijn Cubes grijs 180 x 200cm')"
+        ],
+        "Scene": "103997895_171031182",
+        "Target": [
+            [
+                "e8798c56bd14fcc690d39a1ef6a670cfa15c2938",
+                "AquaVive douchegordijn Cubes grijs 180 x 200cm",
+                "bathroom"
+            ],
+            [
+                "d57e3132eb49a7e0a3e6971f304a6d52951a4f74",
+                "Paxton Round Wall Clock",
+                "living room"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Please take the memory foam bath mat from the bathroom and place it on the marble tables in the living room",
+        "Subtask list": [
+            "Move_to('Premium Memory Foam Bath Mat - 70x120 cms_bathroom')",
+            "Grab('Premium Memory Foam Bath Mat - 70x120 cms')",
+            "Move_to('Lincoln Marble 3 In 1 Pack Tables_living room')",
+            "Release('Premium Memory Foam Bath Mat - 70x120 cms')"
+        ],
+        "Scene": "103997895_171031182",
+        "Target": [
+            [
+                "d46d7261aa80655e3f2583b0b752e26d86d6271d",
+                "Premium Memory Foam Bath Mat - 70x120 cms",
+                "bathroom"
+            ],
+            [
+                "735845d0674f69f736af7e0f116767a01392f9b8",
+                "Lincoln Marble 3 In 1 Pack Tables",
+                "living room"
+            ]
+        ]
+    }
+]

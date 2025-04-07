@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Take the black Venetian mirror from the bedroom and place it on the coffee table in the living room",
+        "Subtask list": [
+            "Move_to('Lola Black Venetian Mirror_bedroom')",
+            "Grab('Lola Black Venetian Mirror')",
+            "Move_to('Madison Park Signature Bordeaux Coffee Table_living room')",
+            "Release('Lola Black Venetian Mirror')"
+        ],
+        "Scene": "106878960_174887073",
+        "Target": [
+            [
+                "09cb03f0708756554d3f79334fb2a87e854b97d2",
+                "Lola Black Venetian Mirror",
+                "bedroom"
+            ],
+            [
+                "24948d656ee551402efa257e451d587431a972b3",
+                "Madison Park Signature Bordeaux Coffee Table",
+                "living room"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Please take the Cedar Shoe Rack from the bedroom to the Eucalyptus in Cylinder Vase in the living room",
+        "Subtask list": [
+            "Move_to('Cedar Shoe Rack_bedroom')",
+            "Grab('Cedar Shoe Rack')",
+            "Move_to('Eucalyptus in Cylinder Vase_living room')",
+            "Release('Cedar Shoe Rack')"
+        ],
+        "Scene": "106878960_174887073",
+        "Target": [
+            [
+                "482351496548bc89258838f6630d0c73afe3a158",
+                "Cedar Shoe Rack",
+                "bedroom"
+            ],
+            [
+                "e2f0531cba31ce0f40c15ecff463e9e7f5f606ef",
+                "Eucalyptus in Cylinder Vase",
+                "living room"
+            ]
+        ]
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Please take the black bookshelf from the living room and place it near the grey desk in the office",
+        "Subtask list": [
+            "Move_to('Logan Bookshelf Walnut and Gray_living room')",
+            "Grab('Logan Bookshelf Walnut and Gray')",
+            "Move_to('Copenhague 90 Desk, Grey / Oak_office')",
+            "Release('Logan Bookshelf Walnut and Gray')"
+        ],
+        "Scene": "106878945_174887058",
+        "Target": [
+            [
+                "68333b64226ceb3585f2355a154a77cfa3276c21",
+                "Logan Bookshelf Walnut and Gray",
+                "living room"
+            ],
+            [
+                "aee87f94b8fe693757b14827b969fbbfe03eb12e",
+                "Copenhague 90 Desk, Grey / Oak",
+                "office"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Please take the Genevieve Ladder from the bedroom and bring it over to the Potted Sansevieria in the living room",
+        "Subtask list": [
+            "Move_to('Genevieve Ladder_bedroom')",
+            "Grab('Genevieve Ladder')",
+            "Move_to('Potted Sansevieria_living room')",
+            "Release('Genevieve Ladder')"
+        ],
+        "Scene": "106878945_174887058",
+        "Target": [
+            [
+                "de65d35ef7eee3e68d5f1abceefb816cdb871491",
+                "Genevieve Ladder",
+                "bedroom"
+            ],
+            [
+                "26a38271fb04e01cc4ae5f6cabad71f37a69231b",
+                "Potted Sansevieria",
+                "living room"
+            ]
+        ]
+    }
+]

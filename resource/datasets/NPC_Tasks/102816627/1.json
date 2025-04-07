@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Take the indoor plant from the living room and place it next to the vanity unit in the bathroom",
+        "Subtask list": [
+            "Move_to('Indoor Plant_living room')",
+            "Grab('Indoor Plant')",
+            "Move_to('Loosli VANITY-AQUINO Unterbau/meuble inf\u00e9rieur/mobile inferiore_bathroom')",
+            "Release('Indoor Plant')"
+        ],
+        "Scene": "102816627",
+        "Target": [
+            [
+                "deae2fd69a0752bc5da79083dad3a4b9f7317da6",
+                "Indoor Plant",
+                "living room"
+            ],
+            [
+                "c5a5add8981b50bfca5fca13baa061faa730a8d4",
+                "Loosli VANITY-AQUINO Unterbau/meuble inf\u00e9rieur/mobile inferiore",
+                "bathroom"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Could you please take the seagrass basket from the living room and place it on the cooker hood in the kitchen",
+        "Subtask list": [
+            "Move_to('KRALLIG Basket, seagrass, 25 cm, White_living room')",
+            "Grab('KRALLIG Basket, seagrass, 25 cm, White')",
+            "Move_to('Rangemaster Classic 90 Cooker Hood, Black with Chrome Rail_kitchen')",
+            "Release('KRALLIG Basket, seagrass, 25 cm, White')"
+        ],
+        "Scene": "102816627",
+        "Target": [
+            [
+                "18c27e6de6793e951029c5f24de25005283cf29a",
+                "KRALLIG Basket, seagrass, 25 cm, White",
+                "living room"
+            ],
+            [
+                "aadd558c7aa574b485e07396219055de8c994e2c",
+                "Rangemaster Classic 90 Cooker Hood, Black with Chrome Rail",
+                "kitchen"
+            ]
+        ]
+    }
+]

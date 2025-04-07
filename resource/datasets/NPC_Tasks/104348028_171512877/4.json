@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Take the Gwen mirror from the bedroom and place it on the CB Desk in the office",
+        "Subtask list": [
+            "Move_to('Gwennie Mirror_bedroom')",
+            "Grab('Gwennie Mirror')",
+            "Move_to('CB Desk_office')",
+            "Release('Gwennie Mirror')"
+        ],
+        "Scene": "104348028_171512877",
+        "Target": [
+            [
+                "afe773ff0423115a55e49defb4c62bf5e20cf172",
+                "Gwennie Mirror",
+                "bedroom"
+            ],
+            [
+                "6b63013dfa25cabaa2ef3d0830c19c823e6b1f7d",
+                "CB Desk",
+                "office"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Pick up the rolled-up towel in the bathroom and place it on the kitchen island in the kitchen",
+        "Subtask list": [
+            "Move_to('Rolled Up Towel_bathroom')",
+            "Grab('Rolled Up Towel')",
+            "Move_to('Kitchen island_kitchen')",
+            "Release('Rolled Up Towel')"
+        ],
+        "Scene": "104348028_171512877",
+        "Target": [
+            [
+                "6ece1a15f0f508aab2371808d58eefa8420cf725",
+                "Rolled Up Towel",
+                "bathroom"
+            ],
+            [
+                "af102d5ce3df9cc58b991eb618a86f66c5901efe",
+                "Kitchen island",
+                "kitchen"
+            ]
+        ]
+    }
+]

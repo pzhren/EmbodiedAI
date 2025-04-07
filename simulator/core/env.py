@@ -5,6 +5,7 @@ from simulator.robots import make_robot
 from simulator.tasks import make_task
 from typing import List, Dict
 from collections import deque
+from simulator.utils.scene_utils import extract_target_ids
 import json
 
 class BaseEnv:
@@ -21,7 +22,9 @@ class BaseEnv:
         self.robots = []
         self.scenes = []
         self.task_objects = []
+        self.all_obj_dict = []
         self.load()
+        self.hssd_item = self.sim.get_item_lookup()
         
     def load_scene(self, scene_id):
         scene_class = registry.get_scene(self.configs.scene.type)
@@ -29,6 +32,7 @@ class BaseEnv:
         self.sim.import_scene(self.scenes[scene_id], self.scene_id2offset[scene_id], scene_id)
         # register.get(self.configs)
         # load scene and object into simulator
+        self.all_obj_dict[scene_id] = self.sim.get_all_objects(self.scenes[scene_id])
         pass
     
     def load_robot(self, offset):
@@ -47,27 +51,10 @@ class BaseEnv:
         return robots
     
     
-
-    def extract_target_ids(self, json_path):
-        """
-        Reads the JSON file from the given path and returns a list of target IDs.
-        
-        :param json_path: Path to the JSON file.
-        :return: List of target IDs.
-        """
-        with open(json_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        
-        # 获取 "Target" 字段中的所有子项，提取每个子项的第一个元素
-        target_ids = [item[0] for item in data.get("Target", []) if item]
-        return target_ids
-    
-    
-    
     def load_object(self, scene_id, offset=None):
         # 根据物品ID找到prim路径，并实例化为Xformprim,以列表形式返回
         # 首先通过读取task.json获取物品ID，然后通过find_object_by_id获取物品的prim路径
-        target_ids = self.extract_target_ids(self.task_config.task_path[0])
+        target_ids = extract_target_ids(self.task_config.task_path)
         objects = self.sim.find_object_by_id(self.scenes[scene_id], target_ids)
         # for obj in self.task_config.object_ids:
         #     obj = make_object(obj.type, obj)
@@ -109,7 +96,8 @@ class BaseEnv:
 
         # Iterate over all robots and apply actions
         for robot in self.robots[scene_id]:
-           robot.apply_action(action_dict[robot.name])
+        #    robot.apply_action(action_dict[robot.name])
+           self.sim.physics_step(robot, action_dict[robot.name])
 
 
     def _post_step(self, scene_id):
@@ -138,7 +126,13 @@ class BaseEnv:
             obs.append(self._post_step(scene_id=i))
         # Run final post-processing
         return obs
-
+    
+    def find_object_around(self, position, scene_id=0):
+        return self.sim.find_object_around(self.scenes[scene_id], position)
+    
+    def get_scene_graph(self, robot_id, scene_id=0):
+        
+        pass
 
     def close(self):
         self.sim.close()

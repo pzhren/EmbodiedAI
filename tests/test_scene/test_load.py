@@ -40,9 +40,11 @@
 #             my_world.reset()
 #             my_controller.reset()
 #             reset_needed = False
+import os
 from simulator.core.config import EnvConfig
 from simulator.core.env import BaseEnv
 from simulator.scenes import Interactive_Scene
+from simulator.utils.scene_utils import extract_target_ids
 from lazyimport import lazyimport
 lazyimport(globals(), """
     from omni.isaac.core.prims import XFormPrim
@@ -50,21 +52,21 @@ lazyimport(globals(), """
     from transformations import euler_from_quaternion,quaternion_from_euler
   """
 )
+print(os.getcwd())
 
-
-config_file= "/data1/lfwj/linmin_embodiedAI/EmbodiedAI/tests/test_configs/test.yaml"
+config_file= "tests/test_configs/test.yaml"
 cfg = EnvConfig(config_file)
 print(cfg.config)
 env = BaseEnv(cfg)
+env.reset()
 i = 0
 while env.is_running:
         # print(cfg.config.task.task_path)
-        target_ids = env.sim.extract_target_ids(cfg.config.task.task_path[0])
+        target_ids = extract_target_ids(cfg.config.task.task_path[0])
         objs_xformprim = env.sim.find_object_by_id(env.scenes[0], target_ids)
         
         # 获取当前的机器人的位置
-        robot_form = XFormPrim(cfg.config.task.robots[0].prim_path)
-        current_pos,_ = robot_form.get_world_pose()
+        current_pos = env.robots[0].get_world_pose()
 
         current_pos = current_pos[:2]
         
@@ -90,7 +92,7 @@ while env.is_running:
         
         # 将这些图片保存下来，利用Pillow库
         from PIL import Image
-        Image.fromarray(rgb1).save(f"/data1/lfwj/linmin_embodiedAI/EmbodiedAI/tests/obs/lf_2/rgb1_{i}.png")
-        Image.fromarray(rgb2).save(f"/data1/lfwj/linmin_embodiedAI/EmbodiedAI/tests/obs/lf_2/rgb2_{i}.png")
-        Image.fromarray(rgb3).save(f"/data1/lfwj/linmin_embodiedAI/EmbodiedAI/tests/obs/lf_2/rgb3_{i}.png")
+        Image.fromarray(rgb1).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb1_{i}.png")
+        Image.fromarray(rgb2).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb2_{i}.png")
+        Image.fromarray(rgb3).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb3_{i}.png")
         i+=1

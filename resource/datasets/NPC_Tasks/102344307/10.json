@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Please take the Tropical Plant from the living room and place it near the Washer Dryer in the kitchen",
+        "Subtask list": [
+            "Move_to('Tropical Plant_living room')",
+            "Grab('Tropical Plant')",
+            "Move_to('Hotpoint WDF740A Satin Aluminium Washer Dryer._kitchen')",
+            "Release('Tropical Plant')"
+        ],
+        "Scene": "102344307",
+        "Target": [
+            [
+                "4e476e157b3837870de19ceccd0179841269143b",
+                "Tropical Plant",
+                "living room"
+            ],
+            [
+                "00b285ed70673826ccb6941929a64abfaf5f9239",
+                "Hotpoint WDF740A Satin Aluminium Washer Dryer.",
+                "kitchen"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Please fetch the Emerson II LAF Loveseat from the living room and place it beside the Seba bed in the bedroom",
+        "Subtask list": [
+            "Move_to('Emerson II LAF Loveseat_living room')",
+            "Grab('Emerson II LAF Loveseat')",
+            "Move_to('Seba bed_bedroom')",
+            "Release('Emerson II LAF Loveseat')"
+        ],
+        "Scene": "102344307",
+        "Target": [
+            [
+                "7165e9d457a1fb2a4fa6d827d5ef9f5a90a6408e",
+                "Emerson II LAF Loveseat",
+                "living room"
+            ],
+            [
+                "e115319d6ac365ebdbab83456ed3439a9fdb1692",
+                "Seba bed",
+                "bedroom"
+            ]
+        ]
+    }
+]

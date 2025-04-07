@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Please take the small cactus plant from the living room and place it on the vanity in the bathroom",
+        "Subtask list": [
+            "Move_to('Cactus Plant in Round Pot_living room')",
+            "Grab('Cactus Plant in Round Pot')",
+            "Move_to('Loosli Vanity-Tribute/Similor TWINPLUS/Bodenschatz wood 2_bathroom')",
+            "Release('Cactus Plant in Round Pot')"
+        ],
+        "Scene": "108294573_176710113",
+        "Target": [
+            [
+                "c461ecb62efa4ef74eb34fb8152acf8cc8ac427d",
+                "Cactus Plant in Round Pot",
+                "living room"
+            ],
+            [
+                "2af49526b00696ff2449c5e19f44d6b8e653a1b4",
+                "Loosli Vanity-Tribute/Similor TWINPLUS/Bodenschatz wood 2",
+                "bathroom"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Take the black and gold vanity from the shared bedroom-living room space and place it on the table in the living room",
+        "Subtask list": [
+            "Move_to('Black + Gold Vanity_bedroom,living room')",
+            "Grab('Black + Gold Vanity')",
+            "Move_to('Rowan Sofa Table_living room')",
+            "Release('Black + Gold Vanity')"
+        ],
+        "Scene": "108294573_176710113",
+        "Target": [
+            [
+                "467413f215daba3f0a88b154b17ccd1fb7ecb48d",
+                "Black + Gold Vanity",
+                "bedroom,living room"
+            ],
+            [
+                "4a43310877336ce42f4e18c88b4effb3e7a5b7f4",
+                "Rowan Sofa Table",
+                "living room"
+            ]
+        ]
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "Task instruction": "Could you please take the shoe rack from the bedroom and place it near the storage console table in the living room",
+        "Subtask list": [
+            "Move_to('Extending Shoe Rack_bedroom')",
+            "Grab('Extending Shoe Rack')",
+            "Move_to('Evans Black and Gold Storage Console Table by HomeDepot_living room')",
+            "Release('Extending Shoe Rack')"
+        ],
+        "Scene": "106366302_174226617",
+        "Target": [
+            [
+                "ac699faed7efa37f5b22c3dde720756e71dbf3b1",
+                "Extending Shoe Rack",
+                "bedroom"
+            ],
+            [
+                "01b65339d622bb9f89eb8fdd753a76cffc7eb8d6",
+                "Evans Black and Gold Storage Console Table by HomeDepot",
+                "living room"
+            ]
+        ]
+    },
+    {
+        "Task instruction": "Please take the interior plant from the living room and place it on the Elba cocktail table in the same room",
+        "Subtask list": [
+            "Move_to('Interior Plant_living room')",
+            "Grab('Interior Plant')",
+            "Move_to('Elba Cocktail Table_living room')",
+            "Release('Interior Plant')"
+        ],
+        "Scene": "106366302_174226617",
+        "Target": [
+            [
+                "c37e1c6105bc43c44c14b8fb371b0d3c843ec313",
+                "Interior Plant",
+                "living room"
+            ],
+            [
+                "3940da56d443b5be11a6f117c5b62a4c6b1ff62f",
+                "Elba Cocktail Table",
+                "living room"
+            ]
+        ]
+    }
+]
