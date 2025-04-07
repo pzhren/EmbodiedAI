@@ -44,7 +44,7 @@ class StretchGraspController(BaseController):
     
     def step(self, robot, world, command: str):
         command = self.get_action(command, robot)
-        if command[0] == "grasp"
+        if command[0] == "grasp":
             self.grasp_by_target(robot, command[1], world)
         elif command[0] == "release":
             self.release_by_target(robot, command[1], world)
