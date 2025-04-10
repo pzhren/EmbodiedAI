@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you please go to the living room and take the plant to place it on the dining table in the dining room",
+    "Subtask list": [
+        "Move_to('plant_living room')",
+        "Grab('plant')",
+        "Move_to('CHIPS DINING TABLE_living room,dining room')",
+        "Release('plant')"
+    ],
+    "Scene": "107734176_176000019",
+    "Target": [
+        [
+            "475870f8089a1c7bf8186679ed82537d9fbcc587",
+            "plant",
+            "living room"
+        ],
+        [
+            "e4258a74474114a9e2677548124b209cf0f6ae43",
+            "CHIPS DINING TABLE",
+            "living room,dining room"
+        ]
+    ]
+}

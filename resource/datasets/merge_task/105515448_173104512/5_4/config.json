@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the stool from the bedroom and place it by the blackboard in the office",
+        "Please take the Devon stool from the bedroom and place it next to the Shia 47 Inch Writing Desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Devon Stool_bedroom')",
+            "Grab('Devon Stool')",
+            "Move_to('Note To Self Huge Blackboard_office')",
+            "Release('Devon Stool')"
+        ],
+        [
+            "Move_to('Devon Stool_bedroom')",
+            "Grab('Devon Stool')",
+            "Move_to('Shia 47 Inch Writing Desk_office')",
+            "Release('Devon Stool')"
+        ]
+    ],
+    "Scene": "105515448_173104512",
+    "Target": [
+        [
+            [
+                "c3bfe9d9969b21fac01b8bb7b9399a0047feef73",
+                "Devon Stool",
+                "bedroom"
+            ],
+            [
+                "7c2940a68cdeac64c0e2d2ccae0905316118076e",
+                "Note To Self Huge Blackboard",
+                "office"
+            ]
+        ],
+        [
+            [
+                "c3bfe9d9969b21fac01b8bb7b9399a0047feef73",
+                "Devon Stool",
+                "bedroom"
+            ],
+            [
+                "f84624a16fc343ce94373e0ec45362127c70451a",
+                "Shia 47 Inch Writing Desk",
+                "office"
+            ]
+        ]
+    ]
+}

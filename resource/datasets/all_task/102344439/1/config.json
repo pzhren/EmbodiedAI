@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the laundry hamper from the bathroom and place it in the corner of the living room near the bamboo plant",
+    "Subtask list": [
+        "Move_to('Family Laundry Hamper_bathroom')",
+        "Grab('Family Laundry Hamper')",
+        "Move_to('faux bamboo plant_living room')",
+        "Release('Family Laundry Hamper')"
+    ],
+    "Scene": "102344439",
+    "Target": [
+        [
+            "bfb4b2a7d105c96efa8bb813240a3361ad15bd69",
+            "Family Laundry Hamper",
+            "bathroom"
+        ],
+        [
+            "8dbcdfb6bade81562880496b0eef73f0a2d26834",
+            "faux bamboo plant",
+            "living room"
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Princess Chest from the bedroom-living room area and place it on the Hartley 2 Piece Sectional in the living room",
+        "Move the cozy kitchen from the kids room to the booksheld in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Princess Chest_bedroom,living room')",
+            "Grab('Princess Chest')",
+            "Move_to('Hartley 2 Piece Sectional_living room')",
+            "Release('Princess Chest')"
+        ],
+        [
+            "Move_to('Cozy Kitchen - Item # COZYKIT_kids room')",
+            "Grab('Cozy Kitchen - Item # COZYKIT')",
+            "Move_to('Baybrin Bookshelf_living room')",
+            "Release('Cozy Kitchen - Item # COZYKIT')"
+        ]
+    ],
+    "Scene": "104862558_172226664",
+    "Target": [
+        [
+            [
+                "848c2cc9428329445b3de7dc982469c583b16c1d",
+                "Princess Chest",
+                "bedroom,living room"
+            ],
+            [
+                "66ec4fc576cf716a9e41f389a8ab27b103edfa9f",
+                "Hartley 2 Piece Sectional",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "66c31369764e529c59d1257905a165dfbca6ec4d",
+                "Cozy Kitchen - Item # COZYKIT",
+                "kids room"
+            ],
+            [
+                "2008d8ac79f55bb3bad47a4bc7af494f0a7fe9f8",
+                "Baybrin Bookshelf",
+                "living room"
+            ]
+        ]
+    ]
+}

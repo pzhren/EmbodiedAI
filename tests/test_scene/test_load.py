@@ -43,6 +43,7 @@
 import os
 from simulator.core.config import EnvConfig
 from simulator.core.env import BaseEnv
+from simulator.core.dataset import DatasetLoader
 from simulator.scenes import Interactive_Scene
 from simulator.utils.scene_utils import extract_target_ids
 from lazyimport import lazyimport
@@ -54,20 +55,26 @@ lazyimport(globals(), """
 )
 print(os.getcwd())
 
-config_file= "tests/test_configs/test.yaml"
-cfg = EnvConfig(config_file)
-print(cfg.config)
+# config_file= "tests/test_configs/test.yaml"
+# cfg = EnvConfig(config_file)
+# print(cfg.config)
+loader = DatasetLoader(root_dir="/data1/linmin/EmbodiedAI/resource/datasets/all_task",
+scene_path="/data1/linmin/NPC/hssd_test_scene",
+robot_path="/data1/linmin/EmbodiedAI/tests/stretch/model/stretch.usd",)
+print("total len:",len(loader))
+cfg = loader[0]
+print(cfg)
 env = BaseEnv(cfg)
 env.reset()
 i = 0
 while env.is_running:
         # print(cfg.config.task.task_path)
-        target_ids = extract_target_ids(cfg.config.task.task_path[0])
+        target_ids = extract_target_ids(cfg.task.task_path)
         objs_xformprim = env.sim.find_object_by_id(env.scenes[0], target_ids)
         
         # 获取当前的机器人的位置
-        current_pos = env.robots[0].get_world_pose()
-
+        current_pos = env.robots[0][0].get_world_pose()
+        
         current_pos = current_pos[:2]
         
         around_objects = env.sim.find_object_around(env.scenes[0], current_pos)
@@ -78,9 +85,9 @@ while env.is_running:
         print("goal_pos1", goal_pos1)
         # 这里很奇怪，要全部加负号才正常
         goal_pose1 = [-goal_pos1[0], -goal_pos1[1]]
-        distance, action = env.task.get_distance(goal_pose1)
+        distance, action = env.task[0].get_distance(goal_pose1)
         print("distance, action", distance, action)
-        obs = env.step([action])
+        obs,_,_ = env.step([[action]])
         # 把obs的观测数据按照图片保存下来
         rgb1 = obs[0][0][0]["rgb"]
         rgb2 = obs[0][0][1]["rgb"]

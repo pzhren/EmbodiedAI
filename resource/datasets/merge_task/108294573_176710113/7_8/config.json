@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the handblown carved glass vase from the living room and place it on the Palmer Desk in the office",
+        "Take the black and gold vanity from the shared bedroom-living room space and place it on the table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('HANDBLOWN CARVED GLASS VASE_living room')",
+            "Grab('HANDBLOWN CARVED GLASS VASE')",
+            "Move_to('Palmer Desk_office')",
+            "Release('HANDBLOWN CARVED GLASS VASE')"
+        ],
+        [
+            "Move_to('Black + Gold Vanity_bedroom,living room')",
+            "Grab('Black + Gold Vanity')",
+            "Move_to('Rowan Sofa Table_living room')",
+            "Release('Black + Gold Vanity')"
+        ]
+    ],
+    "Scene": "108294573_176710113",
+    "Target": [
+        [
+            [
+                "db8288398b2513371f31aff4e2e6271dd08476af",
+                "HANDBLOWN CARVED GLASS VASE",
+                "living room"
+            ],
+            [
+                "7e54244342d7a8716e723311313adf7d5ba1620e",
+                "Palmer Desk",
+                "office"
+            ]
+        ],
+        [
+            [
+                "467413f215daba3f0a88b154b17ccd1fb7ecb48d",
+                "Black + Gold Vanity",
+                "bedroom,living room"
+            ],
+            [
+                "4a43310877336ce42f4e18c88b4effb3e7a5b7f4",
+                "Rowan Sofa Table",
+                "living room"
+            ]
+        ]
+    ]
+}

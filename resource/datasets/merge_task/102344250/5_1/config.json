@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Invotis Wall Alu Numbers Clock from the living room and place it on the dressing table bench legs in the bedroom",
+        "Take the mixed numbers wall clock from the living room and place it on the side table in the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Invotis Wall Alu Numbers Clock_living room')",
+            "Grab('Invotis Wall Alu Numbers Clock')",
+            "Move_to('Dressing table bench Legs_bedroom')",
+            "Release('Invotis Wall Alu Numbers Clock')"
+        ],
+        [
+            "Move_to('Mixed numbers Wall Clock Red_living room')",
+            "Grab('Mixed numbers Wall Clock Red')",
+            "Move_to('Mixed up side table_living room')",
+            "Release('Mixed numbers Wall Clock Red')"
+        ]
+    ],
+    "Scene": "102344250",
+    "Target": [
+        [
+            [
+                "770311f153df8ccc86d08f4f24749227a91e153f",
+                "Invotis Wall Alu Numbers Clock",
+                "living room"
+            ],
+            [
+                "01e5e60f2cb12562e4e8f7bf78beb2832a5638e9",
+                "Dressing table bench Legs",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "573c6477f0f3067edcd1e9fb52c558a4291f0c5c",
+                "Mixed numbers Wall Clock Red",
+                "living room"
+            ],
+            [
+                "9bf6552ba4cba1cdb6819e60bc3f416807a4eeec",
+                "Mixed up side table",
+                "living room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the Blanket from the bedroom or living room and move it to the Provence table in the living room or dining room",
+        "Take the rolled-up towel from the bathroom and place it on the farmhouse table in the living and dining room area"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Blanket_bedroom,living room')",
+            "Grab('Blanket')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('Blanket')"
+        ],
+        [
+            "Move_to('Rolled Up Towel_bathroom')",
+            "Grab('Rolled Up Towel')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('Rolled Up Towel')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "da1cddb10d235eb771f138a5d173da551406c125",
+                "Blanket",
+                "bedroom,living room"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "6ece1a15f0f508aab2371808d58eefa8420cf725",
+                "Rolled Up Towel",
+                "bathroom"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

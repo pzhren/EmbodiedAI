@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Can you please take the small nesting table from the living room and place it beside the large terracotta planter in the same room",
+    "Subtask list": [
+        "Move_to('Radleigh Small Nesting Table_living room')",
+        "Grab('Radleigh Small Nesting Table')",
+        "Move_to('Jara Terracotta Planter with Stand, Large_living room')",
+        "Release('Radleigh Small Nesting Table')"
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            "1a4841c613e9f5c2ba492107fb6aff4692c564a4",
+            "Radleigh Small Nesting Table",
+            "living room"
+        ],
+        [
+            "0e3f31820718c4195b9884dbdf9015035f66dae0",
+            "Jara Terracotta Planter with Stand, Large",
+            "living room"
+        ]
+    ]
+}

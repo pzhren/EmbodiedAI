@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the espresso maker from the kitchen to the coffee table in the living room",
+        "Please move the small round mirror from the bathroom to the Grand Sofa in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('DeLonghi Icona Pump Espresso Maker Blue_kitchen')",
+            "Grab('DeLonghi Icona Pump Espresso Maker Blue')",
+            "Move_to('Magnolia Home Strut Coffee Table By Joanna Gaines, Natural_living room')",
+            "Release('DeLonghi Icona Pump Espresso Maker Blue')"
+        ],
+        [
+            "Move_to('Harlesden Round 610mm Mirror, Gold_bathroom')",
+            "Grab('Harlesden Round 610mm Mirror, Gold')",
+            "Move_to('Bailey GrandSofa, Lustre Cappuccino_living room')",
+            "Release('Harlesden Round 610mm Mirror, Gold')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "335fc5d250b5f7e424fcb25a26bf001f738ca364",
+                "DeLonghi Icona Pump Espresso Maker Blue",
+                "kitchen"
+            ],
+            [
+                "ce9c5810fc2943f1487a73b60e163d1d56f7a5c8",
+                "Magnolia Home Strut Coffee Table By Joanna Gaines, Natural",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "49ac5c85bea178f60e16380f334e6b36cd113985",
+                "Harlesden Round 610mm Mirror, Gold",
+                "bathroom"
+            ],
+            [
+                "efcf1f36229805bf808017e52e0aacdb4d731a4a",
+                "Bailey GrandSofa, Lustre Cappuccino",
+                "living room"
+            ]
+        ]
+    ]
+}

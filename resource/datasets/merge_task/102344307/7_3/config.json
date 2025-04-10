@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please fetch the Emerson II LAF Loveseat from the living room and place it beside the Seba bed in the bedroom",
+        "Please take the dishwasher from the kitchen and place it near the Montauk Dresser which is located between the bedroom and living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Emerson II LAF Loveseat_living room')",
+            "Grab('Emerson II LAF Loveseat')",
+            "Move_to('Seba bed_bedroom')",
+            "Release('Emerson II LAF Loveseat')"
+        ],
+        [
+            "Move_to('Dishwasher_kitchen')",
+            "Grab('Dishwasher')",
+            "Move_to('Montauk Dresser_bedroom,living room')",
+            "Release('Dishwasher')"
+        ]
+    ],
+    "Scene": "102344307",
+    "Target": [
+        [
+            [
+                "7165e9d457a1fb2a4fa6d827d5ef9f5a90a6408e",
+                "Emerson II LAF Loveseat",
+                "living room"
+            ],
+            [
+                "e115319d6ac365ebdbab83456ed3439a9fdb1692",
+                "Seba bed",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "43b7ea81b8b10840845f7d2551599c5a6d96e3d4",
+                "Dishwasher",
+                "kitchen"
+            ],
+            [
+                "2c69bff136e6399bfc19cfdd8af1d9e5bcbc7843",
+                "Montauk Dresser",
+                "bedroom,living room"
+            ]
+        ]
+    ]
+}

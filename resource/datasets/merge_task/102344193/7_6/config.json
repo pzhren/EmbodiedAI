@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the knife set from the kitchen to the industrial coffee table in the living room",
+        "take a knife set from the kitchen to the coffee table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Graphix 15 Piece Knife Set_kitchen')",
+            "Grab('Graphix 15 Piece Knife Set')",
+            "Move_to('Metal And Wood Industrial Coffee Table_living room')",
+            "Release('Graphix 15 Piece Knife Set')"
+        ],
+        [
+            "Move_to('Graphix 15 Piece Knife Set_kitchen')",
+            "Grab('Graphix 15 Piece Knife Set')",
+            "Move_to('Metal And Wood Industrial Coffee Table_living room')",
+            "Release('Graphix 15 Piece Knife Set')"
+        ]
+    ],
+    "Scene": "102344193",
+    "Target": [
+        [
+            [
+                "b5d1b894bdc9d22be934ea4efeae007d9048add2",
+                "Graphix 15 Piece Knife Set",
+                "kitchen"
+            ],
+            [
+                "752f77d7c0349b81c201fcc71650970170382456",
+                "Metal And Wood Industrial Coffee Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "b5d1b894bdc9d22be934ea4efeae007d9048add2",
+                "Graphix 15 Piece Knife Set",
+                "kitchen"
+            ],
+            [
+                "752f77d7c0349b81c201fcc71650970170382456",
+                "Metal And Wood Industrial Coffee Table",
+                "living room"
+            ]
+        ]
+    ]
+}

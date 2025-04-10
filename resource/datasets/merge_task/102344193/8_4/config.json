@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the potted faux eucalyptus from the living room and place it on the industrial coffee table in the same room",
+        "Could you please pick up the potted faux succulents from the living room and place it on the dining room table"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Potted Faux Eucalyptus 8\"_living room')",
+            "Grab('Potted Faux Eucalyptus 8\"')",
+            "Move_to('Metal And Wood Industrial Coffee Table_living room')",
+            "Release('Potted Faux Eucalyptus 8\"')"
+        ],
+        [
+            "Move_to('Potted Faux Succulent White Pot 14\"_living room')",
+            "Grab('Potted Faux Succulent White Pot 14\"')",
+            "Move_to('Custom Oak Large Table w/Miller Leg_living room,dining room')",
+            "Release('Potted Faux Succulent White Pot 14\"')"
+        ]
+    ],
+    "Scene": "102344193",
+    "Target": [
+        [
+            [
+                "ee7b9e4cf5c533737ebd058f7950ca632db5bc62",
+                "Potted Faux Eucalyptus 8\"",
+                "living room"
+            ],
+            [
+                "752f77d7c0349b81c201fcc71650970170382456",
+                "Metal And Wood Industrial Coffee Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "3c163391afeb4130eadacb6ef9b6e5930329a32b",
+                "Potted Faux Succulent White Pot 14\"",
+                "living room"
+            ],
+            [
+                "468c7b290805e59fc57bfd0792437889e4fa4403",
+                "Custom Oak Large Table w/Miller Leg",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the bike in the kids room and place it in the living room near the sofa",
+        "Take the Jumbo Toy Bin in the kitchen and place it next to the vanity mirror in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Hot Wheels 14'' Bike_kids room')",
+            "Grab('Hot Wheels 14'' Bike')",
+            "Move_to('Brooke 3-cushion sofa_living room')",
+            "Release('Hot Wheels 14'' Bike')"
+        ],
+        [
+            "Move_to('Jumbo Toy Bin_kitchen')",
+            "Grab('Jumbo Toy Bin')",
+            "Move_to('Celestia Vanity Mirror_bedroom')",
+            "Release('Jumbo Toy Bin')"
+        ]
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            [
+                "de69a7b4e62b31f695624352494a14893148eae3",
+                "Hot Wheels 14'' Bike",
+                "kids room"
+            ],
+            [
+                "7b1858c043bad608f981a6b33cff7db51b80b420",
+                "Brooke 3-cushion sofa",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "3157a2905050ec0ecbe06723d968e1743c38e11d",
+                "Jumbo Toy Bin",
+                "kitchen"
+            ],
+            [
+                "be29027141222beb3ac121e48c131189e1b8cd0f",
+                "Celestia Vanity Mirror",
+                "bedroom"
+            ]
+        ]
+    ]
+}

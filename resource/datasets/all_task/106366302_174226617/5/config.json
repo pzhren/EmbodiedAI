@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the indoor plant from the living room to the dresser in the bedroom",
+    "Subtask list": [
+        "Move_to('Indoor Plant_living room')",
+        "Grab('Indoor Plant')",
+        "Move_to('Elden Dresser_bedroom,living room')",
+        "Release('Indoor Plant')"
+    ],
+    "Scene": "106366302_174226617",
+    "Target": [
+        [
+            "deae2fd69a0752bc5da79083dad3a4b9f7317da6",
+            "Indoor Plant",
+            "living room"
+        ],
+        [
+            "1f48206dca3babea534ced6c1b440a24ed1d8bc1",
+            "Elden Dresser",
+            "bedroom,living room"
+        ]
+    ]
+}

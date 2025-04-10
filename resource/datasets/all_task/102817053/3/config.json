@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Pick up the coffee maker from the kitchen and place it on the accent chair in the living room",
+    "Subtask list": [
+        "Move_to('Russell Hobbs Coffee Maker, 12693_kitchen')",
+        "Grab('Russell Hobbs Coffee Maker, 12693')",
+        "Move_to('Marina Accent Chair, Light Grey_living room')",
+        "Release('Russell Hobbs Coffee Maker, 12693')"
+    ],
+    "Scene": "102817053",
+    "Target": [
+        [
+            "4b88358f9e5e92dd9664a4a0719afc269819df0e",
+            "Russell Hobbs Coffee Maker, 12693",
+            "kitchen"
+        ],
+        [
+            "843c70ec93a45b19af1fa6981ea23a6f1a66cad6",
+            "Marina Accent Chair, Light Grey",
+            "living room"
+        ]
+    ]
+}

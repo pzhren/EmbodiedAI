@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you please pick up the potted faux succulents from the living room and place it on the dining room table",
+    "Subtask list": [
+        "Move_to('Potted Faux Succulent White Pot 14\"_living room')",
+        "Grab('Potted Faux Succulent White Pot 14\"')",
+        "Move_to('Custom Oak Large Table w/Miller Leg_living room,dining room')",
+        "Release('Potted Faux Succulent White Pot 14\"')"
+    ],
+    "Scene": "102344193",
+    "Target": [
+        [
+            "3c163391afeb4130eadacb6ef9b6e5930329a32b",
+            "Potted Faux Succulent White Pot 14\"",
+            "living room"
+        ],
+        [
+            "468c7b290805e59fc57bfd0792437889e4fa4403",
+            "Custom Oak Large Table w/Miller Leg",
+            "living room,dining room"
+        ]
+    ]
+}

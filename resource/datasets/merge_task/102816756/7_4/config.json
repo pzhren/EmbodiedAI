@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Transfer the tissue box cover from the combined bedroom and living room area to the accent table in the living room",
+        "Take the Frosted pen pot from the office and place it on the Dining Table in the living room, dining room area"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Cleo Rectangle Tissue Box Cover_bedroom,living room')",
+            "Grab('Cleo Rectangle Tissue Box Cover')",
+            "Move_to('Zee Lacquered Accent Table_living room')",
+            "Release('Cleo Rectangle Tissue Box Cover')"
+        ],
+        [
+            "Move_to('Frosted pen pot_office')",
+            "Grab('Frosted pen pot')",
+            "Move_to('Palerma Extendable Dining Table, White_living room,dining room')",
+            "Release('Palerma Extendable Dining Table, White')"
+        ]
+    ],
+    "Scene": "102816756",
+    "Target": [
+        [
+            [
+                "efc0201c33f516285eea7f5ad4516fed892a4ba6",
+                "Cleo Rectangle Tissue Box Cover",
+                "bedroom,living room"
+            ],
+            [
+                "7dd70791b3608b7a7e5f24b451cf7b11cdadcba5",
+                "Zee Lacquered Accent Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "24dcf1f353b54d43bf12bcf17266f2685091318d",
+                "Frosted pen pot",
+                "office"
+            ],
+            [
+                "786845ecaee2a43d135f922f4d617da02c8543b6",
+                "Palerma Extendable Dining Table, White",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

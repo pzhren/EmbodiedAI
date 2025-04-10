@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the Cactus Plant in the living room and move it to the Rose bowl in the kitchen",
+    "Subtask list": [
+        "Move_to('Cactus Plant in Round Pot_living room')",
+        "Grab('Cactus Plant in Round Pot')",
+        "Move_to('Rose bowl_kitchen,dining room')",
+        "Release('Cactus Plant in Round Pot')"
+    ],
+    "Scene": "106366386_174226770",
+    "Target": [
+        [
+            "c461ecb62efa4ef74eb34fb8152acf8cc8ac427d",
+            "Cactus Plant in Round Pot",
+            "living room"
+        ],
+        [
+            "095cf56558ca75b0ab0a4037ce7c8f870085aff9",
+            "Rose bowl",
+            "kitchen,dining room"
+        ]
+    ]
+}

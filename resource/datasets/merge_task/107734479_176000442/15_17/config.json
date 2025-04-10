@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the small mirror in the bedroom and place it next to the laundry bin in the bathroom",
+        "Pick up the Typhoon Capsule Kitchen Scale from the kitchen and place it on the Magnolia Home Strut Coffee Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('MIRROR-HANGING SHIELD SMALL 25X29_bedroom')",
+            "Grab('MIRROR-HANGING SHIELD SMALL 25X29')",
+            "Move_to('The Water Hyacinth Laundry Bin_bathroom')",
+            "Release('The Water Hyacinth Laundry Bin')"
+        ],
+        [
+            "Move_to('Typhoon Capsule Kitchen Scale_kitchen')",
+            "Grab('Typhoon Capsule Kitchen Scale')",
+            "Move_to('Magnolia Home Strut Coffee Table By Joanna Gaines, Natural_living room')",
+            "Release('Typhoon Capsule Kitchen Scale')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "ff7366f18451584f3e0f84494b90dc32e97cd9da",
+                "MIRROR-HANGING SHIELD SMALL 25X29",
+                "bedroom"
+            ],
+            [
+                "df3ba3caf8c1321195b13e23ee8642b09d1a9323",
+                "The Water Hyacinth Laundry Bin",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "befcc872791099a79d7b2a85723e2e2cea2d48cc",
+                "Typhoon Capsule Kitchen Scale",
+                "kitchen"
+            ],
+            [
+                "ce9c5810fc2943f1487a73b60e163d1d56f7a5c8",
+                "Magnolia Home Strut Coffee Table By Joanna Gaines, Natural",
+                "living room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the plush bathmat in the bathroom and place it next to the queen platform bed in the bedroom",
+        "Pick up the toilet paper holder from the bathroom and place it on the nightstand in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('DWR Plush Bathmat, Grey_bathroom')",
+            "Grab('DWR Plush Bathmat, Grey')",
+            "Move_to('Dylan II Queen Platform Bed_bedroom')",
+            "Release('DWR Plush Bathmat, Grey')"
+        ],
+        [
+            "Move_to('Vipp Toilet Paper Holder_bathroom')",
+            "Grab('Vipp Toilet Paper Holder')",
+            "Move_to('Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent_bedroom')",
+            "Release('Vipp Toilet Paper Holder')"
+        ]
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            [
+                "bbdc1b4f72d1347d144887c3b5d4d614737d3737",
+                "DWR Plush Bathmat, Grey",
+                "bathroom"
+            ],
+            [
+                "bf0d188b37ed02e5567e8651df3425c57fbff7bd",
+                "Dylan II Queen Platform Bed",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "797bcf6deace50c829a3f341f7ad35bbbda8080f",
+                "Vipp Toilet Paper Holder",
+                "bathroom"
+            ],
+            [
+                "2b9af0f16b5f1e6b7621bfa05afb45b3581e0736",
+                "Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent",
+                "bedroom"
+            ]
+        ]
+    ]
+}

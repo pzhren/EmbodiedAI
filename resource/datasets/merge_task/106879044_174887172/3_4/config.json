@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "take the Premium Cashmere Throw from the bedroom to the Mid Century Modern End Table in the living room",
+        "Transfer the blanket from the shared space of the bedroom and living room to the Morvah Wall Hanging Planter in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Premium Cashmere Throw, Oyster_bedroom,living room')",
+            "Grab('Premium Cashmere Throw, Oyster')",
+            "Move_to('Mid Century Modern End Table_living room')",
+            "Release('Premium Cashmere Throw, Oyster')"
+        ],
+        [
+            "Move_to('Blanket_bedroom,living room')",
+            "Grab('Blanket')",
+            "Move_to('Morvah Wall Hanging Planter_living room')",
+            "Release('Blanket')"
+        ]
+    ],
+    "Scene": "106879044_174887172",
+    "Target": [
+        [
+            [
+                "e7c0a88838318f18b932d3d165f939ad19a2d8cc",
+                "Premium Cashmere Throw, Oyster",
+                "bedroom,living room"
+            ],
+            [
+                "2b39e8c2237ea1f0ba7417b2ec96d2aca51ee17b",
+                "Mid Century Modern End Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "1bc7b29ad3d8177e70e5e1e9802f361a19dc673f",
+                "Blanket",
+                "bedroom,living room"
+            ],
+            [
+                "5086845254b801fe41676cefb9673f7fc3ba8f04",
+                "Morvah Wall Hanging Planter",
+                "living room"
+            ]
+        ]
+    ]
+}

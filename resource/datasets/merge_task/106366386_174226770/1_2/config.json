@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Red Tulip Water Garden in the living room and place it on the Palais Coffee Table By Nate Berkus and Jeremiah Brent in the living room",
+        "take the Xbox from the living room and place it on the small nesting table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Red Tulip Water Garden_living room')",
+            "Grab('Red Tulip Water Garden')",
+            "Move_to('Palais Coffee Table By Nate Berkus and Jeremiah Brent_living room')",
+            "Release('Red Tulip Water Garden')"
+        ],
+        [
+            "Move_to('XBOX One_living room')",
+            "Grab('XBOX One')",
+            "Move_to('Radleigh Small Nesting Table_living room')",
+            "Release('Radleigh Small Nesting Table')"
+        ]
+    ],
+    "Scene": "106366386_174226770",
+    "Target": [
+        [
+            [
+                "8f9440cad20bac4f3a17cef6a3b34879c75c26d5",
+                "Red Tulip Water Garden",
+                "living room"
+            ],
+            [
+                "138009a6121d7ebb8c3b78e3a411b4e33c388efb",
+                "Palais Coffee Table By Nate Berkus and Jeremiah Brent",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "de016d31ad24004bf75eeb8c0107e966c626133f",
+                "XBOX One",
+                "living room"
+            ],
+            [
+                "1a4841c613e9f5c2ba492107fb6aff4692c564a4",
+                "Radleigh Small Nesting Table",
+                "living room"
+            ]
+        ]
+    ]
+}

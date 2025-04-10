@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "please pick up the storage stool from the bedroom and place it on the console table in the living room",
+        "Transfer the little nightstand from the bedroom to the coffee table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Melrose Storage Stool_bedroom')",
+            "Grab('Melrose Storage Stool')",
+            "Move_to('Lexington Console Table_living room')",
+            "Release('Melrose Storage Stool')"
+        ],
+        [
+            "Move_to('Harrison Nightstand, Charcoal_bedroom')",
+            "Grab('Harrison Nightstand, Charcoal')",
+            "Move_to('Coffee table_living room')",
+            "Release('Harrison Nightstand, Charcoal')"
+        ]
+    ],
+    "Scene": "105515505_173104584",
+    "Target": [
+        [
+            [
+                "aa3980e5647496394070f4591cff9cd143a067c0",
+                "Melrose Storage Stool",
+                "bedroom"
+            ],
+            [
+                "44689bfbf34013ad3ff7f8b05eb2cede29ff9f4e",
+                "Lexington Console Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "16a4e41e6085b65ee5f86acabc8c7185d84c4749",
+                "Harrison Nightstand, Charcoal",
+                "bedroom"
+            ],
+            [
+                "1663b946dd2c160317930f5b2eb724549409e6b0",
+                "Coffee table",
+                "living room"
+            ]
+        ]
+    ]
+}

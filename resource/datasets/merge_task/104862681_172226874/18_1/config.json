@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the plant from the outdoor area and place it on the coffee table in the living room",
+        "Would you please take the coffee table from the living room and place it in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('plant_outdoor,garden')",
+            "Grab('plant')",
+            "Move_to('Blaine Coffee Table_living room')",
+            "Release('plant')"
+        ],
+        [
+            "Move_to('Blaine Coffee Table_living room')",
+            "Grab('Blaine Coffee Table')",
+            "Move_to('Foundry Writing Desk_office')",
+            "Release('Foundry Writing Desk')"
+        ]
+    ],
+    "Scene": "104862681_172226874",
+    "Target": [
+        [
+            [
+                "34170a3abede075d1e15942197394d95ee063bf7",
+                "plant",
+                "outdoor,garden"
+            ],
+            [
+                "df21f89b4559be781d3f70f41832c90ed035d0ef",
+                "Blaine Coffee Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "df21f89b4559be781d3f70f41832c90ed035d0ef",
+                "Blaine Coffee Table",
+                "living room"
+            ],
+            [
+                "cd88a7acd6170502cae92b5054f0ea1327376a03",
+                "Foundry Writing Desk",
+                "office"
+            ]
+        ]
+    ]
+}

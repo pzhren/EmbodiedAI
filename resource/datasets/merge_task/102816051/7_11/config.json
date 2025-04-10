@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the plush bathmat from the bathroom and place it on the nightstand in the bedroom",
+        "Move the toddler bed from the kids room to the nightstand in bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('DWR Plush Bathmat, Grey_bathroom')",
+            "Grab('DWR Plush Bathmat, Grey')",
+            "Move_to('Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent_bedroom')",
+            "Release('DWR Plush Bathmat, Grey')"
+        ],
+        [
+            "Move_to('Digger Toddler Bed_kids room')",
+            "Grab('Digger Toddler Bed')",
+            "Move_to('Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent_bedroom')",
+            "Release('Digger Toddler Bed')"
+        ]
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            [
+                "bbdc1b4f72d1347d144887c3b5d4d614737d3737",
+                "DWR Plush Bathmat, Grey",
+                "bathroom"
+            ],
+            [
+                "2b9af0f16b5f1e6b7621bfa05afb45b3581e0736",
+                "Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "709510d6568e1057c9fd62d8cf9ee6c34f72df46",
+                "Digger Toddler Bed",
+                "kids room"
+            ],
+            [
+                "2b9af0f16b5f1e6b7621bfa05afb45b3581e0736",
+                "Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent",
+                "bedroom"
+            ]
+        ]
+    ]
+}

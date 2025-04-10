@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the Gold pillar candle from the living room and place it on the kitchen island",
+        "Take the Gwen mirror from the bedroom and place it on the CB Desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Gold pillar candle_living room')",
+            "Grab('Gold pillar candle')",
+            "Move_to('Kitchen island_kitchen')",
+            "Release('Gold pillar candle')"
+        ],
+        [
+            "Move_to('Gwennie Mirror_bedroom')",
+            "Grab('Gwennie Mirror')",
+            "Move_to('CB Desk_office')",
+            "Release('Gwennie Mirror')"
+        ]
+    ],
+    "Scene": "104348028_171512877",
+    "Target": [
+        [
+            [
+                "0e48fad4f2a0e48200aeef0129e6e588b9400cc7",
+                "Gold pillar candle",
+                "living room"
+            ],
+            [
+                "af102d5ce3df9cc58b991eb618a86f66c5901efe",
+                "Kitchen island",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "afe773ff0423115a55e49defb4c62bf5e20cf172",
+                "Gwennie Mirror",
+                "bedroom"
+            ],
+            [
+                "6b63013dfa25cabaa2ef3d0830c19c823e6b1f7d",
+                "CB Desk",
+                "office"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Can you move one of those French storage boxes from the space between the bedroom and the living room to that chic coffee table in the living room",
+        "Could you please take the Springfield Night Stand from the bedroom and place it on the Allen Corner Desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('French Storage Boxes Set of 3_bedroom,living room')",
+            "Grab('French Storage Boxes Set of 3')",
+            "Move_to('Mid Century Pop-Up Storage Coffee Table, Marble/Walnut by WestElm_living room')",
+            "Release('French Storage Boxes Set of 3')"
+        ],
+        [
+            "Move_to('Springfield Night Stand-L.Oak/A.Silver_bedroom')",
+            "Grab('Springfield Night Stand-L.Oak/A.Silver')",
+            "Move_to('Allen Corner Desk_office')",
+            "Release('Springfield Night Stand-L.Oak/A.Silver')"
+        ]
+    ],
+    "Scene": "105515184_173104128",
+    "Target": [
+        [
+            [
+                "e7237bb3b460231cda20b4c93e1fdb65de9eac41",
+                "French Storage Boxes Set of 3",
+                "bedroom,living room"
+            ],
+            [
+                "f8a1e9ad71428615e74490c8fe10d309b527ee55",
+                "Mid Century Pop-Up Storage Coffee Table, Marble/Walnut by WestElm",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "d161f89dbda03dc3ff807fd144e448fa6bbc32ca",
+                "Springfield Night Stand-L.Oak/A.Silver",
+                "bedroom"
+            ],
+            [
+                "7be120511a688df6f496e04384b9ede07f151b8d",
+                "Allen Corner Desk",
+                "office"
+            ]
+        ]
+    ]
+}

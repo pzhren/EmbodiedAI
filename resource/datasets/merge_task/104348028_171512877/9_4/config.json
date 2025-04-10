@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the rolled up towel from the bathroom and place it on the kitchen island in the kitchen",
+        "Could you take the SERVE oil and vinegar set from the kitchen and move it to the TILT DINING CHAIR in the dining room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Rolled Up Towel_bathroom')",
+            "Grab('Rolled Up Towel')",
+            "Move_to('Kitchen island_kitchen')",
+            "Release('Rolled Up Towel')"
+        ],
+        [
+            "Move_to('SERVE oil and vinegar set_kitchen')",
+            "Grab('SERVE oil and vinegar set')",
+            "Move_to('TILT DINING CHAIR_dining room')",
+            "Release('SERVE oil and vinegar set')"
+        ]
+    ],
+    "Scene": "104348028_171512877",
+    "Target": [
+        [
+            [
+                "6ece1a15f0f508aab2371808d58eefa8420cf725",
+                "Rolled Up Towel",
+                "bathroom"
+            ],
+            [
+                "af102d5ce3df9cc58b991eb618a86f66c5901efe",
+                "Kitchen island",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "345d3d2b0045fec71c7d31be7836b8001a56edf1",
+                "SERVE oil and vinegar set",
+                "kitchen"
+            ],
+            [
+                "79ad3c2f9e40b87e3a22d82bec28cbfb4f0ab627",
+                "TILT DINING CHAIR",
+                "dining room"
+            ]
+        ]
+    ]
+}

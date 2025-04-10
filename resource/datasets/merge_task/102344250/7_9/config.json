@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "take the plant in the living room to the washing machine in the laundry",
+        "Please take the small plant from the living room and place it on the dressing table in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('plant_living room')",
+            "Grab('plant')",
+            "Move_to('Washing Machine_laundry')",
+            "Release('plant')"
+        ],
+        [
+            "Move_to('plant_living room')",
+            "Grab('plant')",
+            "Move_to('Dressing table bench Legs_bedroom')",
+            "Release('Dressing table bench Legs')"
+        ]
+    ],
+    "Scene": "102344250",
+    "Target": [
+        [
+            [
+                "cb47ce31bd4309c8b3c99a1d53db43f7046cb489",
+                "plant",
+                "living room"
+            ],
+            [
+                "cfcb3d204d92b039136f28eadba5a7d408edfbae",
+                "Washing Machine",
+                "laundry"
+            ]
+        ],
+        [
+            [
+                "cb47ce31bd4309c8b3c99a1d53db43f7046cb489",
+                "plant",
+                "living room"
+            ],
+            [
+                "01e5e60f2cb12562e4e8f7bf78beb2832a5638e9",
+                "Dressing table bench Legs",
+                "bedroom"
+            ]
+        ]
+    ]
+}

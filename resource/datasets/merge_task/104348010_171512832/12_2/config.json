@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Soap from the bathroom and place it on the Tuuci Ocean Master Hexagon Shade, Aluma-Teak, Natural in the patio",
+        "Please take the rolled-up towel from the bathroom and place it on the Utopia sofa in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Soap_bathroom')",
+            "Grab('Soap')",
+            "Move_to('Tuuci Ocean Master Hexagon Shade, Aluma-Teak, Natural_patio')",
+            "Release('Soap')"
+        ],
+        [
+            "Move_to('Rolled Up Towel_bathroom')",
+            "Grab('Rolled Up Towel')",
+            "Move_to('Utopia Sofa_living room')",
+            "Release('Rolled Up Towel')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "6b21bd924df8f21c02fb8bb569de93bd887d8f1e",
+                "Soap",
+                "bathroom"
+            ],
+            [
+                "00b94ee7f2a013ffb7b681d19a5769b63c1b8357",
+                "Tuuci Ocean Master Hexagon Shade, Aluma-Teak, Natural",
+                "patio"
+            ]
+        ],
+        [
+            [
+                "6ece1a15f0f508aab2371808d58eefa8420cf725",
+                "Rolled Up Towel",
+                "bathroom"
+            ],
+            [
+                "d08d31c962d7e9fe620baf6562354b192c862ebe",
+                "Utopia Sofa",
+                "living room"
+            ]
+        ]
+    ]
+}

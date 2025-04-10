@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the black and gold vanity from the shared bedroom-living room space and place it on the table in the living room",
+    "Subtask list": [
+        "Move_to('Black + Gold Vanity_bedroom,living room')",
+        "Grab('Black + Gold Vanity')",
+        "Move_to('Rowan Sofa Table_living room')",
+        "Release('Black + Gold Vanity')"
+    ],
+    "Scene": "108294573_176710113",
+    "Target": [
+        [
+            "467413f215daba3f0a88b154b17ccd1fb7ecb48d",
+            "Black + Gold Vanity",
+            "bedroom,living room"
+        ],
+        [
+            "4a43310877336ce42f4e18c88b4effb3e7a5b7f4",
+            "Rowan Sofa Table",
+            "living room"
+        ]
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you please take the Uno toilet paper from the bathroom and place it on the Kansas console table in the living room",
+    "Subtask list": [
+        "Move_to('Uno - Toilet Paper_bathroom')",
+        "Grab('Uno - Toilet Paper')",
+        "Move_to('Kansas console table_living room')",
+        "Release('Uno - Toilet Paper')"
+    ],
+    "Scene": "102816216",
+    "Target": [
+        [
+            "99665804218804022bc87b9e8edf35221a0bb8ee",
+            "Uno - Toilet Paper",
+            "bathroom"
+        ],
+        [
+            "bdbc554e98a2ae28fd4fb5e3cffce373c2d20628",
+            "Kansas console table",
+            "living room"
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "take the FICUS plant in the living room to the LOMMARP cabinet in the living room",
+        "Pick up the Blue Hydrangea Water Garden from the living room and place it on the Ashby Striped Accent Chair, Taupe within the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('FICUS MICROCARPA GINSENG_living room')",
+            "Grab('FICUS MICROCARPA GINSENG')",
+            "Move_to('LOMMARP Cabinet, Dark Blue-Green_living room')",
+            "Release('LOMMARP Cabinet, Dark Blue-Green')"
+        ],
+        [
+            "Move_to('Blue Hydrangea Water Garden_living room')",
+            "Grab('Blue Hydrangea Water Garden')",
+            "Move_to('Ashby Striped Accent Chair, Taupe_living room')",
+            "Release('Blue Hydrangea Water Garden')"
+        ]
+    ],
+    "Scene": "102816852",
+    "Target": [
+        [
+            [
+                "1943726018bc88e96a8fa16fd6f8d88523d75abc",
+                "FICUS MICROCARPA GINSENG",
+                "living room"
+            ],
+            [
+                "b87936a4a52e2a0b805369a0763a536c719ca7d6",
+                "LOMMARP Cabinet, Dark Blue-Green",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "51cd1976549241666bcf3cc27e6c4c580352361b",
+                "Blue Hydrangea Water Garden",
+                "living room"
+            ],
+            [
+                "13c6bb06c803e021b8fd9b6244a065b795cd05b5",
+                "Ashby Striped Accent Chair, Taupe",
+                "living room"
+            ]
+        ]
+    ]
+}

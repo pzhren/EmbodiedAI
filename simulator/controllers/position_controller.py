@@ -78,7 +78,7 @@ class PositionController(BaseController):
         Returns:
             tuple: (position, roll, pitch, yaw)
         """
-        position, quaternion  = robot.get_world_pose()
+        position, quaternion  = robot.get_world_pose(), robot.get_world_orientation()
         roll, pitch, yaw = euler_from_quaternion(quaternion)
         return position, roll, pitch, yaw 
     

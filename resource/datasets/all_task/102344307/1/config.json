@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you please take the soap dish from the bathroom and place it on the kitchen island in the kitchen",
+    "Subtask list": [
+        "Move_to('Chancery Soap Dish, Rose Gold_bathroom')",
+        "Grab('Chancery Soap Dish, Rose Gold')",
+        "Move_to('YOO OH Kitchen Island_kitchen')",
+        "Release('Chancery Soap Dish, Rose Gold')"
+    ],
+    "Scene": "102344307",
+    "Target": [
+        [
+            "84092984ce8a7cd7ad7aec05eb95d2612d3cd209",
+            "Chancery Soap Dish, Rose Gold",
+            "bathroom"
+        ],
+        [
+            "27903d5a77d900067dd9031caf2f229776d800d4",
+            "YOO OH Kitchen Island",
+            "kitchen"
+        ]
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please move the Interior Plant from the living room to the Rama Coffee Table in the same living room",
+    "Subtask list": [
+        "Move_to('Interior Plant_living room')",
+        "Grab('Interior Plant')",
+        "Move_to('Rama Coffee Table_living room')",
+        "Release('Interior Plant')"
+    ],
+    "Scene": "102815859",
+    "Target": [
+        [
+            "adc3aaea6b4bf09f853a3844655b98af8c6af2a6",
+            "Interior Plant",
+            "living room"
+        ],
+        [
+            "d34c43bbc021b075835eb995bd142fb6fb18930d",
+            "Rama Coffee Table",
+            "living room"
+        ]
+    ]
+}

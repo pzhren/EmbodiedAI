@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the Scalloped Mirror from the bedroom to the Girard Coffee Table in the living room",
+        "Please take the bathrobe from the bathroom and place it by the bed in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Scalloped Mirror_bedroom')",
+            "Grab('Scalloped Mirror')",
+            "Move_to('Girard Coffee Table_living room')",
+            "Release('Scalloped Mirror')"
+        ],
+        [
+            "Move_to('Bath robe_bathroom')",
+            "Grab('Bath robe')",
+            "Move_to('Pearson Queen Gallery Cane Bed, Basa Natural_bedroom')",
+            "Release('Bath robe')"
+        ]
+    ],
+    "Scene": "107734254_176000121",
+    "Target": [
+        [
+            [
+                "27270bd8cd43d174767c0348a0bcb826ed3e97a1",
+                "Scalloped Mirror",
+                "bedroom"
+            ],
+            [
+                "016556105b34152b96d7323eed7878bb8c142fbc",
+                "Girard Coffee Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "973c8db16abb188caa2868a16141b643684e3881",
+                "Bath robe",
+                "bathroom"
+            ],
+            [
+                "744366310169ddec779b5d1b2989d3a1b9f28205",
+                "Pearson Queen Gallery Cane Bed, Basa Natural",
+                "bedroom"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the red rose pot in the living room and place it on the large tower laundry hamper in the bathroom",
+        "please take the decorative hand-blown glass vase from the living room and place it on the console table there"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Rose in Pot, Red_living room')",
+            "Grab('Rose in Pot, Red')",
+            "Move_to('Large Tower Laundry Hamper, Black_bathroom')",
+            "Release('Rose in Pot, Red')"
+        ],
+        [
+            "Move_to('HANDBLOWN CARVED GLASS VASE_living room')",
+            "Grab('HANDBLOWN CARVED GLASS VASE')",
+            "Move_to('Blaine Console Table_living room')",
+            "Release('Blaine Console Table')"
+        ]
+    ],
+    "Scene": "106366386_174226770",
+    "Target": [
+        [
+            [
+                "c530e9e489c0e3f7859d1d34325faa69a0795289",
+                "Rose in Pot, Red",
+                "living room"
+            ],
+            [
+                "c43cfcfcf9b8cb403e4145b10d6e2377abb39822",
+                "Large Tower Laundry Hamper, Black",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "db8288398b2513371f31aff4e2e6271dd08476af",
+                "HANDBLOWN CARVED GLASS VASE",
+                "living room"
+            ],
+            [
+                "c39181c455b8df6ac1b8112a8d2d7bc4a493d8e7",
+                "Blaine Console Table",
+                "living room"
+            ]
+        ]
+    ]
+}

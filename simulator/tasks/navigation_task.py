@@ -21,7 +21,8 @@ class NavigateTask(BaseTask):
         super().__init__(config)
         # 获取任务的config, 任务的config是一个字典，包含了任务的所有信息, 例如任务的名字，任务的目标物体的名字，任务的目标物体的ID等
         self.task_config = config
-        
+        self.task_instruction = config.task_instruction
+        # self.shorest_path = config.shorest_path
         # 导航任务独有属性
         self.start_points = config.start_points
         self.goal_points = config.goal_points
@@ -31,7 +32,10 @@ class NavigateTask(BaseTask):
         self.object_ids = extract_target_ids(config.task_path)
         self.map_path = config.map_path
         self.get_map(self.map_path)
-    
+        self.goal_image_path = config.goal_image_path
+        self.stage = [0 for _ in range(len(self.robots))]
+        self.robot_path_length = [0 for _ in range(len(self.robots))]
+        self.optimal_length = [0 for _ in range(len(self.robots))]
 
     def get_task_type(self):
         '''
@@ -54,7 +58,7 @@ class NavigateTask(BaseTask):
         return self.task_config["obj_name"]
     
     
-    def get_task_contnet(self):
+    def get_task_content(self):
         '''
         Get the content of the task, e.g. "pick up", "put down", "navigate to"
         '''
@@ -68,11 +72,27 @@ class NavigateTask(BaseTask):
         return self.task_config["robot_name"]
     
     def get_observations(self):
-        obs = []
+        obs = {}
         for robot in self.robots:
             for sensor in robot.sensors:
-                obs.append(sensor.data)
+                obs.update({sensor.name:sensor.data})
         return obs
+
+    def get_shortest_path(self, start_point, goal_point):
+        """
+        goal_point, start_point is 2D pos
+        """
+        goal_point = self.navigator.planner.real2map(goal_point)
+        goal_point = self.navigator.planner.map2real(goal_point)
+        path, map_path = self.navigator.navigate(goal_point, start_point)
+        return path
+
+    def get_scene_graph(self, robot_id):
+        """
+        graph format:
+
+        """
+        robot = self.robots[robot_id]
 
     def step(self):
         """
@@ -80,10 +100,11 @@ class NavigateTask(BaseTask):
         """
         super().step()
         observations = self.get_observations()
+        self.is_done()
         self.update_metrics()
         self.steps+=1
         # self.is_done()
-        return observations, self.metrics, self._success
+        return observations, self._info, self._success
 
     def is_done(self) -> bool:
         """
@@ -92,7 +113,7 @@ class NavigateTask(BaseTask):
         for robot_id in range(len(self.robots)):
             robot_position = self.robots[robot_id].get_world_pose()
         # 检查机器人是否到达目标点
-            if self._is_at_goal(robot_position):
+            if self._is_at_goal(robot_position, robot_id):
                 self.reached_goal = True
                 self._done = True
                 self._success = True
@@ -112,21 +133,22 @@ class NavigateTask(BaseTask):
         """
         检查机器人是否到达目标点
         """
-
-        distance = ((position[0] - self.goal_point[0]) ** 2 +
-                    (position[1] - self.goal_point[1]) ** 2) ** 0.5
+        if len(goal_points[1])>1:
+            goal_point = self.goal_points[id][0]
+        else:
+            goal_point = self.goal_points[0]
+        distance = ((position[0] - goal_point[0]) ** 2 +
+                    (position[1] - goal_point[1]) ** 2) ** 0.5
         return distance < self.goal_threshold
-
 
     def individual_reset(self):
         """
         重置导航任务
         """
-        self.robot.reset_position(self.start_point)
         self.reached_goal = False
         self.steps = 0
+        self.stage = 0
         self._reset_variables(None)
-
 
     def get_distance_to_goal(self):
         """
@@ -170,7 +192,7 @@ class NavigateTask(BaseTask):
         self.navigator.planner.compute_cost_map()
         return self.navigator
 
-    def get_distance(self, goal_pos):
+    def get_distance(self, goal_pos, robot_id =0):
         '''
         根据机器人位置和物品位置计算规划路径距离
         robot_pos和goal_pos都是isaacsim的世界坐标
@@ -188,7 +210,8 @@ class NavigateTask(BaseTask):
         
         # show_map_(navigator.planner.cost_map)
         robot_form = XFormPrim(self.task_config.robots[0].prim_path)
-        robot_pos,_ = robot_form.get_world_pose()
+
+        robot_pos = self.robots[robot_id].get_world_pose()
         robot_pos = [robot_pos[0], robot_pos[1]]
         
         path, map_nav_path = self.navigator.navigate(goal_pos, robot_pos)
@@ -219,4 +242,5 @@ class NavigateTask(BaseTask):
             action = "d"
         
         return total_distance, action
+
     

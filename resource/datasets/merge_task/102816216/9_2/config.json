@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the Uno toilet paper from the bathroom and place it on the Kansas console table in the living room",
+        "Please take the KITCHEN AID ARTISAN MIXER CREAM from the kitchen and place it on the Kansas console table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Uno - Toilet Paper_bathroom')",
+            "Grab('Uno - Toilet Paper')",
+            "Move_to('Kansas console table_living room')",
+            "Release('Uno - Toilet Paper')"
+        ],
+        [
+            "Move_to('KITCHEN AID ARTISAN MIXER CREAM_kitchen')",
+            "Grab('KITCHEN AID ARTISAN MIXER CREAM')",
+            "Move_to('Kansas console table_living room')",
+            "Release('KITCHEN AID ARTISAN MIXER CREAM')"
+        ]
+    ],
+    "Scene": "102816216",
+    "Target": [
+        [
+            [
+                "99665804218804022bc87b9e8edf35221a0bb8ee",
+                "Uno - Toilet Paper",
+                "bathroom"
+            ],
+            [
+                "bdbc554e98a2ae28fd4fb5e3cffce373c2d20628",
+                "Kansas console table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "e1d30ae83996db2ab653f342d27a5b316b762979",
+                "KITCHEN AID ARTISAN MIXER CREAM",
+                "kitchen"
+            ],
+            [
+                "bdbc554e98a2ae28fd4fb5e3cffce373c2d20628",
+                "Kansas console table",
+                "living room"
+            ]
+        ]
+    ]
+}

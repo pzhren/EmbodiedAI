@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please pick up the toy tub from the kids room and place it on the solid wood Japanese-style coffee table in the living room",
+        "Take the Tropical Plant from the living room and place it on the Mango Wood Upholstered Hallway Bench in the living room, dining room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Toy Tubs_kids room')",
+            "Grab('Toy Tubs')",
+            "Move_to('Solid Wood Japanese-Style Coffee Table_living room')",
+            "Release('Toy Tubs')"
+        ],
+        [
+            "Move_to('Tropical Plant_living room')",
+            "Grab('Tropical Plant')",
+            "Move_to('Mango Wood Upholstered Hallway Bench_living room,dining room')",
+            "Release('Tropical Plant')"
+        ]
+    ],
+    "Scene": "104862573_172226682",
+    "Target": [
+        [
+            [
+                "712ef8ca280bad8e1f00da9043b74b8f64f992b2",
+                "Toy Tubs",
+                "kids room"
+            ],
+            [
+                "5512591fd16c3597295b9e15db083dc360f58772",
+                "Solid Wood Japanese-Style Coffee Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "fc3a8896e25e5cc58df58d8e24a75c935ca161ba",
+                "Tropical Plant",
+                "living room"
+            ],
+            [
+                "962c8e355adf204032a9c724483ee0a2d388dbf5",
+                "Mango Wood Upholstered Hallway Bench",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

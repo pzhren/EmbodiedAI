@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the indoor plant from the living room and place it next to the vanity unit in the bathroom",
+    "Subtask list": [
+        "Move_to('Indoor Plant_living room')",
+        "Grab('Indoor Plant')",
+        "Move_to('Loosli VANITY-AQUINO Unterbau/meuble inf\u00e9rieur/mobile inferiore_bathroom')",
+        "Release('Indoor Plant')"
+    ],
+    "Scene": "102816627",
+    "Target": [
+        [
+            "deae2fd69a0752bc5da79083dad3a4b9f7317da6",
+            "Indoor Plant",
+            "living room"
+        ],
+        [
+            "c5a5add8981b50bfca5fca13baa061faa730a8d4",
+            "Loosli VANITY-AQUINO Unterbau/meuble inf\u00e9rieur/mobile inferiore",
+            "bathroom"
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the toy sink from the kids room to the contemporary dresser in the shared bedroom and living room area",
+        "Could you please take the plush bathmat in the bathroom and place it next to the queen platform bed in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('TOY SINK/STOVE UNIT_kids room')",
+            "Grab('TOY SINK/STOVE UNIT')",
+            "Move_to('Modern Industrial Dresser, Coffee_bedroom,living room')",
+            "Release('TOY SINK/STOVE UNIT')"
+        ],
+        [
+            "Move_to('DWR Plush Bathmat, Grey_bathroom')",
+            "Grab('DWR Plush Bathmat, Grey')",
+            "Move_to('Dylan II Queen Platform Bed_bedroom')",
+            "Release('DWR Plush Bathmat, Grey')"
+        ]
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            [
+                "0add22cc4b991c0b80e94a36eb72687f44ccb3ba",
+                "TOY SINK/STOVE UNIT",
+                "kids room"
+            ],
+            [
+                "58c1f347bea26244cf39efe7ff10e6cebaf48758",
+                "Modern Industrial Dresser, Coffee",
+                "bedroom,living room"
+            ]
+        ],
+        [
+            [
+                "bbdc1b4f72d1347d144887c3b5d4d614737d3737",
+                "DWR Plush Bathmat, Grey",
+                "bathroom"
+            ],
+            [
+                "bf0d188b37ed02e5567e8651df3425c57fbff7bd",
+                "Dylan II Queen Platform Bed",
+                "bedroom"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "take the laundry bin in the bathroom to the armchair in the living room",
+        "Please take the espresso maker from the kitchen and place it on the Alton Chairside Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('The Water Hyacinth Laundry Bin_bathroom')",
+            "Grab('The Water Hyacinth Laundry Bin')",
+            "Move_to('Hoffman Armchair, Coffee_living room')",
+            "Release('The Water Hyacinth Laundry Bin')"
+        ],
+        [
+            "Move_to('DeLonghi Icona Pump Espresso Maker Blue_kitchen')",
+            "Grab('DeLonghi Icona Pump Espresso Maker Blue')",
+            "Move_to('Alton Chairside Table_living room')",
+            "Release('DeLonghi Icona Pump Espresso Maker Blue')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "df3ba3caf8c1321195b13e23ee8642b09d1a9323",
+                "The Water Hyacinth Laundry Bin",
+                "bathroom"
+            ],
+            [
+                "79b9fdabc6d1c61c041c4843ea3cdd860c9df8ba",
+                "Hoffman Armchair, Coffee",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "335fc5d250b5f7e424fcb25a26bf001f738ca364",
+                "DeLonghi Icona Pump Espresso Maker Blue",
+                "kitchen"
+            ],
+            [
+                "5ad40619a3bb78eac62b5d40817966fce8f9814e",
+                "Alton Chairside Table",
+                "living room"
+            ]
+        ]
+    ]
+}

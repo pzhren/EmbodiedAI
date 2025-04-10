@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the stylish egg chair from the patio and move it to the classy Antwerp farm table in the dining room of the living room-dining room combo",
+        "Pick up the soap in the bathroom and place it on the coffee table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Egg Chair_patio')",
+            "Grab('Egg Chair')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('Egg Chair')"
+        ],
+        [
+            "Move_to('Soap_bathroom')",
+            "Grab('Soap')",
+            "Move_to('Bayshore Coffee Table With Casters_living room')",
+            "Release('Soap')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "fb7aa17b6fb609a6e9c1bcbacad1580ecbe69c21",
+                "Egg Chair",
+                "patio"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "6b21bd924df8f21c02fb8bb569de93bd887d8f1e",
+                "Soap",
+                "bathroom"
+            ],
+            [
+                "b7be6ad871800511e7a320626aac37272eb919c4",
+                "Bayshore Coffee Table With Casters",
+                "living room"
+            ]
+        ]
+    ]
+}

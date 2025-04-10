@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Uno toilet paper from the bathroom and place it on the kitchen island",
+        "take the towel rack from the bathroom and place it on the Ubud Console in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Uno - Toilet Paper_bathroom')",
+            "Grab('Uno - Toilet Paper')",
+            "Move_to('Kitchen island, 90x150x90_kitchen')",
+            "Release('Uno - Toilet Paper')"
+        ],
+        [
+            "Move_to('Inox Towel Rack_bathroom')",
+            "Grab('Inox Towel Rack')",
+            "Move_to('Ubud Console_living room')",
+            "Release('Inox Towel Rack')"
+        ]
+    ],
+    "Scene": "102816216",
+    "Target": [
+        [
+            [
+                "99665804218804022bc87b9e8edf35221a0bb8ee",
+                "Uno - Toilet Paper",
+                "bathroom"
+            ],
+            [
+                "465c339f405bf0f55e0c316820958dee1126dabd",
+                "Kitchen island, 90x150x90",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "8c6c2542f3fc80d98cd324c58496eafd3ecdd5c5",
+                "Inox Towel Rack",
+                "bathroom"
+            ],
+            [
+                "f72c0e86085c6b6f48b82d47d5066248be8b7c4a",
+                "Ubud Console",
+                "living room"
+            ]
+        ]
+    ]
+}

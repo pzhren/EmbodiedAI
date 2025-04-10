@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the toy sink from the kids room to the contemporary dresser in the shared bedroom and living room area",
+        "Pick up the toy stove unit from the kids room and place it on the nightstand in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('TOY SINK/STOVE UNIT_kids room')",
+            "Grab('TOY SINK/STOVE UNIT')",
+            "Move_to('Modern Industrial Dresser, Coffee_bedroom,living room')",
+            "Release('TOY SINK/STOVE UNIT')"
+        ],
+        [
+            "Move_to('TOY SINK/STOVE UNIT_kids room')",
+            "Grab('TOY SINK/STOVE UNIT')",
+            "Move_to('Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent_bedroom')",
+            "Release('TOY SINK/STOVE UNIT')"
+        ]
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            [
+                "0add22cc4b991c0b80e94a36eb72687f44ccb3ba",
+                "TOY SINK/STOVE UNIT",
+                "kids room"
+            ],
+            [
+                "58c1f347bea26244cf39efe7ff10e6cebaf48758",
+                "Modern Industrial Dresser, Coffee",
+                "bedroom,living room"
+            ]
+        ],
+        [
+            [
+                "0add22cc4b991c0b80e94a36eb72687f44ccb3ba",
+                "TOY SINK/STOVE UNIT",
+                "kids room"
+            ],
+            [
+                "2b9af0f16b5f1e6b7621bfa05afb45b3581e0736",
+                "Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent",
+                "bedroom"
+            ]
+        ]
+    ]
+}

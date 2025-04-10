@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Transfer the tissue box cover from the combined bedroom and living room area to the accent table in the living room",
+    "Subtask list": [
+        "Move_to('Cleo Rectangle Tissue Box Cover_bedroom,living room')",
+        "Grab('Cleo Rectangle Tissue Box Cover')",
+        "Move_to('Zee Lacquered Accent Table_living room')",
+        "Release('Cleo Rectangle Tissue Box Cover')"
+    ],
+    "Scene": "102816756",
+    "Target": [
+        [
+            "efc0201c33f516285eea7f5ad4516fed892a4ba6",
+            "Cleo Rectangle Tissue Box Cover",
+            "bedroom,living room"
+        ],
+        [
+            "7dd70791b3608b7a7e5f24b451cf7b11cdadcba5",
+            "Zee Lacquered Accent Table",
+            "living room"
+        ]
+    ]
+}

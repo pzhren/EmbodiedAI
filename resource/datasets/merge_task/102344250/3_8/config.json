@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the folding trolley in the living room and place it next to the twin bed in the bedroom",
+        "Could you please bring the wall hanging from the living room to the folding trolley in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Beech Folding Trolley_living room')",
+            "Grab('Beech Folding Trolley')",
+            "Move_to('Namaste Twin Bed_bedroom,kids room')",
+            "Release('Beech Folding Trolley')"
+        ],
+        [
+            "Move_to('Moments - Wall Hanging_living room')",
+            "Grab('Moments - Wall Hanging')",
+            "Move_to('Beech Folding Trolley_living room')",
+            "Release('Moments - Wall Hanging')"
+        ]
+    ],
+    "Scene": "102344250",
+    "Target": [
+        [
+            [
+                "fcd4cfd15f790272e5ce95bab3c62de87beb3142",
+                "Beech Folding Trolley",
+                "living room"
+            ],
+            [
+                "3869fc2dbbfe2c95d7dc93081dc9df573d96fb88",
+                "Namaste Twin Bed",
+                "bedroom,kids room"
+            ]
+        ],
+        [
+            [
+                "b10620e794a96839cce5f37974578229667b89b7",
+                "Moments - Wall Hanging",
+                "living room"
+            ],
+            [
+                "fcd4cfd15f790272e5ce95bab3c62de87beb3142",
+                "Beech Folding Trolley",
+                "living room"
+            ]
+        ]
+    ]
+}

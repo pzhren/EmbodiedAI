@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you please bring the bath robe from the bathroom to the couch in the living room",
+    "Subtask list": [
+        "Move_to('Bath robe_bathroom')",
+        "Grab('Bath robe')",
+        "Move_to('Engles Leather 35'' Chair, Saddlebag Lead_living room')",
+        "Release('Bath robe')"
+    ],
+    "Scene": "107734227_176000091",
+    "Target": [
+        [
+            "973c8db16abb188caa2868a16141b643684e3881",
+            "Bath robe",
+            "bathroom"
+        ],
+        [
+            "c54816423cdd8e3e699b411d028aba1e5aef3f2c",
+            "Engles Leather 35'' Chair, Saddlebag Lead",
+            "living room"
+        ]
+    ]
+}

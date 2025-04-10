@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Can you please take the small nesting table from the living room and place it beside the large terracotta planter in the same room",
+        "Could you please take the soft close toilet seat from the bathroom to the black waste bin and place it there"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Radleigh Small Nesting Table_living room')",
+            "Grab('Radleigh Small Nesting Table')",
+            "Move_to('Jara Terracotta Planter with Stand, Large_living room')",
+            "Release('Radleigh Small Nesting Table')"
+        ],
+        [
+            "Move_to('Cooke & Lewis Helena Modern Close-Coupled Toilet with Soft Close Seat_bathroom')",
+            "Grab('Cooke & Lewis Helena Modern Close-Coupled Toilet with Soft Close Seat')",
+            "Move_to('Blanc Doeuf Waste Bin_bathroom')",
+            "Release('Cooke & Lewis Helena Modern Close-Coupled Toilet with Soft Close Seat')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "1a4841c613e9f5c2ba492107fb6aff4692c564a4",
+                "Radleigh Small Nesting Table",
+                "living room"
+            ],
+            [
+                "0e3f31820718c4195b9884dbdf9015035f66dae0",
+                "Jara Terracotta Planter with Stand, Large",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "316d7bc87db3c6ee1fdc26601bcda7d18c5110fb",
+                "Cooke & Lewis Helena Modern Close-Coupled Toilet with Soft Close Seat",
+                "bathroom"
+            ],
+            [
+                "5f42b2ef37446d00652bccc1fea78258518a807e",
+                "Blanc Doeuf Waste Bin",
+                "bathroom"
+            ]
+        ]
+    ]
+}

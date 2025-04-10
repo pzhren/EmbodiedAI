@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the coffee maker from the kitchen and place it on the console table in the living room",
+        "Move the Black Rattan Woven Round Basket from the living room to the sink cabinet in the kitchen"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Delonghi Filter Coffee Maker_kitchen')",
+            "Grab('Delonghi Filter Coffee Maker')",
+            "Move_to('console table_living room')",
+            "Release('Delonghi Filter Coffee Maker')"
+        ],
+        [
+            "Move_to('Black Rattan Woven Round Basket_living room')",
+            "Grab('Black Rattan Woven Round Basket')",
+            "Move_to('Kitchen cabinet with sink, double_kitchen')",
+            "Release('Black Rattan Woven Round Basket')"
+        ]
+    ],
+    "Scene": "102344094",
+    "Target": [
+        [
+            [
+                "4a5d65ef0499befafb833f460e1dbe5050d99c2a",
+                "Delonghi Filter Coffee Maker",
+                "kitchen"
+            ],
+            [
+                "2e028ffe637a7f7b62154ccfb1cb406a2d8ed6ba",
+                "console table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "xxxx028e6297xba22x4718xb4cbx1470a69a0bd6",
+                "Black Rattan Woven Round Basket",
+                "living room"
+            ],
+            [
+                "048d80c36ddc6ac63785ca08ccf231431195717c",
+                "Kitchen cabinet with sink, double",
+                "kitchen"
+            ]
+        ]
+    ]
+}

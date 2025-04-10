@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you place the Jessie End Table from the living room onto the Kitchen island in the kitchen",
+        "Please take the artificial flowers from the living room and place them on the coffee table in the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Jessie End Table_living room')",
+            "Grab('Jessie End Table')",
+            "Move_to('Kitchen island_kitchen')",
+            "Release('Jessie End Table')"
+        ],
+        [
+            "Move_to('Bloom White Rose Artificial Flowers_living room')",
+            "Grab('Bloom White Rose Artificial Flowers')",
+            "Move_to('Arden Coffee Table_living room')",
+            "Release('Bloom White Rose Artificial Flowers')"
+        ]
+    ],
+    "Scene": "106366353_174226695",
+    "Target": [
+        [
+            [
+                "a05ea4457ab8cb61197cbc8fb69a05437db684e8",
+                "Jessie End Table",
+                "living room"
+            ],
+            [
+                "af102d5ce3df9cc58b991eb618a86f66c5901efe",
+                "Kitchen island",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "0eaeb0a2cb5c912b76c0bb825a67dc80c27781b4",
+                "Bloom White Rose Artificial Flowers",
+                "living room"
+            ],
+            [
+                "584abd8d91d3cc16c728bba6f9818904b177f59a",
+                "Arden Coffee Table",
+                "living room"
+            ]
+        ]
+    ]
+}

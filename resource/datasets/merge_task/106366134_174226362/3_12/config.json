@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Rolled Up Towel from the bathroom and place it on the Vegan Leather Desk Chair in the office",
+        "Could you take the rolled-up towel from the bathroom to the sofa in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Rolled Up Towel_bathroom')",
+            "Grab('Rolled Up Towel')",
+            "Move_to('Channeled Vegan Leather Desk Chair, Gold And White_office')",
+            "Release('Rolled Up Towel')"
+        ],
+        [
+            "Move_to('Rolled Up Towel_bathroom')",
+            "Grab('Rolled Up Towel')",
+            "Move_to('Vivian Sofa_living room')",
+            "Release('Rolled Up Towel')"
+        ]
+    ],
+    "Scene": "106366134_174226362",
+    "Target": [
+        [
+            [
+                "6ece1a15f0f508aab2371808d58eefa8420cf725",
+                "Rolled Up Towel",
+                "bathroom"
+            ],
+            [
+                "265114799460fcd58e282c00c5e60be3ab5e9148",
+                "Channeled Vegan Leather Desk Chair, Gold And White",
+                "office"
+            ]
+        ],
+        [
+            [
+                "6ece1a15f0f508aab2371808d58eefa8420cf725",
+                "Rolled Up Towel",
+                "bathroom"
+            ],
+            [
+                "dcb1a1b641a5441628a79be4811dcb71f4640a19",
+                "Vivian Sofa",
+                "living room"
+            ]
+        ]
+    ]
+}

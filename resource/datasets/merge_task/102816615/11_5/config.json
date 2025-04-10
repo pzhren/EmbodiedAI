@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Potted Sansevieria in the living room and place it on the Envy Nightstand in the bedroom",
+        "Could you please take the soft close toilet seat from the bathroom to the black waste bin and place it there"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Potted Sansevieria_living room')",
+            "Grab('Potted Sansevieria')",
+            "Move_to('Envy Nightstand_bedroom')",
+            "Release('Potted Sansevieria')"
+        ],
+        [
+            "Move_to('Cooke & Lewis Helena Modern Close-Coupled Toilet with Soft Close Seat_bathroom')",
+            "Grab('Cooke & Lewis Helena Modern Close-Coupled Toilet with Soft Close Seat')",
+            "Move_to('Blanc Doeuf Waste Bin_bathroom')",
+            "Release('Cooke & Lewis Helena Modern Close-Coupled Toilet with Soft Close Seat')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "26a38271fb04e01cc4ae5f6cabad71f37a69231b",
+                "Potted Sansevieria",
+                "living room"
+            ],
+            [
+                "03639dab61b6903ff319e047b008cb6abec971c6",
+                "Envy Nightstand",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "316d7bc87db3c6ee1fdc26601bcda7d18c5110fb",
+                "Cooke & Lewis Helena Modern Close-Coupled Toilet with Soft Close Seat",
+                "bathroom"
+            ],
+            [
+                "5f42b2ef37446d00652bccc1fea78258518a807e",
+                "Blanc Doeuf Waste Bin",
+                "bathroom"
+            ]
+        ]
+    ]
+}

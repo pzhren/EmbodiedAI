@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Princess Chest from the bedroom-living room area and place it on the Hartley 2 Piece Sectional in the living room",
+        "Could you please take the Princess Chest from the shared bedroom and living room area to the Tropical Plant in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Princess Chest_bedroom,living room')",
+            "Grab('Princess Chest')",
+            "Move_to('Hartley 2 Piece Sectional_living room')",
+            "Release('Princess Chest')"
+        ],
+        [
+            "Move_to('Princess Chest_bedroom,living room')",
+            "Grab('Princess Chest')",
+            "Move_to('Tropical Plant_living room')",
+            "Release('Princess Chest')"
+        ]
+    ],
+    "Scene": "104862558_172226664",
+    "Target": [
+        [
+            [
+                "848c2cc9428329445b3de7dc982469c583b16c1d",
+                "Princess Chest",
+                "bedroom,living room"
+            ],
+            [
+                "66ec4fc576cf716a9e41f389a8ab27b103edfa9f",
+                "Hartley 2 Piece Sectional",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "848c2cc9428329445b3de7dc982469c583b16c1d",
+                "Princess Chest",
+                "bedroom,living room"
+            ],
+            [
+                "fc3a8896e25e5cc58df58d8e24a75c935ca161ba",
+                "Tropical Plant",
+                "living room"
+            ]
+        ]
+    ]
+}

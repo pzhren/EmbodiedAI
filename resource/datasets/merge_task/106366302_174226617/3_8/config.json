@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the laptop table from the living room and place it by the storage closet in the office",
+        "take the small indoor plant in the living room to the dining room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Laptop Table_living room')",
+            "Grab('Laptop Table')",
+            "Move_to('Tall Closed Storage_office')",
+            "Release('Laptop Table')"
+        ],
+        [
+            "Move_to('plant_living room')",
+            "Grab('plant')",
+            "Move_to('Revolve Andini Counter Stool_dining room')",
+            "Release('plant')"
+        ]
+    ],
+    "Scene": "106366302_174226617",
+    "Target": [
+        [
+            [
+                "e1d51fa2fae90a92cbb8876689336c9ae07cb5a9",
+                "Laptop Table",
+                "living room"
+            ],
+            [
+                "aa69ad95160221cb20a99652a2d8b905bcefdac4",
+                "Tall Closed Storage",
+                "office"
+            ]
+        ],
+        [
+            [
+                "506c458cbfc61d313e7505e4e363d238b7ba55e7",
+                "plant",
+                "living room"
+            ],
+            [
+                "047b04d3192d8ba22aeeab2c6f9fc63766926cd4",
+                "Revolve Andini Counter Stool",
+                "dining room"
+            ]
+        ]
+    ]
+}

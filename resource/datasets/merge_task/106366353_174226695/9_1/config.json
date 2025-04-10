@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the artificial flowers from the living room and place them on the bedside nightstand in the bedroom",
+        "Please move the decorative flowers from the living room to the antique sofa elsewhere in the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Bloom White Rose Artificial Flowers_living room')",
+            "Grab('Bloom White Rose Artificial Flowers')",
+            "Move_to('Marge Carson # Oval Drawer Nightstand_bedroom')",
+            "Release('Bloom White Rose Artificial Flowers')"
+        ],
+        [
+            "Move_to('Bloom White Rose Artificial Flowers_living room')",
+            "Grab('Bloom White Rose Artificial Flowers')",
+            "Move_to('2 seater - Antique Tan_living room')",
+            "Release('2 seater - Antique Tan')"
+        ]
+    ],
+    "Scene": "106366353_174226695",
+    "Target": [
+        [
+            [
+                "0eaeb0a2cb5c912b76c0bb825a67dc80c27781b4",
+                "Bloom White Rose Artificial Flowers",
+                "living room"
+            ],
+            [
+                "d463ac21f74cef85dd8bb9ddb81d710d461f9efd",
+                "Marge Carson # Oval Drawer Nightstand",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "0eaeb0a2cb5c912b76c0bb825a67dc80c27781b4",
+                "Bloom White Rose Artificial Flowers",
+                "living room"
+            ],
+            [
+                "5e0c57c89718bf9f8859b6181978d150aed749ca",
+                "2 seater - Antique Tan",
+                "living room"
+            ]
+        ]
+    ]
+}

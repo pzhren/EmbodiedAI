@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the plush bathmat from the bathroom and place it on the nightstand in the bedroom",
+        "Take the Hot Wheels bike from the kids room and place it next to the sofa table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('DWR Plush Bathmat, Grey_bathroom')",
+            "Grab('DWR Plush Bathmat, Grey')",
+            "Move_to('Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent_bedroom')",
+            "Release('DWR Plush Bathmat, Grey')"
+        ],
+        [
+            "Move_to('Hot Wheels 14'' Bike_kids room')",
+            "Grab('Hot Wheels 14'' Bike')",
+            "Move_to('Presby 54'' Sofa Table, White_living room')",
+            "Release('Hot Wheels 14'' Bike')"
+        ]
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            [
+                "bbdc1b4f72d1347d144887c3b5d4d614737d3737",
+                "DWR Plush Bathmat, Grey",
+                "bathroom"
+            ],
+            [
+                "2b9af0f16b5f1e6b7621bfa05afb45b3581e0736",
+                "Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "de69a7b4e62b31f695624352494a14893148eae3",
+                "Hot Wheels 14'' Bike",
+                "kids room"
+            ],
+            [
+                "d445bb243f12ba89fc91c9d2265408b5cd635632",
+                "Presby 54'' Sofa Table, White",
+                "living room"
+            ]
+        ]
+    ]
+}

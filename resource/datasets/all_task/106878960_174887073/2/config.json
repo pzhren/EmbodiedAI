@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please pick up the Cedar Shoe Rack from the bedroom and place it on the Sadie Desk in the office",
+    "Subtask list": [
+        "Move_to('Cedar Shoe Rack_bedroom')",
+        "Grab('Cedar Shoe Rack')",
+        "Move_to('Sadie Desk_office')",
+        "Release('Cedar Shoe Rack')"
+    ],
+    "Scene": "106878960_174887073",
+    "Target": [
+        [
+            "482351496548bc89258838f6630d0c73afe3a158",
+            "Cedar Shoe Rack",
+            "bedroom"
+        ],
+        [
+            "215e08aaca7f96eb917fb32b11a459b2271a31f0",
+            "Sadie Desk",
+            "office"
+        ]
+    ]
+}

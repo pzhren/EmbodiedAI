@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please bring the wall hanging from the living room to the folding trolley in the living room",
+        "Please take the folding trolley from the living room and put it next to the bathmat in the bathroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Moments - Wall Hanging_living room')",
+            "Grab('Moments - Wall Hanging')",
+            "Move_to('Beech Folding Trolley_living room')",
+            "Release('Moments - Wall Hanging')"
+        ],
+        [
+            "Move_to('Beech Folding Trolley_living room')",
+            "Grab('Beech Folding Trolley')",
+            "Move_to('Aristocrat Plush Bathmat - 60x90 cms, Yellow_bathroom')",
+            "Release('Beech Folding Trolley')"
+        ]
+    ],
+    "Scene": "102344250",
+    "Target": [
+        [
+            [
+                "b10620e794a96839cce5f37974578229667b89b7",
+                "Moments - Wall Hanging",
+                "living room"
+            ],
+            [
+                "fcd4cfd15f790272e5ce95bab3c62de87beb3142",
+                "Beech Folding Trolley",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "fcd4cfd15f790272e5ce95bab3c62de87beb3142",
+                "Beech Folding Trolley",
+                "living room"
+            ],
+            [
+                "4578e276bf903ec43d98e86f181851c87aff9fc1",
+                "Aristocrat Plush Bathmat - 60x90 cms, Yellow",
+                "bathroom"
+            ]
+        ]
+    ]
+}

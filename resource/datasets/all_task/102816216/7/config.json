@@ -1,0 +1,22 @@
+{
+    "Task instruction": "find the towel rack in the bathroom and place it on the kitchen island",
+    "Subtask list": [
+        "Move_to('Inox Towel Rack_bathroom')",
+        "Grab('Inox Towel Rack')",
+        "Move_to('Kitchen island, 90x150x90_kitchen')",
+        "Release('Inox Towel Rack')"
+    ],
+    "Scene": "102816216",
+    "Target": [
+        [
+            "8c6c2542f3fc80d98cd324c58496eafd3ecdd5c5",
+            "Inox Towel Rack",
+            "bathroom"
+        ],
+        [
+            "465c339f405bf0f55e0c316820958dee1126dabd",
+            "Kitchen island, 90x150x90",
+            "kitchen"
+        ]
+    ]
+}

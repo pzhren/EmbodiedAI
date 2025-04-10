@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the Blanket from the bedroom or living room and move it to the Provence table in the living room or dining room",
+        "Take the espresso coffee maker from the kitchen and place it on the Provencal 220cm Farmhouse Table in the living room, dining room area"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Blanket_bedroom,living room')",
+            "Grab('Blanket')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('Blanket')"
+        ],
+        [
+            "Move_to('espresso coffee maker_kitchen')",
+            "Grab('espresso coffee maker')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('espresso coffee maker')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "da1cddb10d235eb771f138a5d173da551406c125",
+                "Blanket",
+                "bedroom,living room"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "9d027ac8635b202c4ba4d2e39708d98a918677af",
+                "espresso coffee maker",
+                "kitchen"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

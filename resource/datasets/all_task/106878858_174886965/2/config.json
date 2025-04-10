@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you move the in tray from the office to the king bed in the bedroom",
+    "Subtask list": [
+        "Move_to('Natural Flair - In Tray_office')",
+        "Grab('Natural Flair - In Tray')",
+        "Move_to('King Bed_bedroom')",
+        "Release('Natural Flair - In Tray')"
+    ],
+    "Scene": "106878858_174886965",
+    "Target": [
+        [
+            "c8e52cc537e216597dde1b7b5fcb753101385ed5",
+            "Natural Flair - In Tray",
+            "office"
+        ],
+        [
+            "c171ad19a915dbe4159a2714eeba07b2f71166f9",
+            "King Bed",
+            "bedroom"
+        ]
+    ]
+}

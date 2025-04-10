@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please pick up the toy tub from the kids room and place it on the solid wood Japanese-style coffee table in the living room",
+    "Subtask list": [
+        "Move_to('Toy Tubs_kids room')",
+        "Grab('Toy Tubs')",
+        "Move_to('Solid Wood Japanese-Style Coffee Table_living room')",
+        "Release('Toy Tubs')"
+    ],
+    "Scene": "104862573_172226682",
+    "Target": [
+        [
+            "712ef8ca280bad8e1f00da9043b74b8f64f992b2",
+            "Toy Tubs",
+            "kids room"
+        ],
+        [
+            "5512591fd16c3597295b9e15db083dc360f58772",
+            "Solid Wood Japanese-Style Coffee Table",
+            "living room"
+        ]
+    ]
+}

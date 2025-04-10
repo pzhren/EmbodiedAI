@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please transport the Bonsai Style Money Silk Tree from the living room to the Shallow under cabinet in the bathroom",
+        "Could you help me move the pothos tree from the living room to that modern dining table in the dining room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('51 In. Bonsai Style Money Silk Tree 5249_living room')",
+            "Grab('51 In. Bonsai Style Money Silk Tree 5249')",
+            "Move_to('The Collection onderkast Shallow 120cm, zwart _bathroom')",
+            "Release('51 In. Bonsai Style Money Silk Tree 5249')"
+        ],
+        [
+            "Move_to('Pothos Tree in Pot 152 cms_living room')",
+            "Grab('Pothos Tree in Pot 152 cms')",
+            "Move_to('Mid Century Modern Rectangular Dining Table_dining room')",
+            "Release('Pothos Tree in Pot 152 cms')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "7c1ea02edb0783b985500678dd07578dbfa0e635",
+                "51 In. Bonsai Style Money Silk Tree 5249",
+                "living room"
+            ],
+            [
+                "a01b0bf94c12425aa537eb467300a5125132e425",
+                "The Collection onderkast Shallow 120cm, zwart ",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "4dbb221926b856e5c1c07a26b133690d47cd818d",
+                "Pothos Tree in Pot 152 cms",
+                "living room"
+            ],
+            [
+                "bf3c644c0686ef3f380f199a533d65d5d71e8bf0",
+                "Mid Century Modern Rectangular Dining Table",
+                "dining room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Pick up the espresso maker from the kitchen and place it on the side table in the living room",
+        "Could you move the White Tulip Water Garden from the living room to the E15 Alex Side Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Delonghi Silky White Lattissima One Espresso Maker_kitchen')",
+            "Grab('Delonghi Silky White Lattissima One Espresso Maker')",
+            "Move_to('E15 Alex Side Table_living room')",
+            "Release('Delonghi Silky White Lattissima One Espresso Maker')"
+        ],
+        [
+            "Move_to('White Tulip Water Garden_living room')",
+            "Grab('White Tulip Water Garden')",
+            "Move_to('E15 Alex Side Table_living room')",
+            "Release('White Tulip Water Garden')"
+        ]
+    ],
+    "Scene": "102816852",
+    "Target": [
+        [
+            [
+                "b4934a67247a1d1dfc53320eeb47b62ecb560dba",
+                "Delonghi Silky White Lattissima One Espresso Maker",
+                "kitchen"
+            ],
+            [
+                "67b958a5263c73693978ddac57e429b18925ee38",
+                "E15 Alex Side Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "39f24d83b5ab476d0880cb19fb218f7029f11840",
+                "White Tulip Water Garden",
+                "living room"
+            ],
+            [
+                "67b958a5263c73693978ddac57e429b18925ee38",
+                "E15 Alex Side Table",
+                "living room"
+            ]
+        ]
+    ]
+}

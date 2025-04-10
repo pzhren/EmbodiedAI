@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the candle holder with candles from the living room and place it on the kitchen trolley",
+    "Subtask list": [
+        "Move_to('Candle holder with candles_living room')",
+        "Grab('Candle holder with candles')",
+        "Move_to('Circus 03 trolley by Pierantonio Bonacina_kitchen')",
+        "Release('Candle holder with candles')"
+    ],
+    "Scene": "102816786",
+    "Target": [
+        [
+            "06a829f5adcb128338196a8d95b288e8f5921610",
+            "Candle holder with candles",
+            "living room"
+        ],
+        [
+            "1d39918807757bae1e51a42b54c044cda8d4cfeb",
+            "Circus 03 trolley by Pierantonio Bonacina",
+            "kitchen"
+        ]
+    ]
+}

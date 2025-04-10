@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the Jumbo Toy Bin in the kitchen and place it next to the vanity mirror in the bedroom",
+    "Subtask list": [
+        "Move_to('Jumbo Toy Bin_kitchen')",
+        "Grab('Jumbo Toy Bin')",
+        "Move_to('Celestia Vanity Mirror_bedroom')",
+        "Release('Jumbo Toy Bin')"
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            "3157a2905050ec0ecbe06723d968e1743c38e11d",
+            "Jumbo Toy Bin",
+            "kitchen"
+        ],
+        [
+            "be29027141222beb3ac121e48c131189e1b8cd0f",
+            "Celestia Vanity Mirror",
+            "bedroom"
+        ]
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Transfer the little nightstand from the bedroom to the coffee table in the living room",
+    "Subtask list": [
+        "Move_to('Harrison Nightstand, Charcoal_bedroom')",
+        "Grab('Harrison Nightstand, Charcoal')",
+        "Move_to('Coffee table_living room')",
+        "Release('Harrison Nightstand, Charcoal')"
+    ],
+    "Scene": "105515505_173104584",
+    "Target": [
+        [
+            "16a4e41e6085b65ee5f86acabc8c7185d84c4749",
+            "Harrison Nightstand, Charcoal",
+            "bedroom"
+        ],
+        [
+            "1663b946dd2c160317930f5b2eb724549409e6b0",
+            "Coffee table",
+            "living room"
+        ]
+    ]
+}

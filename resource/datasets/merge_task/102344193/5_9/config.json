@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you move the potted faux succulent from the living room and place it onto a bar stool in the dining room",
+        "Take the faux eucalyptus plant from the living room and place it on the laundry dryer"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Potted Faux Succulent White Pot 14\"_living room')",
+            "Grab('Potted Faux Succulent White Pot 14\"')",
+            "Move_to('Slim Bar Stool_dining room')",
+            "Release('Potted Faux Succulent White Pot 14\"')"
+        ],
+        [
+            "Move_to('Potted Faux Eucalyptus 8\"_living room')",
+            "Grab('Potted Faux Eucalyptus 8\"')",
+            "Move_to('Dryer_laundry')",
+            "Release('Potted Faux Eucalyptus 8\"')"
+        ]
+    ],
+    "Scene": "102344193",
+    "Target": [
+        [
+            [
+                "3c163391afeb4130eadacb6ef9b6e5930329a32b",
+                "Potted Faux Succulent White Pot 14\"",
+                "living room"
+            ],
+            [
+                "782f0a9b9f354f0055c0ba551ebde2f459b83a09",
+                "Slim Bar Stool",
+                "dining room"
+            ]
+        ],
+        [
+            [
+                "ee7b9e4cf5c533737ebd058f7950ca632db5bc62",
+                "Potted Faux Eucalyptus 8\"",
+                "living room"
+            ],
+            [
+                "6cd2dc2611c27f758c972b4874efad8c8cbd5d29",
+                "Dryer",
+                "laundry"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Pick the aloe and succulents in pot in the living room and place them on the classic desk in the office",
+        "Could you please take the Me box storage box from the shared area between the bedroom and living room, and place it on the Classic Desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Aloe and Succulents in Pot_living room')",
+            "Grab('Aloe and Succulents in Pot')",
+            "Move_to('Classic Desk_office')",
+            "Release('Aloe and Succulents in Pot')"
+        ],
+        [
+            "Move_to('Me box storage box_bedroom,living room')",
+            "Grab('Me box storage box')",
+            "Move_to('Classic Desk_office')",
+            "Release('Me box storage box')"
+        ]
+    ],
+    "Scene": "106366173_174226431",
+    "Target": [
+        [
+            [
+                "6de33eda4e80839c178ffa8695f0e1730a2e2e7e",
+                "Aloe and Succulents in Pot",
+                "living room"
+            ],
+            [
+                "8a2440fd268adf3842f55c58abaa35c474934171",
+                "Classic Desk",
+                "office"
+            ]
+        ],
+        [
+            [
+                "b641256fca2bc0560890b7012a342af39ba41916",
+                "Me box storage box",
+                "bedroom,living room"
+            ],
+            [
+                "8a2440fd268adf3842f55c58abaa35c474934171",
+                "Classic Desk",
+                "office"
+            ]
+        ]
+    ]
+}

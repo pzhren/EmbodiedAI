@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Echo Brickell Kitchen (portable item assumed) from the kitchen to the Leahy Splayed Leg Desk in the office",
+        "Please pick up the coffee maker from the kitchen and place it on the Leahy desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Echo Brickell Kitchen_kitchen')",
+            "Grab('Echo Brickell Kitchen')",
+            "Move_to('Leahy Splayed Leg Desk_office')",
+            "Release('Echo Brickell Kitchen')"
+        ],
+        [
+            "Move_to('Russell Hobbs Coffee Maker, 12693_kitchen')",
+            "Grab('Russell Hobbs Coffee Maker, 12693')",
+            "Move_to('Leahy Splayed Leg Desk_office')",
+            "Release('Russell Hobbs Coffee Maker, 12693')"
+        ]
+    ],
+    "Scene": "104862534_172226625",
+    "Target": [
+        [
+            [
+                "a2d18114421991200bb43645a15359859ee9f95d",
+                "Echo Brickell Kitchen",
+                "kitchen"
+            ],
+            [
+                "bb034d375833247e8539a25b7075afb01e908507",
+                "Leahy Splayed Leg Desk",
+                "office"
+            ]
+        ],
+        [
+            [
+                "4b88358f9e5e92dd9664a4a0719afc269819df0e",
+                "Russell Hobbs Coffee Maker, 12693",
+                "kitchen"
+            ],
+            [
+                "bb034d375833247e8539a25b7075afb01e908507",
+                "Leahy Splayed Leg Desk",
+                "office"
+            ]
+        ]
+    ]
+}

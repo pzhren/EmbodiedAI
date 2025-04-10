@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the folding trolley in the living room and place it next to the twin bed in the bedroom",
+        "Please take the folding trolley from the living room and put it next to the bathmat in the bathroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Beech Folding Trolley_living room')",
+            "Grab('Beech Folding Trolley')",
+            "Move_to('Namaste Twin Bed_bedroom,kids room')",
+            "Release('Beech Folding Trolley')"
+        ],
+        [
+            "Move_to('Beech Folding Trolley_living room')",
+            "Grab('Beech Folding Trolley')",
+            "Move_to('Aristocrat Plush Bathmat - 60x90 cms, Yellow_bathroom')",
+            "Release('Beech Folding Trolley')"
+        ]
+    ],
+    "Scene": "102344250",
+    "Target": [
+        [
+            [
+                "fcd4cfd15f790272e5ce95bab3c62de87beb3142",
+                "Beech Folding Trolley",
+                "living room"
+            ],
+            [
+                "3869fc2dbbfe2c95d7dc93081dc9df573d96fb88",
+                "Namaste Twin Bed",
+                "bedroom,kids room"
+            ]
+        ],
+        [
+            [
+                "fcd4cfd15f790272e5ce95bab3c62de87beb3142",
+                "Beech Folding Trolley",
+                "living room"
+            ],
+            [
+                "4578e276bf903ec43d98e86f181851c87aff9fc1",
+                "Aristocrat Plush Bathmat - 60x90 cms, Yellow",
+                "bathroom"
+            ]
+        ]
+    ]
+}

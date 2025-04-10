@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Can you please take the small nesting table from the living room and place it beside the large terracotta planter in the same room",
+        "Take the Potted Sansevieria from the living room and place it on the Summit Mirror in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Radleigh Small Nesting Table_living room')",
+            "Grab('Radleigh Small Nesting Table')",
+            "Move_to('Jara Terracotta Planter with Stand, Large_living room')",
+            "Release('Radleigh Small Nesting Table')"
+        ],
+        [
+            "Move_to('Potted Sansevieria_living room')",
+            "Grab('Potted Sansevieria')",
+            "Move_to('Summit Mirror, Black_bedroom')",
+            "Release('Potted Sansevieria')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "1a4841c613e9f5c2ba492107fb6aff4692c564a4",
+                "Radleigh Small Nesting Table",
+                "living room"
+            ],
+            [
+                "0e3f31820718c4195b9884dbdf9015035f66dae0",
+                "Jara Terracotta Planter with Stand, Large",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "26a38271fb04e01cc4ae5f6cabad71f37a69231b",
+                "Potted Sansevieria",
+                "living room"
+            ],
+            [
+                "853e4e301305a0884e64b17efb9ada196bbfcf87",
+                "Summit Mirror, Black",
+                "bedroom"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Essey Bin Bin Paper Bin from the kitchen and place it next to the Dave Waste Bin in the bathroom",
+        "Please take the white wardrobe from the bedroom and place it in the kids room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Essey Bin Bin Paper Bin_kitchen')",
+            "Grab('Essey Bin Bin Paper Bin')",
+            "Move_to('Dave Waste Bin_bathroom')",
+            "Release('Essey Bin Bin Paper Bin')"
+        ],
+        [
+            "Move_to('Designer Double Wardrobe White &amp; White Gloss_bedroom')",
+            "Grab('Designer Double Wardrobe White &amp; White Gloss')",
+            "Move_to('STUVA Wardrobe 4 doors, white_kids room')",
+            "Release('Designer Double Wardrobe White &amp; White Gloss')"
+        ]
+    ],
+    "Scene": "104348028_171512877",
+    "Target": [
+        [
+            [
+                "f04effbe4d8e9d3c2739c647f6d05759b3b382c2",
+                "Essey Bin Bin Paper Bin",
+                "kitchen"
+            ],
+            [
+                "4244a5c9fb74784f8c25b5d8dc62a0628f87e3f0",
+                "Dave Waste Bin",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "0546a524f6584d5beeaf8a72b3df494f9ceeec90",
+                "Designer Double Wardrobe White &amp; White Gloss",
+                "bedroom"
+            ],
+            [
+                "674b628a31866a0ccef740fbb4836d8aca5a5d51",
+                "STUVA Wardrobe 4 doors, white",
+                "kids room"
+            ]
+        ]
+    ]
+}

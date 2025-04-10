@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Can you please take the Faux Suede Bean Bag from the living room and place it on the Executive Desk in the office",
+    "Subtask list": [
+        "Move_to('Faux Suede Bean Bag_living room')",
+        "Grab('Faux Suede Bean Bag')",
+        "Move_to('Kase 66 Inch Executive Desk_office')",
+        "Release('Faux Suede Bean Bag')"
+    ],
+    "Scene": "106366134_174226362",
+    "Target": [
+        [
+            "94037135727a19e496e29bccc0e971a105b87ed3",
+            "Faux Suede Bean Bag",
+            "living room"
+        ],
+        [
+            "1619e2e6a18d5d374963a3a4280f7a6d76356079",
+            "Kase 66 Inch Executive Desk",
+            "office"
+        ]
+    ]
+}

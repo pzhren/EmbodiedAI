@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the Uno toilet paper from the bathroom and place it on the Kansas console table in the living room",
+        "Transfer the laundry basket from the bathroom to the console table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Uno - Toilet Paper_bathroom')",
+            "Grab('Uno - Toilet Paper')",
+            "Move_to('Kansas console table_living room')",
+            "Release('Uno - Toilet Paper')"
+        ],
+        [
+            "Move_to('Rattan Collection Egg Shaped Laundry Basket_bathroom')",
+            "Grab('Rattan Collection Egg Shaped Laundry Basket')",
+            "Move_to('Ubud Console_living room')",
+            "Release('Rattan Collection Egg Shaped Laundry Basket')"
+        ]
+    ],
+    "Scene": "102816216",
+    "Target": [
+        [
+            [
+                "99665804218804022bc87b9e8edf35221a0bb8ee",
+                "Uno - Toilet Paper",
+                "bathroom"
+            ],
+            [
+                "bdbc554e98a2ae28fd4fb5e3cffce373c2d20628",
+                "Kansas console table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "724302468f654ed8bf8d72ad82e5057db5d08336",
+                "Rattan Collection Egg Shaped Laundry Basket",
+                "bathroom"
+            ],
+            [
+                "f72c0e86085c6b6f48b82d47d5066248be8b7c4a",
+                "Ubud Console",
+                "living room"
+            ]
+        ]
+    ]
+}

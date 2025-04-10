@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Pick up the Faux Suede Storage Box from the area between the bedroom and living room and place it on the Valencia bench located in the living room and dining room area",
+    "Subtask list": [
+        "Move_to('Faux Suede Storage Boxes Cream And Brown Set Of 3_bedroom,living room')",
+        "Grab('Faux Suede Storage Boxes Cream And Brown Set Of 3')",
+        "Move_to('Valencia bench_living room,dining room')",
+        "Release('Faux Suede Storage Boxes Cream And Brown Set Of 3')"
+    ],
+    "Scene": "102817140",
+    "Target": [
+        [
+            "48a05af7c5452b07c94665f2b0bfdab2c9a3466c",
+            "Faux Suede Storage Boxes Cream And Brown Set Of 3",
+            "bedroom,living room"
+        ],
+        [
+            "c0b50a7f924f4738899cebd17412dc364bcfaf3e",
+            "Valencia bench",
+            "living room,dining room"
+        ]
+    ]
+}

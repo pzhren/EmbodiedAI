@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the toy stove unit from the kids room and place it next to the sofa table in the living room",
+        "Take the bike in the kids room and place it in the living room near the sofa"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('TOY SINK/STOVE UNIT_kids room')",
+            "Grab('TOY SINK/STOVE UNIT')",
+            "Move_to('Presby 54'' Sofa Table, White_living room')",
+            "Release('TOY SINK/STOVE UNIT')"
+        ],
+        [
+            "Move_to('Hot Wheels 14'' Bike_kids room')",
+            "Grab('Hot Wheels 14'' Bike')",
+            "Move_to('Brooke 3-cushion sofa_living room')",
+            "Release('Hot Wheels 14'' Bike')"
+        ]
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            [
+                "0add22cc4b991c0b80e94a36eb72687f44ccb3ba",
+                "TOY SINK/STOVE UNIT",
+                "kids room"
+            ],
+            [
+                "d445bb243f12ba89fc91c9d2265408b5cd635632",
+                "Presby 54'' Sofa Table, White",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "de69a7b4e62b31f695624352494a14893148eae3",
+                "Hot Wheels 14'' Bike",
+                "kids room"
+            ],
+            [
+                "7b1858c043bad608f981a6b33cff7db51b80b420",
+                "Brooke 3-cushion sofa",
+                "living room"
+            ]
+        ]
+    ]
+}

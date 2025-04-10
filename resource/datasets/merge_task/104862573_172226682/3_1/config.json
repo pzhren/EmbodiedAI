@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "could you take the toy box from the kids room and place it on the hallway bench in the living room",
+        "Please pick up the toy tub from the kids room and place it on the solid wood Japanese-style coffee table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Noah Toy Box_kids room')",
+            "Grab('Noah Toy Box')",
+            "Move_to('Mango Wood Upholstered Hallway Bench_living room,dining room')",
+            "Release('Noah Toy Box')"
+        ],
+        [
+            "Move_to('Toy Tubs_kids room')",
+            "Grab('Toy Tubs')",
+            "Move_to('Solid Wood Japanese-Style Coffee Table_living room')",
+            "Release('Toy Tubs')"
+        ]
+    ],
+    "Scene": "104862573_172226682",
+    "Target": [
+        [
+            [
+                "cc57668f1affa1e9b866ce5af34ee20c7e7a0649",
+                "Noah Toy Box",
+                "kids room"
+            ],
+            [
+                "962c8e355adf204032a9c724483ee0a2d388dbf5",
+                "Mango Wood Upholstered Hallway Bench",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "712ef8ca280bad8e1f00da9043b74b8f64f992b2",
+                "Toy Tubs",
+                "kids room"
+            ],
+            [
+                "5512591fd16c3597295b9e15db083dc360f58772",
+                "Solid Wood Japanese-Style Coffee Table",
+                "living room"
+            ]
+        ]
+    ]
+}

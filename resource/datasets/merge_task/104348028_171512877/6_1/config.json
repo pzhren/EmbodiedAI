@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the succulent plant from the living room and place it on the dining room table",
+        "Take the Gwen mirror from the bedroom and place it on the CB Desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Succulent Plant- 23x9x11 cms_living room')",
+            "Grab('Succulent Plant- 23x9x11 cms')",
+            "Move_to('TILT DINING CHAIR_dining room')",
+            "Release('Succulent Plant- 23x9x11 cms')"
+        ],
+        [
+            "Move_to('Gwennie Mirror_bedroom')",
+            "Grab('Gwennie Mirror')",
+            "Move_to('CB Desk_office')",
+            "Release('Gwennie Mirror')"
+        ]
+    ],
+    "Scene": "104348028_171512877",
+    "Target": [
+        [
+            [
+                "14bdc1398760aef6d8757e2dd6a1c674d7851e66",
+                "Succulent Plant- 23x9x11 cms",
+                "living room"
+            ],
+            [
+                "79ad3c2f9e40b87e3a22d82bec28cbfb4f0ab627",
+                "TILT DINING CHAIR",
+                "dining room"
+            ]
+        ],
+        [
+            [
+                "afe773ff0423115a55e49defb4c62bf5e20cf172",
+                "Gwennie Mirror",
+                "bedroom"
+            ],
+            [
+                "6b63013dfa25cabaa2ef3d0830c19c823e6b1f7d",
+                "CB Desk",
+                "office"
+            ]
+        ]
+    ]
+}

@@ -25,6 +25,9 @@ class NPCConfig(BaseConfig):
 
 
 class MetricConfig(BaseConfig):
+    type: str
+    name: str
+    collision_threshold: Optional[float] = 0.5
     pass
 
 
@@ -114,6 +117,8 @@ class TaskConfig(BaseConfig):
     goal_threshold: Optional[float] = 0.8 # m
     task_path: Optional[str] = "" # 任务的json路径，可以拿来获取物品ID
     map_path: Optional[str] = "" # 地图文件路径
+    task_instruction: Optional[str] = ""
+    goal_image_path: Optional[List[str]] = []
 
 
 class SimulatorConfig(BaseConfig):

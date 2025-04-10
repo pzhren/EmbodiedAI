@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Move the Dracaena plant from the living room to the Bonsai table in the same room",
+    "Subtask list": [
+        "Move_to('Dracaena Marginata 122 cms_living room')",
+        "Grab('Dracaena Marginata 122 cms')",
+        "Move_to('Mid Century Modern End Table_living room')",
+        "Release('Mid Century Modern End Table')"
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            "132dcfd81bf3c8a059c73caa049deac411d3c11c",
+            "Dracaena Marginata 122 cms",
+            "living room"
+        ],
+        [
+            "2b39e8c2237ea1f0ba7417b2ec96d2aca51ee17b",
+            "Mid Century Modern End Table",
+            "living room"
+        ]
+    ]
+}

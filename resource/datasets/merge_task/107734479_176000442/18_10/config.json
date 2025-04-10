@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the artificial flower arrangement from the living room and place it on the tribeca dining table in the dining room",
+        "Move the Dualit Lite 2 Slot Toaster from the kitchen to the Metal And Wood Round Accent Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Artificial Flower Arrangements_living room')",
+            "Grab('Artificial Flower Arrangements')",
+            "Move_to('Tribeca Dining Table_living room,dining room')",
+            "Release('Artificial Flower Arrangements')"
+        ],
+        [
+            "Move_to('Dualit Lite 2 Slot Toaster Cream_kitchen')",
+            "Grab('Dualit Lite 2 Slot Toaster Cream')",
+            "Move_to('Metal And Wood Round Accent Table_living room')",
+            "Release('Metal And Wood Round Accent Table')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "d2a166e8ce6c464c51da9da9f0aeb45423ec210e",
+                "Artificial Flower Arrangements",
+                "living room"
+            ],
+            [
+                "e2470c29a511a8c9f4937a689ee1b9127974a61b",
+                "Tribeca Dining Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "712e8b6769bebb2dde5302e3de78d2c28d639759",
+                "Dualit Lite 2 Slot Toaster Cream",
+                "kitchen"
+            ],
+            [
+                "1520f695cc022d759701159cfea0c0f75aaa92c6",
+                "Metal And Wood Round Accent Table",
+                "living room"
+            ]
+        ]
+    ]
+}

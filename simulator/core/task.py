@@ -13,11 +13,6 @@ lazyimport(
 )
 
 
-class BaseMetric(ABC):
-    def __init__(self):
-        pass
-    def calculate(self, task, observations) -> float:
-        raise NotImplementedError
 
 
 class BaseTask(ABC):
@@ -38,11 +33,11 @@ class BaseTask(ABC):
         self.steps = 0
         self.work = True
         self._success = False
-
         for metric_config in config.metrics:
-            self.metrics[metric_config.name] = make_metric(metric_config)
+            self.metrics[metric_config.name] = make_metric(metric_config.type, metric_config)
 
     def step(self):
+
         pass 
 
     def get_observations(self) -> Dict[str, Any]:
@@ -56,25 +51,18 @@ class BaseTask(ABC):
         return obs
 
     def update_metrics(self):
-        for _, metric in self.metrics.items():
-            metric.update()
-
-    def calculate_metrics(self) -> dict:
-        metrics_res = {}
+        self._info = {}
         for name, metric in self.metrics.items():
-            metrics_res[name] = metric.calculate()
-        return metrics_res
+            self._info[name] = metric.update(self)
     
     def init(self, robots, objects):
         self.robots = robots
         self.objects = objects
+        self._reset_variables()
 
-    def _reset_variables(self, env):
+    def _reset_variables(self):
         """
         Task-specific internal variable reset
-
-        Args:
-            env (Environment): environment instance
         """
         # By default, reset reward, done, and info
         self._reward = None

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Potted Sansevieria in the living room and place it on the Envy Nightstand in the bedroom",
+        "Could you please pick up the Black Braided Basket from the living room and place it on the Chocolattice Toilet Brush Holder in the bathroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Potted Sansevieria_living room')",
+            "Grab('Potted Sansevieria')",
+            "Move_to('Envy Nightstand_bedroom')",
+            "Release('Potted Sansevieria')"
+        ],
+        [
+            "Move_to('Black Braided Basket_living room')",
+            "Grab('Black Braided Basket')",
+            "Move_to('Chocolattice Toilet Brush Holder_bathroom')",
+            "Release('Black Braided Basket')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "26a38271fb04e01cc4ae5f6cabad71f37a69231b",
+                "Potted Sansevieria",
+                "living room"
+            ],
+            [
+                "03639dab61b6903ff319e047b008cb6abec971c6",
+                "Envy Nightstand",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "7455be76e2dd607faf8df97b1e55bc9358118e55",
+                "Black Braided Basket",
+                "living room"
+            ],
+            [
+                "5785d33e6af231b40f4d8aba24f9be6d0a248bec",
+                "Chocolattice Toilet Brush Holder",
+                "bathroom"
+            ]
+        ]
+    ]
+}

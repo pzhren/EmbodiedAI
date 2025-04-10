@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Deer & Stag Heads With Antlers from the living room and place it on the Elite d'Art Console Table in the same room",
+        "Please take the artificial white rose flowers from the living room and place them on the nightstand in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Deer &amp; Stag Heads With Antlers_living room')",
+            "Grab('Deer &amp; Stag Heads With Antlers')",
+            "Move_to('Elite d'Art Console Table_living room')",
+            "Release('Deer &amp; Stag Heads With Antlers')"
+        ],
+        [
+            "Move_to('Bloom White Rose Artificial Flowers_living room')",
+            "Grab('Bloom White Rose Artificial Flowers')",
+            "Move_to('Marge Carson # Oval Drawer Nightstand_bedroom')",
+            "Release('Bloom White Rose Artificial Flowers')"
+        ]
+    ],
+    "Scene": "106366353_174226695",
+    "Target": [
+        [
+            [
+                "5dc4a6783c96d68da449ead5a92f9055fd3e8169",
+                "Deer &amp; Stag Heads With Antlers",
+                "living room"
+            ],
+            [
+                "ff7ac44857ed740b2e18b59fe3b0ebce25f34ad0",
+                "Elite d'Art Console Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "0eaeb0a2cb5c912b76c0bb825a67dc80c27781b4",
+                "Bloom White Rose Artificial Flowers",
+                "living room"
+            ],
+            [
+                "d463ac21f74cef85dd8bb9ddb81d710d461f9efd",
+                "Marge Carson # Oval Drawer Nightstand",
+                "bedroom"
+            ]
+        ]
+    ]
+}

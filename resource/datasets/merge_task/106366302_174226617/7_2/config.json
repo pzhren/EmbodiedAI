@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the interior plant from the living room and place it on the Elba cocktail table in the same room",
+        "Could you please take the laptop from the living room and place it on the tall closed storage in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Interior Plant_living room')",
+            "Grab('Interior Plant')",
+            "Move_to('Elba Cocktail Table_living room')",
+            "Release('Interior Plant')"
+        ],
+        [
+            "Move_to('Laptop Table_living room')",
+            "Grab('Laptop Table')",
+            "Move_to('Tall Closed Storage_office')",
+            "Release('Laptop Table')"
+        ]
+    ],
+    "Scene": "106366302_174226617",
+    "Target": [
+        [
+            [
+                "c37e1c6105bc43c44c14b8fb371b0d3c843ec313",
+                "Interior Plant",
+                "living room"
+            ],
+            [
+                "3940da56d443b5be11a6f117c5b62a4c6b1ff62f",
+                "Elba Cocktail Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "e1d51fa2fae90a92cbb8876689336c9ae07cb5a9",
+                "Laptop Table",
+                "living room"
+            ],
+            [
+                "aa69ad95160221cb20a99652a2d8b905bcefdac4",
+                "Tall Closed Storage",
+                "office"
+            ]
+        ]
+    ]
+}

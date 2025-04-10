@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the succulent plant from the living room and place it on the Springfield bench in the living room dining area",
+        "Please take the succulent plant from the living room and place it on the coffee table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Succulent Plant- 23x9x11 cms_living room')",
+            "Grab('Succulent Plant- 23x9x11 cms')",
+            "Move_to('Springfield Bench_living room,dining room')",
+            "Release('Succulent Plant- 23x9x11 cms')"
+        ],
+        [
+            "Move_to('Succulent Plant- 23x9x11 cms_living room')",
+            "Grab('Succulent Plant- 23x9x11 cms')",
+            "Move_to('Chamcha Wood Coffee Table_living room')",
+            "Release('Succulent Plant- 23x9x11 cms')"
+        ]
+    ],
+    "Scene": "103997460_171030507",
+    "Target": [
+        [
+            [
+                "14bdc1398760aef6d8757e2dd6a1c674d7851e66",
+                "Succulent Plant- 23x9x11 cms",
+                "living room"
+            ],
+            [
+                "5f34ecd96bc47d523bc77ef89369819e7d697fb5",
+                "Springfield Bench",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "14bdc1398760aef6d8757e2dd6a1c674d7851e66",
+                "Succulent Plant- 23x9x11 cms",
+                "living room"
+            ],
+            [
+                "cad4f138344f6fc378d72b05e0584155649f1ad6",
+                "Chamcha Wood Coffee Table",
+                "living room"
+            ]
+        ]
+    ]
+}

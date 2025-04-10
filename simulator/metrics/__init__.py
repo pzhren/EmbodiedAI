@@ -1,4 +1,5 @@
 from simulator.core.register import registry
+from .navigation_metric import *
 
 def make_metric(id_metric: str, *args):
     metric = registry.get_metric(id_metric)

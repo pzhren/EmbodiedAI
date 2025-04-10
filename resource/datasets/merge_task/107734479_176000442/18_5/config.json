@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the artificial flower arrangement from the living room and place it on the tribeca dining table in the dining room",
+        "Pick up the DeLonghi espresso maker in the kitchen and place it on the Magnolia Home Jo White Table Desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Artificial Flower Arrangements_living room')",
+            "Grab('Artificial Flower Arrangements')",
+            "Move_to('Tribeca Dining Table_living room,dining room')",
+            "Release('Artificial Flower Arrangements')"
+        ],
+        [
+            "Move_to('DeLonghi Icona Pump Espresso Maker Blue_kitchen')",
+            "Grab('DeLonghi Icona Pump Espresso Maker Blue')",
+            "Move_to('Magnolia Home Jo White Table Desk by Joanna Gaines_office')",
+            "Release('DeLonghi Icona Pump Espresso Maker Blue')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "d2a166e8ce6c464c51da9da9f0aeb45423ec210e",
+                "Artificial Flower Arrangements",
+                "living room"
+            ],
+            [
+                "e2470c29a511a8c9f4937a689ee1b9127974a61b",
+                "Tribeca Dining Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "335fc5d250b5f7e424fcb25a26bf001f738ca364",
+                "DeLonghi Icona Pump Espresso Maker Blue",
+                "kitchen"
+            ],
+            [
+                "63fb966ae8a96a526619aec4a5a45f81f589a787",
+                "Magnolia Home Jo White Table Desk by Joanna Gaines",
+                "office"
+            ]
+        ]
+    ]
+}

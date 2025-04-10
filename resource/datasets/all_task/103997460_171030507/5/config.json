@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Transport the stylish barstool from the dining room to the sleek coffee table in the living room",
+    "Subtask list": [
+        "Move_to('Oeste Barstool_dining room')",
+        "Grab('Oeste Barstool')",
+        "Move_to('Chamcha Wood Coffee Table_living room')",
+        "Release('Oeste Barstool')"
+    ],
+    "Scene": "103997460_171030507",
+    "Target": [
+        [
+            "0b28920a9c0655a6061b47049d7a50d9c4918840",
+            "Oeste Barstool",
+            "dining room"
+        ],
+        [
+            "cad4f138344f6fc378d72b05e0584155649f1ad6",
+            "Chamcha Wood Coffee Table",
+            "living room"
+        ]
+    ]
+}

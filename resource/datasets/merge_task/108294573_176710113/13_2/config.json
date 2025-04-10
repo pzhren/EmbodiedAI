@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the mustard throw blanket from the shared bedroom and living room area to the Maisie stool in the bedroom",
+        "take the HANDBLOWN CARVED GLASS VASE from the living room to the Palmer Desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Mustard Throw Blanket_bedroom,living room')",
+            "Grab('Mustard Throw Blanket')",
+            "Move_to('Maisie Stool_bedroom')",
+            "Release('Mustard Throw Blanket')"
+        ],
+        [
+            "Move_to('HANDBLOWN CARVED GLASS VASE_living room')",
+            "Grab('HANDBLOWN CARVED GLASS VASE')",
+            "Move_to('Palmer Desk_office')",
+            "Release('HANDBLOWN CARVED GLASS VASE')"
+        ]
+    ],
+    "Scene": "108294573_176710113",
+    "Target": [
+        [
+            [
+                "1deb8fb234f678ac5e06b4f967011c09eb8714ce",
+                "Mustard Throw Blanket",
+                "bedroom,living room"
+            ],
+            [
+                "5562de4568952a7f72318fff93085d7f5e98aba9",
+                "Maisie Stool",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "db8288398b2513371f31aff4e2e6271dd08476af",
+                "HANDBLOWN CARVED GLASS VASE",
+                "living room"
+            ],
+            [
+                "7e54244342d7a8716e723311313adf7d5ba1620e",
+                "Palmer Desk",
+                "office"
+            ]
+        ]
+    ]
+}

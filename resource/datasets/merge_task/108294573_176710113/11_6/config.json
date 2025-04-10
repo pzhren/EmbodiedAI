@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please pick up the HANDBLOWN CARVED GLASS VASE from the living room and place it on the Palmer Desk in the office",
+        "Please take the small cactus plant from the living room and place it on the vanity in the bathroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('HANDBLOWN CARVED GLASS VASE_living room')",
+            "Grab('HANDBLOWN CARVED GLASS VASE')",
+            "Move_to('Palmer Desk_office')",
+            "Release('HANDBLOWN CARVED GLASS VASE')"
+        ],
+        [
+            "Move_to('Cactus Plant in Round Pot_living room')",
+            "Grab('Cactus Plant in Round Pot')",
+            "Move_to('Loosli Vanity-Tribute/Similor TWINPLUS/Bodenschatz wood 2_bathroom')",
+            "Release('Cactus Plant in Round Pot')"
+        ]
+    ],
+    "Scene": "108294573_176710113",
+    "Target": [
+        [
+            [
+                "db8288398b2513371f31aff4e2e6271dd08476af",
+                "HANDBLOWN CARVED GLASS VASE",
+                "living room"
+            ],
+            [
+                "7e54244342d7a8716e723311313adf7d5ba1620e",
+                "Palmer Desk",
+                "office"
+            ]
+        ],
+        [
+            [
+                "c461ecb62efa4ef74eb34fb8152acf8cc8ac427d",
+                "Cactus Plant in Round Pot",
+                "living room"
+            ],
+            [
+                "2af49526b00696ff2449c5e19f44d6b8e653a1b4",
+                "Loosli Vanity-Tribute/Similor TWINPLUS/Bodenschatz wood 2",
+                "bathroom"
+            ]
+        ]
+    ]
+}

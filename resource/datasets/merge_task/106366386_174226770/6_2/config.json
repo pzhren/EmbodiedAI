@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "take the Xbox in the living room to the coffee table in the same room",
+        "take the Xbox from the living room and place it on the small nesting table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('XBOX One_living room')",
+            "Grab('XBOX One')",
+            "Move_to('Palais Coffee Table By Nate Berkus and Jeremiah Brent_living room')",
+            "Release('XBOX One')"
+        ],
+        [
+            "Move_to('XBOX One_living room')",
+            "Grab('XBOX One')",
+            "Move_to('Radleigh Small Nesting Table_living room')",
+            "Release('Radleigh Small Nesting Table')"
+        ]
+    ],
+    "Scene": "106366386_174226770",
+    "Target": [
+        [
+            [
+                "de016d31ad24004bf75eeb8c0107e966c626133f",
+                "XBOX One",
+                "living room"
+            ],
+            [
+                "138009a6121d7ebb8c3b78e3a411b4e33c388efb",
+                "Palais Coffee Table By Nate Berkus and Jeremiah Brent",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "de016d31ad24004bf75eeb8c0107e966c626133f",
+                "XBOX One",
+                "living room"
+            ],
+            [
+                "1a4841c613e9f5c2ba492107fb6aff4692c564a4",
+                "Radleigh Small Nesting Table",
+                "living room"
+            ]
+        ]
+    ]
+}

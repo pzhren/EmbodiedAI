@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the fleece picnic blanket from the kids room and place it on the sofa in the living room",
+    "Subtask list": [
+        "Move_to('Fleecy Waterproof Picnic Blanket_kids room')",
+        "Grab('Fleecy Waterproof Picnic Blanket')",
+        "Move_to('Lucy Queen Sleeper, Grey_living room')",
+        "Release('Fleecy Waterproof Picnic Blanket')"
+    ],
+    "Scene": "107734017_175999794",
+    "Target": [
+        [
+            "8653855b3b368d593143b42994b0d5d467f684f7",
+            "Fleecy Waterproof Picnic Blanket",
+            "kids room"
+        ],
+        [
+            "8de7f263d3b3d32707957c1f0c0727d82cc6f0f8",
+            "Lucy Queen Sleeper, Grey",
+            "living room"
+        ]
+    ]
+}

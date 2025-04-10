@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the memo pads from the office and place them near the handwoven jute large basket in the living room",
+        "Could you take the memo pads from the office and place them on the console table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Memo Pads_office')",
+            "Grab('Memo Pads')",
+            "Move_to('HANDWOVEN JUTE LARGE BASKET_living room')",
+            "Release('Memo Pads')"
+        ],
+        [
+            "Move_to('Memo Pads_office')",
+            "Grab('Memo Pads')",
+            "Move_to('Martha Stewart Holls 48'' Console Table_living room')",
+            "Release('Memo Pads')"
+        ]
+    ],
+    "Scene": "106366410_174226806",
+    "Target": [
+        [
+            [
+                "7e5d517c0e402fc5133a808a26157694583502da",
+                "Memo Pads",
+                "office"
+            ],
+            [
+                "8637547dcbdad6644369329ff84cbb4209cfa254",
+                "HANDWOVEN JUTE LARGE BASKET",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "7e5d517c0e402fc5133a808a26157694583502da",
+                "Memo Pads",
+                "office"
+            ],
+            [
+                "983e167916e12d920189d565ee5a3efb8419dd3b",
+                "Martha Stewart Holls 48'' Console Table",
+                "living room"
+            ]
+        ]
+    ]
+}

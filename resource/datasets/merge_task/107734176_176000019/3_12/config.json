@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the bowl of oranges from the dining room to the coffee table in the living room",
+        "Please take the Wok Basket from the kitchen and place it on the Boracay End Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Bowl of Oranges_dining room')",
+            "Grab('Bowl of Oranges')",
+            "Move_to('Coffee table_living room')",
+            "Release('Bowl of Oranges')"
+        ],
+        [
+            "Move_to('Wok Basket_kitchen')",
+            "Grab('Wok Basket')",
+            "Move_to('Boracay End Table_living room')",
+            "Release('Wok Basket')"
+        ]
+    ],
+    "Scene": "107734176_176000019",
+    "Target": [
+        [
+            [
+                "e073e5a03b9554fbdd72ae7290dcf8c1a04431f1",
+                "Bowl of Oranges",
+                "dining room"
+            ],
+            [
+                "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69",
+                "Coffee table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "34334ebad427446b63a6874253b5cd26cfded52f",
+                "Wok Basket",
+                "kitchen"
+            ],
+            [
+                "24304078d26588e2d78d4db014c5804506388cf5",
+                "Boracay End Table",
+                "living room"
+            ]
+        ]
+    ]
+}

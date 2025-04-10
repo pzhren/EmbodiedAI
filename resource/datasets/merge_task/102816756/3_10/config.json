@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the tissue box cover from the bedroom and place it on the desk in the office",
+        "Take the tissue box from the bedroom and put it on the end table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Cleo Rectangle Tissue Box Cover_bedroom,living room')",
+            "Grab('Cleo Rectangle Tissue Box Cover')",
+            "Move_to('Sherlock Desk_office')",
+            "Release('Cleo Rectangle Tissue Box Cover')"
+        ],
+        [
+            "Move_to('Cleo Rectangle Tissue Box Cover_bedroom,living room')",
+            "Grab('Cleo Rectangle Tissue Box Cover')",
+            "Move_to('Revolve Grange End Table_living room')",
+            "Release('Cleo Rectangle Tissue Box Cover')"
+        ]
+    ],
+    "Scene": "102816756",
+    "Target": [
+        [
+            [
+                "efc0201c33f516285eea7f5ad4516fed892a4ba6",
+                "Cleo Rectangle Tissue Box Cover",
+                "bedroom,living room"
+            ],
+            [
+                "a32ed32cc5693cb1ccd4792b7c3f0340cc8eda91",
+                "Sherlock Desk",
+                "office"
+            ]
+        ],
+        [
+            [
+                "efc0201c33f516285eea7f5ad4516fed892a4ba6",
+                "Cleo Rectangle Tissue Box Cover",
+                "bedroom,living room"
+            ],
+            [
+                "e773f6b54137ce8acdf013c000fc8dbf29071e1d",
+                "Revolve Grange End Table",
+                "living room"
+            ]
+        ]
+    ]
+}

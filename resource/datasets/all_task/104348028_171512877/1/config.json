@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the Gwen mirror from the bedroom and place it on the CB Desk in the office",
+    "Subtask list": [
+        "Move_to('Gwennie Mirror_bedroom')",
+        "Grab('Gwennie Mirror')",
+        "Move_to('CB Desk_office')",
+        "Release('Gwennie Mirror')"
+    ],
+    "Scene": "104348028_171512877",
+    "Target": [
+        [
+            "afe773ff0423115a55e49defb4c62bf5e20cf172",
+            "Gwennie Mirror",
+            "bedroom"
+        ],
+        [
+            "6b63013dfa25cabaa2ef3d0830c19c823e6b1f7d",
+            "CB Desk",
+            "office"
+        ]
+    ]
+}

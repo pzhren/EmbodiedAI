@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the candle holder from the living room and place it on the console chest in the bedroom or living room area",
+        "please pick up the storage stool from the bedroom and place it on the console table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Candle holder with candles_living room')",
+            "Grab('Candle holder with candles')",
+            "Move_to('Painswick 2-Drawer Console Chest_bedroom,living room')",
+            "Release('Candle holder with candles')"
+        ],
+        [
+            "Move_to('Melrose Storage Stool_bedroom')",
+            "Grab('Melrose Storage Stool')",
+            "Move_to('Lexington Console Table_living room')",
+            "Release('Melrose Storage Stool')"
+        ]
+    ],
+    "Scene": "105515505_173104584",
+    "Target": [
+        [
+            [
+                "06a829f5adcb128338196a8d95b288e8f5921610",
+                "Candle holder with candles",
+                "living room"
+            ],
+            [
+                "bcd4cee8acfd838f9b678d15286ecc841f174448",
+                "Painswick 2-Drawer Console Chest",
+                "bedroom,living room"
+            ]
+        ],
+        [
+            [
+                "aa3980e5647496394070f4591cff9cd143a067c0",
+                "Melrose Storage Stool",
+                "bedroom"
+            ],
+            [
+                "44689bfbf34013ad3ff7f8b05eb2cede29ff9f4e",
+                "Lexington Console Table",
+                "living room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the red rose pot in the living room and place it on the large tower laundry hamper in the bathroom",
+        "Take the Red Tulip Water Garden in the living room and place it on the Palais Coffee Table By Nate Berkus and Jeremiah Brent in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Rose in Pot, Red_living room')",
+            "Grab('Rose in Pot, Red')",
+            "Move_to('Large Tower Laundry Hamper, Black_bathroom')",
+            "Release('Rose in Pot, Red')"
+        ],
+        [
+            "Move_to('Red Tulip Water Garden_living room')",
+            "Grab('Red Tulip Water Garden')",
+            "Move_to('Palais Coffee Table By Nate Berkus and Jeremiah Brent_living room')",
+            "Release('Red Tulip Water Garden')"
+        ]
+    ],
+    "Scene": "106366386_174226770",
+    "Target": [
+        [
+            [
+                "c530e9e489c0e3f7859d1d34325faa69a0795289",
+                "Rose in Pot, Red",
+                "living room"
+            ],
+            [
+                "c43cfcfcf9b8cb403e4145b10d6e2377abb39822",
+                "Large Tower Laundry Hamper, Black",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "8f9440cad20bac4f3a17cef6a3b34879c75c26d5",
+                "Red Tulip Water Garden",
+                "living room"
+            ],
+            [
+                "138009a6121d7ebb8c3b78e3a411b4e33c388efb",
+                "Palais Coffee Table By Nate Berkus and Jeremiah Brent",
+                "living room"
+            ]
+        ]
+    ]
+}

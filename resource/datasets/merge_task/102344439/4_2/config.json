@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "take the natural pine sliding mirror bathroom cabinet from the bathroom and place it on the mid-century pop-up storage coffee table in the living room",
+        "Please take the bamboo bath mat from the bathroom and place it onto the pop-up storage coffee table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Natural Pine Sliding Mirror Bathroom Cabinet._bathroom')",
+            "Grab('Natural Pine Sliding Mirror Bathroom Cabinet.')",
+            "Move_to('Mid Century Pop-Up Storage Coffee Table, Marble/Walnut by WestElm_living room')",
+            "Release('Natural Pine Sliding Mirror Bathroom Cabinet.')"
+        ],
+        [
+            "Move_to('Bamboo Bath Mat_bathroom')",
+            "Grab('Bamboo Bath Mat')",
+            "Move_to('Mid Century Pop-Up Storage Coffee Table, Marble/Walnut by WestElm_living room')",
+            "Release('Bamboo Bath Mat')"
+        ]
+    ],
+    "Scene": "102344439",
+    "Target": [
+        [
+            [
+                "3432a71596b6cd7e944b6f19cf6d713fe17fc8bd",
+                "Natural Pine Sliding Mirror Bathroom Cabinet.",
+                "bathroom"
+            ],
+            [
+                "f8a1e9ad71428615e74490c8fe10d309b527ee55",
+                "Mid Century Pop-Up Storage Coffee Table, Marble/Walnut by WestElm",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "ad1c7575fa2367a9087858da0624554d0b6e7ba8",
+                "Bamboo Bath Mat",
+                "bathroom"
+            ],
+            [
+                "f8a1e9ad71428615e74490c8fe10d309b527ee55",
+                "Mid Century Pop-Up Storage Coffee Table, Marble/Walnut by WestElm",
+                "living room"
+            ]
+        ]
+    ]
+}

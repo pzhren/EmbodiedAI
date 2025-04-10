@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the indoor plant from the living room to the dresser in the bedroom",
+        "Please take the laptop table from the living room and place it by the storage closet in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Indoor Plant_living room')",
+            "Grab('Indoor Plant')",
+            "Move_to('Elden Dresser_bedroom,living room')",
+            "Release('Indoor Plant')"
+        ],
+        [
+            "Move_to('Laptop Table_living room')",
+            "Grab('Laptop Table')",
+            "Move_to('Tall Closed Storage_office')",
+            "Release('Laptop Table')"
+        ]
+    ],
+    "Scene": "106366302_174226617",
+    "Target": [
+        [
+            [
+                "deae2fd69a0752bc5da79083dad3a4b9f7317da6",
+                "Indoor Plant",
+                "living room"
+            ],
+            [
+                "1f48206dca3babea534ced6c1b440a24ed1d8bc1",
+                "Elden Dresser",
+                "bedroom,living room"
+            ]
+        ],
+        [
+            [
+                "e1d51fa2fae90a92cbb8876689336c9ae07cb5a9",
+                "Laptop Table",
+                "living room"
+            ],
+            [
+                "aa69ad95160221cb20a99652a2d8b905bcefdac4",
+                "Tall Closed Storage",
+                "office"
+            ]
+        ]
+    ]
+}

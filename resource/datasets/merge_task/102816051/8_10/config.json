@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Hot Wheels bike from the kids room and place it next to the sofa table in the living room",
+        "Take the Hot Wheels bike from the kids room and place it by the Helen 2 Seater Gold in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Hot Wheels 14'' Bike_kids room')",
+            "Grab('Hot Wheels 14'' Bike')",
+            "Move_to('Presby 54'' Sofa Table, White_living room')",
+            "Release('Hot Wheels 14'' Bike')"
+        ],
+        [
+            "Move_to('Hot Wheels 14'' Bike_kids room')",
+            "Grab('Hot Wheels 14'' Bike')",
+            "Move_to('Helen 2 Seater Gold_living room')",
+            "Release('Helen 2 Seater Gold')"
+        ]
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            [
+                "de69a7b4e62b31f695624352494a14893148eae3",
+                "Hot Wheels 14'' Bike",
+                "kids room"
+            ],
+            [
+                "d445bb243f12ba89fc91c9d2265408b5cd635632",
+                "Presby 54'' Sofa Table, White",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "de69a7b4e62b31f695624352494a14893148eae3",
+                "Hot Wheels 14'' Bike",
+                "kids room"
+            ],
+            [
+                "a3af53319e101c9601af134e6350c6d9e52340f3",
+                "Helen 2 Seater Gold",
+                "living room"
+            ]
+        ]
+    ]
+}

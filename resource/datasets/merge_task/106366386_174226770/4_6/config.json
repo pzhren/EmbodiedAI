@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "please take the decorative hand-blown glass vase from the living room and place it on the console table there",
+        "take the Xbox in the living room to the coffee table in the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('HANDBLOWN CARVED GLASS VASE_living room')",
+            "Grab('HANDBLOWN CARVED GLASS VASE')",
+            "Move_to('Blaine Console Table_living room')",
+            "Release('Blaine Console Table')"
+        ],
+        [
+            "Move_to('XBOX One_living room')",
+            "Grab('XBOX One')",
+            "Move_to('Palais Coffee Table By Nate Berkus and Jeremiah Brent_living room')",
+            "Release('XBOX One')"
+        ]
+    ],
+    "Scene": "106366386_174226770",
+    "Target": [
+        [
+            [
+                "db8288398b2513371f31aff4e2e6271dd08476af",
+                "HANDBLOWN CARVED GLASS VASE",
+                "living room"
+            ],
+            [
+                "c39181c455b8df6ac1b8112a8d2d7bc4a493d8e7",
+                "Blaine Console Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "de016d31ad24004bf75eeb8c0107e966c626133f",
+                "XBOX One",
+                "living room"
+            ],
+            [
+                "138009a6121d7ebb8c3b78e3a411b4e33c388efb",
+                "Palais Coffee Table By Nate Berkus and Jeremiah Brent",
+                "living room"
+            ]
+        ]
+    ]
+}

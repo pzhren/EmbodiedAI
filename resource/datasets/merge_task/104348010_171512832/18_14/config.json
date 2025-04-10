@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the stylish egg chair from the patio and move it to the classy Antwerp farm table in the dining room of the living room-dining room combo",
+        "take the espresso coffee maker from the kitchen and place it on the Provencal 220cm Farmhouse Table in the dining room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Egg Chair_patio')",
+            "Grab('Egg Chair')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('Egg Chair')"
+        ],
+        [
+            "Move_to('espresso coffee maker_kitchen')",
+            "Grab('espresso coffee maker')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('espresso coffee maker')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "fb7aa17b6fb609a6e9c1bcbacad1580ecbe69c21",
+                "Egg Chair",
+                "patio"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "9d027ac8635b202c4ba4d2e39708d98a918677af",
+                "espresso coffee maker",
+                "kitchen"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

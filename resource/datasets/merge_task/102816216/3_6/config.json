@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Pick up the Uno - Toilet Paper from the bathroom and place it on the Kitchen island in the kitchen",
+        "Pick up the decorative mirror in the bedroom and place it on the top cabinet in the kitchen"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Uno - Toilet Paper_bathroom')",
+            "Grab('Uno - Toilet Paper')",
+            "Move_to('Kitchen island, 90x150x90_kitchen')",
+            "Release('Uno - Toilet Paper')"
+        ],
+        [
+            "Move_to('Art Deco Star mirror_bedroom')",
+            "Grab('Art Deco Star mirror')",
+            "Move_to('Shaker Kitchen Wall Cabinet_kitchen')",
+            "Release('Shaker Kitchen Wall Cabinet')"
+        ]
+    ],
+    "Scene": "102816216",
+    "Target": [
+        [
+            [
+                "99665804218804022bc87b9e8edf35221a0bb8ee",
+                "Uno - Toilet Paper",
+                "bathroom"
+            ],
+            [
+                "465c339f405bf0f55e0c316820958dee1126dabd",
+                "Kitchen island, 90x150x90",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "04c4d866301b6f347bd5dc7b4d91e4f33dbd7688",
+                "Art Deco Star mirror",
+                "bedroom"
+            ],
+            [
+                "e8547e73e4873b76eff0eb2b6488e815d7dbf41c",
+                "Shaker Kitchen Wall Cabinet",
+                "kitchen"
+            ]
+        ]
+    ]
+}

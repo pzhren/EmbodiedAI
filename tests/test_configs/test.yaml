@@ -31,18 +31,21 @@ task:
       #     out_limit: default
       sensors:
         - type: "VisionSensor"
+          name: "front_camera"
           on_robot: True
           prim_path: "/World/Robot_0/camera_color_frame/rgb_camera"
           modals: ["rgb","depth"]
           orientation: [1, 0, 0, 0]
           position: [0, 0, 0.8]
         - type: "VisionSensor"
+          name: "left_camera"
           on_robot: True
           prim_path: "/World/Robot_0/camera_color_frame/rgb_camera_l"
           modals: ["rgb","depth"]
           orientation: [0.707, 0, 0, 0.707]
           position: [0, 0, 0.8]
         - type: "VisionSensor"
+          name: "right_camera"
           on_robot: True
           prim_path: "/World/Robot_0/camera_color_frame/rgb_camera_r"
           modals: ["rgb","depth"]

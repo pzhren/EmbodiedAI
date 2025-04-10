@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please transport the tissue box cover from the combined bedroom and living room area to the towel radiator in the bathroom",
+        "Take the Frosted pen pot from the office and place it on the Dining Table in the living room, dining room area"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Cleo Rectangle Tissue Box Cover_bedroom,living room')",
+            "Grab('Cleo Rectangle Tissue Box Cover')",
+            "Move_to('Bisque Cobra Therm Towel Radiator_bathroom')",
+            "Release('Cleo Rectangle Tissue Box Cover')"
+        ],
+        [
+            "Move_to('Frosted pen pot_office')",
+            "Grab('Frosted pen pot')",
+            "Move_to('Palerma Extendable Dining Table, White_living room,dining room')",
+            "Release('Palerma Extendable Dining Table, White')"
+        ]
+    ],
+    "Scene": "102816756",
+    "Target": [
+        [
+            [
+                "efc0201c33f516285eea7f5ad4516fed892a4ba6",
+                "Cleo Rectangle Tissue Box Cover",
+                "bedroom,living room"
+            ],
+            [
+                "88385377c5cb12d12e9dfbd70c2c28d6a05ed587",
+                "Bisque Cobra Therm Towel Radiator",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "24dcf1f353b54d43bf12bcf17266f2685091318d",
+                "Frosted pen pot",
+                "office"
+            ],
+            [
+                "786845ecaee2a43d135f922f4d617da02c8543b6",
+                "Palerma Extendable Dining Table, White",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

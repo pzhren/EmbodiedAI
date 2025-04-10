@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the Blue Hydrangea Water Garden from the living room and place it on the Island in the kitchen",
+    "Subtask list": [
+        "Move_to('Blue Hydrangea Water Garden_living room')",
+        "Grab('Blue Hydrangea Water Garden')",
+        "Move_to('Island, Classic_kitchen')",
+        "Release('Blue Hydrangea Water Garden')"
+    ],
+    "Scene": "102816852",
+    "Target": [
+        [
+            "51cd1976549241666bcf3cc27e6c4c580352361b",
+            "Blue Hydrangea Water Garden",
+            "living room"
+        ],
+        [
+            "39443cc1873a0b4954ce7a2c357f296e98bf86a7",
+            "Island, Classic",
+            "kitchen"
+        ]
+    ]
+}

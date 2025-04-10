@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you place the Jessie End Table from the living room onto the Kitchen island in the kitchen",
+        "Take the Deer & Stag Heads With Antlers from the living room and place it on the Elite d'Art Console Table in the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Jessie End Table_living room')",
+            "Grab('Jessie End Table')",
+            "Move_to('Kitchen island_kitchen')",
+            "Release('Jessie End Table')"
+        ],
+        [
+            "Move_to('Deer &amp; Stag Heads With Antlers_living room')",
+            "Grab('Deer &amp; Stag Heads With Antlers')",
+            "Move_to('Elite d'Art Console Table_living room')",
+            "Release('Deer &amp; Stag Heads With Antlers')"
+        ]
+    ],
+    "Scene": "106366353_174226695",
+    "Target": [
+        [
+            [
+                "a05ea4457ab8cb61197cbc8fb69a05437db684e8",
+                "Jessie End Table",
+                "living room"
+            ],
+            [
+                "af102d5ce3df9cc58b991eb618a86f66c5901efe",
+                "Kitchen island",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "5dc4a6783c96d68da449ead5a92f9055fd3e8169",
+                "Deer &amp; Stag Heads With Antlers",
+                "living room"
+            ],
+            [
+                "ff7ac44857ed740b2e18b59fe3b0ebce25f34ad0",
+                "Elite d'Art Console Table",
+                "living room"
+            ]
+        ]
+    ]
+}

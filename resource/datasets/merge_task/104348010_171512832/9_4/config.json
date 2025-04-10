@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the rolled-up towel from the bathroom and place it on the Camilla Buffet in the living room, dining room area",
+        "Take the soap from the bathroom and place it on the Laurent Buffet in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Rolled Up Towel_bathroom')",
+            "Grab('Rolled Up Towel')",
+            "Move_to('Camilla Buffet_living room,dining room')",
+            "Release('Rolled Up Towel')"
+        ],
+        [
+            "Move_to('Soap_bathroom')",
+            "Grab('Soap')",
+            "Move_to('Laurent Buffet_living room,dining room')",
+            "Release('Soap')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "6ece1a15f0f508aab2371808d58eefa8420cf725",
+                "Rolled Up Towel",
+                "bathroom"
+            ],
+            [
+                "4044949adb6b821464ccd5d36907963ea9f151e4",
+                "Camilla Buffet",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "6b21bd924df8f21c02fb8bb569de93bd887d8f1e",
+                "Soap",
+                "bathroom"
+            ],
+            [
+                "5a5c19684737ded0da7c2811f6303e154a305323",
+                "Laurent Buffet",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

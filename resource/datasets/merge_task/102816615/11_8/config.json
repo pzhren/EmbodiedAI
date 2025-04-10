@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Potted Sansevieria in the living room and place it on the Envy Nightstand in the bedroom",
+        "Could you please move the black wing chair from the dining room to the end table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Potted Sansevieria_living room')",
+            "Grab('Potted Sansevieria')",
+            "Move_to('Envy Nightstand_bedroom')",
+            "Release('Potted Sansevieria')"
+        ],
+        [
+            "Move_to('Revolve Britania Wing Chair, Black_dining room')",
+            "Grab('Revolve Britania Wing Chair, Black')",
+            "Move_to('Mid Century Modern End Table_living room')",
+            "Release('Mid Century Modern End Table')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "26a38271fb04e01cc4ae5f6cabad71f37a69231b",
+                "Potted Sansevieria",
+                "living room"
+            ],
+            [
+                "03639dab61b6903ff319e047b008cb6abec971c6",
+                "Envy Nightstand",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "2f8b1869ffc23806afac2e98ecc61cffb6c94ffc",
+                "Revolve Britania Wing Chair, Black",
+                "dining room"
+            ],
+            [
+                "2b39e8c2237ea1f0ba7417b2ec96d2aca51ee17b",
+                "Mid Century Modern End Table",
+                "living room"
+            ]
+        ]
+    ]
+}

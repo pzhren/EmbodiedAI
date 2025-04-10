@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Would you please take the coffee table from the living room and place it in the office",
+    "Subtask list": [
+        "Move_to('Blaine Coffee Table_living room')",
+        "Grab('Blaine Coffee Table')",
+        "Move_to('Foundry Writing Desk_office')",
+        "Release('Foundry Writing Desk')"
+    ],
+    "Scene": "104862681_172226874",
+    "Target": [
+        [
+            "df21f89b4559be781d3f70f41832c90ed035d0ef",
+            "Blaine Coffee Table",
+            "living room"
+        ],
+        [
+            "cd88a7acd6170502cae92b5054f0ea1327376a03",
+            "Foundry Writing Desk",
+            "office"
+        ]
+    ]
+}

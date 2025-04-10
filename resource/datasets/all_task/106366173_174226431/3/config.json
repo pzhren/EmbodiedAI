@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the Aloe plant from the living room and place it on the console table in the same room",
+    "Subtask list": [
+        "Move_to('Aloe and Succulents in Pot_living room')",
+        "Grab('Aloe and Succulents in Pot')",
+        "Move_to('47 Inch Metal + Wood Arched Front Console Table_living room')",
+        "Release('Aloe and Succulents in Pot')"
+    ],
+    "Scene": "106366173_174226431",
+    "Target": [
+        [
+            "6de33eda4e80839c178ffa8695f0e1730a2e2e7e",
+            "Aloe and Succulents in Pot",
+            "living room"
+        ],
+        [
+            "6f95e53e6f0aaaf34e950e5027dcd991865fa3fd",
+            "47 Inch Metal + Wood Arched Front Console Table",
+            "living room"
+        ]
+    ]
+}

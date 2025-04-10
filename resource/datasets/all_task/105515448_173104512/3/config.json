@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the Jason Maple Small Night Table in the bedroom and place it at the Shia 47 Inch Writing Desk in the office",
+    "Subtask list": [
+        "Move_to('Jason Maple Small Night Table_bedroom')",
+        "Grab('Jason Maple Small Night Table')",
+        "Move_to('Shia 47 Inch Writing Desk_office')",
+        "Release('Jason Maple Small Night Table')"
+    ],
+    "Scene": "105515448_173104512",
+    "Target": [
+        [
+            "67e11a52b2e73c099d55405f65f05f7b5141f6da",
+            "Jason Maple Small Night Table",
+            "bedroom"
+        ],
+        [
+            "f84624a16fc343ce94373e0ec45362127c70451a",
+            "Shia 47 Inch Writing Desk",
+            "office"
+        ]
+    ]
+}

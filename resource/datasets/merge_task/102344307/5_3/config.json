@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the soap dish from the bathroom and place it on the plant stand in the living room",
+        "Please take the dishwasher from the kitchen and place it near the Montauk Dresser which is located between the bedroom and living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Chancery Soap Dish, Rose Gold_bathroom')",
+            "Grab('Chancery Soap Dish, Rose Gold')",
+            "Move_to('KRYDDPEPPAR  Plant stand_living room')",
+            "Release('Chancery Soap Dish, Rose Gold')"
+        ],
+        [
+            "Move_to('Dishwasher_kitchen')",
+            "Grab('Dishwasher')",
+            "Move_to('Montauk Dresser_bedroom,living room')",
+            "Release('Dishwasher')"
+        ]
+    ],
+    "Scene": "102344307",
+    "Target": [
+        [
+            [
+                "84092984ce8a7cd7ad7aec05eb95d2612d3cd209",
+                "Chancery Soap Dish, Rose Gold",
+                "bathroom"
+            ],
+            [
+                "76046a7bd7a4335502da55243e677044f97511bc",
+                "KRYDDPEPPAR  Plant stand",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "43b7ea81b8b10840845f7d2551599c5a6d96e3d4",
+                "Dishwasher",
+                "kitchen"
+            ],
+            [
+                "2c69bff136e6399bfc19cfdd8af1d9e5bcbc7843",
+                "Montauk Dresser",
+                "bedroom,living room"
+            ]
+        ]
+    ]
+}

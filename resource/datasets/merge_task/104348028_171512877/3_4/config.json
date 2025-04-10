@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Essey Bin Bin Paper Bin from the kitchen and place it next to the Dave Waste Bin in the bathroom",
+        "Could you take the SERVE oil and vinegar set from the kitchen and move it to the TILT DINING CHAIR in the dining room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Essey Bin Bin Paper Bin_kitchen')",
+            "Grab('Essey Bin Bin Paper Bin')",
+            "Move_to('Dave Waste Bin_bathroom')",
+            "Release('Essey Bin Bin Paper Bin')"
+        ],
+        [
+            "Move_to('SERVE oil and vinegar set_kitchen')",
+            "Grab('SERVE oil and vinegar set')",
+            "Move_to('TILT DINING CHAIR_dining room')",
+            "Release('SERVE oil and vinegar set')"
+        ]
+    ],
+    "Scene": "104348028_171512877",
+    "Target": [
+        [
+            [
+                "f04effbe4d8e9d3c2739c647f6d05759b3b382c2",
+                "Essey Bin Bin Paper Bin",
+                "kitchen"
+            ],
+            [
+                "4244a5c9fb74784f8c25b5d8dc62a0628f87e3f0",
+                "Dave Waste Bin",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "345d3d2b0045fec71c7d31be7836b8001a56edf1",
+                "SERVE oil and vinegar set",
+                "kitchen"
+            ],
+            [
+                "79ad3c2f9e40b87e3a22d82bec28cbfb4f0ab627",
+                "TILT DINING CHAIR",
+                "dining room"
+            ]
+        ]
+    ]
+}

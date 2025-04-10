@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Jumbo Toy Bin from the kitchen and place it on the Princess Chest in the bedroom connected to the living room",
+        "Take the princess castle clock from the kids room and place it on the Kendall desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Jumbo Toy Bin_kitchen')",
+            "Grab('Jumbo Toy Bin')",
+            "Move_to('Princess Chest_bedroom,living room')",
+            "Release('Jumbo Toy Bin')"
+        ],
+        [
+            "Move_to('Princess Castle Clock_kids room')",
+            "Grab('Princess Castle Clock')",
+            "Move_to('Kendall Desk, Green_office')",
+            "Release('Princess Castle Clock')"
+        ]
+    ],
+    "Scene": "104862558_172226664",
+    "Target": [
+        [
+            [
+                "3157a2905050ec0ecbe06723d968e1743c38e11d",
+                "Jumbo Toy Bin",
+                "kitchen"
+            ],
+            [
+                "848c2cc9428329445b3de7dc982469c583b16c1d",
+                "Princess Chest",
+                "bedroom,living room"
+            ]
+        ],
+        [
+            [
+                "e33d9290a0833c81db2e7e55a80d86ea0aea6082",
+                "Princess Castle Clock",
+                "kids room"
+            ],
+            [
+                "1f3cb2b9ca2bbeab98947de6f076ac212474c494",
+                "Kendall Desk, Green",
+                "office"
+            ]
+        ]
+    ]
+}

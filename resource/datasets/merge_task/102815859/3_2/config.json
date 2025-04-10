@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the portable vase from the living room and place it on the kitchen's island",
+        "Move the small plant from the living room to the cabinet in the kitchen"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Interior Plant_living room')",
+            "Grab('Interior Plant')",
+            "Move_to('Kitchen island, 60x150x90_kitchen')",
+            "Release('Interior Plant')"
+        ],
+        [
+            "Move_to('Interior Plant_living room')",
+            "Grab('Interior Plant')",
+            "Move_to('Kitchen wall cabinet_kitchen')",
+            "Release('Interior Plant')"
+        ]
+    ],
+    "Scene": "102815859",
+    "Target": [
+        [
+            [
+                "adc3aaea6b4bf09f853a3844655b98af8c6af2a6",
+                "Interior Plant",
+                "living room"
+            ],
+            [
+                "882cb986ea0c0559d606858cf01c8282016ca3b4",
+                "Kitchen island, 60x150x90",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "adc3aaea6b4bf09f853a3844655b98af8c6af2a6",
+                "Interior Plant",
+                "living room"
+            ],
+            [
+                "7db8a0477da1bf4b1e10e64353201a000f1bfe47",
+                "Kitchen wall cabinet",
+                "kitchen"
+            ]
+        ]
+    ]
+}

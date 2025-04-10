@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the Potted Sansevieria from the living room to the Bamboo Towel ladder Rail in the bathroom",
+    "Subtask list": [
+        "Move_to('Potted Sansevieria_living room')",
+        "Grab('Potted Sansevieria')",
+        "Move_to('Bamboo Towel ladder Rail_bathroom')",
+        "Release('Potted Sansevieria')"
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            "26a38271fb04e01cc4ae5f6cabad71f37a69231b",
+            "Potted Sansevieria",
+            "living room"
+        ],
+        [
+            "96977a358791fbe57563c80b13f229625ad614ad",
+            "Bamboo Towel ladder Rail",
+            "bathroom"
+        ]
+    ]
+}

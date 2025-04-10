@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please move the Graphix 15 Piece Knife Set from the kitchen and place it on the Blaine Coffee Table in the living room",
+        "Please take the Potted Sansevieria from the living room and place it on the Foundry Writing Desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Graphix 15 Piece Knife Set_kitchen')",
+            "Grab('Graphix 15 Piece Knife Set')",
+            "Move_to('Blaine Coffee Table_living room')",
+            "Release('Graphix 15 Piece Knife Set')"
+        ],
+        [
+            "Move_to('Potted Sansevieria_living room')",
+            "Grab('Potted Sansevieria')",
+            "Move_to('Foundry Writing Desk_office')",
+            "Release('Potted Sansevieria')"
+        ]
+    ],
+    "Scene": "104862681_172226874",
+    "Target": [
+        [
+            [
+                "b5d1b894bdc9d22be934ea4efeae007d9048add2",
+                "Graphix 15 Piece Knife Set",
+                "kitchen"
+            ],
+            [
+                "df21f89b4559be781d3f70f41832c90ed035d0ef",
+                "Blaine Coffee Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "26a38271fb04e01cc4ae5f6cabad71f37a69231b",
+                "Potted Sansevieria",
+                "living room"
+            ],
+            [
+                "cd88a7acd6170502cae92b5054f0ea1327376a03",
+                "Foundry Writing Desk",
+                "office"
+            ]
+        ]
+    ]
+}

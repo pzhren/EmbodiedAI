@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the toaster from the kitchen to the side table in the living room",
+        "Pick up the Typhoon Capsule Kitchen Scale from the kitchen and place it on the Magnolia Home Strut Coffee Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Dualit Lite 2 Slot Toaster Cream_kitchen')",
+            "Grab('Dualit Lite 2 Slot Toaster Cream')",
+            "Move_to('Alton Chairside Table_living room')",
+            "Release('Dualit Lite 2 Slot Toaster Cream')"
+        ],
+        [
+            "Move_to('Typhoon Capsule Kitchen Scale_kitchen')",
+            "Grab('Typhoon Capsule Kitchen Scale')",
+            "Move_to('Magnolia Home Strut Coffee Table By Joanna Gaines, Natural_living room')",
+            "Release('Typhoon Capsule Kitchen Scale')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "712e8b6769bebb2dde5302e3de78d2c28d639759",
+                "Dualit Lite 2 Slot Toaster Cream",
+                "kitchen"
+            ],
+            [
+                "5ad40619a3bb78eac62b5d40817966fce8f9814e",
+                "Alton Chairside Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "befcc872791099a79d7b2a85723e2e2cea2d48cc",
+                "Typhoon Capsule Kitchen Scale",
+                "kitchen"
+            ],
+            [
+                "ce9c5810fc2943f1487a73b60e163d1d56f7a5c8",
+                "Magnolia Home Strut Coffee Table By Joanna Gaines, Natural",
+                "living room"
+            ]
+        ]
+    ]
+}

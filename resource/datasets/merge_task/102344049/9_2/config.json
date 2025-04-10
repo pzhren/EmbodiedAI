@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Transfer the small fridge from the kitchen to the coffee table in the living room",
+        "Could you please take the white dresser from the shared bedroom and living room area and place it next to the sofa table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('American fridge freezer, small_kitchen')",
+            "Grab('American fridge freezer, small')",
+            "Move_to('Igny 36'' Coffee Table_living room')",
+            "Release('American fridge freezer, small')"
+        ],
+        [
+            "Move_to('Bianca Dresser White_bedroom,living room')",
+            "Grab('Bianca Dresser White')",
+            "Move_to('Howard Sofa Table_living room')",
+            "Release('Bianca Dresser White')"
+        ]
+    ],
+    "Scene": "102344049",
+    "Target": [
+        [
+            [
+                "35230dedd6b3f035a602f7226fae2dcb61bf1e4a",
+                "American fridge freezer, small",
+                "kitchen"
+            ],
+            [
+                "6477ab2b133a11b1ab2b3eea0214f2c1a1d31b89",
+                "Igny 36'' Coffee Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "2abfe2c185d18cf31e3dcfd8833207d78daae258",
+                "Bianca Dresser White",
+                "bedroom,living room"
+            ],
+            [
+                "ddb12acb4121c7da12250e33726fef740aac08d6",
+                "Howard Sofa Table",
+                "living room"
+            ]
+        ]
+    ]
+}

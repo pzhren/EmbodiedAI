@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you please take the white dresser from the shared bedroom and living room area and place it next to the sofa table in the living room",
+    "Subtask list": [
+        "Move_to('Bianca Dresser White_bedroom,living room')",
+        "Grab('Bianca Dresser White')",
+        "Move_to('Howard Sofa Table_living room')",
+        "Release('Bianca Dresser White')"
+    ],
+    "Scene": "102344049",
+    "Target": [
+        [
+            "2abfe2c185d18cf31e3dcfd8833207d78daae258",
+            "Bianca Dresser White",
+            "bedroom,living room"
+        ],
+        [
+            "ddb12acb4121c7da12250e33726fef740aac08d6",
+            "Howard Sofa Table",
+            "living room"
+        ]
+    ]
+}

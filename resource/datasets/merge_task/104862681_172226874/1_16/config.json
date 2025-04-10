@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Would you please take the coffee table from the living room and place it in the office",
+        "Please move the kitchen tool set from the kitchen and place it on the coffee table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Blaine Coffee Table_living room')",
+            "Grab('Blaine Coffee Table')",
+            "Move_to('Foundry Writing Desk_office')",
+            "Release('Foundry Writing Desk')"
+        ],
+        [
+            "Move_to('Brabantia S- Line Kitchen Tool set_kitchen')",
+            "Grab('Brabantia S- Line Kitchen Tool set')",
+            "Move_to('Blaine Coffee Table_living room')",
+            "Release('Brabantia S- Line Kitchen Tool set')"
+        ]
+    ],
+    "Scene": "104862681_172226874",
+    "Target": [
+        [
+            [
+                "df21f89b4559be781d3f70f41832c90ed035d0ef",
+                "Blaine Coffee Table",
+                "living room"
+            ],
+            [
+                "cd88a7acd6170502cae92b5054f0ea1327376a03",
+                "Foundry Writing Desk",
+                "office"
+            ]
+        ],
+        [
+            [
+                "fc34254f2aac6da46964ede7efc727a33a755919",
+                "Brabantia S- Line Kitchen Tool set",
+                "kitchen"
+            ],
+            [
+                "df21f89b4559be781d3f70f41832c90ed035d0ef",
+                "Blaine Coffee Table",
+                "living room"
+            ]
+        ]
+    ]
+}

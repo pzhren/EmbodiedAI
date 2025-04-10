@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please transport the Bonsai Style Money Silk Tree from the living room to the Shallow under cabinet in the bathroom",
+        "move the Blanc Doeuf Waste Bin from the bathroom to the Mid Century Modern Cocktail Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('51 In. Bonsai Style Money Silk Tree 5249_living room')",
+            "Grab('51 In. Bonsai Style Money Silk Tree 5249')",
+            "Move_to('The Collection onderkast Shallow 120cm, zwart _bathroom')",
+            "Release('51 In. Bonsai Style Money Silk Tree 5249')"
+        ],
+        [
+            "Move_to('Blanc Doeuf Waste Bin_bathroom')",
+            "Grab('Blanc Doeuf Waste Bin')",
+            "Move_to('Mid Century Modern Cocktail Table_living room')",
+            "Release('Blanc Doeuf Waste Bin')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "7c1ea02edb0783b985500678dd07578dbfa0e635",
+                "51 In. Bonsai Style Money Silk Tree 5249",
+                "living room"
+            ],
+            [
+                "a01b0bf94c12425aa537eb467300a5125132e425",
+                "The Collection onderkast Shallow 120cm, zwart ",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "5f42b2ef37446d00652bccc1fea78258518a807e",
+                "Blanc Doeuf Waste Bin",
+                "bathroom"
+            ],
+            [
+                "7025cd14a948f491902ef12724f0fe6e4ce672af",
+                "Mid Century Modern Cocktail Table",
+                "living room"
+            ]
+        ]
+    ]
+}

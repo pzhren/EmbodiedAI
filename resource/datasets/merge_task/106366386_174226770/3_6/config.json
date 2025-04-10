@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Cactus Plant in the living room and move it to the Rose bowl in the kitchen",
+        "take the Xbox in the living room to the coffee table in the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Cactus Plant in Round Pot_living room')",
+            "Grab('Cactus Plant in Round Pot')",
+            "Move_to('Rose bowl_kitchen,dining room')",
+            "Release('Cactus Plant in Round Pot')"
+        ],
+        [
+            "Move_to('XBOX One_living room')",
+            "Grab('XBOX One')",
+            "Move_to('Palais Coffee Table By Nate Berkus and Jeremiah Brent_living room')",
+            "Release('XBOX One')"
+        ]
+    ],
+    "Scene": "106366386_174226770",
+    "Target": [
+        [
+            [
+                "c461ecb62efa4ef74eb34fb8152acf8cc8ac427d",
+                "Cactus Plant in Round Pot",
+                "living room"
+            ],
+            [
+                "095cf56558ca75b0ab0a4037ce7c8f870085aff9",
+                "Rose bowl",
+                "kitchen,dining room"
+            ]
+        ],
+        [
+            [
+                "de016d31ad24004bf75eeb8c0107e966c626133f",
+                "XBOX One",
+                "living room"
+            ],
+            [
+                "138009a6121d7ebb8c3b78e3a411b4e33c388efb",
+                "Palais Coffee Table By Nate Berkus and Jeremiah Brent",
+                "living room"
+            ]
+        ]
+    ]
+}

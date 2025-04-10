@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the laptop table from the living room and place it by the storage closet in the office",
+        "Move the laptop table from the living room to the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Laptop Table_living room')",
+            "Grab('Laptop Table')",
+            "Move_to('Tall Closed Storage_office')",
+            "Release('Laptop Table')"
+        ],
+        [
+            "Move_to('Laptop Table_living room')",
+            "Grab('Laptop Table')",
+            "Move_to('Bayfront Full Lounge Bed_bedroom')",
+            "Release('Laptop Table')"
+        ]
+    ],
+    "Scene": "106366302_174226617",
+    "Target": [
+        [
+            [
+                "e1d51fa2fae90a92cbb8876689336c9ae07cb5a9",
+                "Laptop Table",
+                "living room"
+            ],
+            [
+                "aa69ad95160221cb20a99652a2d8b905bcefdac4",
+                "Tall Closed Storage",
+                "office"
+            ]
+        ],
+        [
+            [
+                "e1d51fa2fae90a92cbb8876689336c9ae07cb5a9",
+                "Laptop Table",
+                "living room"
+            ],
+            [
+                "c7f36c5508f215a6c531cf12e31cb0c46a716c0b",
+                "Bayfront Full Lounge Bed",
+                "bedroom"
+            ]
+        ]
+    ]
+}

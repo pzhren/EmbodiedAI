@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the bathrobe from the bathroom and place it by the bed in the bedroom",
+    "Subtask list": [
+        "Move_to('Bath robe_bathroom')",
+        "Grab('Bath robe')",
+        "Move_to('Pearson Queen Gallery Cane Bed, Basa Natural_bedroom')",
+        "Release('Bath robe')"
+    ],
+    "Scene": "107734254_176000121",
+    "Target": [
+        [
+            "973c8db16abb188caa2868a16141b643684e3881",
+            "Bath robe",
+            "bathroom"
+        ],
+        [
+            "744366310169ddec779b5d1b2989d3a1b9f28205",
+            "Pearson Queen Gallery Cane Bed, Basa Natural",
+            "bedroom"
+        ]
+    ]
+}

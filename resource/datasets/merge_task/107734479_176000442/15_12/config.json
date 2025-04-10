@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the small mirror in the bedroom and place it next to the laundry bin in the bathroom",
+        "Move the toaster from the kitchen to the side table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('MIRROR-HANGING SHIELD SMALL 25X29_bedroom')",
+            "Grab('MIRROR-HANGING SHIELD SMALL 25X29')",
+            "Move_to('The Water Hyacinth Laundry Bin_bathroom')",
+            "Release('The Water Hyacinth Laundry Bin')"
+        ],
+        [
+            "Move_to('Dualit Lite 2 Slot Toaster Cream_kitchen')",
+            "Grab('Dualit Lite 2 Slot Toaster Cream')",
+            "Move_to('Alton Chairside Table_living room')",
+            "Release('Dualit Lite 2 Slot Toaster Cream')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "ff7366f18451584f3e0f84494b90dc32e97cd9da",
+                "MIRROR-HANGING SHIELD SMALL 25X29",
+                "bedroom"
+            ],
+            [
+                "df3ba3caf8c1321195b13e23ee8642b09d1a9323",
+                "The Water Hyacinth Laundry Bin",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "712e8b6769bebb2dde5302e3de78d2c28d639759",
+                "Dualit Lite 2 Slot Toaster Cream",
+                "kitchen"
+            ],
+            [
+                "5ad40619a3bb78eac62b5d40817966fce8f9814e",
+                "Alton Chairside Table",
+                "living room"
+            ]
+        ]
+    ]
+}

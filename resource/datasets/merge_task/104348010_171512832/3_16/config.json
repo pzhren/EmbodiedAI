@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Pick up the soap in the bathroom and place it on the coffee table in the living room",
+        "Take the milk pot from the kitchen and place it on the farmhouse table in the combined living room and dining room area"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Soap_bathroom')",
+            "Grab('Soap')",
+            "Move_to('Bayshore Coffee Table With Casters_living room')",
+            "Release('Soap')"
+        ],
+        [
+            "Move_to('Milk Pot_kitchen')",
+            "Grab('Milk Pot')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('Milk Pot')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "6b21bd924df8f21c02fb8bb569de93bd887d8f1e",
+                "Soap",
+                "bathroom"
+            ],
+            [
+                "b7be6ad871800511e7a320626aac37272eb919c4",
+                "Bayshore Coffee Table With Casters",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "b1722de81151d2e1b1f51e779414e9259473ed1f",
+                "Milk Pot",
+                "kitchen"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

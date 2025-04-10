@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please move the small round mirror from the bathroom to the Grand Sofa in the living room",
+        "Could you please transfer the espresso maker from the kitchen to the wooden side table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Harlesden Round 610mm Mirror, Gold_bathroom')",
+            "Grab('Harlesden Round 610mm Mirror, Gold')",
+            "Move_to('Bailey GrandSofa, Lustre Cappuccino_living room')",
+            "Release('Harlesden Round 610mm Mirror, Gold')"
+        ],
+        [
+            "Move_to('DeLonghi Icona Pump Espresso Maker Blue_kitchen')",
+            "Grab('DeLonghi Icona Pump Espresso Maker Blue')",
+            "Move_to('Burled Wood Side Table_living room')",
+            "Release('DeLonghi Icona Pump Espresso Maker Blue')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "49ac5c85bea178f60e16380f334e6b36cd113985",
+                "Harlesden Round 610mm Mirror, Gold",
+                "bathroom"
+            ],
+            [
+                "efcf1f36229805bf808017e52e0aacdb4d731a4a",
+                "Bailey GrandSofa, Lustre Cappuccino",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "335fc5d250b5f7e424fcb25a26bf001f738ca364",
+                "DeLonghi Icona Pump Espresso Maker Blue",
+                "kitchen"
+            ],
+            [
+                "fd60745108c2bae82be7fa631ac73df6fd6125ab",
+                "Burled Wood Side Table",
+                "living room"
+            ]
+        ]
+    ]
+}

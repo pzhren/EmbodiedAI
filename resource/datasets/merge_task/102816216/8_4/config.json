@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "take the towel rack from the bathroom and place it on the Ubud Console in the living room",
+        "Take the Rattan Collection Egg Shaped Laundry Basket from the bathroom and place it on the floor next to the Squeezer Kitchen Roll Holder in the kitchen"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Inox Towel Rack_bathroom')",
+            "Grab('Inox Towel Rack')",
+            "Move_to('Ubud Console_living room')",
+            "Release('Inox Towel Rack')"
+        ],
+        [
+            "Move_to('Rattan Collection Egg Shaped Laundry Basket_bathroom')",
+            "Grab('Rattan Collection Egg Shaped Laundry Basket')",
+            "Move_to('Squeezer Kitchen Roll Holder_kitchen')",
+            "Release('Rattan Collection Egg Shaped Laundry Basket')"
+        ]
+    ],
+    "Scene": "102816216",
+    "Target": [
+        [
+            [
+                "8c6c2542f3fc80d98cd324c58496eafd3ecdd5c5",
+                "Inox Towel Rack",
+                "bathroom"
+            ],
+            [
+                "f72c0e86085c6b6f48b82d47d5066248be8b7c4a",
+                "Ubud Console",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "724302468f654ed8bf8d72ad82e5057db5d08336",
+                "Rattan Collection Egg Shaped Laundry Basket",
+                "bathroom"
+            ],
+            [
+                "a1316f752216c5938f26c70c7c0af1cd80f470e1",
+                "Squeezer Kitchen Roll Holder",
+                "kitchen"
+            ]
+        ]
+    ]
+}

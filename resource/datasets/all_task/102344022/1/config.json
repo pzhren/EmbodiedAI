@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the decorative pillar wreath with the gold candle from the living room and place it on the kitchen island",
+    "Subtask list": [
+        "Move_to('Pillar Wreath With Gold Candle_living room')",
+        "Grab('Pillar Wreath With Gold Candle')",
+        "Move_to('Kitchen island_kitchen')",
+        "Release('Pillar Wreath With Gold Candle')"
+    ],
+    "Scene": "102344022",
+    "Target": [
+        [
+            "ca1f1a0a2e87b15b5159e98547d7d2ca8f4020c7",
+            "Pillar Wreath With Gold Candle",
+            "living room"
+        ],
+        [
+            "af102d5ce3df9cc58b991eb618a86f66c5901efe",
+            "Kitchen island",
+            "kitchen"
+        ]
+    ]
+}

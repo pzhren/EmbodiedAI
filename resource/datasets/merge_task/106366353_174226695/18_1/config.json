@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "place the artificial flowers from the living room onto the coffee table in the living room",
+        "Please move the decorative flowers from the living room to the antique sofa elsewhere in the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Bloom White Rose Artificial Flowers_living room')",
+            "Grab('Bloom White Rose Artificial Flowers')",
+            "Move_to('Arden Coffee Table_living room')",
+            "Release('Bloom White Rose Artificial Flowers')"
+        ],
+        [
+            "Move_to('Bloom White Rose Artificial Flowers_living room')",
+            "Grab('Bloom White Rose Artificial Flowers')",
+            "Move_to('2 seater - Antique Tan_living room')",
+            "Release('2 seater - Antique Tan')"
+        ]
+    ],
+    "Scene": "106366353_174226695",
+    "Target": [
+        [
+            [
+                "0eaeb0a2cb5c912b76c0bb825a67dc80c27781b4",
+                "Bloom White Rose Artificial Flowers",
+                "living room"
+            ],
+            [
+                "584abd8d91d3cc16c728bba6f9818904b177f59a",
+                "Arden Coffee Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "0eaeb0a2cb5c912b76c0bb825a67dc80c27781b4",
+                "Bloom White Rose Artificial Flowers",
+                "living room"
+            ],
+            [
+                "5e0c57c89718bf9f8859b6181978d150aed749ca",
+                "2 seater - Antique Tan",
+                "living room"
+            ]
+        ]
+    ]
+}

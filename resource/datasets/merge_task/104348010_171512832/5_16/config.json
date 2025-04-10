@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the rolled up towel from the bathroom and place it on the couch in the living room",
+        "Take the milk pot from the kitchen and place it on the farmhouse table in the combined living room and dining room area"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Rolled Up Towel_bathroom')",
+            "Grab('Rolled Up Towel')",
+            "Move_to('Utopia Sofa_living room')",
+            "Release('Rolled Up Towel')"
+        ],
+        [
+            "Move_to('Milk Pot_kitchen')",
+            "Grab('Milk Pot')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('Milk Pot')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "6ece1a15f0f508aab2371808d58eefa8420cf725",
+                "Rolled Up Towel",
+                "bathroom"
+            ],
+            [
+                "d08d31c962d7e9fe620baf6562354b192c862ebe",
+                "Utopia Sofa",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "b1722de81151d2e1b1f51e779414e9259473ed1f",
+                "Milk Pot",
+                "kitchen"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

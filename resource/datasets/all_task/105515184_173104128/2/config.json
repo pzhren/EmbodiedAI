@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the black pen pot from the office and place it on the Mid-Century Pop-Up Storage Coffee Table in the living room",
+    "Subtask list": [
+        "Move_to('Pen pot - black_office')",
+        "Grab('Pen pot - black')",
+        "Move_to('Mid Century Pop-Up Storage Coffee Table, Marble/Walnut by WestElm_living room')",
+        "Release('Pen pot - black')"
+    ],
+    "Scene": "105515184_173104128",
+    "Target": [
+        [
+            "73cae0c00c31e895cbf8c6ac2bcc3ce718d03b21",
+            "Pen pot - black",
+            "office"
+        ],
+        [
+            "f8a1e9ad71428615e74490c8fe10d309b527ee55",
+            "Mid Century Pop-Up Storage Coffee Table, Marble/Walnut by WestElm",
+            "living room"
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Coppercomb Toilet Brush Holder from the bathroom and place it on the Studio 3 Door Wardrobe in the bedroom",
+        "Could you please pick up the Rolled Up Towel from the bathroom and place it on the Vivian Sofa in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Coppercomb Toilet Brush Holder_bathroom')",
+            "Grab('Coppercomb Toilet Brush Holder')",
+            "Move_to('Studio 3 Door Wardrobe_bedroom')",
+            "Release('Coppercomb Toilet Brush Holder')"
+        ],
+        [
+            "Move_to('Rolled Up Towel_bathroom')",
+            "Grab('Rolled Up Towel')",
+            "Move_to('Vivian Sofa_living room')",
+            "Release('Rolled Up Towel')"
+        ]
+    ],
+    "Scene": "106366134_174226362",
+    "Target": [
+        [
+            [
+                "6edb72ff1959e26a1d7c66976786c85129df83a4",
+                "Coppercomb Toilet Brush Holder",
+                "bathroom"
+            ],
+            [
+                "5e74de078d0d0bd18ecb9f41feb1fd2aef42d478",
+                "Studio 3 Door Wardrobe",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "6ece1a15f0f508aab2371808d58eefa8420cf725",
+                "Rolled Up Towel",
+                "bathroom"
+            ],
+            [
+                "dcb1a1b641a5441628a79be4811dcb71f4640a19",
+                "Vivian Sofa",
+                "living room"
+            ]
+        ]
+    ]
+}

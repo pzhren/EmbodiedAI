@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please move the black wing chair from the dining room to the end table in the living room",
+        "Move the Dracaena plant from the living room to the Bonsai table in the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Revolve Britania Wing Chair, Black_dining room')",
+            "Grab('Revolve Britania Wing Chair, Black')",
+            "Move_to('Mid Century Modern End Table_living room')",
+            "Release('Mid Century Modern End Table')"
+        ],
+        [
+            "Move_to('Dracaena Marginata 122 cms_living room')",
+            "Grab('Dracaena Marginata 122 cms')",
+            "Move_to('Mid Century Modern End Table_living room')",
+            "Release('Mid Century Modern End Table')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "2f8b1869ffc23806afac2e98ecc61cffb6c94ffc",
+                "Revolve Britania Wing Chair, Black",
+                "dining room"
+            ],
+            [
+                "2b39e8c2237ea1f0ba7417b2ec96d2aca51ee17b",
+                "Mid Century Modern End Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "132dcfd81bf3c8a059c73caa049deac411d3c11c",
+                "Dracaena Marginata 122 cms",
+                "living room"
+            ],
+            [
+                "2b39e8c2237ea1f0ba7417b2ec96d2aca51ee17b",
+                "Mid Century Modern End Table",
+                "living room"
+            ]
+        ]
+    ]
+}

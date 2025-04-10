@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the SEAGRASS TRAY from the kitchen,dining room region and place it on the Boracay End Table in the living room",
+    "Subtask list": [
+        "Move_to('SEAGRASS TRAY_kitchen,dining room')",
+        "Grab('SEAGRASS TRAY')",
+        "Move_to('Boracay End Table_living room')",
+        "Release('SEAGRASS TRAY')"
+    ],
+    "Scene": "107734176_176000019",
+    "Target": [
+        [
+            "9d1a125a6188c7009effc529afd62b15bc84ee0a",
+            "SEAGRASS TRAY",
+            "kitchen,dining room"
+        ],
+        [
+            "24304078d26588e2d78d4db014c5804506388cf5",
+            "Boracay End Table",
+            "living room"
+        ]
+    ]
+}

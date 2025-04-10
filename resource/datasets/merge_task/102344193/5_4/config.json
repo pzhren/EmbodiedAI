@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you move the potted faux succulent from the living room and place it onto a bar stool in the dining room",
+        "Could you please pick up the potted faux succulents from the living room and place it on the dining room table"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Potted Faux Succulent White Pot 14\"_living room')",
+            "Grab('Potted Faux Succulent White Pot 14\"')",
+            "Move_to('Slim Bar Stool_dining room')",
+            "Release('Potted Faux Succulent White Pot 14\"')"
+        ],
+        [
+            "Move_to('Potted Faux Succulent White Pot 14\"_living room')",
+            "Grab('Potted Faux Succulent White Pot 14\"')",
+            "Move_to('Custom Oak Large Table w/Miller Leg_living room,dining room')",
+            "Release('Potted Faux Succulent White Pot 14\"')"
+        ]
+    ],
+    "Scene": "102344193",
+    "Target": [
+        [
+            [
+                "3c163391afeb4130eadacb6ef9b6e5930329a32b",
+                "Potted Faux Succulent White Pot 14\"",
+                "living room"
+            ],
+            [
+                "782f0a9b9f354f0055c0ba551ebde2f459b83a09",
+                "Slim Bar Stool",
+                "dining room"
+            ]
+        ],
+        [
+            [
+                "3c163391afeb4130eadacb6ef9b6e5930329a32b",
+                "Potted Faux Succulent White Pot 14\"",
+                "living room"
+            ],
+            [
+                "468c7b290805e59fc57bfd0792437889e4fa4403",
+                "Custom Oak Large Table w/Miller Leg",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

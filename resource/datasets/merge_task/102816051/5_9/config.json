@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the plush bathmat in the bathroom and place it on the nightstand in the bedroom",
+        "Move the toy sink from the kids room to the contemporary dresser in the shared bedroom and living room area"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('DWR Plush Bathmat, Grey_bathroom')",
+            "Grab('DWR Plush Bathmat, Grey')",
+            "Move_to('Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent_bedroom')",
+            "Release('DWR Plush Bathmat, Grey')"
+        ],
+        [
+            "Move_to('TOY SINK/STOVE UNIT_kids room')",
+            "Grab('TOY SINK/STOVE UNIT')",
+            "Move_to('Modern Industrial Dresser, Coffee_bedroom,living room')",
+            "Release('TOY SINK/STOVE UNIT')"
+        ]
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            [
+                "bbdc1b4f72d1347d144887c3b5d4d614737d3737",
+                "DWR Plush Bathmat, Grey",
+                "bathroom"
+            ],
+            [
+                "2b9af0f16b5f1e6b7621bfa05afb45b3581e0736",
+                "Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "0add22cc4b991c0b80e94a36eb72687f44ccb3ba",
+                "TOY SINK/STOVE UNIT",
+                "kids room"
+            ],
+            [
+                "58c1f347bea26244cf39efe7ff10e6cebaf48758",
+                "Modern Industrial Dresser, Coffee",
+                "bedroom,living room"
+            ]
+        ]
+    ]
+}

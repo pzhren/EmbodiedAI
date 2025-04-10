@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the Gold pillar candle from the living room and place it on the kitchen island",
+        "Please take the white wardrobe from the bedroom and place it in the kids room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Gold pillar candle_living room')",
+            "Grab('Gold pillar candle')",
+            "Move_to('Kitchen island_kitchen')",
+            "Release('Gold pillar candle')"
+        ],
+        [
+            "Move_to('Designer Double Wardrobe White &amp; White Gloss_bedroom')",
+            "Grab('Designer Double Wardrobe White &amp; White Gloss')",
+            "Move_to('STUVA Wardrobe 4 doors, white_kids room')",
+            "Release('Designer Double Wardrobe White &amp; White Gloss')"
+        ]
+    ],
+    "Scene": "104348028_171512877",
+    "Target": [
+        [
+            [
+                "0e48fad4f2a0e48200aeef0129e6e588b9400cc7",
+                "Gold pillar candle",
+                "living room"
+            ],
+            [
+                "af102d5ce3df9cc58b991eb618a86f66c5901efe",
+                "Kitchen island",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "0546a524f6584d5beeaf8a72b3df494f9ceeec90",
+                "Designer Double Wardrobe White &amp; White Gloss",
+                "bedroom"
+            ],
+            [
+                "674b628a31866a0ccef740fbb4836d8aca5a5d51",
+                "STUVA Wardrobe 4 doors, white",
+                "kids room"
+            ]
+        ]
+    ]
+}

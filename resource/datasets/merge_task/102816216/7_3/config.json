@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "find the towel rack in the bathroom and place it on the kitchen island",
+        "Pick up the Uno - Toilet Paper from the bathroom and place it on the Kitchen island in the kitchen"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Inox Towel Rack_bathroom')",
+            "Grab('Inox Towel Rack')",
+            "Move_to('Kitchen island, 90x150x90_kitchen')",
+            "Release('Inox Towel Rack')"
+        ],
+        [
+            "Move_to('Uno - Toilet Paper_bathroom')",
+            "Grab('Uno - Toilet Paper')",
+            "Move_to('Kitchen island, 90x150x90_kitchen')",
+            "Release('Uno - Toilet Paper')"
+        ]
+    ],
+    "Scene": "102816216",
+    "Target": [
+        [
+            [
+                "8c6c2542f3fc80d98cd324c58496eafd3ecdd5c5",
+                "Inox Towel Rack",
+                "bathroom"
+            ],
+            [
+                "465c339f405bf0f55e0c316820958dee1126dabd",
+                "Kitchen island, 90x150x90",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "99665804218804022bc87b9e8edf35221a0bb8ee",
+                "Uno - Toilet Paper",
+                "bathroom"
+            ],
+            [
+                "465c339f405bf0f55e0c316820958dee1126dabd",
+                "Kitchen island, 90x150x90",
+                "kitchen"
+            ]
+        ]
+    ]
+}

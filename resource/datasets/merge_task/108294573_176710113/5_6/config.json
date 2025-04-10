@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the small set of candles from the living room and place them on top of the toilet in the bathroom",
+        "Please take the small cactus plant from the living room and place it on the vanity in the bathroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('baltic pillar candle, set of 2_living room')",
+            "Grab('baltic pillar candle, set of 2')",
+            "Move_to('Toilette/toilette Casual_bathroom')",
+            "Release('baltic pillar candle, set of 2')"
+        ],
+        [
+            "Move_to('Cactus Plant in Round Pot_living room')",
+            "Grab('Cactus Plant in Round Pot')",
+            "Move_to('Loosli Vanity-Tribute/Similor TWINPLUS/Bodenschatz wood 2_bathroom')",
+            "Release('Cactus Plant in Round Pot')"
+        ]
+    ],
+    "Scene": "108294573_176710113",
+    "Target": [
+        [
+            [
+                "52b86c8bfd1804c6bed56b1d51c0d95e2f6ae285",
+                "baltic pillar candle, set of 2",
+                "living room"
+            ],
+            [
+                "5368e6e4bb682ba841fb69dc471f5c048a33fa48",
+                "Toilette/toilette Casual",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "c461ecb62efa4ef74eb34fb8152acf8cc8ac427d",
+                "Cactus Plant in Round Pot",
+                "living room"
+            ],
+            [
+                "2af49526b00696ff2449c5e19f44d6b8e653a1b4",
+                "Loosli Vanity-Tribute/Similor TWINPLUS/Bodenschatz wood 2",
+                "bathroom"
+            ]
+        ]
+    ]
+}

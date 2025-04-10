@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the studio wardrobe in the bedroom and place it in the garden",
+        "Could you please take the grey bathmat from the bathroom and place it on the bunk bed in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Studio 3 Door Wardrobe_bedroom')",
+            "Grab('Studio 3 Door Wardrobe')",
+            "Move_to('Alice in Wonderland - Rosemary Topiary Spiral_outdoor,garden')",
+            "Release('Studio 3 Door Wardrobe')"
+        ],
+        [
+            "Move_to('DWR Plush Bathmat, Grey_bathroom')",
+            "Grab('DWR Plush Bathmat, Grey')",
+            "Move_to('Mateo Full Over Full Bunk Bed, Blue_bedroom')",
+            "Release('DWR Plush Bathmat, Grey')"
+        ]
+    ],
+    "Scene": "106366134_174226362",
+    "Target": [
+        [
+            [
+                "5e74de078d0d0bd18ecb9f41feb1fd2aef42d478",
+                "Studio 3 Door Wardrobe",
+                "bedroom"
+            ],
+            [
+                "7d0ea89ff0407744a6989714223ef8a73d117d8f",
+                "Alice in Wonderland - Rosemary Topiary Spiral",
+                "outdoor,garden"
+            ]
+        ],
+        [
+            [
+                "bbdc1b4f72d1347d144887c3b5d4d614737d3737",
+                "DWR Plush Bathmat, Grey",
+                "bathroom"
+            ],
+            [
+                "6c4b1c3b37dcb378028b96f3253e3b463689cb5d",
+                "Mateo Full Over Full Bunk Bed, Blue",
+                "bedroom"
+            ]
+        ]
+    ]
+}

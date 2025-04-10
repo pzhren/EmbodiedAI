@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Pick up the toilet paper holder from the bathroom and place it on the nightstand in the bedroom",
+        "Pick up the toy stove unit from the kids room and place it on the nightstand in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Vipp Toilet Paper Holder_bathroom')",
+            "Grab('Vipp Toilet Paper Holder')",
+            "Move_to('Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent_bedroom')",
+            "Release('Vipp Toilet Paper Holder')"
+        ],
+        [
+            "Move_to('TOY SINK/STOVE UNIT_kids room')",
+            "Grab('TOY SINK/STOVE UNIT')",
+            "Move_to('Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent_bedroom')",
+            "Release('TOY SINK/STOVE UNIT')"
+        ]
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            [
+                "797bcf6deace50c829a3f341f7ad35bbbda8080f",
+                "Vipp Toilet Paper Holder",
+                "bathroom"
+            ],
+            [
+                "2b9af0f16b5f1e6b7621bfa05afb45b3581e0736",
+                "Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "0add22cc4b991c0b80e94a36eb72687f44ccb3ba",
+                "TOY SINK/STOVE UNIT",
+                "kids room"
+            ],
+            [
+                "2b9af0f16b5f1e6b7621bfa05afb45b3581e0736",
+                "Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent",
+                "bedroom"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please bring the decorative floor mirror from the bedroom and place it next to the TV console in the living room",
+    "Subtask list": [
+        "Move_to('Decorative Floor Mirror_bedroom')",
+        "Grab('Decorative Floor Mirror')",
+        "Move_to('Hamilton 76 Inch Tv Console_living room')",
+        "Release('Decorative Floor Mirror')"
+    ],
+    "Scene": "105515448_173104512",
+    "Target": [
+        [
+            "c2f412d6053a51a162ad0c42eb0116d30cd181be",
+            "Decorative Floor Mirror",
+            "bedroom"
+        ],
+        [
+            "823e68a00d4aa37069b991bdf75f2d2cced124a3",
+            "Hamilton 76 Inch Tv Console",
+            "living room"
+        ]
+    ]
+}

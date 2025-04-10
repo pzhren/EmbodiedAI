@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the memo pads from the office and place them in the kitchen cabinet with a sink",
+    "Subtask list": [
+        "Move_to('Memo Pads_office')",
+        "Grab('Memo Pads')",
+        "Move_to('Kitchen Cabinet with sink, 2 doors_kitchen')",
+        "Release('Memo Pads')"
+    ],
+    "Scene": "104862534_172226625",
+    "Target": [
+        [
+            "7e5d517c0e402fc5133a808a26157694583502da",
+            "Memo Pads",
+            "office"
+        ],
+        [
+            "6a5c779b2deee1af83e7d2f85605fe0a1d39f665",
+            "Kitchen Cabinet with sink, 2 doors",
+            "kitchen"
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the small mirror in the bedroom and place it next to the laundry bin in the bathroom",
+        "Take the DeLonghi espresso maker from the kitchen and place it on the Magnolia Home Jo White Table Desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('MIRROR-HANGING SHIELD SMALL 25X29_bedroom')",
+            "Grab('MIRROR-HANGING SHIELD SMALL 25X29')",
+            "Move_to('The Water Hyacinth Laundry Bin_bathroom')",
+            "Release('The Water Hyacinth Laundry Bin')"
+        ],
+        [
+            "Move_to('DeLonghi Icona Pump Espresso Maker Blue_kitchen')",
+            "Grab('DeLonghi Icona Pump Espresso Maker Blue')",
+            "Move_to('Magnolia Home Jo White Table Desk by Joanna Gaines_office')",
+            "Release('DeLonghi Icona Pump Espresso Maker Blue')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "ff7366f18451584f3e0f84494b90dc32e97cd9da",
+                "MIRROR-HANGING SHIELD SMALL 25X29",
+                "bedroom"
+            ],
+            [
+                "df3ba3caf8c1321195b13e23ee8642b09d1a9323",
+                "The Water Hyacinth Laundry Bin",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "335fc5d250b5f7e424fcb25a26bf001f738ca364",
+                "DeLonghi Icona Pump Espresso Maker Blue",
+                "kitchen"
+            ],
+            [
+                "63fb966ae8a96a526619aec4a5a45f81f589a787",
+                "Magnolia Home Jo White Table Desk by Joanna Gaines",
+                "office"
+            ]
+        ]
+    ]
+}

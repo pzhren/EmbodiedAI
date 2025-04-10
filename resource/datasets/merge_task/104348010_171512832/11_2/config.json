@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the espresso coffee maker from the kitchen and place it on the Provencal 220cm Farmhouse Table in the living room, dining room area",
+        "Please take the rolled-up towel from the bathroom and place it on the Utopia sofa in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('espresso coffee maker_kitchen')",
+            "Grab('espresso coffee maker')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('espresso coffee maker')"
+        ],
+        [
+            "Move_to('Rolled Up Towel_bathroom')",
+            "Grab('Rolled Up Towel')",
+            "Move_to('Utopia Sofa_living room')",
+            "Release('Rolled Up Towel')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "9d027ac8635b202c4ba4d2e39708d98a918677af",
+                "espresso coffee maker",
+                "kitchen"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "6ece1a15f0f508aab2371808d58eefa8420cf725",
+                "Rolled Up Towel",
+                "bathroom"
+            ],
+            [
+                "d08d31c962d7e9fe620baf6562354b192c862ebe",
+                "Utopia Sofa",
+                "living room"
+            ]
+        ]
+    ]
+}

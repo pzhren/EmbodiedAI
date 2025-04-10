@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the candle holder from the living room and place it on the console chest in the bedroom or living room area",
+        "Could you please take the house cleaning set from the kids room and place it on the coffee table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Candle holder with candles_living room')",
+            "Grab('Candle holder with candles')",
+            "Move_to('Painswick 2-Drawer Console Chest_bedroom,living room')",
+            "Release('Candle holder with candles')"
+        ],
+        [
+            "Move_to('House Cleaning Set - 7 Pieces- Item # MESSY_kids room')",
+            "Grab('House Cleaning Set - 7 Pieces- Item # MESSY')",
+            "Move_to('Coffee table_living room')",
+            "Release('House Cleaning Set - 7 Pieces- Item # MESSY')"
+        ]
+    ],
+    "Scene": "105515505_173104584",
+    "Target": [
+        [
+            [
+                "06a829f5adcb128338196a8d95b288e8f5921610",
+                "Candle holder with candles",
+                "living room"
+            ],
+            [
+                "bcd4cee8acfd838f9b678d15286ecc841f174448",
+                "Painswick 2-Drawer Console Chest",
+                "bedroom,living room"
+            ]
+        ],
+        [
+            [
+                "6a00ec1d0608d4df771a01042f5c902e15a42aa2",
+                "House Cleaning Set - 7 Pieces- Item # MESSY",
+                "kids room"
+            ],
+            [
+                "1663b946dd2c160317930f5b2eb724549409e6b0",
+                "Coffee table",
+                "living room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the milk pot from the kitchen and place it on the farmhouse table in the combined living room and dining room area",
+        "Please take the rolled-up towel from the bathroom and place it in the laundry bin in the same bathroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Milk Pot_kitchen')",
+            "Grab('Milk Pot')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('Milk Pot')"
+        ],
+        [
+            "Move_to('Rolled Up Towel_bathroom')",
+            "Grab('Rolled Up Towel')",
+            "Move_to('Birch Laundry Bin_bathroom')",
+            "Release('Rolled Up Towel')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "b1722de81151d2e1b1f51e779414e9259473ed1f",
+                "Milk Pot",
+                "kitchen"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "6ece1a15f0f508aab2371808d58eefa8420cf725",
+                "Rolled Up Towel",
+                "bathroom"
+            ],
+            [
+                "949851e617feda8ab8270e6bb748fdbae4f79ac0",
+                "Birch Laundry Bin",
+                "bathroom"
+            ]
+        ]
+    ]
+}

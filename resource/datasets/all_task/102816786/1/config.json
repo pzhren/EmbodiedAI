@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you please move the Calla Lily Bouquet from the living room to the Brighton Queen Upholstered Bed in the bedroom",
+    "Subtask list": [
+        "Move_to('CALLA LILY BOUQUET IN GLASS_living room')",
+        "Grab('CALLA LILY BOUQUET IN GLASS')",
+        "Move_to('Brighton Queen Upholstered Platform Bed By Nate Berkus And Jeremiah Brent_bedroom')",
+        "Release('CALLA LILY BOUQUET IN GLASS')"
+    ],
+    "Scene": "102816786",
+    "Target": [
+        [
+            "fd99e8af0aab94cafa5ec73787d55cfb330623fa",
+            "CALLA LILY BOUQUET IN GLASS",
+            "living room"
+        ],
+        [
+            "cb88813ef78001887105294c74675cc7438c8e17",
+            "Brighton Queen Upholstered Platform Bed By Nate Berkus And Jeremiah Brent",
+            "bedroom"
+        ]
+    ]
+}

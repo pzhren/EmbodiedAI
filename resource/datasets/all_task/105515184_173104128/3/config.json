@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Can you take one of the small storage boxes from the bedroom or living room and place it on the storage coffee table in the living room",
+    "Subtask list": [
+        "Move_to('French Storage Boxes Set of 3_bedroom,living room')",
+        "Grab('French Storage Boxes Set of 3')",
+        "Move_to('Mid Century Pop-Up Storage Coffee Table, Marble/Walnut by WestElm_living room')",
+        "Release('French Storage Boxes Set of 3')"
+    ],
+    "Scene": "105515184_173104128",
+    "Target": [
+        [
+            "e7237bb3b460231cda20b4c93e1fdb65de9eac41",
+            "French Storage Boxes Set of 3",
+            "bedroom,living room"
+        ],
+        [
+            "f8a1e9ad71428615e74490c8fe10d309b527ee55",
+            "Mid Century Pop-Up Storage Coffee Table, Marble/Walnut by WestElm",
+            "living room"
+        ]
+    ]
+}

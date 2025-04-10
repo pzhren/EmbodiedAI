@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you please take the laptop from the living room and place it on the tall closed storage in the office",
+    "Subtask list": [
+        "Move_to('Laptop Table_living room')",
+        "Grab('Laptop Table')",
+        "Move_to('Tall Closed Storage_office')",
+        "Release('Laptop Table')"
+    ],
+    "Scene": "106366302_174226617",
+    "Target": [
+        [
+            "e1d51fa2fae90a92cbb8876689336c9ae07cb5a9",
+            "Laptop Table",
+            "living room"
+        ],
+        [
+            "aa69ad95160221cb20a99652a2d8b905bcefdac4",
+            "Tall Closed Storage",
+            "office"
+        ]
+    ]
+}

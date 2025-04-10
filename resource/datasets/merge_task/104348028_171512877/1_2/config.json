@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Gwen mirror from the bedroom and place it on the CB Desk in the office",
+        "Please take the white wardrobe from the bedroom and place it in the kids room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Gwennie Mirror_bedroom')",
+            "Grab('Gwennie Mirror')",
+            "Move_to('CB Desk_office')",
+            "Release('Gwennie Mirror')"
+        ],
+        [
+            "Move_to('Designer Double Wardrobe White &amp; White Gloss_bedroom')",
+            "Grab('Designer Double Wardrobe White &amp; White Gloss')",
+            "Move_to('STUVA Wardrobe 4 doors, white_kids room')",
+            "Release('Designer Double Wardrobe White &amp; White Gloss')"
+        ]
+    ],
+    "Scene": "104348028_171512877",
+    "Target": [
+        [
+            [
+                "afe773ff0423115a55e49defb4c62bf5e20cf172",
+                "Gwennie Mirror",
+                "bedroom"
+            ],
+            [
+                "6b63013dfa25cabaa2ef3d0830c19c823e6b1f7d",
+                "CB Desk",
+                "office"
+            ]
+        ],
+        [
+            [
+                "0546a524f6584d5beeaf8a72b3df494f9ceeec90",
+                "Designer Double Wardrobe White &amp; White Gloss",
+                "bedroom"
+            ],
+            [
+                "674b628a31866a0ccef740fbb4836d8aca5a5d51",
+                "STUVA Wardrobe 4 doors, white",
+                "kids room"
+            ]
+        ]
+    ]
+}

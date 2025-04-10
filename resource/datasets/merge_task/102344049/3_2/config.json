@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the 29-inch faux potted Monstera plant from the living room and move it to the bedside table in the bedroom",
+        "Could you please take the white dresser from the shared bedroom and living room area and place it next to the sofa table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Faux Potted Monstera Plant 29\"_living room')",
+            "Grab('Faux Potted Monstera Plant 29\"')",
+            "Move_to('Loop Bedside Table, Oak/Black_bedroom')",
+            "Release('Faux Potted Monstera Plant 29\"')"
+        ],
+        [
+            "Move_to('Bianca Dresser White_bedroom,living room')",
+            "Grab('Bianca Dresser White')",
+            "Move_to('Howard Sofa Table_living room')",
+            "Release('Bianca Dresser White')"
+        ]
+    ],
+    "Scene": "102344049",
+    "Target": [
+        [
+            [
+                "bd8a1dc70062c8e7c8a33cb92ee86fbe6b015547",
+                "Faux Potted Monstera Plant 29\"",
+                "living room"
+            ],
+            [
+                "311a303f0b3f212b97c5bb23a79a6499efda2f71",
+                "Loop Bedside Table, Oak/Black",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "2abfe2c185d18cf31e3dcfd8833207d78daae258",
+                "Bianca Dresser White",
+                "bedroom,living room"
+            ],
+            [
+                "ddb12acb4121c7da12250e33726fef740aac08d6",
+                "Howard Sofa Table",
+                "living room"
+            ]
+        ]
+    ]
+}

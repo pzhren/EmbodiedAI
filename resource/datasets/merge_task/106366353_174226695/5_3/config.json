@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the beautiful Bloom White Rose Artificial Flowers from the living room and place them on the Magnolia Home Jo'S Kitchen Island by Joanna Gaines in the kitchen",
+        "Take the artificial flowers from the living room and place them on the side table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Bloom White Rose Artificial Flowers_living room')",
+            "Grab('Bloom White Rose Artificial Flowers')",
+            "Move_to('Magnolia Home Jo'S Kitchen Island by Joanna Gaines, White_kitchen')",
+            "Release('Bloom White Rose Artificial Flowers')"
+        ],
+        [
+            "Move_to('Bloom White Rose Artificial Flowers_living room')",
+            "Grab('Bloom White Rose Artificial Flowers')",
+            "Move_to('Habibi Side Table_living room')",
+            "Release('Bloom White Rose Artificial Flowers')"
+        ]
+    ],
+    "Scene": "106366353_174226695",
+    "Target": [
+        [
+            [
+                "0eaeb0a2cb5c912b76c0bb825a67dc80c27781b4",
+                "Bloom White Rose Artificial Flowers",
+                "living room"
+            ],
+            [
+                "7bbdbc91b4e39aa072906b2c0c8e1deca281603b",
+                "Magnolia Home Jo'S Kitchen Island by Joanna Gaines, White",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "0eaeb0a2cb5c912b76c0bb825a67dc80c27781b4",
+                "Bloom White Rose Artificial Flowers",
+                "living room"
+            ],
+            [
+                "4b410e0f052d226f5d429064000e29e1cae39d8a",
+                "Habibi Side Table",
+                "living room"
+            ]
+        ]
+    ]
+}

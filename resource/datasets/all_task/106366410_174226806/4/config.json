@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the Frosted pen pot from the office and place it in the living room near the Xbox One",
+    "Subtask list": [
+        "Move_to('Frosted pen pot_office')",
+        "Grab('Frosted pen pot')",
+        "Move_to('XBOX One_living room')",
+        "Release('Frosted pen pot')"
+    ],
+    "Scene": "106366410_174226806",
+    "Target": [
+        [
+            "24dcf1f353b54d43bf12bcf17266f2685091318d",
+            "Frosted pen pot",
+            "office"
+        ],
+        [
+            "de016d31ad24004bf75eeb8c0107e966c626133f",
+            "XBOX One",
+            "living room"
+        ]
+    ]
+}

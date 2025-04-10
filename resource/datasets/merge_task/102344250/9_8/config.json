@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the small plant from the living room and place it on the dressing table in the bedroom",
+        "Could you please bring the wall hanging from the living room to the folding trolley in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('plant_living room')",
+            "Grab('plant')",
+            "Move_to('Dressing table bench Legs_bedroom')",
+            "Release('Dressing table bench Legs')"
+        ],
+        [
+            "Move_to('Moments - Wall Hanging_living room')",
+            "Grab('Moments - Wall Hanging')",
+            "Move_to('Beech Folding Trolley_living room')",
+            "Release('Moments - Wall Hanging')"
+        ]
+    ],
+    "Scene": "102344250",
+    "Target": [
+        [
+            [
+                "cb47ce31bd4309c8b3c99a1d53db43f7046cb489",
+                "plant",
+                "living room"
+            ],
+            [
+                "01e5e60f2cb12562e4e8f7bf78beb2832a5638e9",
+                "Dressing table bench Legs",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "b10620e794a96839cce5f37974578229667b89b7",
+                "Moments - Wall Hanging",
+                "living room"
+            ],
+            [
+                "fcd4cfd15f790272e5ce95bab3c62de87beb3142",
+                "Beech Folding Trolley",
+                "living room"
+            ]
+        ]
+    ]
+}

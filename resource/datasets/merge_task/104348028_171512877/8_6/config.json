@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Gold Lacquer Coasters from the kitchen or dining room and place them on the Calypso TV Unit in the living room",
+        "Could you please take the succulent plant from the living room and place it on the dining room table"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Gold Lacquer Coasters_kitchen,dining room')",
+            "Grab('Gold Lacquer Coasters')",
+            "Move_to('Calypso TV Unit_living room')",
+            "Release('Gold Lacquer Coasters')"
+        ],
+        [
+            "Move_to('Succulent Plant- 23x9x11 cms_living room')",
+            "Grab('Succulent Plant- 23x9x11 cms')",
+            "Move_to('TILT DINING CHAIR_dining room')",
+            "Release('Succulent Plant- 23x9x11 cms')"
+        ]
+    ],
+    "Scene": "104348028_171512877",
+    "Target": [
+        [
+            [
+                "0af34cda233e590a19b3448a06ac6cb33be17f2f",
+                "Gold Lacquer Coasters",
+                "kitchen,dining room"
+            ],
+            [
+                "c70ef2f552fd561ae25806cfe63d5d7e07ac6f76",
+                "Calypso TV Unit",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "14bdc1398760aef6d8757e2dd6a1c674d7851e66",
+                "Succulent Plant- 23x9x11 cms",
+                "living room"
+            ],
+            [
+                "79ad3c2f9e40b87e3a22d82bec28cbfb4f0ab627",
+                "TILT DINING CHAIR",
+                "dining room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you place the Jessie End Table from the living room onto the Kitchen island in the kitchen",
+        "Please take the artificial flowers from the living room and place them on the bedside nightstand in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Jessie End Table_living room')",
+            "Grab('Jessie End Table')",
+            "Move_to('Kitchen island_kitchen')",
+            "Release('Jessie End Table')"
+        ],
+        [
+            "Move_to('Bloom White Rose Artificial Flowers_living room')",
+            "Grab('Bloom White Rose Artificial Flowers')",
+            "Move_to('Marge Carson # Oval Drawer Nightstand_bedroom')",
+            "Release('Bloom White Rose Artificial Flowers')"
+        ]
+    ],
+    "Scene": "106366353_174226695",
+    "Target": [
+        [
+            [
+                "a05ea4457ab8cb61197cbc8fb69a05437db684e8",
+                "Jessie End Table",
+                "living room"
+            ],
+            [
+                "af102d5ce3df9cc58b991eb618a86f66c5901efe",
+                "Kitchen island",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "0eaeb0a2cb5c912b76c0bb825a67dc80c27781b4",
+                "Bloom White Rose Artificial Flowers",
+                "living room"
+            ],
+            [
+                "d463ac21f74cef85dd8bb9ddb81d710d461f9efd",
+                "Marge Carson # Oval Drawer Nightstand",
+                "bedroom"
+            ]
+        ]
+    ]
+}

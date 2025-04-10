@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Kaffee-Vollautomat from the kitchen and place it on the BrixXo Quatro Plus CAD Corner desk in the office",
+        "Please take the Potted Sansevieria from the living room and place it on the Foundry Writing Desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Kaffee-Vollautomat_kitchen')",
+            "Grab('Kaffee-Vollautomat')",
+            "Move_to('BrixXo Quatro Plus CAD Corner desk B200, White/Black legs_office')",
+            "Release('Kaffee-Vollautomat')"
+        ],
+        [
+            "Move_to('Potted Sansevieria_living room')",
+            "Grab('Potted Sansevieria')",
+            "Move_to('Foundry Writing Desk_office')",
+            "Release('Potted Sansevieria')"
+        ]
+    ],
+    "Scene": "104862681_172226874",
+    "Target": [
+        [
+            [
+                "b9d409dc9ea5660568acf09addbf1c259625c345",
+                "Kaffee-Vollautomat",
+                "kitchen"
+            ],
+            [
+                "29851ebf2741441607a1ab9cd16950540ed60477",
+                "BrixXo Quatro Plus CAD Corner desk B200, White/Black legs",
+                "office"
+            ]
+        ],
+        [
+            [
+                "26a38271fb04e01cc4ae5f6cabad71f37a69231b",
+                "Potted Sansevieria",
+                "living room"
+            ],
+            [
+                "cd88a7acd6170502cae92b5054f0ea1327376a03",
+                "Foundry Writing Desk",
+                "office"
+            ]
+        ]
+    ]
+}

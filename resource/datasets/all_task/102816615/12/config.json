@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Pick up the Mid Century Modern End Table in the living room and place it beside the Blanc Doeuf Waste Bin in the bathroom",
+    "Subtask list": [
+        "Move_to('Mid Century Modern End Table_living room')",
+        "Grab('Mid Century Modern End Table')",
+        "Move_to('Blanc Doeuf Waste Bin_bathroom')",
+        "Release('Mid Century Modern End Table')"
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            "2b39e8c2237ea1f0ba7417b2ec96d2aca51ee17b",
+            "Mid Century Modern End Table",
+            "living room"
+        ],
+        [
+            "5f42b2ef37446d00652bccc1fea78258518a807e",
+            "Blanc Doeuf Waste Bin",
+            "bathroom"
+        ]
+    ]
+}

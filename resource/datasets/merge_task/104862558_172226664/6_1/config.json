@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the Princess Chest from the shared bedroom and living room area to the Tropical Plant in the living room",
+        "Move the cozy kitchen from the kids room to the booksheld in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Princess Chest_bedroom,living room')",
+            "Grab('Princess Chest')",
+            "Move_to('Tropical Plant_living room')",
+            "Release('Princess Chest')"
+        ],
+        [
+            "Move_to('Cozy Kitchen - Item # COZYKIT_kids room')",
+            "Grab('Cozy Kitchen - Item # COZYKIT')",
+            "Move_to('Baybrin Bookshelf_living room')",
+            "Release('Cozy Kitchen - Item # COZYKIT')"
+        ]
+    ],
+    "Scene": "104862558_172226664",
+    "Target": [
+        [
+            [
+                "848c2cc9428329445b3de7dc982469c583b16c1d",
+                "Princess Chest",
+                "bedroom,living room"
+            ],
+            [
+                "fc3a8896e25e5cc58df58d8e24a75c935ca161ba",
+                "Tropical Plant",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "66c31369764e529c59d1257905a165dfbca6ec4d",
+                "Cozy Kitchen - Item # COZYKIT",
+                "kids room"
+            ],
+            [
+                "2008d8ac79f55bb3bad47a4bc7af494f0a7fe9f8",
+                "Baybrin Bookshelf",
+                "living room"
+            ]
+        ]
+    ]
+}

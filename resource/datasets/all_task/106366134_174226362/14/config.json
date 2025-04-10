@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Pick up the grey bathmat from the bathroom and place it on the Athens II chair in the living room",
+    "Subtask list": [
+        "Move_to('DWR Plush Bathmat, Grey_bathroom')",
+        "Grab('DWR Plush Bathmat, Grey')",
+        "Move_to('Athens II Chair_living room')",
+        "Release('DWR Plush Bathmat, Grey')"
+    ],
+    "Scene": "106366134_174226362",
+    "Target": [
+        [
+            "bbdc1b4f72d1347d144887c3b5d4d614737d3737",
+            "DWR Plush Bathmat, Grey",
+            "bathroom"
+        ],
+        [
+            "e31c405a5222b81f6fcb1e2e8326d2efff00097f",
+            "Athens II Chair",
+            "living room"
+        ]
+    ]
+}

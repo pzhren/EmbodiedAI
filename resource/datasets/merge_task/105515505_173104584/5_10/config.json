@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the candle holder from the living room and place it on the console chest in the bedroom or living room area",
+        "Transfer the little nightstand from the bedroom to the coffee table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Candle holder with candles_living room')",
+            "Grab('Candle holder with candles')",
+            "Move_to('Painswick 2-Drawer Console Chest_bedroom,living room')",
+            "Release('Candle holder with candles')"
+        ],
+        [
+            "Move_to('Harrison Nightstand, Charcoal_bedroom')",
+            "Grab('Harrison Nightstand, Charcoal')",
+            "Move_to('Coffee table_living room')",
+            "Release('Harrison Nightstand, Charcoal')"
+        ]
+    ],
+    "Scene": "105515505_173104584",
+    "Target": [
+        [
+            [
+                "06a829f5adcb128338196a8d95b288e8f5921610",
+                "Candle holder with candles",
+                "living room"
+            ],
+            [
+                "bcd4cee8acfd838f9b678d15286ecc841f174448",
+                "Painswick 2-Drawer Console Chest",
+                "bedroom,living room"
+            ]
+        ],
+        [
+            [
+                "16a4e41e6085b65ee5f86acabc8c7185d84c4749",
+                "Harrison Nightstand, Charcoal",
+                "bedroom"
+            ],
+            [
+                "1663b946dd2c160317930f5b2eb724549409e6b0",
+                "Coffee table",
+                "living room"
+            ]
+        ]
+    ]
+}

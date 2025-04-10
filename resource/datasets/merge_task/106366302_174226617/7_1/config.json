@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the interior plant from the living room and place it on the Elba cocktail table in the same room",
+        "Could you take the laptop table from the living room and place it near the queen bed in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Interior Plant_living room')",
+            "Grab('Interior Plant')",
+            "Move_to('Elba Cocktail Table_living room')",
+            "Release('Interior Plant')"
+        ],
+        [
+            "Move_to('Laptop Table_living room')",
+            "Grab('Laptop Table')",
+            "Move_to('Briggs Queen Upholstered Bed With Storage and USB_bedroom')",
+            "Release('Laptop Table')"
+        ]
+    ],
+    "Scene": "106366302_174226617",
+    "Target": [
+        [
+            [
+                "c37e1c6105bc43c44c14b8fb371b0d3c843ec313",
+                "Interior Plant",
+                "living room"
+            ],
+            [
+                "3940da56d443b5be11a6f117c5b62a4c6b1ff62f",
+                "Elba Cocktail Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "e1d51fa2fae90a92cbb8876689336c9ae07cb5a9",
+                "Laptop Table",
+                "living room"
+            ],
+            [
+                "32f2febf923c24a6076d2f861d13347a0913c492",
+                "Briggs Queen Upholstered Bed With Storage and USB",
+                "bedroom"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the coffee maker from the kitchen and place it on the desk in the office",
+        "Take the pen pot in the office to the easy chair in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Russell Hobbs Coffee Maker, 12693_kitchen')",
+            "Grab('Russell Hobbs Coffee Maker, 12693')",
+            "Move_to('Leahy Splayed Leg Desk_office')",
+            "Release('Russell Hobbs Coffee Maker, 12693')"
+        ],
+        [
+            "Move_to('Frosted pen pot_office')",
+            "Grab('Frosted pen pot')",
+            "Move_to('IKEA STOCKHOLM easy chair_living room')",
+            "Release('Frosted pen pot')"
+        ]
+    ],
+    "Scene": "104862534_172226625",
+    "Target": [
+        [
+            [
+                "4b88358f9e5e92dd9664a4a0719afc269819df0e",
+                "Russell Hobbs Coffee Maker, 12693",
+                "kitchen"
+            ],
+            [
+                "bb034d375833247e8539a25b7075afb01e908507",
+                "Leahy Splayed Leg Desk",
+                "office"
+            ]
+        ],
+        [
+            [
+                "24dcf1f353b54d43bf12bcf17266f2685091318d",
+                "Frosted pen pot",
+                "office"
+            ],
+            [
+                "5f414e6759858beb19086b77e40b260e0a700eff",
+                "IKEA STOCKHOLM easy chair",
+                "living room"
+            ]
+        ]
+    ]
+}

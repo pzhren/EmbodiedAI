@@ -45,7 +45,13 @@ class BaseRobot(ABC):
         """
         Get the world pose of the robot
         """
-        return self.Xform.get_world_pose()
+        return self.Xform.get_world_pose()[0]
+
+    def get_world_orientation(self) -> np.ndarray:
+        """
+        Get the world orientation of the robot
+        """
+        return self.Xform.get_world_pose()[1]
     
     def reset(self):
         """

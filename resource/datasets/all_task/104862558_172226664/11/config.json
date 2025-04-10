@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the Cozy Kitchen set from the kids room and place it on the Tropical Plant area in the living room",
+    "Subtask list": [
+        "Move_to('Cozy Kitchen - Item # COZYKIT_kids room')",
+        "Grab('Cozy Kitchen - Item # COZYKIT')",
+        "Move_to('Tropical Plant_living room')",
+        "Release('Cozy Kitchen - Item # COZYKIT')"
+    ],
+    "Scene": "104862558_172226664",
+    "Target": [
+        [
+            "66c31369764e529c59d1257905a165dfbca6ec4d",
+            "Cozy Kitchen - Item # COZYKIT",
+            "kids room"
+        ],
+        [
+            "fc3a8896e25e5cc58df58d8e24a75c935ca161ba",
+            "Tropical Plant",
+            "living room"
+        ]
+    ]
+}

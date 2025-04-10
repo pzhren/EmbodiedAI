@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please transport the Bonsai Style Money Silk Tree from the living room to the Shallow under cabinet in the bathroom",
+        "Could you please pick up the Black Braided Basket from the living room and place it on the Chocolattice Toilet Brush Holder in the bathroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('51 In. Bonsai Style Money Silk Tree 5249_living room')",
+            "Grab('51 In. Bonsai Style Money Silk Tree 5249')",
+            "Move_to('The Collection onderkast Shallow 120cm, zwart _bathroom')",
+            "Release('51 In. Bonsai Style Money Silk Tree 5249')"
+        ],
+        [
+            "Move_to('Black Braided Basket_living room')",
+            "Grab('Black Braided Basket')",
+            "Move_to('Chocolattice Toilet Brush Holder_bathroom')",
+            "Release('Black Braided Basket')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "7c1ea02edb0783b985500678dd07578dbfa0e635",
+                "51 In. Bonsai Style Money Silk Tree 5249",
+                "living room"
+            ],
+            [
+                "a01b0bf94c12425aa537eb467300a5125132e425",
+                "The Collection onderkast Shallow 120cm, zwart ",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "7455be76e2dd607faf8df97b1e55bc9358118e55",
+                "Black Braided Basket",
+                "living room"
+            ],
+            [
+                "5785d33e6af231b40f4d8aba24f9be6d0a248bec",
+                "Chocolattice Toilet Brush Holder",
+                "bathroom"
+            ]
+        ]
+    ]
+}

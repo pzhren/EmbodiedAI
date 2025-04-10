@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the Faux Potted Monstera Plant, which is in the living room, and place it in the 30 bottle wine rack located in the kitchen",
+    "Subtask list": [
+        "Move_to('Faux Potted Monstera Plant 29\"_living room')",
+        "Grab('Faux Potted Monstera Plant 29\"')",
+        "Move_to('30 bottle wine rack_kitchen')",
+        "Release('Faux Potted Monstera Plant 29\"')"
+    ],
+    "Scene": "102816009",
+    "Target": [
+        [
+            "bd8a1dc70062c8e7c8a33cb92ee86fbe6b015547",
+            "Faux Potted Monstera Plant 29\"",
+            "living room"
+        ],
+        [
+            "ed4fbbb8cc877cea34ff946b05c9da8b3690ee74",
+            "30 bottle wine rack",
+            "kitchen"
+        ]
+    ]
+}

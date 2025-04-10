@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Wok Basket from the kitchen and place it on the Boracay End Table in the living room",
+        "Please take the Wok Basket from the kitchen and place it on the Mercer Down II 3 Piece Sectional With Double Chaise in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Wok Basket_kitchen')",
+            "Grab('Wok Basket')",
+            "Move_to('Boracay End Table_living room')",
+            "Release('Wok Basket')"
+        ],
+        [
+            "Move_to('Wok Basket_kitchen')",
+            "Grab('Wok Basket')",
+            "Move_to('Mercer Down II 3 Piece Sectional With Double Chaise_living room')",
+            "Release('Wok Basket')"
+        ]
+    ],
+    "Scene": "107734176_176000019",
+    "Target": [
+        [
+            [
+                "34334ebad427446b63a6874253b5cd26cfded52f",
+                "Wok Basket",
+                "kitchen"
+            ],
+            [
+                "24304078d26588e2d78d4db014c5804506388cf5",
+                "Boracay End Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "34334ebad427446b63a6874253b5cd26cfded52f",
+                "Wok Basket",
+                "kitchen"
+            ],
+            [
+                "f75c49f9bed26c64c3ada2c8623fda53583d3025",
+                "Mercer Down II 3 Piece Sectional With Double Chaise",
+                "living room"
+            ]
+        ]
+    ]
+}
