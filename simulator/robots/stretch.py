@@ -11,6 +11,7 @@ class Stretch(BaseRobot):
         self.prim_path = "/World/Robot/Stretch" if self.prim_path==None else robot_config.prim_path
         self.use_position = robot_config.use_position if robot_config.use_position is not None else False
         self.grasped_object = {}
+        self.plan_length = []
         pass
     
     
@@ -102,5 +103,7 @@ class Stretch(BaseRobot):
 
     def reset(self):
         self.grasped_object = {}
-
+    
+    def get_path_length(self):
+        return sum(self.plan_length)
     

@@ -111,8 +111,8 @@ class TaskConfig(BaseConfig):
     offset: Optional[List[float]] = None
 
     ### Navigate
-    start_points: Optional[List[float]] = [.0, .0, .0]
-    goal_points: Optional[List[float]] = [.0, .0, .0]
+    start_points: Optional[List] = []
+    goal_points: Optional[List] = []
     max_steps: Optional[int] = 1000
     goal_threshold: Optional[float] = 0.8 # m
     task_path: Optional[str] = "" # 任务的json路径，可以拿来获取物品ID

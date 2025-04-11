@@ -60,7 +60,8 @@ print(os.getcwd())
 # print(cfg.config)
 loader = DatasetLoader(root_dir="/data1/linmin/EmbodiedAI/resource/datasets/all_task",
 scene_path="/data1/linmin/NPC/hssd_test_scene",
-robot_path="/data1/linmin/EmbodiedAI/tests/stretch/model/stretch.usd",)
+robot_path="/data1/linmin/EmbodiedAI/tests/stretch/model/stretch.usd",
+headless = False)
 print("total len:",len(loader))
 cfg = loader[0]
 print(cfg)
@@ -85,13 +86,13 @@ while env.is_running:
         print("goal_pos1", goal_pos1)
         # 这里很奇怪，要全部加负号才正常
         goal_pose1 = [-goal_pos1[0], -goal_pos1[1]]
-        distance, action = env.task[0].get_distance(goal_pose1)
-        print("distance, action", distance, action)
-        obs,_,_ = env.step([[action]])
+        distance, action, action_value = env.task[0].get_distance(goal_pose1)
+        print("distance, action", distance, action, action_value)
+        obs, info, reward, done = env.step([[action, action_value]])[0]
         # 把obs的观测数据按照图片保存下来
-        rgb1 = obs[0][0][0]["rgb"]
-        rgb2 = obs[0][0][1]["rgb"]
-        rgb3 = obs[0][0][2]["rgb"]
+        rgb1 = obs["robot0_front_camera"]["rgb"]
+        rgb2 = obs["robot0_left_camera"]["rgb"]
+        rgb3 = obs["robot0_right_camera"]["rgb"]
         
         # depth1 = obs[0][0][0]["depth"]
         # depth2 = obs[0][0][1]["depth"]

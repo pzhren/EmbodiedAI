@@ -109,17 +109,11 @@ class BaseEnv:
         for robot in self.robots[scene_id]:
             for sensor in robot.sensors:
                 sensor.update()
-        obs_list = []
-        info_list = []
-        done_list = []
-        reward_list = []
-        for task in self.task:
-            obs, info, done = task.step()
-            obs_list.append(obs)
-            info_list.append(info)
-            done_list.append(done)
-            reward_list.append(info["NE"] if info is not None else 0)
-        return obs_list, reward_list, done_list, info_list
+      
+        task = self.task[scene_id]
+        obs, info, done = task.step()
+        reward = info["NE"] if info is not None else 0
+        return obs, info, reward, done
 
     def step(self, action):
         # if isinstance(action, Iterable) and not isinstance(action, (dict, OrderedDict)):
