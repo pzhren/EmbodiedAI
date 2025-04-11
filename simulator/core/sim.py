@@ -113,6 +113,7 @@ class Simulator():
             )
         robot.init()
         self._world.scene.add(robot.isaac_robot)
+        # self._warm_up()
         pass
 
     # def import_sensor(self, sensor):
@@ -158,7 +159,7 @@ class Simulator():
             scene_aabb = scene_prim.get_aabb()
             center,width,height = compute_enclosing_square(scene_aabb)
             add_boundary_walls(width=width, height=height, wall_height=5, wall_thickness=0.5,center=center, env_id=scene_id)
-        
+        # self._warm_up()
 
     def extract_target_ids(self, json_path):
         """
@@ -272,6 +273,7 @@ class Simulator():
 
     def physics_step(self, robot: BaseRobot, action: np.ndarray):
         robot.apply_action(action, self._world)
+        self._world.step(render=True)
         pass
 
     def reset(self):

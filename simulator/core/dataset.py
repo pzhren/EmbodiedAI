@@ -160,26 +160,29 @@ class DatasetLoader:
                         "name":robot_name+"_front_camera",
                         "prim_path":robot_prim_path+"/camera_color_frame/rgb_camera",
                         "modals":["rgb","depth"],
-                        "orientation":[1,0,0,0],
-                        "position":[0,0,0.8]
+                        # "orientation":[1,0,0,0],
+                        "orientation":[0.707,-0.707,0,0]
+                        # "position":[0,0,0.8]
                     },
                     {
                         "type":"VisionSensor",
                         "name":robot_name+"_left_camera",
                         "on_robot": True,
-                        "prim_path":robot_prim_path+"/camera_depth_frame/rgb_camera_l",
+                        "prim_path":robot_prim_path+"/camera_color_frame/rgb_camera_l",
                         "modals":["rgb","depth"],  
-                        "orientation":[0.707,0,0,0.707],
-                        "position":[0,0,0.8]
+                        # "orientation":[0.707,0,0,0.707],
+                        "orientation":[0.5,-0.5,0.5,0.5],
+                        # "position":[0,0,0.8]
                     },
                     {
                         "type":"VisionSensor",
                         "on_robot": True,
                         "name":robot_name+"_right_camera",
-                        "prim_path":robot_prim_path+"/camera_depth_frame/rgb_camera_r",
+                        "prim_path":robot_prim_path+"/camera_color_frame/rgb_camera_r",
                         "modals":["rgb","depth"],  
-                        "orientation":[0.707,0,0,-0.707],
-                        "position":[0,0,0.8]
+                        # "orientation":[0.707,0,0,-0.707],
+                        "orientation":[0.5,-0.5,-0.5,-0.5],
+                        # "position":[0,0,0.8]
                     }
                 ]
 

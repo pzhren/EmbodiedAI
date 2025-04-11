@@ -63,12 +63,14 @@ scene_path="/data1/linmin/NPC/hssd_test_scene",
 robot_path="/data1/linmin/EmbodiedAI/tests/stretch/model/stretch.usd",
 headless = False)
 print("total len:",len(loader))
-cfg = loader[0]
+cfg = loader[422]
+cfg.task.robots[0].position= [-10, 6, 0]
 print(cfg)
 env = BaseEnv(cfg)
 env.reset()
 i = 0
 while env.is_running:
+        env.sim._warm_up()
         # print(cfg.config.task.task_path)
         target_ids = extract_target_ids(cfg.task.task_path)
         objs_xformprim = env.sim.find_object_by_id(env.scenes[0], target_ids)
@@ -78,16 +80,18 @@ while env.is_running:
         
         current_pos = current_pos[:2]
         
-        around_objects = env.sim.find_object_around(env.scenes[0], current_pos)
-        print("around_objects", around_objects)
+        # around_objects = env.sim.find_object_around(env.scenes[0], current_pos)
+        # print("around_objects", around_objects)
 
         goal_pos1, _ = objs_xformprim[0].get_world_pose()
         
         print("goal_pos1", goal_pos1)
         # 这里很奇怪，要全部加负号才正常
         goal_pose1 = [-goal_pos1[0], -goal_pos1[1]]
-        distance, action, action_value = env.task[0].get_distance(goal_pose1)
-        print("distance, action", distance, action, action_value)
+        # distance, action, action_value = env.task[0].get_distance(goal_pose1)
+        action = "w"
+        action_value = 0.02
+        # print("distance, action", distance, action, action_value)
         obs, info, reward, done = env.step([[action, action_value]])[0]
         # 把obs的观测数据按照图片保存下来
         rgb1 = obs["robot0_front_camera"]["rgb"]
@@ -100,7 +104,7 @@ while env.is_running:
         
         # 将这些图片保存下来，利用Pillow库
         from PIL import Image
-        Image.fromarray(rgb1).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb1_{i}.png")
-        Image.fromarray(rgb2).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb2_{i}.png")
-        Image.fromarray(rgb3).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb3_{i}.png")
+        Image.fromarray(rgb1).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb1.png")
+        Image.fromarray(rgb2).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb2.png")
+        Image.fromarray(rgb3).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb3.png")
         i+=1

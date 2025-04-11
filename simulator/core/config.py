@@ -79,7 +79,7 @@ class RobotConfig(BaseConfig):
     init_joints: Optional[List[float]] = None
     # common config
     position: Optional[List[float]] = [.0, .0, .0]
-    orientation: Optional[List[float]] = [.0, .0, .0, 1.0]
+    orientation: Optional[List[float]] = [1.0, .0, .0, 0.0]
     scale: Optional[List[float]] = [1.0, 1.0, 1.0]
 
     # Parameters

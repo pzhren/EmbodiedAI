@@ -34,7 +34,7 @@ class VisionSensor(BaseSensor):
             position =  [x + y for x, y in zip(self.config.position, offset)]
         self.camera = Camera(
             prim_path=self.config.prim_path,
-            position=position,
+            translation=position,
             orientation=self.config.orientation,
             resolution=self.resolution,
             # fov=self.fov,

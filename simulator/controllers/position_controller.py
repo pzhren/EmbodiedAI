@@ -72,7 +72,6 @@ class PositionController(BaseController):
             for k,v in grasped_object:
                 target_pos, euler = self.get_action(command, v)
                 v.set_world_pose(position = target_pos, orientation = euler)
-        world.step(render=True)
         return 1
     
     def trans_pos(self, robot)-> tuple:
