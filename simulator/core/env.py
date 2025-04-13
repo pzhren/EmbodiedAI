@@ -151,7 +151,10 @@ class BaseEnv:
     def is_done(self, scene_id=0):
         assert self.task is not None, "Task is not initialized."
         return self.task[scene_id]._done
-
+   
+    def close(self):
+        self.sim.close()
+        # self.sim = None
 
 class RL_env(BaseEnv):
     pass
