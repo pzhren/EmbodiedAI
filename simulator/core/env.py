@@ -82,11 +82,13 @@ class BaseEnv:
             # self.load_robot()
             self.load_task(i)
 
-    def reset(self):
+    def reset(self, scene_id=0):
         self.sim.reset()
+        return self._post_step(scene_id=0)
     
     def _pre_step(self, action, scene_id):
         """Apply the pre-sim-step part of an environment step, i.e. apply the robot actions."""
+        
         if not isinstance(action, dict):
             action_dict = dict()
             idx = 0
@@ -130,21 +132,25 @@ class BaseEnv:
 
         # Step simulation
         self.sim.step(render=True)
-        
+        obs_list = []
+        info_list = []
+        reward_list = []
+        done_list = []
+
         for i in range(self.scene_num):
-            obs.append(self._post_step(scene_id=i))
+            obs_list.append(self._post_step(scene_id=i)[0])
+            info_list.append(self._post_step(scene_id=i)[1])
+            reward_list.append(self._post_step(scene_id=i)[2])
+            done_list.append(self._post_step(scene_id=i)[3])
         # Run final post-processing
-        return obs
+        return obs_list, info_list, reward_list, done_list
     
     def find_object_around(self, position, scene_id=0):
         return self.sim.find_object_around(self.scenes[scene_id], position)
-    
-    def get_scene_graph(self, robot_id, scene_id=0):
-        
-        pass
 
-    def close(self):
-        self.sim.close()
+    def is_done(self, scene_id=0):
+        assert self.task is not None, "Task is not initialized."
+        return self.task[scene_id]._done
 
 
 class RL_env(BaseEnv):

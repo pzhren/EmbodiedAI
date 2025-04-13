@@ -15,6 +15,7 @@ lazyimport(
 
 import math
 import numpy as np
+from gym import spaces
 
 @registry.register_controller
 class StretchGraspController(BaseController):
@@ -259,3 +260,13 @@ class StretchGraspController(BaseController):
     @property
     def grasp_arm3(self):
         return self.get_arm_names()[1]
+
+    @property
+    def action_space(self) -> spaces.Tuple:
+        """
+        Returns the action space of the task.
+        """
+        return spaces.Tuple((
+            spaces.Discrete(1),  # 动作类型索引
+            spaces.Box(low=0, high=1, shape=(1,), dtype=np.float32)  # 参数值
+        ))

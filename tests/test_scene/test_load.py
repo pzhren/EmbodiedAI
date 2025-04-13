@@ -92,11 +92,11 @@ while env.is_running:
         action = "w"
         action_value = 0.02
         # print("distance, action", distance, action, action_value)
-        obs, info, reward, done = env.step([[action, action_value]])[0]
+        obs, info, reward, done = env.step([[action, action_value]])
         # 把obs的观测数据按照图片保存下来
-        rgb1 = obs["robot0_front_camera"]["rgb"]
-        rgb2 = obs["robot0_left_camera"]["rgb"]
-        rgb3 = obs["robot0_right_camera"]["rgb"]
+        rgb1 = obs[0]["robot0_front_camera"]["rgb"]
+        rgb2 = obs[0]["robot0_left_camera"]["rgb"]
+        rgb3 = obs[0]["robot0_right_camera"]["rgb"]
         
         # depth1 = obs[0][0][0]["depth"]
         # depth2 = obs[0][0][1]["depth"]

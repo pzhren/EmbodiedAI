@@ -127,7 +127,7 @@ class NavigateTask(BaseTask):
         self.update_metrics()
         self.steps+=1
         # self.is_done()
-        return observations, self._info, self._success
+        return observations, self._info, self._done
 
     def is_done(self) -> bool:
         """

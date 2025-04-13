@@ -149,9 +149,10 @@ class DatasetLoader:
                     [{
                         "type": "PositionController",
                     },
-                    {
-                        "type":"StretchGraspController",
-                    }],
+                    # {
+                    #     "type":"StretchGraspController",
+                    # }],
+                    ]
                 "sensors":
                 [
                     {

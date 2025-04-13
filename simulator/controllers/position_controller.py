@@ -14,7 +14,7 @@ lazyimport(
 
 import math
 import numpy as np
-
+from gym import spaces
 
 @registry.register_controller
 class PositionController(BaseController):
@@ -116,3 +116,18 @@ class PositionController(BaseController):
             int: Action dimension
         """
         return 2
+
+    @property
+    def action_space(self) -> spaces.Tuple:
+        """
+        Get action space.
+        
+        Returns:
+            spaces.Box: Action space
+        """
+        return spaces.Tuple((
+            spaces.Discrete(3),  # 动作类型索引
+            spaces.Box(low=0, high=self._max_forward_m, shape=(1,), dtype=np.float32)  # 参数值
+        ))
+
+    
