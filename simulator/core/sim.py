@@ -11,6 +11,8 @@ from simulator.core.scene import BaseScene
 from transformations import quaternion_from_euler
 import json
 import numpy as np
+import io
+import contextlib
 
 
 
@@ -23,6 +25,7 @@ lazyimport(globals(), """
     from simulator.utils.scene_utils import add_boundary_walls
     from simulator.utils.scene_utils import compute_enclosing_square
     from simulator.utils.semantic_utils import ItemLookup
+    import omni.isaac.core.utils.stage as stage_utils
   """
 )
 
@@ -80,7 +83,7 @@ class Simulator():
         self._stage = self._world.stage
         self._resource_path = "./resource"
         self._warm_up()
-        self.is_playing = self._world.is_playing()
+        
 
     def _warm_up(self, steps=20, render=True):
         """
@@ -275,9 +278,26 @@ class Simulator():
         robot.apply_action(action, self._world)
         self._world.step(render=True)
         pass
+    
+    def reinit_world(self):
+        buffer = io.StringIO()
+        self._world.scene.clear()
+        with contextlib.redirect_stdout(buffer):
+            stage_utils.print_stage_prim_paths()
+        # print("Delete ",stage_utils.print_stage_prim_paths())
+        all_prims = buffer.getvalue().strip().split('\n')
+        for prim in all_prims:
+            if ("Robot" in prim or "Scene" in prim or "Wall" in prim or "Sky" in prim ) and "physicsScene" not in prim:
+                prim_utils.delete_prim(prim)
+        
+        self._warm_up()
+        self.pause()
 
     def reset(self):
         self._world.reset()
+
+    def pause(self):
+        self._world.pause()
 
     def close(self):
         self._simulation_app.close()
@@ -289,6 +309,10 @@ class Simulator():
     @property
     def is_running(self) -> bool:
         return self._simulation_app.is_running()
+
+    @property
+    def is_playing(self) -> bool:
+        return self._world.is_playing()
 
    
     

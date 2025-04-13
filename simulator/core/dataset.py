@@ -140,19 +140,18 @@ class DatasetLoader:
         def make_init_config(robot_prim_path, robot_name, init_pos):
             init_config = {
                 "type": "Stretch",
+                "name": "stretch",
                 "prim_path": robot_prim_path,
                 "position": init_pos,
                 "use_position": True,
                 "usd_path": self.robot_path,
                 "create_robot": True,
-                "controllers": 
-                    [{
-                        "type": "PositionController",
-                    },
-                    # {
-                    #     "type":"StretchGraspController",
-                    # }],
-                    ]
+                "controllers":
+                [
+                    {
+                        "type": "PositionController"
+                    }
+                ],
                 "sensors":
                 [
                     {

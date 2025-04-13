@@ -16,7 +16,6 @@ class BaseEnv:
             self.configs = configs.config
         self.sim  = Simulator(self.configs.sim)
         self.task_config = self.configs.task
-        self.sim.play()
         self.is_running = self.sim.is_running
         self.offset = self.configs.offset
         self.scene_num = self.configs.env_num
@@ -28,7 +27,27 @@ class BaseEnv:
         self.task_objects = []
         self.all_obj_dict = []
         self.load()
+        self.sim.play()
         self.hssd_item = self.sim.get_item_lookup()
+    
+    def reinit(self, configs:Union[Config, EnvConfig]):
+        self.sim.reinit_world()
+        self.task_config = self.configs.task
+        # self.sim.play()
+        self.is_running = self.sim.is_running
+        self.offset = self.configs.offset
+        self.scene_num = self.configs.env_num
+        self.scene_id = list(range(self.scene_num))
+        self.scene_id2offset = {id:list(map(lambda x: id * x, self.offset)) for id in self.scene_id}
+        self.robots = []
+        self.scenes = []
+        self.task = []
+        self.task_objects = []
+        self.all_obj_dict = []
+        self.load()
+        self.sim.play()
+        self.hssd_item = self.sim.get_item_lookup()
+
         
     def load_scene(self, scene_id):
         scene_class = registry.get_scene(self.configs.scene.type)

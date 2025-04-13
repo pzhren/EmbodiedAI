@@ -42,21 +42,21 @@ class PositionController(BaseController):
         position, roll, pitch, yaw = self.trans_pos(robot)
         x_dir = np.array([math.cos(yaw), math.sin(yaw), 0])
         
-        if command[0] == 'w':
+        if command[0] == 'w' or command[0]==0:
             length = min(self._max_forward_m, command[1]) # in meters
             target_pos = position + length * x_dir
 
-        elif command[0] == 's':
+        elif command[0] == 's' or command[0]==1:
             length = min(self._max_forward_m, command[1]) # in meters
             target_pos = position - length * x_dir
         else:
             target_pos = position
         
         new_yaw = yaw
-        if command[0] == 'a':
+        if command[0] == 'a' or command[0]==2:
             angle_yaw = min(self._max_angle_yaw,command[1]) # in radians
             new_yaw = (yaw + angle_yaw) % (2 * math.pi)
-        elif command[0] == 'd':
+        elif command[0] == 'd' or command[0]==3:
             angle_yaw = min(self._max_angle_yaw,command[1])
             new_yaw = (yaw - angle_yaw) % (2 * math.pi)
         
