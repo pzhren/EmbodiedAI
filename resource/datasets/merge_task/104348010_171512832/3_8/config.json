@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Pick up the soap in the bathroom and place it on the coffee table in the living room",
+        "Take the black pen pot in the office to the bookshelf in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Soap_bathroom')",
+            "Grab('Soap')",
+            "Move_to('Bayshore Coffee Table With Casters_living room')",
+            "Release('Soap')"
+        ],
+        [
+            "Move_to('Pen pot - black_office')",
+            "Grab('Pen pot - black')",
+            "Move_to('Baybrin Bookshelf_living room')",
+            "Release('Pen pot - black')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "6b21bd924df8f21c02fb8bb569de93bd887d8f1e",
+                "Soap",
+                "bathroom"
+            ],
+            [
+                "b7be6ad871800511e7a320626aac37272eb919c4",
+                "Bayshore Coffee Table With Casters",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "73cae0c00c31e895cbf8c6ac2bcc3ce718d03b21",
+                "Pen pot - black",
+                "office"
+            ],
+            [
+                "2008d8ac79f55bb3bad47a4bc7af494f0a7fe9f8",
+                "Baybrin Bookshelf",
+                "living room"
+            ]
+        ]
+    ]
+}

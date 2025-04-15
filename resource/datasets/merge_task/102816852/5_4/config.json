@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "take the FICUS plant in the living room to the LOMMARP cabinet in the living room",
+        "Please take the Blue Hydrangea Water Garden from the living room and place it on the Island in the kitchen"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('FICUS MICROCARPA GINSENG_living room')",
+            "Grab('FICUS MICROCARPA GINSENG')",
+            "Move_to('LOMMARP Cabinet, Dark Blue-Green_living room')",
+            "Release('LOMMARP Cabinet, Dark Blue-Green')"
+        ],
+        [
+            "Move_to('Blue Hydrangea Water Garden_living room')",
+            "Grab('Blue Hydrangea Water Garden')",
+            "Move_to('Island, Classic_kitchen')",
+            "Release('Blue Hydrangea Water Garden')"
+        ]
+    ],
+    "Scene": "102816852",
+    "Target": [
+        [
+            [
+                "1943726018bc88e96a8fa16fd6f8d88523d75abc",
+                "FICUS MICROCARPA GINSENG",
+                "living room"
+            ],
+            [
+                "b87936a4a52e2a0b805369a0763a536c719ca7d6",
+                "LOMMARP Cabinet, Dark Blue-Green",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "51cd1976549241666bcf3cc27e6c4c580352361b",
+                "Blue Hydrangea Water Garden",
+                "living room"
+            ],
+            [
+                "39443cc1873a0b4954ce7a2c357f296e98bf86a7",
+                "Island, Classic",
+                "kitchen"
+            ]
+        ]
+    ]
+}

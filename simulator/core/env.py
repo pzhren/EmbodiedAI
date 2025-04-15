@@ -1,19 +1,21 @@
-from simulator.core.simulator import Simulator
-from simulator.core.config import EnvConfig
+from simulator.core.sim import Simulator
+from simulator.core.config import EnvConfig, Config
 from simulator.core.register import registry
 from simulator.robots import make_robot
 from simulator.tasks import make_task
-from typing import List, Dict
+from typing import List, Dict, Union
 from collections import deque
 from simulator.utils.scene_utils import extract_target_ids
 import json
 
 class BaseEnv:
-    def __init__(self, configs:EnvConfig):
-        self.configs = configs.config
+    def __init__(self, configs:Union[Config, EnvConfig]):
+        if isinstance(configs, Config):
+            self.configs = configs
+        elif isinstance(configs, EnvConfig):
+            self.configs = configs.config
         self.sim  = Simulator(self.configs.sim)
         self.task_config = self.configs.task
-        self.sim.play()
         self.is_running = self.sim.is_running
         self.offset = self.configs.offset
         self.scene_num = self.configs.env_num
@@ -21,10 +23,31 @@ class BaseEnv:
         self.scene_id2offset = {id:list(map(lambda x: id * x, self.offset)) for id in self.scene_id}
         self.robots = []
         self.scenes = []
+        self.task = []
         self.task_objects = []
         self.all_obj_dict = []
         self.load()
+        self.sim.play()
         self.hssd_item = self.sim.get_item_lookup()
+    
+    def reinit(self, configs:Union[Config, EnvConfig]):
+        self.sim.reinit_world()
+        self.task_config = self.configs.task
+        # self.sim.play()
+        self.is_running = self.sim.is_running
+        self.offset = self.configs.offset
+        self.scene_num = self.configs.env_num
+        self.scene_id = list(range(self.scene_num))
+        self.scene_id2offset = {id:list(map(lambda x: id * x, self.offset)) for id in self.scene_id}
+        self.robots = []
+        self.scenes = []
+        self.task = []
+        self.task_objects = []
+        self.all_obj_dict = []
+        self.load()
+        self.sim.play()
+        self.hssd_item = self.sim.get_item_lookup()
+
         
     def load_scene(self, scene_id):
         scene_class = registry.get_scene(self.configs.scene.type)
@@ -32,7 +55,7 @@ class BaseEnv:
         self.sim.import_scene(self.scenes[scene_id], self.scene_id2offset[scene_id], scene_id)
         # register.get(self.configs)
         # load scene and object into simulator
-        self.all_obj_dict[scene_id] = self.sim.get_all_objects(self.scenes[scene_id])
+        self.all_obj_dict.append(self.sim.get_all_objects(self.scenes[scene_id]))
         pass
     
     def load_robot(self, offset):
@@ -41,7 +64,7 @@ class BaseEnv:
             robot = make_robot(robot.type, robot)
             robots.append(robot)
             self.sim.import_robot(robot, offset)
-            robot.init()
+            
             # intialize robot's controller
 
             # intialize robot's sensor
@@ -64,11 +87,11 @@ class BaseEnv:
         return objects
     
     def load_task(self, scene_id):
-        self.task = make_task(self.task_config.type, self.task_config)
+        self.task.append(make_task(self.task_config.type, self.task_config))
         offset = self.scene_id2offset[scene_id]
         self.robots.append(self.load_robot(offset))
         self.task_objects.append(self.load_object(scene_id, offset))
-        self.task.init(self.robots[scene_id], self.task_objects[scene_id])
+        self.task[scene_id].init(self.robots[scene_id], self.task_objects[scene_id])
         
         pass
 
@@ -78,11 +101,13 @@ class BaseEnv:
             # self.load_robot()
             self.load_task(i)
 
-    def reset(self):
+    def reset(self, scene_id=0):
         self.sim.reset()
+        return self._post_step(scene_id=0)
     
     def _pre_step(self, action, scene_id):
         """Apply the pre-sim-step part of an environment step, i.e. apply the robot actions."""
+        
         if not isinstance(action, dict):
             action_dict = dict()
             idx = 0
@@ -105,7 +130,11 @@ class BaseEnv:
         for robot in self.robots[scene_id]:
             for sensor in robot.sensors:
                 sensor.update()
-        return self.task.step()
+      
+        task = self.task[scene_id]
+        obs, info, done = task.step()
+        reward = info["NE"] if info is not None else 0
+        return obs, info, reward, done
 
     def step(self, action):
         # if isinstance(action, Iterable) and not isinstance(action, (dict, OrderedDict)):
@@ -116,27 +145,35 @@ class BaseEnv:
         if len(action) != self.scene_num and self.scene_num==1:
             action = [action]
         assert len(action) == self.scene_num
+        
         for i in range(self.scene_num):
             self._pre_step(action[i], scene_id=i)
 
         # Step simulation
         self.sim.step(render=True)
-        
+        obs_list = []
+        info_list = []
+        reward_list = []
+        done_list = []
+
         for i in range(self.scene_num):
-            obs.append(self._post_step(scene_id=i))
+            obs_list.append(self._post_step(scene_id=i)[0])
+            info_list.append(self._post_step(scene_id=i)[1])
+            reward_list.append(self._post_step(scene_id=i)[2])
+            done_list.append(self._post_step(scene_id=i)[3])
         # Run final post-processing
-        return obs
+        return obs_list, info_list, reward_list, done_list
     
     def find_object_around(self, position, scene_id=0):
         return self.sim.find_object_around(self.scenes[scene_id], position)
-    
-    def get_scene_graph(self, robot_id, scene_id=0):
-        
-        pass
 
+    def is_done(self, scene_id=0):
+        assert self.task is not None, "Task is not initialized."
+        return self.task[scene_id]._done
+   
     def close(self):
         self.sim.close()
-
+        # self.sim = None
 
 class RL_env(BaseEnv):
     pass

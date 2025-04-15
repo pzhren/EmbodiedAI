@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Frosted pen pot from the office and place it on the Dining Table in the living room, dining room area",
+        "Please take the towel radiator from the bathroom and place it in the large seagrass basket in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Frosted pen pot_office')",
+            "Grab('Frosted pen pot')",
+            "Move_to('Palerma Extendable Dining Table, White_living room,dining room')",
+            "Release('Palerma Extendable Dining Table, White')"
+        ],
+        [
+            "Move_to('Bisque Cobra Therm Towel Radiator_bathroom')",
+            "Grab('Bisque Cobra Therm Towel Radiator')",
+            "Move_to('Merced Large Seagrass Basket_living room')",
+            "Release('Bisque Cobra Therm Towel Radiator')"
+        ]
+    ],
+    "Scene": "102816756",
+    "Target": [
+        [
+            [
+                "24dcf1f353b54d43bf12bcf17266f2685091318d",
+                "Frosted pen pot",
+                "office"
+            ],
+            [
+                "786845ecaee2a43d135f922f4d617da02c8543b6",
+                "Palerma Extendable Dining Table, White",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "88385377c5cb12d12e9dfbd70c2c28d6a05ed587",
+                "Bisque Cobra Therm Towel Radiator",
+                "bathroom"
+            ],
+            [
+                "35fdc6d66950606f33262da718b378f7fe46923a",
+                "Merced Large Seagrass Basket",
+                "living room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Soap from the bathroom and place it on the Tuuci Ocean Master Hexagon Shade, Aluma-Teak, Natural in the patio",
+        "Could you please pick up the Sabatier knife block from the kitchen and place it on the farmhouse table in the dining room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Soap_bathroom')",
+            "Grab('Soap')",
+            "Move_to('Tuuci Ocean Master Hexagon Shade, Aluma-Teak, Natural_patio')",
+            "Release('Soap')"
+        ],
+        [
+            "Move_to('Sabatier V 5 Piece Knife Block Set_kitchen,dining room')",
+            "Grab('Sabatier V 5 Piece Knife Block Set')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('Sabatier V 5 Piece Knife Block Set')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "6b21bd924df8f21c02fb8bb569de93bd887d8f1e",
+                "Soap",
+                "bathroom"
+            ],
+            [
+                "00b94ee7f2a013ffb7b681d19a5769b63c1b8357",
+                "Tuuci Ocean Master Hexagon Shade, Aluma-Teak, Natural",
+                "patio"
+            ]
+        ],
+        [
+            [
+                "62b08fe4e989f15d9672478194419f44749f5b19",
+                "Sabatier V 5 Piece Knife Block Set",
+                "kitchen,dining room"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Kaffee-Vollautomat from the kitchen and place it on the BrixXo Quatro Plus CAD Corner desk in the office",
+        "Would you please take the coffee table from the living room and place it in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Kaffee-Vollautomat_kitchen')",
+            "Grab('Kaffee-Vollautomat')",
+            "Move_to('BrixXo Quatro Plus CAD Corner desk B200, White/Black legs_office')",
+            "Release('Kaffee-Vollautomat')"
+        ],
+        [
+            "Move_to('Blaine Coffee Table_living room')",
+            "Grab('Blaine Coffee Table')",
+            "Move_to('Foundry Writing Desk_office')",
+            "Release('Foundry Writing Desk')"
+        ]
+    ],
+    "Scene": "104862681_172226874",
+    "Target": [
+        [
+            [
+                "b9d409dc9ea5660568acf09addbf1c259625c345",
+                "Kaffee-Vollautomat",
+                "kitchen"
+            ],
+            [
+                "29851ebf2741441607a1ab9cd16950540ed60477",
+                "BrixXo Quatro Plus CAD Corner desk B200, White/Black legs",
+                "office"
+            ]
+        ],
+        [
+            [
+                "df21f89b4559be781d3f70f41832c90ed035d0ef",
+                "Blaine Coffee Table",
+                "living room"
+            ],
+            [
+                "cd88a7acd6170502cae92b5054f0ea1327376a03",
+                "Foundry Writing Desk",
+                "office"
+            ]
+        ]
+    ]
+}

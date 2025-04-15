@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the espresso maker from the kitchen to the coffee table in the living room",
+        "Please take the espresso maker from the kitchen and place it on the Alton Chairside Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('DeLonghi Icona Pump Espresso Maker Blue_kitchen')",
+            "Grab('DeLonghi Icona Pump Espresso Maker Blue')",
+            "Move_to('Magnolia Home Strut Coffee Table By Joanna Gaines, Natural_living room')",
+            "Release('DeLonghi Icona Pump Espresso Maker Blue')"
+        ],
+        [
+            "Move_to('DeLonghi Icona Pump Espresso Maker Blue_kitchen')",
+            "Grab('DeLonghi Icona Pump Espresso Maker Blue')",
+            "Move_to('Alton Chairside Table_living room')",
+            "Release('DeLonghi Icona Pump Espresso Maker Blue')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "335fc5d250b5f7e424fcb25a26bf001f738ca364",
+                "DeLonghi Icona Pump Espresso Maker Blue",
+                "kitchen"
+            ],
+            [
+                "ce9c5810fc2943f1487a73b60e163d1d56f7a5c8",
+                "Magnolia Home Strut Coffee Table By Joanna Gaines, Natural",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "335fc5d250b5f7e424fcb25a26bf001f738ca364",
+                "DeLonghi Icona Pump Espresso Maker Blue",
+                "kitchen"
+            ],
+            [
+                "5ad40619a3bb78eac62b5d40817966fce8f9814e",
+                "Alton Chairside Table",
+                "living room"
+            ]
+        ]
+    ]
+}

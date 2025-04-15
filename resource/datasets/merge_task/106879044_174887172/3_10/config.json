@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "take the Premium Cashmere Throw from the bedroom to the Mid Century Modern End Table in the living room",
+        "Take the large pedal bin from the kitchen and place it on the dining table in the dining room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Premium Cashmere Throw, Oyster_bedroom,living room')",
+            "Grab('Premium Cashmere Throw, Oyster')",
+            "Move_to('Mid Century Modern End Table_living room')",
+            "Release('Premium Cashmere Throw, Oyster')"
+        ],
+        [
+            "Move_to('Square pedal bin large_kitchen')",
+            "Grab('Square pedal bin large')",
+            "Move_to('Established Sons M5 Dining Table_living room,dining room')",
+            "Release('Square pedal bin large')"
+        ]
+    ],
+    "Scene": "106879044_174887172",
+    "Target": [
+        [
+            [
+                "e7c0a88838318f18b932d3d165f939ad19a2d8cc",
+                "Premium Cashmere Throw, Oyster",
+                "bedroom,living room"
+            ],
+            [
+                "2b39e8c2237ea1f0ba7417b2ec96d2aca51ee17b",
+                "Mid Century Modern End Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "26f2000adb4ef26cbed1971ef90777253e223aa2",
+                "Square pedal bin large",
+                "kitchen"
+            ],
+            [
+                "eedc440b949be844592cf2de757aa728f882ab11",
+                "Established Sons M5 Dining Table",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

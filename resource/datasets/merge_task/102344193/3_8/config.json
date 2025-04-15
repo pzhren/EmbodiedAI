@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you kindly take the Small Seagrass Laundry Basket from the bathroom and place it on the Metal And Wood Industrial Coffee Table in the living room",
+        "Please take the potted faux eucalyptus from the living room and place it on the industrial coffee table in the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Small Seagrass Laundry Basket_bathroom')",
+            "Grab('Small Seagrass Laundry Basket')",
+            "Move_to('Metal And Wood Industrial Coffee Table_living room')",
+            "Release('Small Seagrass Laundry Basket')"
+        ],
+        [
+            "Move_to('Potted Faux Eucalyptus 8\"_living room')",
+            "Grab('Potted Faux Eucalyptus 8\"')",
+            "Move_to('Metal And Wood Industrial Coffee Table_living room')",
+            "Release('Potted Faux Eucalyptus 8\"')"
+        ]
+    ],
+    "Scene": "102344193",
+    "Target": [
+        [
+            [
+                "5bb8abe60b296ee6bd0846dd445da915b0d9fc1e",
+                "Small Seagrass Laundry Basket",
+                "bathroom"
+            ],
+            [
+                "752f77d7c0349b81c201fcc71650970170382456",
+                "Metal And Wood Industrial Coffee Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "ee7b9e4cf5c533737ebd058f7950ca632db5bc62",
+                "Potted Faux Eucalyptus 8\"",
+                "living room"
+            ],
+            [
+                "752f77d7c0349b81c201fcc71650970170382456",
+                "Metal And Wood Industrial Coffee Table",
+                "living room"
+            ]
+        ]
+    ]
+}

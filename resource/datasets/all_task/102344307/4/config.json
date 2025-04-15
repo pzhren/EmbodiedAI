@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the soap dish from the bathroom and place it on the sofa table in the living room",
+    "Subtask list": [
+        "Move_to('Chancery Soap Dish, Rose Gold_bathroom')",
+        "Grab('Chancery Soap Dish, Rose Gold')",
+        "Move_to('Borough Sofa Table_living room')",
+        "Release('Chancery Soap Dish, Rose Gold')"
+    ],
+    "Scene": "102344307",
+    "Target": [
+        [
+            "84092984ce8a7cd7ad7aec05eb95d2612d3cd209",
+            "Chancery Soap Dish, Rose Gold",
+            "bathroom"
+        ],
+        [
+            "7c552d86b26f38593b3f5601c82ce43cc86e132c",
+            "Borough Sofa Table",
+            "living room"
+        ]
+    ]
+}

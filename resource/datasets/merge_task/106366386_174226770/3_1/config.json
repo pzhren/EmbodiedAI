@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Cactus Plant in the living room and move it to the Rose bowl in the kitchen",
+        "Take the Red Tulip Water Garden in the living room and place it on the Palais Coffee Table By Nate Berkus and Jeremiah Brent in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Cactus Plant in Round Pot_living room')",
+            "Grab('Cactus Plant in Round Pot')",
+            "Move_to('Rose bowl_kitchen,dining room')",
+            "Release('Cactus Plant in Round Pot')"
+        ],
+        [
+            "Move_to('Red Tulip Water Garden_living room')",
+            "Grab('Red Tulip Water Garden')",
+            "Move_to('Palais Coffee Table By Nate Berkus and Jeremiah Brent_living room')",
+            "Release('Red Tulip Water Garden')"
+        ]
+    ],
+    "Scene": "106366386_174226770",
+    "Target": [
+        [
+            [
+                "c461ecb62efa4ef74eb34fb8152acf8cc8ac427d",
+                "Cactus Plant in Round Pot",
+                "living room"
+            ],
+            [
+                "095cf56558ca75b0ab0a4037ce7c8f870085aff9",
+                "Rose bowl",
+                "kitchen,dining room"
+            ]
+        ],
+        [
+            [
+                "8f9440cad20bac4f3a17cef6a3b34879c75c26d5",
+                "Red Tulip Water Garden",
+                "living room"
+            ],
+            [
+                "138009a6121d7ebb8c3b78e3a411b4e33c388efb",
+                "Palais Coffee Table By Nate Berkus and Jeremiah Brent",
+                "living room"
+            ]
+        ]
+    ]
+}

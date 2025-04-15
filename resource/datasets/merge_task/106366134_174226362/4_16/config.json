@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the studio wardrobe in the bedroom and place it in the garden",
+        "Take the plush bathmat from the bathroom and place it near the vegan leather desk chair in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Studio 3 Door Wardrobe_bedroom')",
+            "Grab('Studio 3 Door Wardrobe')",
+            "Move_to('Alice in Wonderland - Rosemary Topiary Spiral_outdoor,garden')",
+            "Release('Studio 3 Door Wardrobe')"
+        ],
+        [
+            "Move_to('DWR Plush Bathmat, Grey_bathroom')",
+            "Grab('DWR Plush Bathmat, Grey')",
+            "Move_to('Channeled Vegan Leather Desk Chair, Gold And White_office')",
+            "Release('DWR Plush Bathmat, Grey')"
+        ]
+    ],
+    "Scene": "106366134_174226362",
+    "Target": [
+        [
+            [
+                "5e74de078d0d0bd18ecb9f41feb1fd2aef42d478",
+                "Studio 3 Door Wardrobe",
+                "bedroom"
+            ],
+            [
+                "7d0ea89ff0407744a6989714223ef8a73d117d8f",
+                "Alice in Wonderland - Rosemary Topiary Spiral",
+                "outdoor,garden"
+            ]
+        ],
+        [
+            [
+                "bbdc1b4f72d1347d144887c3b5d4d614737d3737",
+                "DWR Plush Bathmat, Grey",
+                "bathroom"
+            ],
+            [
+                "265114799460fcd58e282c00c5e60be3ab5e9148",
+                "Channeled Vegan Leather Desk Chair, Gold And White",
+                "office"
+            ]
+        ]
+    ]
+}

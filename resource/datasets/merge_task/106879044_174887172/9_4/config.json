@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the square pedal bin from the kitchen and place it next to the chest of drawers in the shared bedroom and living room area",
+        "Transfer the blanket from the shared space of the bedroom and living room to the Morvah Wall Hanging Planter in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Square pedal bin large_kitchen')",
+            "Grab('Square pedal bin large')",
+            "Move_to('Montauk Chest Of Drawers_bedroom,living room')",
+            "Release('Square pedal bin large')"
+        ],
+        [
+            "Move_to('Blanket_bedroom,living room')",
+            "Grab('Blanket')",
+            "Move_to('Morvah Wall Hanging Planter_living room')",
+            "Release('Blanket')"
+        ]
+    ],
+    "Scene": "106879044_174887172",
+    "Target": [
+        [
+            [
+                "26f2000adb4ef26cbed1971ef90777253e223aa2",
+                "Square pedal bin large",
+                "kitchen"
+            ],
+            [
+                "1bf0baeb5c66c7be8dac14edeb36dc97479cb462",
+                "Montauk Chest Of Drawers",
+                "bedroom,living room"
+            ]
+        ],
+        [
+            [
+                "1bc7b29ad3d8177e70e5e1e9802f361a19dc673f",
+                "Blanket",
+                "bedroom,living room"
+            ],
+            [
+                "5086845254b801fe41676cefb9673f7fc3ba8f04",
+                "Morvah Wall Hanging Planter",
+                "living room"
+            ]
+        ]
+    ]
+}

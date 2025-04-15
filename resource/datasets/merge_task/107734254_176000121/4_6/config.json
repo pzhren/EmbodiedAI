@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "take the bath robe from the bathroom and place it on the coat rack in the living room",
+        "Take the floor mirror in the bedroom and move it to the faucet area in the bathroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Bath robe_bathroom')",
+            "Grab('Bath robe')",
+            "Move_to('Folk Ladder Coat Rack, Black Ash_living room')",
+            "Release('Bath robe')"
+        ],
+        [
+            "Move_to('Brayden Iron Floor Mirror_bedroom')",
+            "Grab('Brayden Iron Floor Mirror')",
+            "Move_to('Tapwell - Faucet ARM887_bathroom')",
+            "Release('Brayden Iron Floor Mirror')"
+        ]
+    ],
+    "Scene": "107734254_176000121",
+    "Target": [
+        [
+            [
+                "973c8db16abb188caa2868a16141b643684e3881",
+                "Bath robe",
+                "bathroom"
+            ],
+            [
+                "19279a6433e47450b7638d0e7dc2ae31c55cbac5",
+                "Folk Ladder Coat Rack, Black Ash",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "8083346ccbdd2b001e8e6e1c6e5c2a37e4774792",
+                "Brayden Iron Floor Mirror",
+                "bedroom"
+            ],
+            [
+                "3d901ff75e41368cf9bfc2aca27e34ed11def9e7",
+                "Tapwell - Faucet ARM887",
+                "bathroom"
+            ]
+        ]
+    ]
+}

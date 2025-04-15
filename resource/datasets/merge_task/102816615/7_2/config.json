@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Can you please take the small nesting table from the living room and place it beside the large terracotta planter in the same room",
+        "Move the Dracaena plant from the living room to the Bonsai table in the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Radleigh Small Nesting Table_living room')",
+            "Grab('Radleigh Small Nesting Table')",
+            "Move_to('Jara Terracotta Planter with Stand, Large_living room')",
+            "Release('Radleigh Small Nesting Table')"
+        ],
+        [
+            "Move_to('Dracaena Marginata 122 cms_living room')",
+            "Grab('Dracaena Marginata 122 cms')",
+            "Move_to('Mid Century Modern End Table_living room')",
+            "Release('Mid Century Modern End Table')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "1a4841c613e9f5c2ba492107fb6aff4692c564a4",
+                "Radleigh Small Nesting Table",
+                "living room"
+            ],
+            [
+                "0e3f31820718c4195b9884dbdf9015035f66dae0",
+                "Jara Terracotta Planter with Stand, Large",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "132dcfd81bf3c8a059c73caa049deac411d3c11c",
+                "Dracaena Marginata 122 cms",
+                "living room"
+            ],
+            [
+                "2b39e8c2237ea1f0ba7417b2ec96d2aca51ee17b",
+                "Mid Century Modern End Table",
+                "living room"
+            ]
+        ]
+    ]
+}

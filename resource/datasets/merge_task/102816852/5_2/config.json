@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "take the FICUS plant in the living room to the LOMMARP cabinet in the living room",
+        "take the espresso maker in the kitchen and place it on the side table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('FICUS MICROCARPA GINSENG_living room')",
+            "Grab('FICUS MICROCARPA GINSENG')",
+            "Move_to('LOMMARP Cabinet, Dark Blue-Green_living room')",
+            "Release('LOMMARP Cabinet, Dark Blue-Green')"
+        ],
+        [
+            "Move_to('Delonghi Silky White Lattissima One Espresso Maker_kitchen')",
+            "Grab('Delonghi Silky White Lattissima One Espresso Maker')",
+            "Move_to('E15 Alex Side Table_living room')",
+            "Release('Delonghi Silky White Lattissima One Espresso Maker')"
+        ]
+    ],
+    "Scene": "102816852",
+    "Target": [
+        [
+            [
+                "1943726018bc88e96a8fa16fd6f8d88523d75abc",
+                "FICUS MICROCARPA GINSENG",
+                "living room"
+            ],
+            [
+                "b87936a4a52e2a0b805369a0763a536c719ca7d6",
+                "LOMMARP Cabinet, Dark Blue-Green",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "b4934a67247a1d1dfc53320eeb47b62ecb560dba",
+                "Delonghi Silky White Lattissima One Espresso Maker",
+                "kitchen"
+            ],
+            [
+                "67b958a5263c73693978ddac57e429b18925ee38",
+                "E15 Alex Side Table",
+                "living room"
+            ]
+        ]
+    ]
+}

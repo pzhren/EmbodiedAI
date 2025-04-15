@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you please take the Faux Potted Monstera Plant from the living room and place it on the dining table in the dining room",
+    "Subtask list": [
+        "Move_to('Faux Potted Monstera Plant 29\"_living room')",
+        "Grab('Faux Potted Monstera Plant 29\"')",
+        "Move_to('Moon Dining Table 120, Black Marquina Marble Top_living room,dining room')",
+        "Release('Faux Potted Monstera Plant 29\"')"
+    ],
+    "Scene": "102816009",
+    "Target": [
+        [
+            "bd8a1dc70062c8e7c8a33cb92ee86fbe6b015547",
+            "Faux Potted Monstera Plant 29\"",
+            "living room"
+        ],
+        [
+            "9c4a2899547a09f196bf87e368cc7835e035462d",
+            "Moon Dining Table 120, Black Marquina Marble Top",
+            "living room,dining room"
+        ]
+    ]
+}

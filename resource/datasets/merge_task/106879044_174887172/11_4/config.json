@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the potted faux eucalyptus from the living room to the dining room and place it on the dining table",
+        "Transfer the blanket from the shared space of the bedroom and living room to the Morvah Wall Hanging Planter in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Potted Faux Eucalyptus 8\"_living room')",
+            "Grab('Potted Faux Eucalyptus 8\"')",
+            "Move_to('Established Sons M5 Dining Table_living room,dining room')",
+            "Release('Potted Faux Eucalyptus 8\"')"
+        ],
+        [
+            "Move_to('Blanket_bedroom,living room')",
+            "Grab('Blanket')",
+            "Move_to('Morvah Wall Hanging Planter_living room')",
+            "Release('Blanket')"
+        ]
+    ],
+    "Scene": "106879044_174887172",
+    "Target": [
+        [
+            [
+                "ee7b9e4cf5c533737ebd058f7950ca632db5bc62",
+                "Potted Faux Eucalyptus 8\"",
+                "living room"
+            ],
+            [
+                "eedc440b949be844592cf2de757aa728f882ab11",
+                "Established Sons M5 Dining Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "1bc7b29ad3d8177e70e5e1e9802f361a19dc673f",
+                "Blanket",
+                "bedroom,living room"
+            ],
+            [
+                "5086845254b801fe41676cefb9673f7fc3ba8f04",
+                "Morvah Wall Hanging Planter",
+                "living room"
+            ]
+        ]
+    ]
+}

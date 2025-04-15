@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the artificial flower arrangement from the living room and place it on the tribeca dining table in the dining room",
+        "Please move the small round mirror from the bathroom to the Grand Sofa in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Artificial Flower Arrangements_living room')",
+            "Grab('Artificial Flower Arrangements')",
+            "Move_to('Tribeca Dining Table_living room,dining room')",
+            "Release('Artificial Flower Arrangements')"
+        ],
+        [
+            "Move_to('Harlesden Round 610mm Mirror, Gold_bathroom')",
+            "Grab('Harlesden Round 610mm Mirror, Gold')",
+            "Move_to('Bailey GrandSofa, Lustre Cappuccino_living room')",
+            "Release('Harlesden Round 610mm Mirror, Gold')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "d2a166e8ce6c464c51da9da9f0aeb45423ec210e",
+                "Artificial Flower Arrangements",
+                "living room"
+            ],
+            [
+                "e2470c29a511a8c9f4937a689ee1b9127974a61b",
+                "Tribeca Dining Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "49ac5c85bea178f60e16380f334e6b36cd113985",
+                "Harlesden Round 610mm Mirror, Gold",
+                "bathroom"
+            ],
+            [
+                "efcf1f36229805bf808017e52e0aacdb4d731a4a",
+                "Bailey GrandSofa, Lustre Cappuccino",
+                "living room"
+            ]
+        ]
+    ]
+}

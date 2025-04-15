@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the artificial hydrangea from the kitchen and place it on the wooden side table in the living room",
+        "Please move the small round mirror from the bathroom to the Grand Sofa in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Artificial Hydrangea in Jug_kitchen,dining room')",
+            "Grab('Artificial Hydrangea in Jug')",
+            "Move_to('Burled Wood Side Table_living room')",
+            "Release('Artificial Hydrangea in Jug')"
+        ],
+        [
+            "Move_to('Harlesden Round 610mm Mirror, Gold_bathroom')",
+            "Grab('Harlesden Round 610mm Mirror, Gold')",
+            "Move_to('Bailey GrandSofa, Lustre Cappuccino_living room')",
+            "Release('Harlesden Round 610mm Mirror, Gold')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "e9fc98585a8c737dfbda4a575d19dfa0d1176abd",
+                "Artificial Hydrangea in Jug",
+                "kitchen,dining room"
+            ],
+            [
+                "fd60745108c2bae82be7fa631ac73df6fd6125ab",
+                "Burled Wood Side Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "49ac5c85bea178f60e16380f334e6b36cd113985",
+                "Harlesden Round 610mm Mirror, Gold",
+                "bathroom"
+            ],
+            [
+                "efcf1f36229805bf808017e52e0aacdb4d731a4a",
+                "Bailey GrandSofa, Lustre Cappuccino",
+                "living room"
+            ]
+        ]
+    ]
+}

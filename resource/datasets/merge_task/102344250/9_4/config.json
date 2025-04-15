@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the small plant from the living room and place it on the dressing table in the bedroom",
+        "Can you move the easy chair from the living room to the laundry area, and place it beside the washing machine"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('plant_living room')",
+            "Grab('plant')",
+            "Move_to('Dressing table bench Legs_bedroom')",
+            "Release('Dressing table bench Legs')"
+        ],
+        [
+            "Move_to('VILLSTAD Easy chair_living room')",
+            "Grab('VILLSTAD Easy chair')",
+            "Move_to('Washing Machine_laundry')",
+            "Release('VILLSTAD Easy chair')"
+        ]
+    ],
+    "Scene": "102344250",
+    "Target": [
+        [
+            [
+                "cb47ce31bd4309c8b3c99a1d53db43f7046cb489",
+                "plant",
+                "living room"
+            ],
+            [
+                "01e5e60f2cb12562e4e8f7bf78beb2832a5638e9",
+                "Dressing table bench Legs",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "7731b27a33dba3816bd7bc321cf47bc12facc109",
+                "VILLSTAD Easy chair",
+                "living room"
+            ],
+            [
+                "cfcb3d204d92b039136f28eadba5a7d408edfbae",
+                "Washing Machine",
+                "laundry"
+            ]
+        ]
+    ]
+}

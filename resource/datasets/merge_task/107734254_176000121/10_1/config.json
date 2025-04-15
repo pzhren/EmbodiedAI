@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the Scalloped Mirror from the bedroom to the Girard Coffee Table in the living room",
+        "Take the Brayden Floor Mirror from the bedroom and place it next to the Olivemix in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Scalloped Mirror_bedroom')",
+            "Grab('Scalloped Mirror')",
+            "Move_to('Girard Coffee Table_living room')",
+            "Release('Scalloped Mirror')"
+        ],
+        [
+            "Move_to('Brayden Iron Floor Mirror_bedroom')",
+            "Grab('Brayden Iron Floor Mirror')",
+            "Move_to('Olive Leaf and Magnolia Bud Mix_living room')",
+            "Release('Brayden Iron Floor Mirror')"
+        ]
+    ],
+    "Scene": "107734254_176000121",
+    "Target": [
+        [
+            [
+                "27270bd8cd43d174767c0348a0bcb826ed3e97a1",
+                "Scalloped Mirror",
+                "bedroom"
+            ],
+            [
+                "016556105b34152b96d7323eed7878bb8c142fbc",
+                "Girard Coffee Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "8083346ccbdd2b001e8e6e1c6e5c2a37e4774792",
+                "Brayden Iron Floor Mirror",
+                "bedroom"
+            ],
+            [
+                "9d050744ed02b40dfe4c3f9814c5c2e684d13b81",
+                "Olive Leaf and Magnolia Bud Mix",
+                "living room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Transfer the coffee maker from the kitchen to the marble stool in the living room",
+    "Subtask list": [
+        "Move_to('Russell Hobbs Coffee Maker, 12693_kitchen')",
+        "Grab('Russell Hobbs Coffee Maker, 12693')",
+        "Move_to('Cylinder stool in Carrara Marble_living room')",
+        "Release('Russell Hobbs Coffee Maker, 12693')"
+    ],
+    "Scene": "102817053",
+    "Target": [
+        [
+            "4b88358f9e5e92dd9664a4a0719afc269819df0e",
+            "Russell Hobbs Coffee Maker, 12693",
+            "kitchen"
+        ],
+        [
+            "2f5adf1fd1ca54088d55c4a70f771101f9690144",
+            "Cylinder stool in Carrara Marble",
+            "living room"
+        ]
+    ]
+}

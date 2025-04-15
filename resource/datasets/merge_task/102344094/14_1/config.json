@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the Delonghi coffee maker from the kitchen and place it on the console table in the living room",
+        "Please take the Black Rattan Woven Round Basket from the living room and place it next to the Envy Bed in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Delonghi Filter Coffee Maker_kitchen')",
+            "Grab('Delonghi Filter Coffee Maker')",
+            "Move_to('console table_living room')",
+            "Release('Delonghi Filter Coffee Maker')"
+        ],
+        [
+            "Move_to('Black Rattan Woven Round Basket_living room')",
+            "Grab('Black Rattan Woven Round Basket')",
+            "Move_to('Envy Bed_bedroom')",
+            "Release('Black Rattan Woven Round Basket')"
+        ]
+    ],
+    "Scene": "102344094",
+    "Target": [
+        [
+            [
+                "4a5d65ef0499befafb833f460e1dbe5050d99c2a",
+                "Delonghi Filter Coffee Maker",
+                "kitchen"
+            ],
+            [
+                "2e028ffe637a7f7b62154ccfb1cb406a2d8ed6ba",
+                "console table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "xxxx028e6297xba22x4718xb4cbx1470a69a0bd6",
+                "Black Rattan Woven Round Basket",
+                "living room"
+            ],
+            [
+                "e91f9db75c0e3679b4bdd1d012ceb0819bb287f5",
+                "Envy Bed",
+                "bedroom"
+            ]
+        ]
+    ]
+}

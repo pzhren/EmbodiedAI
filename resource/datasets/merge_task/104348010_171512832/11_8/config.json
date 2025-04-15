@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the espresso coffee maker from the kitchen and place it on the Provencal 220cm Farmhouse Table in the living room, dining room area",
+        "Take the black pen pot in the office to the bookshelf in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('espresso coffee maker_kitchen')",
+            "Grab('espresso coffee maker')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('espresso coffee maker')"
+        ],
+        [
+            "Move_to('Pen pot - black_office')",
+            "Grab('Pen pot - black')",
+            "Move_to('Baybrin Bookshelf_living room')",
+            "Release('Pen pot - black')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "9d027ac8635b202c4ba4d2e39708d98a918677af",
+                "espresso coffee maker",
+                "kitchen"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "73cae0c00c31e895cbf8c6ac2bcc3ce718d03b21",
+                "Pen pot - black",
+                "office"
+            ],
+            [
+                "2008d8ac79f55bb3bad47a4bc7af494f0a7fe9f8",
+                "Baybrin Bookshelf",
+                "living room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you please move the plant from the living room to the dining room table",
+    "Subtask list": [
+        "Move_to('plant_living room')",
+        "Grab('plant')",
+        "Move_to('Domino Dining Chair_dining room')",
+        "Release('plant')"
+    ],
+    "Scene": "102344094",
+    "Target": [
+        [
+            "cb47ce31bd4309c8b3c99a1d53db43f7046cb489",
+            "plant",
+            "living room"
+        ],
+        [
+            "532681f45088722a5cd947ee4cb4a35441a75f1f",
+            "Domino Dining Chair",
+            "dining room"
+        ]
+    ]
+}

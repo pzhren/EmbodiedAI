@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Delonghi Coffee Maker from the kitchen and place it on the Thorndale Cocktail Table in the living room",
+        "Please take the Delonghi Filter Coffee Maker in the kitchen and place it on the Thorndale Cocktail Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Delonghi Filter Coffee Maker_kitchen')",
+            "Grab('Delonghi Filter Coffee Maker')",
+            "Move_to('Thorndale Cocktail Table_living room')",
+            "Release('Delonghi Filter Coffee Maker')"
+        ],
+        [
+            "Move_to('Delonghi Filter Coffee Maker_kitchen')",
+            "Grab('Delonghi Filter Coffee Maker')",
+            "Move_to('Thorndale Cocktail Table_living room')",
+            "Release('Delonghi Filter Coffee Maker')"
+        ]
+    ],
+    "Scene": "102344094",
+    "Target": [
+        [
+            [
+                "4a5d65ef0499befafb833f460e1dbe5050d99c2a",
+                "Delonghi Filter Coffee Maker",
+                "kitchen"
+            ],
+            [
+                "6e8ab0b6640c5a66914dbb05d4019a5dcaeb0b44",
+                "Thorndale Cocktail Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "4a5d65ef0499befafb833f460e1dbe5050d99c2a",
+                "Delonghi Filter Coffee Maker",
+                "kitchen"
+            ],
+            [
+                "6e8ab0b6640c5a66914dbb05d4019a5dcaeb0b44",
+                "Thorndale Cocktail Table",
+                "living room"
+            ]
+        ]
+    ]
+}

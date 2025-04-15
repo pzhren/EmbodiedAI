@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the white KitchenAid mixer from the kitchen and place it on the Sherlock desk in the office",
+        "Please take the Kitchen Aid Artisan Mixer from the kitchen and place it on the Airframe Desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('KITCHEN AID ARTISAN MIXER CREAM_kitchen')",
+            "Grab('KITCHEN AID ARTISAN MIXER CREAM')",
+            "Move_to('Sherlock Desk_office')",
+            "Release('KITCHEN AID ARTISAN MIXER CREAM')"
+        ],
+        [
+            "Move_to('KITCHEN AID ARTISAN MIXER CREAM_kitchen')",
+            "Grab('KITCHEN AID ARTISAN MIXER CREAM')",
+            "Move_to('Airframe Desk_office')",
+            "Release('KITCHEN AID ARTISAN MIXER CREAM')"
+        ]
+    ],
+    "Scene": "103997643_171030747",
+    "Target": [
+        [
+            [
+                "e1d30ae83996db2ab653f342d27a5b316b762979",
+                "KITCHEN AID ARTISAN MIXER CREAM",
+                "kitchen"
+            ],
+            [
+                "a32ed32cc5693cb1ccd4792b7c3f0340cc8eda91",
+                "Sherlock Desk",
+                "office"
+            ]
+        ],
+        [
+            [
+                "e1d30ae83996db2ab653f342d27a5b316b762979",
+                "KITCHEN AID ARTISAN MIXER CREAM",
+                "kitchen"
+            ],
+            [
+                "9bfd01b7a7f4fb8e1388551d237763778d4b3862",
+                "Airframe Desk",
+                "office"
+            ]
+        ]
+    ]
+}

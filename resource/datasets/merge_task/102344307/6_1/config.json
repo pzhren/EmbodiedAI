@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Tropical Plant from the living room and place it near the Washer Dryer in the kitchen",
+        "Could you please take the soap dish from the bathroom and place it on the kitchen island in the kitchen"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Tropical Plant_living room')",
+            "Grab('Tropical Plant')",
+            "Move_to('Hotpoint WDF740A Satin Aluminium Washer Dryer._kitchen')",
+            "Release('Tropical Plant')"
+        ],
+        [
+            "Move_to('Chancery Soap Dish, Rose Gold_bathroom')",
+            "Grab('Chancery Soap Dish, Rose Gold')",
+            "Move_to('YOO OH Kitchen Island_kitchen')",
+            "Release('Chancery Soap Dish, Rose Gold')"
+        ]
+    ],
+    "Scene": "102344307",
+    "Target": [
+        [
+            [
+                "4e476e157b3837870de19ceccd0179841269143b",
+                "Tropical Plant",
+                "living room"
+            ],
+            [
+                "00b285ed70673826ccb6941929a64abfaf5f9239",
+                "Hotpoint WDF740A Satin Aluminium Washer Dryer.",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "84092984ce8a7cd7ad7aec05eb95d2612d3cd209",
+                "Chancery Soap Dish, Rose Gold",
+                "bathroom"
+            ],
+            [
+                "27903d5a77d900067dd9031caf2f229776d800d4",
+                "YOO OH Kitchen Island",
+                "kitchen"
+            ]
+        ]
+    ]
+}

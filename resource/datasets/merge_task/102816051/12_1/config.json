@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Pick up the toilet paper holder from the bathroom and place it on the nightstand in the bedroom",
+        "Take the Jumbo Toy Bin in the kitchen and place it next to the vanity mirror in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Vipp Toilet Paper Holder_bathroom')",
+            "Grab('Vipp Toilet Paper Holder')",
+            "Move_to('Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent_bedroom')",
+            "Release('Vipp Toilet Paper Holder')"
+        ],
+        [
+            "Move_to('Jumbo Toy Bin_kitchen')",
+            "Grab('Jumbo Toy Bin')",
+            "Move_to('Celestia Vanity Mirror_bedroom')",
+            "Release('Jumbo Toy Bin')"
+        ]
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            [
+                "797bcf6deace50c829a3f341f7ad35bbbda8080f",
+                "Vipp Toilet Paper Holder",
+                "bathroom"
+            ],
+            [
+                "2b9af0f16b5f1e6b7621bfa05afb45b3581e0736",
+                "Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "3157a2905050ec0ecbe06723d968e1743c38e11d",
+                "Jumbo Toy Bin",
+                "kitchen"
+            ],
+            [
+                "be29027141222beb3ac121e48c131189e1b8cd0f",
+                "Celestia Vanity Mirror",
+                "bedroom"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Princess Chest from the bedroom-living room area and place it on the Hartley 2 Piece Sectional in the living room",
+        "Take the Jumbo Toy Bin from the kitchen and place it on the Princess Castle Clock in the kids room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Princess Chest_bedroom,living room')",
+            "Grab('Princess Chest')",
+            "Move_to('Hartley 2 Piece Sectional_living room')",
+            "Release('Princess Chest')"
+        ],
+        [
+            "Move_to('Jumbo Toy Bin_kitchen')",
+            "Grab('Jumbo Toy Bin')",
+            "Move_to('Princess Castle Clock_kids room')",
+            "Release('Princess Castle Clock')"
+        ]
+    ],
+    "Scene": "104862558_172226664",
+    "Target": [
+        [
+            [
+                "848c2cc9428329445b3de7dc982469c583b16c1d",
+                "Princess Chest",
+                "bedroom,living room"
+            ],
+            [
+                "66ec4fc576cf716a9e41f389a8ab27b103edfa9f",
+                "Hartley 2 Piece Sectional",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "3157a2905050ec0ecbe06723d968e1743c38e11d",
+                "Jumbo Toy Bin",
+                "kitchen"
+            ],
+            [
+                "e33d9290a0833c81db2e7e55a80d86ea0aea6082",
+                "Princess Castle Clock",
+                "kids room"
+            ]
+        ]
+    ]
+}

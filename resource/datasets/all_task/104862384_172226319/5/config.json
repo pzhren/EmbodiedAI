@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you take the storage box from the bedroom living room and put it on the side table in the living room",
+    "Subtask list": [
+        "Move_to('Storage Box_bedroom,living room')",
+        "Grab('Storage Box')",
+        "Move_to('Fine Furniture Design # Side Table_living room')",
+        "Release('Storage Box')"
+    ],
+    "Scene": "104862384_172226319",
+    "Target": [
+        [
+            "c23faef9bbd3bf3909d1b8ad9cee4c4b7e0c4061",
+            "Storage Box",
+            "bedroom,living room"
+        ],
+        [
+            "91933e7299ab7b02ee58295f5195bb6ea6b3b46e",
+            "Fine Furniture Design # Side Table",
+            "living room"
+        ]
+    ]
+}

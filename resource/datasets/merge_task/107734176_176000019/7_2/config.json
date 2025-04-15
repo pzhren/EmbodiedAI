@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the Samsung Microwave from the kitchen and place it on the Mercer Down II Sectional Sofa in the living room",
+        "Take the bowl of oranges from the dining room and place it on the coffee table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Samsung Microwave MW872S_kitchen')",
+            "Grab('Samsung Microwave MW872S')",
+            "Move_to('Mercer Down II 3 Piece Sectional With Double Chaise_living room')",
+            "Release('Samsung Microwave MW872S')"
+        ],
+        [
+            "Move_to('Bowl of Oranges_dining room')",
+            "Grab('Bowl of Oranges')",
+            "Move_to('Coffee table_living room')",
+            "Release('Bowl of Oranges')"
+        ]
+    ],
+    "Scene": "107734176_176000019",
+    "Target": [
+        [
+            [
+                "93951e48e6f29a5592dd6e8e2c426427707d6496",
+                "Samsung Microwave MW872S",
+                "kitchen"
+            ],
+            [
+                "f75c49f9bed26c64c3ada2c8623fda53583d3025",
+                "Mercer Down II 3 Piece Sectional With Double Chaise",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "e073e5a03b9554fbdd72ae7290dcf8c1a04431f1",
+                "Bowl of Oranges",
+                "dining room"
+            ],
+            [
+                "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69",
+                "Coffee table",
+                "living room"
+            ]
+        ]
+    ]
+}

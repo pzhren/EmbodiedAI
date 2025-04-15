@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Transfer the small fridge from the kitchen to the coffee table in the living room",
+        "Could you take the Faux Potted Monstera Plant from the living room and place it on the Enzo Round Coffee Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('American fridge freezer, small_kitchen')",
+            "Grab('American fridge freezer, small')",
+            "Move_to('Igny 36'' Coffee Table_living room')",
+            "Release('American fridge freezer, small')"
+        ],
+        [
+            "Move_to('Faux Potted Monstera Plant 29\"_living room')",
+            "Grab('Faux Potted Monstera Plant 29\"')",
+            "Move_to('Enzo Round Coffee Table_living room')",
+            "Release('Faux Potted Monstera Plant 29\"')"
+        ]
+    ],
+    "Scene": "102344049",
+    "Target": [
+        [
+            [
+                "35230dedd6b3f035a602f7226fae2dcb61bf1e4a",
+                "American fridge freezer, small",
+                "kitchen"
+            ],
+            [
+                "6477ab2b133a11b1ab2b3eea0214f2c1a1d31b89",
+                "Igny 36'' Coffee Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "bd8a1dc70062c8e7c8a33cb92ee86fbe6b015547",
+                "Faux Potted Monstera Plant 29\"",
+                "living room"
+            ],
+            [
+                "d046b17dbfb2503a92fae261596d05b2966710b4",
+                "Enzo Round Coffee Table",
+                "living room"
+            ]
+        ]
+    ]
+}

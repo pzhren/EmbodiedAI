@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please pick up the Blue Hydrangea Water Garden from the living room and place it on the Paxton Upholstered 29'' Ottoman",
+        "take the espresso maker in the kitchen and place it on the side table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Blue Hydrangea Water Garden_living room')",
+            "Grab('Blue Hydrangea Water Garden')",
+            "Move_to('Paxton Upholstered 29'' Ottoman_living room')",
+            "Release('Paxton Upholstered 29'' Ottoman')"
+        ],
+        [
+            "Move_to('Delonghi Silky White Lattissima One Espresso Maker_kitchen')",
+            "Grab('Delonghi Silky White Lattissima One Espresso Maker')",
+            "Move_to('E15 Alex Side Table_living room')",
+            "Release('Delonghi Silky White Lattissima One Espresso Maker')"
+        ]
+    ],
+    "Scene": "102816852",
+    "Target": [
+        [
+            [
+                "51cd1976549241666bcf3cc27e6c4c580352361b",
+                "Blue Hydrangea Water Garden",
+                "living room"
+            ],
+            [
+                "a3aa7554c42e688abc9ad7def329df5891c3cd74",
+                "Paxton Upholstered 29'' Ottoman",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "b4934a67247a1d1dfc53320eeb47b62ecb560dba",
+                "Delonghi Silky White Lattissima One Espresso Maker",
+                "kitchen"
+            ],
+            [
+                "67b958a5263c73693978ddac57e429b18925ee38",
+                "E15 Alex Side Table",
+                "living room"
+            ]
+        ]
+    ]
+}

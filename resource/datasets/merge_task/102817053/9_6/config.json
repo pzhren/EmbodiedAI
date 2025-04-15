@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "pick up the coffee maker from the kitchen and place it on the kitchen island",
+        "Please take the Dualit Lite 2 Slot Toaster from the kitchen and place it on the kitchen island"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Russell Hobbs Coffee Maker, 12693_kitchen')",
+            "Grab('Russell Hobbs Coffee Maker, 12693')",
+            "Move_to('Kitchen island, 90x150x90_kitchen')",
+            "Release('Russell Hobbs Coffee Maker, 12693')"
+        ],
+        [
+            "Move_to('Dualit Lite 2 Slot Toaster Black_kitchen')",
+            "Grab('Dualit Lite 2 Slot Toaster Black')",
+            "Move_to('Kitchen island, 90x150x90_kitchen')",
+            "Release('Dualit Lite 2 Slot Toaster Black')"
+        ]
+    ],
+    "Scene": "102817053",
+    "Target": [
+        [
+            [
+                "4b88358f9e5e92dd9664a4a0719afc269819df0e",
+                "Russell Hobbs Coffee Maker, 12693",
+                "kitchen"
+            ],
+            [
+                "c1eb50298ff734470f53763d12f8bebde8d61764",
+                "Kitchen island, 90x150x90",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "9c5db6e77b1207d689e035d957bff9216d1615e5",
+                "Dualit Lite 2 Slot Toaster Black",
+                "kitchen"
+            ],
+            [
+                "c1eb50298ff734470f53763d12f8bebde8d61764",
+                "Kitchen island, 90x150x90",
+                "kitchen"
+            ]
+        ]
+    ]
+}

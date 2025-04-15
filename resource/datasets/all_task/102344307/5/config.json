@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the soap dish from the bathroom and place it on the plant stand in the living room",
+    "Subtask list": [
+        "Move_to('Chancery Soap Dish, Rose Gold_bathroom')",
+        "Grab('Chancery Soap Dish, Rose Gold')",
+        "Move_to('KRYDDPEPPAR  Plant stand_living room')",
+        "Release('Chancery Soap Dish, Rose Gold')"
+    ],
+    "Scene": "102344307",
+    "Target": [
+        [
+            "84092984ce8a7cd7ad7aec05eb95d2612d3cd209",
+            "Chancery Soap Dish, Rose Gold",
+            "bathroom"
+        ],
+        [
+            "76046a7bd7a4335502da55243e677044f97511bc",
+            "KRYDDPEPPAR  Plant stand",
+            "living room"
+        ]
+    ]
+}

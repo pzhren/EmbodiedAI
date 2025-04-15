@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Transfer the Dualit Cream Pro Blender from the kitchen to the Kase Executive Desk in the office",
+        "Can you please take the Faux Suede Bean Bag from the living room and place it on the Executive Desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Dualit Cream Pro Blender 1.5L_kitchen')",
+            "Grab('Dualit Cream Pro Blender 1.5L')",
+            "Move_to('Kase 66 Inch Executive Desk_office')",
+            "Release('Dualit Cream Pro Blender 1.5L')"
+        ],
+        [
+            "Move_to('Faux Suede Bean Bag_living room')",
+            "Grab('Faux Suede Bean Bag')",
+            "Move_to('Kase 66 Inch Executive Desk_office')",
+            "Release('Faux Suede Bean Bag')"
+        ]
+    ],
+    "Scene": "106366134_174226362",
+    "Target": [
+        [
+            [
+                "6be4d96de50b8749ae932608719b2290a585f9ce",
+                "Dualit Cream Pro Blender 1.5L",
+                "kitchen"
+            ],
+            [
+                "1619e2e6a18d5d374963a3a4280f7a6d76356079",
+                "Kase 66 Inch Executive Desk",
+                "office"
+            ]
+        ],
+        [
+            [
+                "94037135727a19e496e29bccc0e971a105b87ed3",
+                "Faux Suede Bean Bag",
+                "living room"
+            ],
+            [
+                "1619e2e6a18d5d374963a3a4280f7a6d76356079",
+                "Kase 66 Inch Executive Desk",
+                "office"
+            ]
+        ]
+    ]
+}

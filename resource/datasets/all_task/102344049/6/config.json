@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you take the Faux Potted Monstera Plant from the living room and place it on the Enzo Round Coffee Table in the living room",
+    "Subtask list": [
+        "Move_to('Faux Potted Monstera Plant 29\"_living room')",
+        "Grab('Faux Potted Monstera Plant 29\"')",
+        "Move_to('Enzo Round Coffee Table_living room')",
+        "Release('Faux Potted Monstera Plant 29\"')"
+    ],
+    "Scene": "102344049",
+    "Target": [
+        [
+            "bd8a1dc70062c8e7c8a33cb92ee86fbe6b015547",
+            "Faux Potted Monstera Plant 29\"",
+            "living room"
+        ],
+        [
+            "d046b17dbfb2503a92fae261596d05b2966710b4",
+            "Enzo Round Coffee Table",
+            "living room"
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the small mirror in the bedroom and place it next to the laundry bin in the bathroom",
+        "Please move the small round mirror from the bathroom to the Grand Sofa in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('MIRROR-HANGING SHIELD SMALL 25X29_bedroom')",
+            "Grab('MIRROR-HANGING SHIELD SMALL 25X29')",
+            "Move_to('The Water Hyacinth Laundry Bin_bathroom')",
+            "Release('The Water Hyacinth Laundry Bin')"
+        ],
+        [
+            "Move_to('Harlesden Round 610mm Mirror, Gold_bathroom')",
+            "Grab('Harlesden Round 610mm Mirror, Gold')",
+            "Move_to('Bailey GrandSofa, Lustre Cappuccino_living room')",
+            "Release('Harlesden Round 610mm Mirror, Gold')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "ff7366f18451584f3e0f84494b90dc32e97cd9da",
+                "MIRROR-HANGING SHIELD SMALL 25X29",
+                "bedroom"
+            ],
+            [
+                "df3ba3caf8c1321195b13e23ee8642b09d1a9323",
+                "The Water Hyacinth Laundry Bin",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "49ac5c85bea178f60e16380f334e6b36cd113985",
+                "Harlesden Round 610mm Mirror, Gold",
+                "bathroom"
+            ],
+            [
+                "efcf1f36229805bf808017e52e0aacdb4d731a4a",
+                "Bailey GrandSofa, Lustre Cappuccino",
+                "living room"
+            ]
+        ]
+    ]
+}

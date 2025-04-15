@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the succulent plant from the living room and place it on the accent chest in the bedroom or living room",
+    "Subtask list": [
+        "Move_to('Succulent Plant- 23x9x11 cms_living room')",
+        "Grab('Succulent Plant- 23x9x11 cms')",
+        "Move_to('Agate Painted Accent Chest_bedroom,living room')",
+        "Release('Succulent Plant- 23x9x11 cms')"
+    ],
+    "Scene": "102344280",
+    "Target": [
+        [
+            "14bdc1398760aef6d8757e2dd6a1c674d7851e66",
+            "Succulent Plant- 23x9x11 cms",
+            "living room"
+        ],
+        [
+            "293c42d04758bffcc63070066170cbb1f09918cc",
+            "Agate Painted Accent Chest",
+            "bedroom,living room"
+        ]
+    ]
+}

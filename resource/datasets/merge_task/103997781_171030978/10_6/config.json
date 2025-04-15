@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you bring the step stool from the kitchen to the nightstand in the bedroom",
+        "Can you take the storage nightstand from the bedroom and place it near the sofa in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Step Stool, White_kitchen')",
+            "Grab('Step Stool, White')",
+            "Move_to('Tremont Storage Nightstand_bedroom')",
+            "Release('Step Stool, White')"
+        ],
+        [
+            "Move_to('Tremont Storage Nightstand_bedroom')",
+            "Grab('Tremont Storage Nightstand')",
+            "Move_to('Tufted Sofa With Pillows, Teal_living room')",
+            "Release('Tremont Storage Nightstand')"
+        ]
+    ],
+    "Scene": "103997781_171030978",
+    "Target": [
+        [
+            [
+                "e7ba564ec743c9317f5be11402d3689a7954eb7f",
+                "Step Stool, White",
+                "kitchen"
+            ],
+            [
+                "fc0ff877237969033d32f3ce1012b4221011e2c2",
+                "Tremont Storage Nightstand",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "fc0ff877237969033d32f3ce1012b4221011e2c2",
+                "Tremont Storage Nightstand",
+                "bedroom"
+            ],
+            [
+                "853bb03e8a81249e4aa6c372b716f61c0fc95235",
+                "Tufted Sofa With Pillows, Teal",
+                "living room"
+            ]
+        ]
+    ]
+}

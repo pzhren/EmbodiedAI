@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the knife set from the kitchen and place it on the coffee table in the living room",
+        "Move the kitchen tool set from the kitchen and place it on the dining storage in the kitchen"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Graphix 15 Piece Knife Set_kitchen')",
+            "Grab('Graphix 15 Piece Knife Set')",
+            "Move_to('Blaine Coffee Table_living room')",
+            "Release('Blaine Coffee Table')"
+        ],
+        [
+            "Move_to('Brabantia S- Line Kitchen Tool set_kitchen')",
+            "Grab('Brabantia S- Line Kitchen Tool set')",
+            "Move_to('Dining storage_kitchen')",
+            "Release('Brabantia S- Line Kitchen Tool set')"
+        ]
+    ],
+    "Scene": "104862681_172226874",
+    "Target": [
+        [
+            [
+                "b5d1b894bdc9d22be934ea4efeae007d9048add2",
+                "Graphix 15 Piece Knife Set",
+                "kitchen"
+            ],
+            [
+                "df21f89b4559be781d3f70f41832c90ed035d0ef",
+                "Blaine Coffee Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "fc34254f2aac6da46964ede7efc727a33a755919",
+                "Brabantia S- Line Kitchen Tool set",
+                "kitchen"
+            ],
+            [
+                "cd4ffae2b879d72de5eb67e2876f7c3fd7a3a740",
+                "Dining storage",
+                "kitchen"
+            ]
+        ]
+    ]
+}

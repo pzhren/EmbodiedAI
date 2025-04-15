@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the espresso coffee maker from the kitchen and place it on the farmhouse table in the living room, dining room area",
+    "Subtask list": [
+        "Move_to('espresso coffee maker_kitchen')",
+        "Grab('espresso coffee maker')",
+        "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+        "Release('espresso coffee maker')"
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            "9d027ac8635b202c4ba4d2e39708d98a918677af",
+            "espresso coffee maker",
+            "kitchen"
+        ],
+        [
+            "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+            "Provencal 220cm Farmhouse Table",
+            "living room,dining room"
+        ]
+    ]
+}

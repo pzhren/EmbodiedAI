@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please move the artificial flowers from the living room to the kitchen island",
+        "Please move the decorative flowers from the living room to the antique sofa elsewhere in the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Bloom White Rose Artificial Flowers_living room')",
+            "Grab('Bloom White Rose Artificial Flowers')",
+            "Move_to('Magnolia Home Jo'S Kitchen Island by Joanna Gaines, White_kitchen')",
+            "Release('Bloom White Rose Artificial Flowers')"
+        ],
+        [
+            "Move_to('Bloom White Rose Artificial Flowers_living room')",
+            "Grab('Bloom White Rose Artificial Flowers')",
+            "Move_to('2 seater - Antique Tan_living room')",
+            "Release('2 seater - Antique Tan')"
+        ]
+    ],
+    "Scene": "106366353_174226695",
+    "Target": [
+        [
+            [
+                "0eaeb0a2cb5c912b76c0bb825a67dc80c27781b4",
+                "Bloom White Rose Artificial Flowers",
+                "living room"
+            ],
+            [
+                "7bbdbc91b4e39aa072906b2c0c8e1deca281603b",
+                "Magnolia Home Jo'S Kitchen Island by Joanna Gaines, White",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "0eaeb0a2cb5c912b76c0bb825a67dc80c27781b4",
+                "Bloom White Rose Artificial Flowers",
+                "living room"
+            ],
+            [
+                "5e0c57c89718bf9f8859b6181978d150aed749ca",
+                "2 seater - Antique Tan",
+                "living room"
+            ]
+        ]
+    ]
+}

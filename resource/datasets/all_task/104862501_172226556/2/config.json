@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Move the black bedside pedestal table from the bedroom to the south coast rustic dartboard cabinet area in the living room",
+    "Subtask list": [
+        "Move_to('Min Bedside Pedestal Table, Black/Black_bedroom')",
+        "Grab('Min Bedside Pedestal Table, Black/Black')",
+        "Move_to('Dartboard Cabinet, South Coast Rustic - OPEN, Natural_living room')",
+        "Release('Min Bedside Pedestal Table, Black/Black')"
+    ],
+    "Scene": "104862501_172226556",
+    "Target": [
+        [
+            "80cc694002271fe18b4cb2726af4bab6eaf4ad14",
+            "Min Bedside Pedestal Table, Black/Black",
+            "bedroom"
+        ],
+        [
+            "8689fdff97258ee027f88fa5d71b149ad5dfc288",
+            "Dartboard Cabinet, South Coast Rustic - OPEN, Natural",
+            "living room"
+        ]
+    ]
+}

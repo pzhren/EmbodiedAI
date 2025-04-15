@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Pick up the Succulent Plant from the living room and place it on the Springfield Bench in the dining room",
+        "Take the plant from the living room and place it on the bathroom shelf"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Succulent Plant- 23x9x11 cms_living room')",
+            "Grab('Succulent Plant- 23x9x11 cms')",
+            "Move_to('Springfield Bench_living room,dining room')",
+            "Release('Succulent Plant- 23x9x11 cms')"
+        ],
+        [
+            "Move_to('Succulent Plant- 23x9x11 cms_living room')",
+            "Grab('Succulent Plant- 23x9x11 cms')",
+            "Move_to('Bathroom shelf_bathroom')",
+            "Release('Bathroom shelf')"
+        ]
+    ],
+    "Scene": "103997460_171030507",
+    "Target": [
+        [
+            [
+                "14bdc1398760aef6d8757e2dd6a1c674d7851e66",
+                "Succulent Plant- 23x9x11 cms",
+                "living room"
+            ],
+            [
+                "5f34ecd96bc47d523bc77ef89369819e7d697fb5",
+                "Springfield Bench",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "14bdc1398760aef6d8757e2dd6a1c674d7851e66",
+                "Succulent Plant- 23x9x11 cms",
+                "living room"
+            ],
+            [
+                "2a4050fbd2bb666d909c45363867a8a4032985bd",
+                "Bathroom shelf",
+                "bathroom"
+            ]
+        ]
+    ]
+}

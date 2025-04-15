@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 import numpy as np
-
+from gym import spaces
 
 class BaseController(ABC):
     def __init__(self, config: dict):
@@ -12,3 +12,6 @@ class BaseController(ABC):
     def get_action(self) -> np.ndarray:
         pass
 
+    @property
+    def action_space(self) -> spaces.Box:
+        pass

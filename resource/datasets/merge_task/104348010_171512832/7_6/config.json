@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the Blanket from the bedroom or living room and move it to the Provence table in the living room or dining room",
+        "Could you please pick up the Sabatier knife block from the kitchen and place it on the farmhouse table in the dining room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Blanket_bedroom,living room')",
+            "Grab('Blanket')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('Blanket')"
+        ],
+        [
+            "Move_to('Sabatier V 5 Piece Knife Block Set_kitchen,dining room')",
+            "Grab('Sabatier V 5 Piece Knife Block Set')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('Sabatier V 5 Piece Knife Block Set')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "da1cddb10d235eb771f138a5d173da551406c125",
+                "Blanket",
+                "bedroom,living room"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "62b08fe4e989f15d9672478194419f44749f5b19",
+                "Sabatier V 5 Piece Knife Block Set",
+                "kitchen,dining room"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

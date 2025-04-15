@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the black nightstand from the bedroom to the armchair in the living room",
+    "Subtask list": [
+        "Move_to('Ashlyn Nightstand, Black_bedroom')",
+        "Grab('Ashlyn Nightstand, Black')",
+        "Move_to('Cassatt Armchair_living room')",
+        "Release('Ashlyn Nightstand, Black')"
+    ],
+    "Scene": "106878960_174887073",
+    "Target": [
+        [
+            "6c80f089f60961936c04cbc4ef61d2563eb40062",
+            "Ashlyn Nightstand, Black",
+            "bedroom"
+        ],
+        [
+            "b40c4c013467c8c6db3c5d2ecfbcc63577beecd9",
+            "Cassatt Armchair",
+            "living room"
+        ]
+    ]
+}

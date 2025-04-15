@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the white step stool from the kitchen and place it next to the nightstand in the bedroom",
+        "Take the step stool from the kitchen and place it in the bathroom next to the vanity"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Step Stool, White_kitchen')",
+            "Grab('Step Stool, White')",
+            "Move_to('Tremont Storage Nightstand_bedroom')",
+            "Release('Step Stool, White')"
+        ],
+        [
+            "Move_to('Step Stool, White_kitchen')",
+            "Grab('Step Stool, White')",
+            "Move_to('Waschplatz/zone lavabo Vanity Pathos 60 x 35 x 55.5 cm schwarz/noir_bathroom')",
+            "Release('Waschplatz/zone lavabo Vanity Pathos 60 x 35 x 55.5 cm schwarz/noir')"
+        ]
+    ],
+    "Scene": "103997781_171030978",
+    "Target": [
+        [
+            [
+                "e7ba564ec743c9317f5be11402d3689a7954eb7f",
+                "Step Stool, White",
+                "kitchen"
+            ],
+            [
+                "fc0ff877237969033d32f3ce1012b4221011e2c2",
+                "Tremont Storage Nightstand",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "e7ba564ec743c9317f5be11402d3689a7954eb7f",
+                "Step Stool, White",
+                "kitchen"
+            ],
+            [
+                "547142a35640f2c4bad3dd5ecfc3a41891587b13",
+                "Waschplatz/zone lavabo Vanity Pathos 60 x 35 x 55.5 cm schwarz/noir",
+                "bathroom"
+            ]
+        ]
+    ]
+}

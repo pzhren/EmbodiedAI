@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the Family Laundry Hamper from the bathroom and place it next to the Oxville Bar Counter in the living room",
+    "Subtask list": [
+        "Move_to('Family Laundry Hamper_bathroom')",
+        "Grab('Family Laundry Hamper')",
+        "Move_to('Oxville Bar Counter_living room')",
+        "Release('Family Laundry Hamper')"
+    ],
+    "Scene": "102344439",
+    "Target": [
+        [
+            "bfb4b2a7d105c96efa8bb813240a3361ad15bd69",
+            "Family Laundry Hamper",
+            "bathroom"
+        ],
+        [
+            "a39374cea34aea3a858c0da32455933a642125a6",
+            "Oxville Bar Counter",
+            "living room"
+        ]
+    ]
+}

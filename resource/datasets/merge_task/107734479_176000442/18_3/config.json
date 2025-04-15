@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the artificial flower arrangement from the living room and place it on the tribeca dining table in the dining room",
+        "take the laundry bin in the bathroom to the armchair in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Artificial Flower Arrangements_living room')",
+            "Grab('Artificial Flower Arrangements')",
+            "Move_to('Tribeca Dining Table_living room,dining room')",
+            "Release('Artificial Flower Arrangements')"
+        ],
+        [
+            "Move_to('The Water Hyacinth Laundry Bin_bathroom')",
+            "Grab('The Water Hyacinth Laundry Bin')",
+            "Move_to('Hoffman Armchair, Coffee_living room')",
+            "Release('The Water Hyacinth Laundry Bin')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "d2a166e8ce6c464c51da9da9f0aeb45423ec210e",
+                "Artificial Flower Arrangements",
+                "living room"
+            ],
+            [
+                "e2470c29a511a8c9f4937a689ee1b9127974a61b",
+                "Tribeca Dining Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "df3ba3caf8c1321195b13e23ee8642b09d1a9323",
+                "The Water Hyacinth Laundry Bin",
+                "bathroom"
+            ],
+            [
+                "79b9fdabc6d1c61c041c4843ea3cdd860c9df8ba",
+                "Hoffman Armchair, Coffee",
+                "living room"
+            ]
+        ]
+    ]
+}

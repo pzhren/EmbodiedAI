@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Move the family laundry hamper in the bathroom to the bar cart in the living room",
+    "Subtask list": [
+        "Move_to('Family Laundry Hamper_bathroom')",
+        "Grab('Family Laundry Hamper')",
+        "Move_to('Round Mirrored Gold Bar Cart_living room')",
+        "Release('Family Laundry Hamper')"
+    ],
+    "Scene": "102344439",
+    "Target": [
+        [
+            "bfb4b2a7d105c96efa8bb813240a3361ad15bd69",
+            "Family Laundry Hamper",
+            "bathroom"
+        ],
+        [
+            "b6702f1ede249b45a791de9bbb4719ac6063bae9",
+            "Round Mirrored Gold Bar Cart",
+            "living room"
+        ]
+    ]
+}

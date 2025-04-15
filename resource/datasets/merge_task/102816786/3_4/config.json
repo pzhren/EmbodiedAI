@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the candle holder with candles from the living room and place it on the kitchen trolley",
+        "Take the Circus 03 trolley from the kitchen and place it by the Azule Bar Cart in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Candle holder with candles_living room')",
+            "Grab('Candle holder with candles')",
+            "Move_to('Circus 03 trolley by Pierantonio Bonacina_kitchen')",
+            "Release('Candle holder with candles')"
+        ],
+        [
+            "Move_to('Circus 03 trolley by Pierantonio Bonacina_kitchen')",
+            "Grab('Circus 03 trolley by Pierantonio Bonacina')",
+            "Move_to('Azule Bar Cart_living room')",
+            "Release('Circus 03 trolley by Pierantonio Bonacina')"
+        ]
+    ],
+    "Scene": "102816786",
+    "Target": [
+        [
+            [
+                "06a829f5adcb128338196a8d95b288e8f5921610",
+                "Candle holder with candles",
+                "living room"
+            ],
+            [
+                "1d39918807757bae1e51a42b54c044cda8d4cfeb",
+                "Circus 03 trolley by Pierantonio Bonacina",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "1d39918807757bae1e51a42b54c044cda8d4cfeb",
+                "Circus 03 trolley by Pierantonio Bonacina",
+                "kitchen"
+            ],
+            [
+                "4c08cdfed62696b0d20013c08a9131286450788e",
+                "Azule Bar Cart",
+                "living room"
+            ]
+        ]
+    ]
+}

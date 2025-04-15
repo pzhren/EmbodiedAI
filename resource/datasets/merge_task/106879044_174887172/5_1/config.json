@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Premium Cashmere Throw, Oyster from the area shared by the bedroom and living room, and place it onto the Mid Century Modern Cocktail Table in the living room",
+        "Pick the potted faux eucalyptus plant in the living room and place it on the Montauk dresser in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Premium Cashmere Throw, Oyster_bedroom,living room')",
+            "Grab('Premium Cashmere Throw, Oyster')",
+            "Move_to('Mid Century Modern Cocktail Table_living room')",
+            "Release('Premium Cashmere Throw, Oyster')"
+        ],
+        [
+            "Move_to('Potted Faux Eucalyptus 8\"_living room')",
+            "Grab('Potted Faux Eucalyptus 8\"')",
+            "Move_to('Montauk Dresser/Mirror_bedroom,living room')",
+            "Release('Potted Faux Eucalyptus 8\"')"
+        ]
+    ],
+    "Scene": "106879044_174887172",
+    "Target": [
+        [
+            [
+                "e7c0a88838318f18b932d3d165f939ad19a2d8cc",
+                "Premium Cashmere Throw, Oyster",
+                "bedroom,living room"
+            ],
+            [
+                "7025cd14a948f491902ef12724f0fe6e4ce672af",
+                "Mid Century Modern Cocktail Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "ee7b9e4cf5c533737ebd058f7950ca632db5bc62",
+                "Potted Faux Eucalyptus 8\"",
+                "living room"
+            ],
+            [
+                "0ec98b6b495a298726470f1636049f8e4e4c2926",
+                "Montauk Dresser/Mirror",
+                "bedroom,living room"
+            ]
+        ]
+    ]
+}

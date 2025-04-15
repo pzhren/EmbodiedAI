@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Pick up the DeLonghi espresso maker in the kitchen and place it on the Magnolia Home Jo White Table Desk in the office",
+        "Move the toaster from the kitchen to the side table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('DeLonghi Icona Pump Espresso Maker Blue_kitchen')",
+            "Grab('DeLonghi Icona Pump Espresso Maker Blue')",
+            "Move_to('Magnolia Home Jo White Table Desk by Joanna Gaines_office')",
+            "Release('DeLonghi Icona Pump Espresso Maker Blue')"
+        ],
+        [
+            "Move_to('Dualit Lite 2 Slot Toaster Cream_kitchen')",
+            "Grab('Dualit Lite 2 Slot Toaster Cream')",
+            "Move_to('Alton Chairside Table_living room')",
+            "Release('Dualit Lite 2 Slot Toaster Cream')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "335fc5d250b5f7e424fcb25a26bf001f738ca364",
+                "DeLonghi Icona Pump Espresso Maker Blue",
+                "kitchen"
+            ],
+            [
+                "63fb966ae8a96a526619aec4a5a45f81f589a787",
+                "Magnolia Home Jo White Table Desk by Joanna Gaines",
+                "office"
+            ]
+        ],
+        [
+            [
+                "712e8b6769bebb2dde5302e3de78d2c28d639759",
+                "Dualit Lite 2 Slot Toaster Cream",
+                "kitchen"
+            ],
+            [
+                "5ad40619a3bb78eac62b5d40817966fce8f9814e",
+                "Alton Chairside Table",
+                "living room"
+            ]
+        ]
+    ]
+}

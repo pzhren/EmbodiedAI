@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the candle holder with candles from the living room and place it on the kitchen trolley",
+        "Could you please move the Calla Lily Bouquet from the living room to the Brighton Queen Upholstered Bed in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Candle holder with candles_living room')",
+            "Grab('Candle holder with candles')",
+            "Move_to('Circus 03 trolley by Pierantonio Bonacina_kitchen')",
+            "Release('Candle holder with candles')"
+        ],
+        [
+            "Move_to('CALLA LILY BOUQUET IN GLASS_living room')",
+            "Grab('CALLA LILY BOUQUET IN GLASS')",
+            "Move_to('Brighton Queen Upholstered Platform Bed By Nate Berkus And Jeremiah Brent_bedroom')",
+            "Release('CALLA LILY BOUQUET IN GLASS')"
+        ]
+    ],
+    "Scene": "102816786",
+    "Target": [
+        [
+            [
+                "06a829f5adcb128338196a8d95b288e8f5921610",
+                "Candle holder with candles",
+                "living room"
+            ],
+            [
+                "1d39918807757bae1e51a42b54c044cda8d4cfeb",
+                "Circus 03 trolley by Pierantonio Bonacina",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "fd99e8af0aab94cafa5ec73787d55cfb330623fa",
+                "CALLA LILY BOUQUET IN GLASS",
+                "living room"
+            ],
+            [
+                "cb88813ef78001887105294c74675cc7438c8e17",
+                "Brighton Queen Upholstered Platform Bed By Nate Berkus And Jeremiah Brent",
+                "bedroom"
+            ]
+        ]
+    ]
+}

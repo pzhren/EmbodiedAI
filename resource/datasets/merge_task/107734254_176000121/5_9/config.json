@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the cozy bathrobe from the bathroom and place it on the lovely nightstand in the bedroom",
+        "Please take the Elko Nightstand from the bedroom and place it next to the Girard Coffee Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Bath robe_bathroom')",
+            "Grab('Bath robe')",
+            "Move_to('Elko Nightstand_bedroom')",
+            "Release('Bath robe')"
+        ],
+        [
+            "Move_to('Elko Nightstand_bedroom')",
+            "Grab('Elko Nightstand')",
+            "Move_to('Girard Coffee Table_living room')",
+            "Release('Elko Nightstand')"
+        ]
+    ],
+    "Scene": "107734254_176000121",
+    "Target": [
+        [
+            [
+                "973c8db16abb188caa2868a16141b643684e3881",
+                "Bath robe",
+                "bathroom"
+            ],
+            [
+                "6eff75ec23c4c9c1f83c636bf6d6ea6993d7adde",
+                "Elko Nightstand",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "6eff75ec23c4c9c1f83c636bf6d6ea6993d7adde",
+                "Elko Nightstand",
+                "bedroom"
+            ],
+            [
+                "016556105b34152b96d7323eed7878bb8c142fbc",
+                "Girard Coffee Table",
+                "living room"
+            ]
+        ]
+    ]
+}

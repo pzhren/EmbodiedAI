@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the artificial hydrangea from the kitchen and place it on the wooden side table in the living room",
+        "Could you please transfer the espresso maker from the kitchen to the wooden side table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Artificial Hydrangea in Jug_kitchen,dining room')",
+            "Grab('Artificial Hydrangea in Jug')",
+            "Move_to('Burled Wood Side Table_living room')",
+            "Release('Artificial Hydrangea in Jug')"
+        ],
+        [
+            "Move_to('DeLonghi Icona Pump Espresso Maker Blue_kitchen')",
+            "Grab('DeLonghi Icona Pump Espresso Maker Blue')",
+            "Move_to('Burled Wood Side Table_living room')",
+            "Release('DeLonghi Icona Pump Espresso Maker Blue')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "e9fc98585a8c737dfbda4a575d19dfa0d1176abd",
+                "Artificial Hydrangea in Jug",
+                "kitchen,dining room"
+            ],
+            [
+                "fd60745108c2bae82be7fa631ac73df6fd6125ab",
+                "Burled Wood Side Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "335fc5d250b5f7e424fcb25a26bf001f738ca364",
+                "DeLonghi Icona Pump Espresso Maker Blue",
+                "kitchen"
+            ],
+            [
+                "fd60745108c2bae82be7fa631ac73df6fd6125ab",
+                "Burled Wood Side Table",
+                "living room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the Rainbow Rectangle rug from the kids room and place it on the Presby sofa table in the living room",
+    "Subtask list": [
+        "Move_to('Rainbow Rectangle - 5'10'' x 8'5''  - Item # RNBOW6_kids room')",
+        "Grab('Rainbow Rectangle - 5'10'' x 8'5''  - Item # RNBOW6')",
+        "Move_to('Presby 54'' Sofa Table, White_living room')",
+        "Release('Presby 54'' Sofa Table, White')"
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            "ce88818af2d4c74f00ee1b40a62a6d89bdda0ea3",
+            "Rainbow Rectangle - 5'10'' x 8'5''  - Item # RNBOW6",
+            "kids room"
+        ],
+        [
+            "d445bb243f12ba89fc91c9d2265408b5cd635632",
+            "Presby 54'' Sofa Table, White",
+            "living room"
+        ]
+    ]
+}

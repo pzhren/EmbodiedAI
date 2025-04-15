@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Black Chinoiserie Mirror from the bedroom and place it on the desk in the office",
+        "Take the black nightstand from the bedroom to the armchair in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Gold Chinoiserie Mirror_bedroom')",
+            "Grab('Gold Chinoiserie Mirror')",
+            "Move_to('Sadie Desk_office')",
+            "Release('Gold Chinoiserie Mirror')"
+        ],
+        [
+            "Move_to('Ashlyn Nightstand, Black_bedroom')",
+            "Grab('Ashlyn Nightstand, Black')",
+            "Move_to('Cassatt Armchair_living room')",
+            "Release('Ashlyn Nightstand, Black')"
+        ]
+    ],
+    "Scene": "106878960_174887073",
+    "Target": [
+        [
+            [
+                "b6841ebeda34eddf68c66baa380583ffd6bf83fe",
+                "Gold Chinoiserie Mirror",
+                "bedroom"
+            ],
+            [
+                "215e08aaca7f96eb917fb32b11a459b2271a31f0",
+                "Sadie Desk",
+                "office"
+            ]
+        ],
+        [
+            [
+                "6c80f089f60961936c04cbc4ef61d2563eb40062",
+                "Ashlyn Nightstand, Black",
+                "bedroom"
+            ],
+            [
+                "b40c4c013467c8c6db3c5d2ecfbcc63577beecd9",
+                "Cassatt Armchair",
+                "living room"
+            ]
+        ]
+    ]
+}

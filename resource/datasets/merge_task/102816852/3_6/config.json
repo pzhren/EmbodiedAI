@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Lianne Chinoiserie Box on Stand from the living room and place it on the Shelburn Cherry Rect Mirror in the bedroom",
+        "Please pick up the Blue Hydrangea Water Garden from the living room and place it on the Paxton Upholstered 29'' Ottoman"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Lianne Chinoiserie Box on Stand_living room')",
+            "Grab('Lianne Chinoiserie Box on Stand')",
+            "Move_to('Shelburn Cherry Rect Mirror_bedroom')",
+            "Release('Lianne Chinoiserie Box on Stand')"
+        ],
+        [
+            "Move_to('Blue Hydrangea Water Garden_living room')",
+            "Grab('Blue Hydrangea Water Garden')",
+            "Move_to('Paxton Upholstered 29'' Ottoman_living room')",
+            "Release('Paxton Upholstered 29'' Ottoman')"
+        ]
+    ],
+    "Scene": "102816852",
+    "Target": [
+        [
+            [
+                "18907e173849a4276315f8932a121033906d5c70",
+                "Lianne Chinoiserie Box on Stand",
+                "living room"
+            ],
+            [
+                "b35a7b24cc984d6e9d6a15dd55bb64f2359eb845",
+                "Shelburn Cherry Rect Mirror",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "51cd1976549241666bcf3cc27e6c4c580352361b",
+                "Blue Hydrangea Water Garden",
+                "living room"
+            ],
+            [
+                "a3aa7554c42e688abc9ad7def329df5891c3cd74",
+                "Paxton Upholstered 29'' Ottoman",
+                "living room"
+            ]
+        ]
+    ]
+}

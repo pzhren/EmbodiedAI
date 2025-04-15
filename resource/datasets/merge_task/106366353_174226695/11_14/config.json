@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the artificial flowers from the living room and place them on the Island in the kitchen",
+        "Take the Deer & Stag Heads With Antlers from the living room and place it on the Elite d'Art Console Table in the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Bloom White Rose Artificial Flowers_living room')",
+            "Grab('Bloom White Rose Artificial Flowers')",
+            "Move_to('Kitchen island_kitchen')",
+            "Release('Bloom White Rose Artificial Flowers')"
+        ],
+        [
+            "Move_to('Deer &amp; Stag Heads With Antlers_living room')",
+            "Grab('Deer &amp; Stag Heads With Antlers')",
+            "Move_to('Elite d'Art Console Table_living room')",
+            "Release('Deer &amp; Stag Heads With Antlers')"
+        ]
+    ],
+    "Scene": "106366353_174226695",
+    "Target": [
+        [
+            [
+                "0eaeb0a2cb5c912b76c0bb825a67dc80c27781b4",
+                "Bloom White Rose Artificial Flowers",
+                "living room"
+            ],
+            [
+                "af102d5ce3df9cc58b991eb618a86f66c5901efe",
+                "Kitchen island",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "5dc4a6783c96d68da449ead5a92f9055fd3e8169",
+                "Deer &amp; Stag Heads With Antlers",
+                "living room"
+            ],
+            [
+                "ff7ac44857ed740b2e18b59fe3b0ebce25f34ad0",
+                "Elite d'Art Console Table",
+                "living room"
+            ]
+        ]
+    ]
+}

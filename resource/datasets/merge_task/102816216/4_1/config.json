@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Rattan Collection Egg Shaped Laundry Basket from the bathroom and place it on the floor next to the Squeezer Kitchen Roll Holder in the kitchen",
+        "Transfer the laundry basket from the bathroom to the console table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Rattan Collection Egg Shaped Laundry Basket_bathroom')",
+            "Grab('Rattan Collection Egg Shaped Laundry Basket')",
+            "Move_to('Squeezer Kitchen Roll Holder_kitchen')",
+            "Release('Rattan Collection Egg Shaped Laundry Basket')"
+        ],
+        [
+            "Move_to('Rattan Collection Egg Shaped Laundry Basket_bathroom')",
+            "Grab('Rattan Collection Egg Shaped Laundry Basket')",
+            "Move_to('Ubud Console_living room')",
+            "Release('Rattan Collection Egg Shaped Laundry Basket')"
+        ]
+    ],
+    "Scene": "102816216",
+    "Target": [
+        [
+            [
+                "724302468f654ed8bf8d72ad82e5057db5d08336",
+                "Rattan Collection Egg Shaped Laundry Basket",
+                "bathroom"
+            ],
+            [
+                "a1316f752216c5938f26c70c7c0af1cd80f470e1",
+                "Squeezer Kitchen Roll Holder",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "724302468f654ed8bf8d72ad82e5057db5d08336",
+                "Rattan Collection Egg Shaped Laundry Basket",
+                "bathroom"
+            ],
+            [
+                "f72c0e86085c6b6f48b82d47d5066248be8b7c4a",
+                "Ubud Console",
+                "living room"
+            ]
+        ]
+    ]
+}

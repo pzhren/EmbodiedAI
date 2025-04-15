@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Pick the faux leather bean bag from the living room and place it onto the Chester footrest in the shared space between the bedroom and living room",
+        "Take the mustard throw blanket from the shared bedroom and living room area to the Maisie stool in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('XL Faux Leather Bean bag BLACK_living room')",
+            "Grab('XL Faux Leather Bean bag BLACK')",
+            "Move_to('CHESTER Footrest_bedroom,living room')",
+            "Release('XL Faux Leather Bean bag BLACK')"
+        ],
+        [
+            "Move_to('Mustard Throw Blanket_bedroom,living room')",
+            "Grab('Mustard Throw Blanket')",
+            "Move_to('Maisie Stool_bedroom')",
+            "Release('Mustard Throw Blanket')"
+        ]
+    ],
+    "Scene": "108294573_176710113",
+    "Target": [
+        [
+            [
+                "5dce7508b43c39e7dba018156a05a29483bff5f7",
+                "XL Faux Leather Bean bag BLACK",
+                "living room"
+            ],
+            [
+                "495ec825e5a1a1a5f1d5aae2098bc6e4ba049e4f",
+                "CHESTER Footrest",
+                "bedroom,living room"
+            ]
+        ],
+        [
+            [
+                "1deb8fb234f678ac5e06b4f967011c09eb8714ce",
+                "Mustard Throw Blanket",
+                "bedroom,living room"
+            ],
+            [
+                "5562de4568952a7f72318fff93085d7f5e98aba9",
+                "Maisie Stool",
+                "bedroom"
+            ]
+        ]
+    ]
+}

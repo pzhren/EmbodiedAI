@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the toy stove unit from the kids room and place it next to the sofa table in the living room",
+        "Take the Jumbo Toy Bin in the kitchen and place it next to the vanity mirror in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('TOY SINK/STOVE UNIT_kids room')",
+            "Grab('TOY SINK/STOVE UNIT')",
+            "Move_to('Presby 54'' Sofa Table, White_living room')",
+            "Release('TOY SINK/STOVE UNIT')"
+        ],
+        [
+            "Move_to('Jumbo Toy Bin_kitchen')",
+            "Grab('Jumbo Toy Bin')",
+            "Move_to('Celestia Vanity Mirror_bedroom')",
+            "Release('Jumbo Toy Bin')"
+        ]
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            [
+                "0add22cc4b991c0b80e94a36eb72687f44ccb3ba",
+                "TOY SINK/STOVE UNIT",
+                "kids room"
+            ],
+            [
+                "d445bb243f12ba89fc91c9d2265408b5cd635632",
+                "Presby 54'' Sofa Table, White",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "3157a2905050ec0ecbe06723d968e1743c38e11d",
+                "Jumbo Toy Bin",
+                "kitchen"
+            ],
+            [
+                "be29027141222beb3ac121e48c131189e1b8cd0f",
+                "Celestia Vanity Mirror",
+                "bedroom"
+            ]
+        ]
+    ]
+}

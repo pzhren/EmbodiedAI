@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the small wind light from recycled glass in the living room and place it on the Sadie desk in the office",
+        "Could you please take the black tapered candle holder set from the living room to the nightstand in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('small wind light from recycled glass_living room')",
+            "Grab('small wind light from recycled glass')",
+            "Move_to('Sadie Desk_office')",
+            "Release('small wind light from recycled glass')"
+        ],
+        [
+            "Move_to('Allis Black Taper Candle Holders Set Of 3_living room')",
+            "Grab('Allis Black Taper Candle Holders Set Of 3')",
+            "Move_to('Ashlyn Nightstand, Black_bedroom')",
+            "Release('Allis Black Taper Candle Holders Set Of 3')"
+        ]
+    ],
+    "Scene": "106878960_174887073",
+    "Target": [
+        [
+            [
+                "1c8e9441083ef0adc4c79668f757c7d4d6ccfbaa",
+                "small wind light from recycled glass",
+                "living room"
+            ],
+            [
+                "215e08aaca7f96eb917fb32b11a459b2271a31f0",
+                "Sadie Desk",
+                "office"
+            ]
+        ],
+        [
+            [
+                "bea1b3b9578d9e11486a9728976f34474ef3e671",
+                "Allis Black Taper Candle Holders Set Of 3",
+                "living room"
+            ],
+            [
+                "6c80f089f60961936c04cbc4ef61d2563eb40062",
+                "Ashlyn Nightstand, Black",
+                "bedroom"
+            ]
+        ]
+    ]
+}

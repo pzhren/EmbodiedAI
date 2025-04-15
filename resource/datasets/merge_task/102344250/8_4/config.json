@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please bring the wall hanging from the living room to the folding trolley in the living room",
+        "Can you move the easy chair from the living room to the laundry area, and place it beside the washing machine"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Moments - Wall Hanging_living room')",
+            "Grab('Moments - Wall Hanging')",
+            "Move_to('Beech Folding Trolley_living room')",
+            "Release('Moments - Wall Hanging')"
+        ],
+        [
+            "Move_to('VILLSTAD Easy chair_living room')",
+            "Grab('VILLSTAD Easy chair')",
+            "Move_to('Washing Machine_laundry')",
+            "Release('VILLSTAD Easy chair')"
+        ]
+    ],
+    "Scene": "102344250",
+    "Target": [
+        [
+            [
+                "b10620e794a96839cce5f37974578229667b89b7",
+                "Moments - Wall Hanging",
+                "living room"
+            ],
+            [
+                "fcd4cfd15f790272e5ce95bab3c62de87beb3142",
+                "Beech Folding Trolley",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "7731b27a33dba3816bd7bc321cf47bc12facc109",
+                "VILLSTAD Easy chair",
+                "living room"
+            ],
+            [
+                "cfcb3d204d92b039136f28eadba5a7d408edfbae",
+                "Washing Machine",
+                "laundry"
+            ]
+        ]
+    ]
+}

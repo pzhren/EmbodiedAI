@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you please relocate the picnic blanket from the kids' room to the dining side chair in the dining room",
+    "Subtask list": [
+        "Move_to('Fleecy Waterproof Picnic Blanket_kids room')",
+        "Grab('Fleecy Waterproof Picnic Blanket')",
+        "Move_to('Gage Dining Side Chair_dining room')",
+        "Release('Fleecy Waterproof Picnic Blanket')"
+    ],
+    "Scene": "107734017_175999794",
+    "Target": [
+        [
+            "8653855b3b368d593143b42994b0d5d467f684f7",
+            "Fleecy Waterproof Picnic Blanket",
+            "kids room"
+        ],
+        [
+            "9caaf8921fd03abd49017a106a0d14b5ede53102",
+            "Gage Dining Side Chair",
+            "dining room"
+        ]
+    ]
+}

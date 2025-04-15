@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please pick up the Sabatier knife block from the kitchen and place it on the farmhouse table in the dining room",
+        "Please take the rolled-up towel from the bathroom and place it on the Utopia sofa in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Sabatier V 5 Piece Knife Block Set_kitchen,dining room')",
+            "Grab('Sabatier V 5 Piece Knife Block Set')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('Sabatier V 5 Piece Knife Block Set')"
+        ],
+        [
+            "Move_to('Rolled Up Towel_bathroom')",
+            "Grab('Rolled Up Towel')",
+            "Move_to('Utopia Sofa_living room')",
+            "Release('Rolled Up Towel')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "62b08fe4e989f15d9672478194419f44749f5b19",
+                "Sabatier V 5 Piece Knife Block Set",
+                "kitchen,dining room"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "6ece1a15f0f508aab2371808d58eefa8420cf725",
+                "Rolled Up Towel",
+                "bathroom"
+            ],
+            [
+                "d08d31c962d7e9fe620baf6562354b192c862ebe",
+                "Utopia Sofa",
+                "living room"
+            ]
+        ]
+    ]
+}

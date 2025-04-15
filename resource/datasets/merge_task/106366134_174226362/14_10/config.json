@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Pick up the grey bathmat from the bathroom and place it on the Athens II chair in the living room",
+        "Please take the Coppercomb Toilet Brush Holder from the bathroom and place it on the Studio 3 Door Wardrobe in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('DWR Plush Bathmat, Grey_bathroom')",
+            "Grab('DWR Plush Bathmat, Grey')",
+            "Move_to('Athens II Chair_living room')",
+            "Release('DWR Plush Bathmat, Grey')"
+        ],
+        [
+            "Move_to('Coppercomb Toilet Brush Holder_bathroom')",
+            "Grab('Coppercomb Toilet Brush Holder')",
+            "Move_to('Studio 3 Door Wardrobe_bedroom')",
+            "Release('Coppercomb Toilet Brush Holder')"
+        ]
+    ],
+    "Scene": "106366134_174226362",
+    "Target": [
+        [
+            [
+                "bbdc1b4f72d1347d144887c3b5d4d614737d3737",
+                "DWR Plush Bathmat, Grey",
+                "bathroom"
+            ],
+            [
+                "e31c405a5222b81f6fcb1e2e8326d2efff00097f",
+                "Athens II Chair",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "6edb72ff1959e26a1d7c66976786c85129df83a4",
+                "Coppercomb Toilet Brush Holder",
+                "bathroom"
+            ],
+            [
+                "5e74de078d0d0bd18ecb9f41feb1fd2aef42d478",
+                "Studio 3 Door Wardrobe",
+                "bedroom"
+            ]
+        ]
+    ]
+}

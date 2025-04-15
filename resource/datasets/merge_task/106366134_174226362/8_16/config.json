@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the rolled up towel from the bathroom and place it on the sofa in the living room",
+        "Take the plush bathmat from the bathroom and place it near the vegan leather desk chair in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Rolled Up Towel_bathroom')",
+            "Grab('Rolled Up Towel')",
+            "Move_to('Vivian Sofa_living room')",
+            "Release('Rolled Up Towel')"
+        ],
+        [
+            "Move_to('DWR Plush Bathmat, Grey_bathroom')",
+            "Grab('DWR Plush Bathmat, Grey')",
+            "Move_to('Channeled Vegan Leather Desk Chair, Gold And White_office')",
+            "Release('DWR Plush Bathmat, Grey')"
+        ]
+    ],
+    "Scene": "106366134_174226362",
+    "Target": [
+        [
+            [
+                "6ece1a15f0f508aab2371808d58eefa8420cf725",
+                "Rolled Up Towel",
+                "bathroom"
+            ],
+            [
+                "dcb1a1b641a5441628a79be4811dcb71f4640a19",
+                "Vivian Sofa",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "bbdc1b4f72d1347d144887c3b5d4d614737d3737",
+                "DWR Plush Bathmat, Grey",
+                "bathroom"
+            ],
+            [
+                "265114799460fcd58e282c00c5e60be3ab5e9148",
+                "Channeled Vegan Leather Desk Chair, Gold And White",
+                "office"
+            ]
+        ]
+    ]
+}

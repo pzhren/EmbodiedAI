@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you place the Jessie End Table from the living room onto the Kitchen island in the kitchen",
+        "Please take the artificial flowers in the living room and place them on the dresser in the combined bedroom and living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Jessie End Table_living room')",
+            "Grab('Jessie End Table')",
+            "Move_to('Kitchen island_kitchen')",
+            "Release('Jessie End Table')"
+        ],
+        [
+            "Move_to('Bloom White Rose Artificial Flowers_living room')",
+            "Grab('Bloom White Rose Artificial Flowers')",
+            "Move_to('Sinclair Dresser/Mirror, Pebble_bedroom,living room')",
+            "Release('Bloom White Rose Artificial Flowers')"
+        ]
+    ],
+    "Scene": "106366353_174226695",
+    "Target": [
+        [
+            [
+                "a05ea4457ab8cb61197cbc8fb69a05437db684e8",
+                "Jessie End Table",
+                "living room"
+            ],
+            [
+                "af102d5ce3df9cc58b991eb618a86f66c5901efe",
+                "Kitchen island",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "0eaeb0a2cb5c912b76c0bb825a67dc80c27781b4",
+                "Bloom White Rose Artificial Flowers",
+                "living room"
+            ],
+            [
+                "2c6ab6266f1d11711743b89a00b0f7ff7d64edde",
+                "Sinclair Dresser/Mirror, Pebble",
+                "bedroom,living room"
+            ]
+        ]
+    ]
+}

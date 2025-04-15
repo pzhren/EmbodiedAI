@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the handblown carved glass vase from the living room and place it on the Maisie Stool in the bedroom",
+        "Take the handblown carved glass vase from the living room and place it on the kitchen island in the kitchen"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('HANDBLOWN CARVED GLASS VASE_living room')",
+            "Grab('HANDBLOWN CARVED GLASS VASE')",
+            "Move_to('Maisie Stool_bedroom')",
+            "Release('HANDBLOWN CARVED GLASS VASE')"
+        ],
+        [
+            "Move_to('HANDBLOWN CARVED GLASS VASE_living room')",
+            "Grab('HANDBLOWN CARVED GLASS VASE')",
+            "Move_to('Cooks Kitchen Island_kitchen')",
+            "Release('HANDBLOWN CARVED GLASS VASE')"
+        ]
+    ],
+    "Scene": "108294573_176710113",
+    "Target": [
+        [
+            [
+                "db8288398b2513371f31aff4e2e6271dd08476af",
+                "HANDBLOWN CARVED GLASS VASE",
+                "living room"
+            ],
+            [
+                "5562de4568952a7f72318fff93085d7f5e98aba9",
+                "Maisie Stool",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "db8288398b2513371f31aff4e2e6271dd08476af",
+                "HANDBLOWN CARVED GLASS VASE",
+                "living room"
+            ],
+            [
+                "edac4829501b7064951b3e1b3ac2aaae5c1fe251",
+                "Cooks Kitchen Island",
+                "kitchen"
+            ]
+        ]
+    ]
+}

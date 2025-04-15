@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the Blanket from the bedroom or living room and move it to the Provence table in the living room or dining room",
+        "Please take the Birch Laundry Bin from the bathroom and place it on the High And Dry Dish Rack in the kitchen"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Blanket_bedroom,living room')",
+            "Grab('Blanket')",
+            "Move_to('Provencal 220cm Farmhouse Table_living room,dining room')",
+            "Release('Blanket')"
+        ],
+        [
+            "Move_to('Birch Laundry Bin_bathroom')",
+            "Grab('Birch Laundry Bin')",
+            "Move_to('High And Dry Dish Rack_kitchen')",
+            "Release('Birch Laundry Bin')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "da1cddb10d235eb771f138a5d173da551406c125",
+                "Blanket",
+                "bedroom,living room"
+            ],
+            [
+                "1d16777b0f75aad9fff6585d66cbd2ba52edf81a",
+                "Provencal 220cm Farmhouse Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "949851e617feda8ab8270e6bb748fdbae4f79ac0",
+                "Birch Laundry Bin",
+                "bathroom"
+            ],
+            [
+                "686fe44a4f4c4f94e20e28a244cc34e9b64f7464",
+                "High And Dry Dish Rack",
+                "kitchen"
+            ]
+        ]
+    ]
+}

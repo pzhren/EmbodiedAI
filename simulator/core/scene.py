@@ -41,7 +41,7 @@ class BaseScene(ABC):
                 prim_type = "Xform",
                 scale = [1,1,1],
                 translation = [0,0,0],
-                orientation = [0,0,0,1],
+                orientation = [1,0,0,0],
                 collision = True
             ))})
         

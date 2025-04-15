@@ -1,0 +1,22 @@
+{
+    "Task instruction": "please pick up the storage stool from the bedroom and place it on the console table in the living room",
+    "Subtask list": [
+        "Move_to('Melrose Storage Stool_bedroom')",
+        "Grab('Melrose Storage Stool')",
+        "Move_to('Lexington Console Table_living room')",
+        "Release('Melrose Storage Stool')"
+    ],
+    "Scene": "105515505_173104584",
+    "Target": [
+        [
+            "aa3980e5647496394070f4591cff9cd143a067c0",
+            "Melrose Storage Stool",
+            "bedroom"
+        ],
+        [
+            "44689bfbf34013ad3ff7f8b05eb2cede29ff9f4e",
+            "Lexington Console Table",
+            "living room"
+        ]
+    ]
+}

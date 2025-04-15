@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the square pedal bin from the kitchen and place it next to the chest of drawers in the shared bedroom and living room area",
+        "Take the Kitchen wall cabinet with 2 glass doors in the kitchen and place it on the Danish table in the dining room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Square pedal bin large_kitchen')",
+            "Grab('Square pedal bin large')",
+            "Move_to('Montauk Chest Of Drawers_bedroom,living room')",
+            "Release('Square pedal bin large')"
+        ],
+        [
+            "Move_to('Kitchen wall cabinet with 2 glass doors_kitchen')",
+            "Grab('Kitchen wall cabinet with 2 glass doors')",
+            "Move_to('Established Sons M5 Dining Table_living room,dining room')",
+            "Release('Kitchen wall cabinet with 2 glass doors')"
+        ]
+    ],
+    "Scene": "106879044_174887172",
+    "Target": [
+        [
+            [
+                "26f2000adb4ef26cbed1971ef90777253e223aa2",
+                "Square pedal bin large",
+                "kitchen"
+            ],
+            [
+                "1bf0baeb5c66c7be8dac14edeb36dc97479cb462",
+                "Montauk Chest Of Drawers",
+                "bedroom,living room"
+            ]
+        ],
+        [
+            [
+                "89934a7354b8a59b3fe2bbe22ffe7964a0b8db4b",
+                "Kitchen wall cabinet with 2 glass doors",
+                "kitchen"
+            ],
+            [
+                "eedc440b949be844592cf2de757aa728f882ab11",
+                "Established Sons M5 Dining Table",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

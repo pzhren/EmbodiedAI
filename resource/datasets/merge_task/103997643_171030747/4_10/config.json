@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please pick up the small metal trash can from the kitchen and place it next to the shower in the bathroom",
+        "Could you please take the white KitchenAid mixer from the kitchen and place it on the Sherlock desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Small Metal Trash Can_kitchen')",
+            "Grab('Small Metal Trash Can')",
+            "Move_to('Shower_bathroom')",
+            "Release('Small Metal Trash Can')"
+        ],
+        [
+            "Move_to('KITCHEN AID ARTISAN MIXER CREAM_kitchen')",
+            "Grab('KITCHEN AID ARTISAN MIXER CREAM')",
+            "Move_to('Sherlock Desk_office')",
+            "Release('KITCHEN AID ARTISAN MIXER CREAM')"
+        ]
+    ],
+    "Scene": "103997643_171030747",
+    "Target": [
+        [
+            [
+                "141dd97fde5601e6c4fb47e9e08b4b489686a500",
+                "Small Metal Trash Can",
+                "kitchen"
+            ],
+            [
+                "2c0d3b1f712185ebacd6cb5e39e1551e13e6ee60",
+                "Shower",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "e1d30ae83996db2ab653f342d27a5b316b762979",
+                "KITCHEN AID ARTISAN MIXER CREAM",
+                "kitchen"
+            ],
+            [
+                "a32ed32cc5693cb1ccd4792b7c3f0340cc8eda91",
+                "Sherlock Desk",
+                "office"
+            ]
+        ]
+    ]
+}

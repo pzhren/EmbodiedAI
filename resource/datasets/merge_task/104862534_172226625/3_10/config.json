@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Echo Brickell Kitchen (portable item assumed) from the kitchen to the Leahy Splayed Leg Desk in the office",
+        "Take the Echo Brickell Kitchen countertop item and place it on the Leahy Splayed Leg Desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Echo Brickell Kitchen_kitchen')",
+            "Grab('Echo Brickell Kitchen')",
+            "Move_to('Leahy Splayed Leg Desk_office')",
+            "Release('Echo Brickell Kitchen')"
+        ],
+        [
+            "Move_to('Echo Brickell Kitchen_kitchen')",
+            "Grab('Echo Brickell Kitchen')",
+            "Move_to('Leahy Splayed Leg Desk_office')",
+            "Release('Echo Brickell Kitchen')"
+        ]
+    ],
+    "Scene": "104862534_172226625",
+    "Target": [
+        [
+            [
+                "a2d18114421991200bb43645a15359859ee9f95d",
+                "Echo Brickell Kitchen",
+                "kitchen"
+            ],
+            [
+                "bb034d375833247e8539a25b7075afb01e908507",
+                "Leahy Splayed Leg Desk",
+                "office"
+            ]
+        ],
+        [
+            [
+                "a2d18114421991200bb43645a15359859ee9f95d",
+                "Echo Brickell Kitchen",
+                "kitchen"
+            ],
+            [
+                "bb034d375833247e8539a25b7075afb01e908507",
+                "Leahy Splayed Leg Desk",
+                "office"
+            ]
+        ]
+    ]
+}

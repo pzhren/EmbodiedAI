@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "move the Blanc Doeuf Waste Bin from the bathroom to the Mid Century Modern Cocktail Table in the living room",
+        "Could you please move the black wing chair from the dining room to the end table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Blanc Doeuf Waste Bin_bathroom')",
+            "Grab('Blanc Doeuf Waste Bin')",
+            "Move_to('Mid Century Modern Cocktail Table_living room')",
+            "Release('Blanc Doeuf Waste Bin')"
+        ],
+        [
+            "Move_to('Revolve Britania Wing Chair, Black_dining room')",
+            "Grab('Revolve Britania Wing Chair, Black')",
+            "Move_to('Mid Century Modern End Table_living room')",
+            "Release('Mid Century Modern End Table')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "5f42b2ef37446d00652bccc1fea78258518a807e",
+                "Blanc Doeuf Waste Bin",
+                "bathroom"
+            ],
+            [
+                "7025cd14a948f491902ef12724f0fe6e4ce672af",
+                "Mid Century Modern Cocktail Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "2f8b1869ffc23806afac2e98ecc61cffb6c94ffc",
+                "Revolve Britania Wing Chair, Black",
+                "dining room"
+            ],
+            [
+                "2b39e8c2237ea1f0ba7417b2ec96d2aca51ee17b",
+                "Mid Century Modern End Table",
+                "living room"
+            ]
+        ]
+    ]
+}

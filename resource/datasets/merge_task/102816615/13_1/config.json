@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please pick up the Black Braided Basket from the living room and place it on the Chocolattice Toilet Brush Holder in the bathroom",
+        "Take the Potted Sansevieria from the living room to the Bamboo Towel ladder Rail in the bathroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Black Braided Basket_living room')",
+            "Grab('Black Braided Basket')",
+            "Move_to('Chocolattice Toilet Brush Holder_bathroom')",
+            "Release('Black Braided Basket')"
+        ],
+        [
+            "Move_to('Potted Sansevieria_living room')",
+            "Grab('Potted Sansevieria')",
+            "Move_to('Bamboo Towel ladder Rail_bathroom')",
+            "Release('Potted Sansevieria')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "7455be76e2dd607faf8df97b1e55bc9358118e55",
+                "Black Braided Basket",
+                "living room"
+            ],
+            [
+                "5785d33e6af231b40f4d8aba24f9be6d0a248bec",
+                "Chocolattice Toilet Brush Holder",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "26a38271fb04e01cc4ae5f6cabad71f37a69231b",
+                "Potted Sansevieria",
+                "living room"
+            ],
+            [
+                "96977a358791fbe57563c80b13f229625ad614ad",
+                "Bamboo Towel ladder Rail",
+                "bathroom"
+            ]
+        ]
+    ]
+}

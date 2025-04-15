@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the potted faux eucalyptus from the living room and place it in the bathroom on the bathroom storage stand",
+    "Subtask list": [
+        "Move_to('Potted Faux Eucalyptus 8\"_living room')",
+        "Grab('Potted Faux Eucalyptus 8\"')",
+        "Move_to('Brookline Bathroom Storage Stand with 3 Tiers_bathroom')",
+        "Release('Potted Faux Eucalyptus 8\"')"
+    ],
+    "Scene": "106879044_174887172",
+    "Target": [
+        [
+            "ee7b9e4cf5c533737ebd058f7950ca632db5bc62",
+            "Potted Faux Eucalyptus 8\"",
+            "living room"
+        ],
+        [
+            "9b578304805dd2e8dc433d5f7275c4164f9aa1e7",
+            "Brookline Bathroom Storage Stand with 3 Tiers",
+            "bathroom"
+        ]
+    ]
+}

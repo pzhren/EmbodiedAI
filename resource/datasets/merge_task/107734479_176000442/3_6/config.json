@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "take the laundry bin in the bathroom to the armchair in the living room",
+        "Could you please take the artificial hydrangea from the kitchen and place it on the wooden side table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('The Water Hyacinth Laundry Bin_bathroom')",
+            "Grab('The Water Hyacinth Laundry Bin')",
+            "Move_to('Hoffman Armchair, Coffee_living room')",
+            "Release('The Water Hyacinth Laundry Bin')"
+        ],
+        [
+            "Move_to('Artificial Hydrangea in Jug_kitchen,dining room')",
+            "Grab('Artificial Hydrangea in Jug')",
+            "Move_to('Burled Wood Side Table_living room')",
+            "Release('Artificial Hydrangea in Jug')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "df3ba3caf8c1321195b13e23ee8642b09d1a9323",
+                "The Water Hyacinth Laundry Bin",
+                "bathroom"
+            ],
+            [
+                "79b9fdabc6d1c61c041c4843ea3cdd860c9df8ba",
+                "Hoffman Armchair, Coffee",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "e9fc98585a8c737dfbda4a575d19dfa0d1176abd",
+                "Artificial Hydrangea in Jug",
+                "kitchen,dining room"
+            ],
+            [
+                "fd60745108c2bae82be7fa631ac73df6fd6125ab",
+                "Burled Wood Side Table",
+                "living room"
+            ]
+        ]
+    ]
+}

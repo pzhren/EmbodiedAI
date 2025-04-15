@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please pick up the small metal trash can from the kitchen and place it next to the shower in the bathroom",
+        "Pick up the bedside table from the bedroom and place it on the TV unit in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Small Metal Trash Can_kitchen')",
+            "Grab('Small Metal Trash Can')",
+            "Move_to('Shower_bathroom')",
+            "Release('Small Metal Trash Can')"
+        ],
+        [
+            "Move_to('Salerno Bedside Table_bedroom')",
+            "Grab('Salerno Bedside Table')",
+            "Move_to('Warne TV Unit_living room')",
+            "Release('Salerno Bedside Table')"
+        ]
+    ],
+    "Scene": "103997643_171030747",
+    "Target": [
+        [
+            [
+                "141dd97fde5601e6c4fb47e9e08b4b489686a500",
+                "Small Metal Trash Can",
+                "kitchen"
+            ],
+            [
+                "2c0d3b1f712185ebacd6cb5e39e1551e13e6ee60",
+                "Shower",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "56f36105d7bf84f7f796bd6272391e16a2e11c5c",
+                "Salerno Bedside Table",
+                "bedroom"
+            ],
+            [
+                "eae23b6121e974982ec521d9118e0034134c37f8",
+                "Warne TV Unit",
+                "living room"
+            ]
+        ]
+    ]
+}

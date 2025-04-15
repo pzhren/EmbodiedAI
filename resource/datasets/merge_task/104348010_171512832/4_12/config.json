@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the soap from the bathroom and place it on the Laurent Buffet in the living room",
+        "Take the Soap from the bathroom and place it on the Tuuci Ocean Master Hexagon Shade, Aluma-Teak, Natural in the patio"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Soap_bathroom')",
+            "Grab('Soap')",
+            "Move_to('Laurent Buffet_living room,dining room')",
+            "Release('Soap')"
+        ],
+        [
+            "Move_to('Soap_bathroom')",
+            "Grab('Soap')",
+            "Move_to('Tuuci Ocean Master Hexagon Shade, Aluma-Teak, Natural_patio')",
+            "Release('Soap')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "6b21bd924df8f21c02fb8bb569de93bd887d8f1e",
+                "Soap",
+                "bathroom"
+            ],
+            [
+                "5a5c19684737ded0da7c2811f6303e154a305323",
+                "Laurent Buffet",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "6b21bd924df8f21c02fb8bb569de93bd887d8f1e",
+                "Soap",
+                "bathroom"
+            ],
+            [
+                "00b94ee7f2a013ffb7b681d19a5769b63c1b8357",
+                "Tuuci Ocean Master Hexagon Shade, Aluma-Teak, Natural",
+                "patio"
+            ]
+        ]
+    ]
+}

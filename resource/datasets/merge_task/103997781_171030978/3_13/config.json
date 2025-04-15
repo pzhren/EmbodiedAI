@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the step stool from the kitchen and place it next to the nightstand in the bedroom",
+        "Please take the step stool from the kitchen and place it by the storage nightstand in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Step Stool, White_kitchen')",
+            "Grab('Step Stool, White')",
+            "Move_to('Tremont Storage Nightstand_bedroom')",
+            "Release('Tremont Storage Nightstand')"
+        ],
+        [
+            "Move_to('Step Stool, White_kitchen')",
+            "Grab('Step Stool, White')",
+            "Move_to('Tremont Storage Nightstand_bedroom')",
+            "Release('Step Stool, White')"
+        ]
+    ],
+    "Scene": "103997781_171030978",
+    "Target": [
+        [
+            [
+                "e7ba564ec743c9317f5be11402d3689a7954eb7f",
+                "Step Stool, White",
+                "kitchen"
+            ],
+            [
+                "fc0ff877237969033d32f3ce1012b4221011e2c2",
+                "Tremont Storage Nightstand",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "e7ba564ec743c9317f5be11402d3689a7954eb7f",
+                "Step Stool, White",
+                "kitchen"
+            ],
+            [
+                "fc0ff877237969033d32f3ce1012b4221011e2c2",
+                "Tremont Storage Nightstand",
+                "bedroom"
+            ]
+        ]
+    ]
+}

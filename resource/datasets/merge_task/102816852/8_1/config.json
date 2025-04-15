@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Pick up the Blue Hydrangea Water Garden from the living room and place it on the Ashby Striped Accent Chair, Taupe within the same room",
+        "Could you move the White Tulip Water Garden from the living room to the E15 Alex Side Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Blue Hydrangea Water Garden_living room')",
+            "Grab('Blue Hydrangea Water Garden')",
+            "Move_to('Ashby Striped Accent Chair, Taupe_living room')",
+            "Release('Blue Hydrangea Water Garden')"
+        ],
+        [
+            "Move_to('White Tulip Water Garden_living room')",
+            "Grab('White Tulip Water Garden')",
+            "Move_to('E15 Alex Side Table_living room')",
+            "Release('White Tulip Water Garden')"
+        ]
+    ],
+    "Scene": "102816852",
+    "Target": [
+        [
+            [
+                "51cd1976549241666bcf3cc27e6c4c580352361b",
+                "Blue Hydrangea Water Garden",
+                "living room"
+            ],
+            [
+                "13c6bb06c803e021b8fd9b6244a065b795cd05b5",
+                "Ashby Striped Accent Chair, Taupe",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "39f24d83b5ab476d0880cb19fb218f7029f11840",
+                "White Tulip Water Garden",
+                "living room"
+            ],
+            [
+                "67b958a5263c73693978ddac57e429b18925ee38",
+                "E15 Alex Side Table",
+                "living room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "Task instruction": "take the Xbox in the living room and place it on the console table in the living room",
+    "Subtask list": [
+        "Move_to('XBOX One_living room')",
+        "Grab('XBOX One')",
+        "Move_to('Blaine Console Table_living room')",
+        "Release('XBOX One')"
+    ],
+    "Scene": "106366386_174226770",
+    "Target": [
+        [
+            "de016d31ad24004bf75eeb8c0107e966c626133f",
+            "XBOX One",
+            "living room"
+        ],
+        [
+            "c39181c455b8df6ac1b8112a8d2d7bc4a493d8e7",
+            "Blaine Console Table",
+            "living room"
+        ]
+    ]
+}

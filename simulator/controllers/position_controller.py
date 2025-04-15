@@ -14,18 +14,18 @@ lazyimport(
 
 import math
 import numpy as np
-
+from gym import spaces
 
 @registry.register_controller
 class PositionController(BaseController):
     
     def __init__(self, config:ControllerConfig):
         super().__init__(config)
-        self.forward_m = config.forward_m if config.forward_m is not None else 0.02
-        self.angle_yaw = config.angle_yaw if config.angle_yaw is not None else 0.02
-    
+        self._max_forward_m = config.forward_m if config.forward_m is not None else 0.5
+        self._max_angle_yaw = config.angle_yaw if config.angle_yaw is not None else np.pi/2.
+        
 
-    def get_action(self, command: str, robot=None) -> np.ndarray:
+    def get_action(self, command: list, robot=None) -> np.ndarray:
         """
         Generate action based on movement command.
         
@@ -37,22 +37,27 @@ class PositionController(BaseController):
         Returns:
             np.ndarray: Target position and yaw angle
         """
-        length = self.forward_m
-        angle_yaw = self.angle_yaw
+        
+        
         position, roll, pitch, yaw = self.trans_pos(robot)
         x_dir = np.array([math.cos(yaw), math.sin(yaw), 0])
         
-        if command == 'w':
+        if command[0] == 'w' or command[0]==0:
+            length = min(self._max_forward_m, command[1]) # in meters
             target_pos = position + length * x_dir
-        elif command == 's':
+
+        elif command[0] == 's' or command[0]==1:
+            length = min(self._max_forward_m, command[1]) # in meters
             target_pos = position - length * x_dir
         else:
             target_pos = position
         
         new_yaw = yaw
-        if command == 'a':
+        if command[0] == 'a' or command[0]==2:
+            angle_yaw = min(self._max_angle_yaw,command[1]) # in radians
             new_yaw = (yaw + angle_yaw) % (2 * math.pi)
-        elif command == 'd':
+        elif command[0] == 'd' or command[0]==3:
+            angle_yaw = min(self._max_angle_yaw,command[1])
             new_yaw = (yaw - angle_yaw) % (2 * math.pi)
         
         euler = quaternion_from_euler(roll, pitch, new_yaw)
@@ -60,12 +65,13 @@ class PositionController(BaseController):
     
     def step(self, robot, world, command, grasped_object):
         target_pos, euler = self.get_action(command, robot)
+        if command[0]=="w":
+            robot.plan_length.append(command[1])
         robot.Xform.set_world_pose(position = target_pos, orientation = euler)
         if grasped_object is not None:
             for k,v in grasped_object:
                 target_pos, euler = self.get_action(command, v)
                 v.set_world_pose(position = target_pos, orientation = euler)
-        world.step(render=True)
         return 1
     
     def trans_pos(self, robot)-> tuple:
@@ -78,7 +84,7 @@ class PositionController(BaseController):
         Returns:
             tuple: (position, roll, pitch, yaw)
         """
-        position, quaternion  = robot.get_world_pose()
+        position, quaternion  = robot.get_world_pose(), robot.get_world_orientation()
         roll, pitch, yaw = euler_from_quaternion(quaternion)
         return position, roll, pitch, yaw 
     
@@ -109,4 +115,19 @@ class PositionController(BaseController):
         Returns:
             int: Action dimension
         """
-        return 1
+        return 2
+
+    @property
+    def action_space(self) -> spaces.Tuple:
+        """
+        Get action space.
+        
+        Returns:
+            spaces.Box: Action space
+        """
+        return spaces.Tuple((
+            spaces.Discrete(3),  # 动作类型索引
+            spaces.Box(low=0, high=self._max_forward_m, shape=(1,), dtype=np.float32)  # 参数值
+        ))
+
+    

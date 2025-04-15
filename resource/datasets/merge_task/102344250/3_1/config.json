@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the folding trolley in the living room and place it next to the twin bed in the bedroom",
+        "Take the mixed numbers wall clock from the living room and place it on the side table in the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Beech Folding Trolley_living room')",
+            "Grab('Beech Folding Trolley')",
+            "Move_to('Namaste Twin Bed_bedroom,kids room')",
+            "Release('Beech Folding Trolley')"
+        ],
+        [
+            "Move_to('Mixed numbers Wall Clock Red_living room')",
+            "Grab('Mixed numbers Wall Clock Red')",
+            "Move_to('Mixed up side table_living room')",
+            "Release('Mixed numbers Wall Clock Red')"
+        ]
+    ],
+    "Scene": "102344250",
+    "Target": [
+        [
+            [
+                "fcd4cfd15f790272e5ce95bab3c62de87beb3142",
+                "Beech Folding Trolley",
+                "living room"
+            ],
+            [
+                "3869fc2dbbfe2c95d7dc93081dc9df573d96fb88",
+                "Namaste Twin Bed",
+                "bedroom,kids room"
+            ]
+        ],
+        [
+            [
+                "573c6477f0f3067edcd1e9fb52c558a4291f0c5c",
+                "Mixed numbers Wall Clock Red",
+                "living room"
+            ],
+            [
+                "9bf6552ba4cba1cdb6819e60bc3f416807a4eeec",
+                "Mixed up side table",
+                "living room"
+            ]
+        ]
+    ]
+}

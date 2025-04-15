@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the interior plant in the living room and place it on the brown mid-century wine cabinet in the kitchen",
+        "Please move the Interior Plant from the living room to the Rama Coffee Table in the same living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Interior Plant_living room')",
+            "Grab('Interior Plant')",
+            "Move_to('Brown Mid Century Wine Cabinet_kitchen')",
+            "Release('Interior Plant')"
+        ],
+        [
+            "Move_to('Interior Plant_living room')",
+            "Grab('Interior Plant')",
+            "Move_to('Rama Coffee Table_living room')",
+            "Release('Interior Plant')"
+        ]
+    ],
+    "Scene": "102815859",
+    "Target": [
+        [
+            [
+                "adc3aaea6b4bf09f853a3844655b98af8c6af2a6",
+                "Interior Plant",
+                "living room"
+            ],
+            [
+                "ab0e61c699e14e1d9f691c93a1ad0fd2cd7f931d",
+                "Brown Mid Century Wine Cabinet",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "adc3aaea6b4bf09f853a3844655b98af8c6af2a6",
+                "Interior Plant",
+                "living room"
+            ],
+            [
+                "d34c43bbc021b075835eb995bd142fb6fb18930d",
+                "Rama Coffee Table",
+                "living room"
+            ]
+        ]
+    ]
+}

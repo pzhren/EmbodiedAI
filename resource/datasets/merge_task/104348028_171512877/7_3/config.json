@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the Gold pillar candle from the living room and place it on the kitchen island",
+        "Take the Essey Bin Bin Paper Bin from the kitchen and place it next to the Dave Waste Bin in the bathroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Gold pillar candle_living room')",
+            "Grab('Gold pillar candle')",
+            "Move_to('Kitchen island_kitchen')",
+            "Release('Gold pillar candle')"
+        ],
+        [
+            "Move_to('Essey Bin Bin Paper Bin_kitchen')",
+            "Grab('Essey Bin Bin Paper Bin')",
+            "Move_to('Dave Waste Bin_bathroom')",
+            "Release('Essey Bin Bin Paper Bin')"
+        ]
+    ],
+    "Scene": "104348028_171512877",
+    "Target": [
+        [
+            [
+                "0e48fad4f2a0e48200aeef0129e6e588b9400cc7",
+                "Gold pillar candle",
+                "living room"
+            ],
+            [
+                "af102d5ce3df9cc58b991eb618a86f66c5901efe",
+                "Kitchen island",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "f04effbe4d8e9d3c2739c647f6d05759b3b382c2",
+                "Essey Bin Bin Paper Bin",
+                "kitchen"
+            ],
+            [
+                "4244a5c9fb74784f8c25b5d8dc62a0628f87e3f0",
+                "Dave Waste Bin",
+                "bathroom"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you bring the Artisan Mixer from the kitchen to the dining room living room area and place it on the Victor Dining Table",
+        "Please take the kitchen aid mixer from the kitchen and place it on the airframe desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('KITCHEN AID ARTISAN MIXER CREAM_kitchen')",
+            "Grab('KITCHEN AID ARTISAN MIXER CREAM')",
+            "Move_to('Victor Dining Table_living room,dining room')",
+            "Release('KITCHEN AID ARTISAN MIXER CREAM')"
+        ],
+        [
+            "Move_to('KITCHEN AID ARTISAN MIXER CREAM_kitchen')",
+            "Grab('KITCHEN AID ARTISAN MIXER CREAM')",
+            "Move_to('Airframe Desk_office')",
+            "Release('KITCHEN AID ARTISAN MIXER CREAM')"
+        ]
+    ],
+    "Scene": "103997643_171030747",
+    "Target": [
+        [
+            [
+                "e1d30ae83996db2ab653f342d27a5b316b762979",
+                "KITCHEN AID ARTISAN MIXER CREAM",
+                "kitchen"
+            ],
+            [
+                "d37560d3af2a7c1b45cf7d77ee4cbe2d24ba050f",
+                "Victor Dining Table",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "e1d30ae83996db2ab653f342d27a5b316b762979",
+                "KITCHEN AID ARTISAN MIXER CREAM",
+                "kitchen"
+            ],
+            [
+                "9bfd01b7a7f4fb8e1388551d237763778d4b3862",
+                "Airframe Desk",
+                "office"
+            ]
+        ]
+    ]
+}

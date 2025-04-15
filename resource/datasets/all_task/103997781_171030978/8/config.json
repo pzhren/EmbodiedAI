@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the step stool from the kitchen and place it next to the dressing table stool in the bedroom",
+    "Subtask list": [
+        "Move_to('Step Stool, White_kitchen')",
+        "Grab('Step Stool, White')",
+        "Move_to('White dressing table stool (19 FABRIC CHOICES) - Dressing table stools_bedroom')",
+        "Release('Step Stool, White')"
+    ],
+    "Scene": "103997781_171030978",
+    "Target": [
+        [
+            "e7ba564ec743c9317f5be11402d3689a7954eb7f",
+            "Step Stool, White",
+            "kitchen"
+        ],
+        [
+            "98b1673ce85ee3b9fceda4a1e3724b64b9e2a6bf",
+            "White dressing table stool (19 FABRIC CHOICES) - Dressing table stools",
+            "bedroom"
+        ]
+    ]
+}

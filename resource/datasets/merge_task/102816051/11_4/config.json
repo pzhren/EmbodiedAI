@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the toddler bed from the kids room to the nightstand in bedroom",
+        "Take the toy stove unit from the kids room and place it next to the sofa table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Digger Toddler Bed_kids room')",
+            "Grab('Digger Toddler Bed')",
+            "Move_to('Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent_bedroom')",
+            "Release('Digger Toddler Bed')"
+        ],
+        [
+            "Move_to('TOY SINK/STOVE UNIT_kids room')",
+            "Grab('TOY SINK/STOVE UNIT')",
+            "Move_to('Presby 54'' Sofa Table, White_living room')",
+            "Release('TOY SINK/STOVE UNIT')"
+        ]
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            [
+                "709510d6568e1057c9fd62d8cf9ee6c34f72df46",
+                "Digger Toddler Bed",
+                "kids room"
+            ],
+            [
+                "2b9af0f16b5f1e6b7621bfa05afb45b3581e0736",
+                "Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "0add22cc4b991c0b80e94a36eb72687f44ccb3ba",
+                "TOY SINK/STOVE UNIT",
+                "kids room"
+            ],
+            [
+                "d445bb243f12ba89fc91c9d2265408b5cd635632",
+                "Presby 54'' Sofa Table, White",
+                "living room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you move the coffee table from the living room to the blender in the kitchen",
+        "take the laundry bin in the bathroom to the armchair in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Magnolia Home Strut Coffee Table By Joanna Gaines, Natural_living room')",
+            "Grab('Magnolia Home Strut Coffee Table By Joanna Gaines, Natural')",
+            "Move_to('Rangemaster Classic 120 Cooker Hood, Black with Chrome Rail_kitchen')",
+            "Release('Magnolia Home Strut Coffee Table By Joanna Gaines, Natural')"
+        ],
+        [
+            "Move_to('The Water Hyacinth Laundry Bin_bathroom')",
+            "Grab('The Water Hyacinth Laundry Bin')",
+            "Move_to('Hoffman Armchair, Coffee_living room')",
+            "Release('The Water Hyacinth Laundry Bin')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "ce9c5810fc2943f1487a73b60e163d1d56f7a5c8",
+                "Magnolia Home Strut Coffee Table By Joanna Gaines, Natural",
+                "living room"
+            ],
+            [
+                "98a97b97fd55df6f6dfef44eef86b6b863df5517",
+                "Rangemaster Classic 120 Cooker Hood, Black with Chrome Rail",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "df3ba3caf8c1321195b13e23ee8642b09d1a9323",
+                "The Water Hyacinth Laundry Bin",
+                "bathroom"
+            ],
+            [
+                "79b9fdabc6d1c61c041c4843ea3cdd860c9df8ba",
+                "Hoffman Armchair, Coffee",
+                "living room"
+            ]
+        ]
+    ]
+}

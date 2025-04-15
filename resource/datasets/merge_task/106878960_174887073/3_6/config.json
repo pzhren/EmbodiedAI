@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the black tapered candle holder set from the living room to the nightstand in the bedroom",
+        "Take the black nightstand from the bedroom to the armchair in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Allis Black Taper Candle Holders Set Of 3_living room')",
+            "Grab('Allis Black Taper Candle Holders Set Of 3')",
+            "Move_to('Ashlyn Nightstand, Black_bedroom')",
+            "Release('Allis Black Taper Candle Holders Set Of 3')"
+        ],
+        [
+            "Move_to('Ashlyn Nightstand, Black_bedroom')",
+            "Grab('Ashlyn Nightstand, Black')",
+            "Move_to('Cassatt Armchair_living room')",
+            "Release('Ashlyn Nightstand, Black')"
+        ]
+    ],
+    "Scene": "106878960_174887073",
+    "Target": [
+        [
+            [
+                "bea1b3b9578d9e11486a9728976f34474ef3e671",
+                "Allis Black Taper Candle Holders Set Of 3",
+                "living room"
+            ],
+            [
+                "6c80f089f60961936c04cbc4ef61d2563eb40062",
+                "Ashlyn Nightstand, Black",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "6c80f089f60961936c04cbc4ef61d2563eb40062",
+                "Ashlyn Nightstand, Black",
+                "bedroom"
+            ],
+            [
+                "b40c4c013467c8c6db3c5d2ecfbcc63577beecd9",
+                "Cassatt Armchair",
+                "living room"
+            ]
+        ]
+    ]
+}

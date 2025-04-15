@@ -34,7 +34,7 @@ class VisionSensor(BaseSensor):
             position =  [x + y for x, y in zip(self.config.position, offset)]
         self.camera = Camera(
             prim_path=self.config.prim_path,
-            position=position,
+            translation=position,
             orientation=self.config.orientation,
             resolution=self.resolution,
             # fov=self.fov,
@@ -59,6 +59,6 @@ class VisionSensor(BaseSensor):
                 obs["rgb"] = rgb
             if "depth" in self.modals:
                 obs["depth"] = camera_data["distance_to_image_plane"]
-        self.data = {self.name:obs} 
+        self.data = obs
 
     

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please move the Brayden Iron Floor Mirror from the bedroom to the Lumin White Linen 4-Piece Sectional Sofa in the living room",
+        "Move the Scalloped Mirror from the bedroom to the Girard Coffee Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Brayden Iron Floor Mirror_bedroom')",
+            "Grab('Brayden Iron Floor Mirror')",
+            "Move_to('Lumin White Linen 4-Piece Sectional Sofa_living room')",
+            "Release('Brayden Iron Floor Mirror')"
+        ],
+        [
+            "Move_to('Scalloped Mirror_bedroom')",
+            "Grab('Scalloped Mirror')",
+            "Move_to('Girard Coffee Table_living room')",
+            "Release('Scalloped Mirror')"
+        ]
+    ],
+    "Scene": "107734254_176000121",
+    "Target": [
+        [
+            [
+                "8083346ccbdd2b001e8e6e1c6e5c2a37e4774792",
+                "Brayden Iron Floor Mirror",
+                "bedroom"
+            ],
+            [
+                "a5f9bb1a1d0549240b4f7d7ab0caafbc693299f7",
+                "Lumin White Linen 4-Piece Sectional Sofa",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "27270bd8cd43d174767c0348a0bcb826ed3e97a1",
+                "Scalloped Mirror",
+                "bedroom"
+            ],
+            [
+                "016556105b34152b96d7323eed7878bb8c142fbc",
+                "Girard Coffee Table",
+                "living room"
+            ]
+        ]
+    ]
+}

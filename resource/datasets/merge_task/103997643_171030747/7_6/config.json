@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please move the mixer from the kitchen and place it in the living room on the shelf",
+        "Pick up the bedside table from the bedroom and place it on the TV unit in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('KITCHEN AID ARTISAN MIXER CREAM_kitchen')",
+            "Grab('KITCHEN AID ARTISAN MIXER CREAM')",
+            "Move_to('Reef Shelf Unit_living room')",
+            "Release('KITCHEN AID ARTISAN MIXER CREAM')"
+        ],
+        [
+            "Move_to('Salerno Bedside Table_bedroom')",
+            "Grab('Salerno Bedside Table')",
+            "Move_to('Warne TV Unit_living room')",
+            "Release('Salerno Bedside Table')"
+        ]
+    ],
+    "Scene": "103997643_171030747",
+    "Target": [
+        [
+            [
+                "e1d30ae83996db2ab653f342d27a5b316b762979",
+                "KITCHEN AID ARTISAN MIXER CREAM",
+                "kitchen"
+            ],
+            [
+                "a3adcc07e1656ec5f67c332587ad30ce080a3e89",
+                "Reef Shelf Unit",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "56f36105d7bf84f7f796bd6272391e16a2e11c5c",
+                "Salerno Bedside Table",
+                "bedroom"
+            ],
+            [
+                "eae23b6121e974982ec521d9118e0034134c37f8",
+                "Warne TV Unit",
+                "living room"
+            ]
+        ]
+    ]
+}

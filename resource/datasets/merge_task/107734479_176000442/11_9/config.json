@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the espresso maker from the kitchen to the coffee table in the living room",
+        "Could you move the coffee table from the living room to the blender in the kitchen"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('DeLonghi Icona Pump Espresso Maker Blue_kitchen')",
+            "Grab('DeLonghi Icona Pump Espresso Maker Blue')",
+            "Move_to('Magnolia Home Strut Coffee Table By Joanna Gaines, Natural_living room')",
+            "Release('DeLonghi Icona Pump Espresso Maker Blue')"
+        ],
+        [
+            "Move_to('Magnolia Home Strut Coffee Table By Joanna Gaines, Natural_living room')",
+            "Grab('Magnolia Home Strut Coffee Table By Joanna Gaines, Natural')",
+            "Move_to('Rangemaster Classic 120 Cooker Hood, Black with Chrome Rail_kitchen')",
+            "Release('Magnolia Home Strut Coffee Table By Joanna Gaines, Natural')"
+        ]
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            [
+                "335fc5d250b5f7e424fcb25a26bf001f738ca364",
+                "DeLonghi Icona Pump Espresso Maker Blue",
+                "kitchen"
+            ],
+            [
+                "ce9c5810fc2943f1487a73b60e163d1d56f7a5c8",
+                "Magnolia Home Strut Coffee Table By Joanna Gaines, Natural",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "ce9c5810fc2943f1487a73b60e163d1d56f7a5c8",
+                "Magnolia Home Strut Coffee Table By Joanna Gaines, Natural",
+                "living room"
+            ],
+            [
+                "98a97b97fd55df6f6dfef44eef86b6b863df5517",
+                "Rangemaster Classic 120 Cooker Hood, Black with Chrome Rail",
+                "kitchen"
+            ]
+        ]
+    ]
+}

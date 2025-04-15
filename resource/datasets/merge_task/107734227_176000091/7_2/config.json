@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Nespresso coffee maker from the kitchen and place it on the side table in the living room",
+        "Could you please bring the bath robe from the bathroom to the couch in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Krups Essenza Nespresso Coffee Maker, Slate Grey_kitchen')",
+            "Grab('Krups Essenza Nespresso Coffee Maker, Slate Grey')",
+            "Move_to('CROFTERS FIGURE 8 SIDE TABLE 75X36CM_living room')",
+            "Release('Krups Essenza Nespresso Coffee Maker, Slate Grey')"
+        ],
+        [
+            "Move_to('Bath robe_bathroom')",
+            "Grab('Bath robe')",
+            "Move_to('Engles Leather 35'' Chair, Saddlebag Lead_living room')",
+            "Release('Bath robe')"
+        ]
+    ],
+    "Scene": "107734227_176000091",
+    "Target": [
+        [
+            [
+                "b431e9b61c0556c8306c776201b92b34889a7eb2",
+                "Krups Essenza Nespresso Coffee Maker, Slate Grey",
+                "kitchen"
+            ],
+            [
+                "3d3e1333443a444a573a4137705de861e96b5651",
+                "CROFTERS FIGURE 8 SIDE TABLE 75X36CM",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "973c8db16abb188caa2868a16141b643684e3881",
+                "Bath robe",
+                "bathroom"
+            ],
+            [
+                "c54816423cdd8e3e699b411d028aba1e5aef3f2c",
+                "Engles Leather 35'' Chair, Saddlebag Lead",
+                "living room"
+            ]
+        ]
+    ]
+}

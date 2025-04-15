@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the Jumbo Toy Bin in the kitchen and place it next to the Princess Castle Clock in the kids room",
+    "Subtask list": [
+        "Move_to('Jumbo Toy Bin_kitchen')",
+        "Grab('Jumbo Toy Bin')",
+        "Move_to('Princess Castle Clock_kids room')",
+        "Release('Jumbo Toy Bin')"
+    ],
+    "Scene": "104862558_172226664",
+    "Target": [
+        [
+            "3157a2905050ec0ecbe06723d968e1743c38e11d",
+            "Jumbo Toy Bin",
+            "kitchen"
+        ],
+        [
+            "e33d9290a0833c81db2e7e55a80d86ea0aea6082",
+            "Princess Castle Clock",
+            "kids room"
+        ]
+    ]
+}

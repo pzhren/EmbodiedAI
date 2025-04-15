@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the mirrored drawer from the bedroom and place it in the living room",
+        "Please take the Frosted pen pot from the office and place it on the Martha Stewart Holls 48'' Console Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('STELLA MIRROR_bedroom')",
+            "Grab('STELLA MIRROR')",
+            "Move_to('Martha Stewart Holls 48'' Console Table_living room')",
+            "Release('STELLA MIRROR')"
+        ],
+        [
+            "Move_to('Frosted pen pot_office')",
+            "Grab('Frosted pen pot')",
+            "Move_to('Martha Stewart Holls 48'' Console Table_living room')",
+            "Release('Frosted pen pot')"
+        ]
+    ],
+    "Scene": "106366410_174226806",
+    "Target": [
+        [
+            [
+                "3ac215af85d5423c555d75704ef89eae5d2b4d40",
+                "STELLA MIRROR",
+                "bedroom"
+            ],
+            [
+                "983e167916e12d920189d565ee5a3efb8419dd3b",
+                "Martha Stewart Holls 48'' Console Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "24dcf1f353b54d43bf12bcf17266f2685091318d",
+                "Frosted pen pot",
+                "office"
+            ],
+            [
+                "983e167916e12d920189d565ee5a3efb8419dd3b",
+                "Martha Stewart Holls 48'' Console Table",
+                "living room"
+            ]
+        ]
+    ]
+}

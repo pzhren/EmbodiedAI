@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the wok basket from the kitchen to the antique brass side table in the living room",
+        "Could you please go to the living room and take the plant to place it on the dining table in the dining room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Wok Basket_kitchen')",
+            "Grab('Wok Basket')",
+            "Move_to('Antique Brass Collection Side Table_living room')",
+            "Release('Wok Basket')"
+        ],
+        [
+            "Move_to('plant_living room')",
+            "Grab('plant')",
+            "Move_to('CHIPS DINING TABLE_living room,dining room')",
+            "Release('plant')"
+        ]
+    ],
+    "Scene": "107734176_176000019",
+    "Target": [
+        [
+            [
+                "34334ebad427446b63a6874253b5cd26cfded52f",
+                "Wok Basket",
+                "kitchen"
+            ],
+            [
+                "174666b4a100a3e62f73d11e96a2ff9c432cd731",
+                "Antique Brass Collection Side Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "475870f8089a1c7bf8186679ed82537d9fbcc587",
+                "plant",
+                "living room"
+            ],
+            [
+                "e4258a74474114a9e2677548124b209cf0f6ae43",
+                "CHIPS DINING TABLE",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

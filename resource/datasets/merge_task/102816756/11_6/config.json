@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Pick up the tissue box cover from the shared bedroom and living room area and place it on the side table in the living room",
+        "Please take the towel radiator from the bathroom and place it in the large seagrass basket in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Cleo Rectangle Tissue Box Cover_bedroom,living room')",
+            "Grab('Cleo Rectangle Tissue Box Cover')",
+            "Move_to('Plinth Tall Side Table, Carrara_living room')",
+            "Release('Plinth Tall Side Table, Carrara')"
+        ],
+        [
+            "Move_to('Bisque Cobra Therm Towel Radiator_bathroom')",
+            "Grab('Bisque Cobra Therm Towel Radiator')",
+            "Move_to('Merced Large Seagrass Basket_living room')",
+            "Release('Bisque Cobra Therm Towel Radiator')"
+        ]
+    ],
+    "Scene": "102816756",
+    "Target": [
+        [
+            [
+                "efc0201c33f516285eea7f5ad4516fed892a4ba6",
+                "Cleo Rectangle Tissue Box Cover",
+                "bedroom,living room"
+            ],
+            [
+                "c95a77cb5c2b67768b566f45b25ccd726be5bead",
+                "Plinth Tall Side Table, Carrara",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "88385377c5cb12d12e9dfbd70c2c28d6a05ed587",
+                "Bisque Cobra Therm Towel Radiator",
+                "bathroom"
+            ],
+            [
+                "35fdc6d66950606f33262da718b378f7fe46923a",
+                "Merced Large Seagrass Basket",
+                "living room"
+            ]
+        ]
+    ]
+}

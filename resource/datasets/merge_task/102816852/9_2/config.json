@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Pick up the espresso maker from the kitchen and place it on the side table in the living room",
+        "take the espresso maker in the kitchen and place it on the side table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Delonghi Silky White Lattissima One Espresso Maker_kitchen')",
+            "Grab('Delonghi Silky White Lattissima One Espresso Maker')",
+            "Move_to('E15 Alex Side Table_living room')",
+            "Release('Delonghi Silky White Lattissima One Espresso Maker')"
+        ],
+        [
+            "Move_to('Delonghi Silky White Lattissima One Espresso Maker_kitchen')",
+            "Grab('Delonghi Silky White Lattissima One Espresso Maker')",
+            "Move_to('E15 Alex Side Table_living room')",
+            "Release('Delonghi Silky White Lattissima One Espresso Maker')"
+        ]
+    ],
+    "Scene": "102816852",
+    "Target": [
+        [
+            [
+                "b4934a67247a1d1dfc53320eeb47b62ecb560dba",
+                "Delonghi Silky White Lattissima One Espresso Maker",
+                "kitchen"
+            ],
+            [
+                "67b958a5263c73693978ddac57e429b18925ee38",
+                "E15 Alex Side Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "b4934a67247a1d1dfc53320eeb47b62ecb560dba",
+                "Delonghi Silky White Lattissima One Espresso Maker",
+                "kitchen"
+            ],
+            [
+                "67b958a5263c73693978ddac57e429b18925ee38",
+                "E15 Alex Side Table",
+                "living room"
+            ]
+        ]
+    ]
+}

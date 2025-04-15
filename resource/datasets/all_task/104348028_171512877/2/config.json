@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the white wardrobe from the bedroom and place it in the kids room",
+    "Subtask list": [
+        "Move_to('Designer Double Wardrobe White &amp; White Gloss_bedroom')",
+        "Grab('Designer Double Wardrobe White &amp; White Gloss')",
+        "Move_to('STUVA Wardrobe 4 doors, white_kids room')",
+        "Release('Designer Double Wardrobe White &amp; White Gloss')"
+    ],
+    "Scene": "104348028_171512877",
+    "Target": [
+        [
+            "0546a524f6584d5beeaf8a72b3df494f9ceeec90",
+            "Designer Double Wardrobe White &amp; White Gloss",
+            "bedroom"
+        ],
+        [
+            "674b628a31866a0ccef740fbb4836d8aca5a5d51",
+            "STUVA Wardrobe 4 doors, white",
+            "kids room"
+        ]
+    ]
+}

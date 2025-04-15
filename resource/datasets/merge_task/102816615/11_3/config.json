@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Potted Sansevieria in the living room and place it on the Envy Nightstand in the bedroom",
+        "move the Blanc Doeuf Waste Bin from the bathroom to the Mid Century Modern Cocktail Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Potted Sansevieria_living room')",
+            "Grab('Potted Sansevieria')",
+            "Move_to('Envy Nightstand_bedroom')",
+            "Release('Potted Sansevieria')"
+        ],
+        [
+            "Move_to('Blanc Doeuf Waste Bin_bathroom')",
+            "Grab('Blanc Doeuf Waste Bin')",
+            "Move_to('Mid Century Modern Cocktail Table_living room')",
+            "Release('Blanc Doeuf Waste Bin')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "26a38271fb04e01cc4ae5f6cabad71f37a69231b",
+                "Potted Sansevieria",
+                "living room"
+            ],
+            [
+                "03639dab61b6903ff319e047b008cb6abec971c6",
+                "Envy Nightstand",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "5f42b2ef37446d00652bccc1fea78258518a807e",
+                "Blanc Doeuf Waste Bin",
+                "bathroom"
+            ],
+            [
+                "7025cd14a948f491902ef12724f0fe6e4ce672af",
+                "Mid Century Modern Cocktail Table",
+                "living room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Genevieve Ladder from the bedroom and bring it over to the Potted Sansevieria in the living room",
+        "Please take the Hilo Mirror from the bedroom and place it on the Jara Terracotta Planter with Stand, Large in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Genevieve Ladder_bedroom')",
+            "Grab('Genevieve Ladder')",
+            "Move_to('Potted Sansevieria_living room')",
+            "Release('Genevieve Ladder')"
+        ],
+        [
+            "Move_to('Hilo Mirror_bedroom')",
+            "Grab('Hilo Mirror')",
+            "Move_to('Jara Terracotta Planter with Stand, Large_living room')",
+            "Release('Hilo Mirror')"
+        ]
+    ],
+    "Scene": "106878945_174887058",
+    "Target": [
+        [
+            [
+                "de65d35ef7eee3e68d5f1abceefb816cdb871491",
+                "Genevieve Ladder",
+                "bedroom"
+            ],
+            [
+                "26a38271fb04e01cc4ae5f6cabad71f37a69231b",
+                "Potted Sansevieria",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "78eb0851a42ad1e7c674eba790810964378c68bc",
+                "Hilo Mirror",
+                "bedroom"
+            ],
+            [
+                "0e3f31820718c4195b9884dbdf9015035f66dae0",
+                "Jara Terracotta Planter with Stand, Large",
+                "living room"
+            ]
+        ]
+    ]
+}

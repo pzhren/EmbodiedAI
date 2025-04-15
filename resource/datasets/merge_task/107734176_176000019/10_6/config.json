@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the bowl of oranges from the dining room to the Boracay end table in the living room",
+        "Take the SEAGRASS TRAY from the kitchen, dining room area and place it on the Sabina Accent Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Bowl of Oranges_dining room')",
+            "Grab('Bowl of Oranges')",
+            "Move_to('Boracay End Table_living room')",
+            "Release('Bowl of Oranges')"
+        ],
+        [
+            "Move_to('SEAGRASS TRAY_kitchen,dining room')",
+            "Grab('SEAGRASS TRAY')",
+            "Move_to('Sabina Accent Table_living room')",
+            "Release('SEAGRASS TRAY')"
+        ]
+    ],
+    "Scene": "107734176_176000019",
+    "Target": [
+        [
+            [
+                "e073e5a03b9554fbdd72ae7290dcf8c1a04431f1",
+                "Bowl of Oranges",
+                "dining room"
+            ],
+            [
+                "24304078d26588e2d78d4db014c5804506388cf5",
+                "Boracay End Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "9d1a125a6188c7009effc529afd62b15bc84ee0a",
+                "SEAGRASS TRAY",
+                "kitchen,dining room"
+            ],
+            [
+                "9d5c4c5e897817e769610d84c3fa695b4f4fee0b",
+                "Sabina Accent Table",
+                "living room"
+            ]
+        ]
+    ]
+}

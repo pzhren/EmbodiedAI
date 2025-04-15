@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the vase from the living room and place it on the bedside table in the bedroom",
+    "Subtask list": [
+        "Move_to('MIDCENTURY RIBBED STONEWARE VASE COLLECTION_living room')",
+        "Grab('MIDCENTURY RIBBED STONEWARE VASE COLLECTION')",
+        "Move_to('Loop Bedside Table, Oak/Black_bedroom')",
+        "Release('MIDCENTURY RIBBED STONEWARE VASE COLLECTION')"
+    ],
+    "Scene": "102344049",
+    "Target": [
+        [
+            "6e091b64e3db98057bec72d11b39f76f7c823487",
+            "MIDCENTURY RIBBED STONEWARE VASE COLLECTION",
+            "living room"
+        ],
+        [
+            "311a303f0b3f212b97c5bb23a79a6499efda2f71",
+            "Loop Bedside Table, Oak/Black",
+            "bedroom"
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the Ficus Lyrata plant from the living room and move it to the bedside table in the bedroom",
+        "Take the faux potted monstera plant from the living room and place it onto the bedside table in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Ficus Lyrata plant_living room')",
+            "Grab('Ficus Lyrata plant')",
+            "Move_to('Loop Bedside Table, Oak/Black_bedroom')",
+            "Release('Ficus Lyrata plant')"
+        ],
+        [
+            "Move_to('Faux Potted Monstera Plant 29\"_living room')",
+            "Grab('Faux Potted Monstera Plant 29\"')",
+            "Move_to('Loop Bedside Table, Oak/Black_bedroom')",
+            "Release('Faux Potted Monstera Plant 29\"')"
+        ]
+    ],
+    "Scene": "102344049",
+    "Target": [
+        [
+            [
+                "95d1e189e93694bb8eee73a64b0d84a8be5a5057",
+                "Ficus Lyrata plant",
+                "living room"
+            ],
+            [
+                "311a303f0b3f212b97c5bb23a79a6499efda2f71",
+                "Loop Bedside Table, Oak/Black",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "bd8a1dc70062c8e7c8a33cb92ee86fbe6b015547",
+                "Faux Potted Monstera Plant 29\"",
+                "living room"
+            ],
+            [
+                "311a303f0b3f212b97c5bb23a79a6499efda2f71",
+                "Loop Bedside Table, Oak/Black",
+                "bedroom"
+            ]
+        ]
+    ]
+}

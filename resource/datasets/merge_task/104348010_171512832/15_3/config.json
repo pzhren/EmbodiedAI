@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Birch Laundry Bin from the bathroom and place it on the High And Dry Dish Rack in the kitchen",
+        "Pick up the soap in the bathroom and place it on the coffee table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Birch Laundry Bin_bathroom')",
+            "Grab('Birch Laundry Bin')",
+            "Move_to('High And Dry Dish Rack_kitchen')",
+            "Release('Birch Laundry Bin')"
+        ],
+        [
+            "Move_to('Soap_bathroom')",
+            "Grab('Soap')",
+            "Move_to('Bayshore Coffee Table With Casters_living room')",
+            "Release('Soap')"
+        ]
+    ],
+    "Scene": "104348010_171512832",
+    "Target": [
+        [
+            [
+                "949851e617feda8ab8270e6bb748fdbae4f79ac0",
+                "Birch Laundry Bin",
+                "bathroom"
+            ],
+            [
+                "686fe44a4f4c4f94e20e28a244cc34e9b64f7464",
+                "High And Dry Dish Rack",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "6b21bd924df8f21c02fb8bb569de93bd887d8f1e",
+                "Soap",
+                "bathroom"
+            ],
+            [
+                "b7be6ad871800511e7a320626aac37272eb919c4",
+                "Bayshore Coffee Table With Casters",
+                "living room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the shoe box from the bedroom to the office desk",
+        "Take the small black shoe box from the bedroom and place it on the console table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Shoe Box Kd - Black_bedroom')",
+            "Grab('Shoe Box Kd - Black')",
+            "Move_to('Shia Rolling File Cabinet_office')",
+            "Release('Shoe Box Kd - Black')"
+        ],
+        [
+            "Move_to('Shoe Box Kd - Black_bedroom')",
+            "Grab('Shoe Box Kd - Black')",
+            "Move_to('Martha Stewart Holls 48'' Console Table_living room')",
+            "Release('Shoe Box Kd - Black')"
+        ]
+    ],
+    "Scene": "106366410_174226806",
+    "Target": [
+        [
+            [
+                "fd8e6858ced0ffa64b22da9b8e0c5932e706b24a",
+                "Shoe Box Kd - Black",
+                "bedroom"
+            ],
+            [
+                "7542d824416c774ec0e59f22be44b6b72a20bf60",
+                "Shia Rolling File Cabinet",
+                "office"
+            ]
+        ],
+        [
+            [
+                "fd8e6858ced0ffa64b22da9b8e0c5932e706b24a",
+                "Shoe Box Kd - Black",
+                "bedroom"
+            ],
+            [
+                "983e167916e12d920189d565ee5a3efb8419dd3b",
+                "Martha Stewart Holls 48'' Console Table",
+                "living room"
+            ]
+        ]
+    ]
+}

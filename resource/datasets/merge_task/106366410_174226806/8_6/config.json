@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the memo pads from the office and place them near the handwoven jute large basket in the living room",
+        "Take the Mobile Shoe Cabinet from the bedroom and place it under the Frosted pen pot in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Memo Pads_office')",
+            "Grab('Memo Pads')",
+            "Move_to('HANDWOVEN JUTE LARGE BASKET_living room')",
+            "Release('Memo Pads')"
+        ],
+        [
+            "Move_to('Mobile Shoe Cabinet_bedroom')",
+            "Grab('Mobile Shoe Cabinet')",
+            "Move_to('Frosted pen pot_office')",
+            "Release('Mobile Shoe Cabinet')"
+        ]
+    ],
+    "Scene": "106366410_174226806",
+    "Target": [
+        [
+            [
+                "7e5d517c0e402fc5133a808a26157694583502da",
+                "Memo Pads",
+                "office"
+            ],
+            [
+                "8637547dcbdad6644369329ff84cbb4209cfa254",
+                "HANDWOVEN JUTE LARGE BASKET",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "d44836372348cee4bb44eefe9cdc2459f78e0ca1",
+                "Mobile Shoe Cabinet",
+                "bedroom"
+            ],
+            [
+                "24dcf1f353b54d43bf12bcf17266f2685091318d",
+                "Frosted pen pot",
+                "office"
+            ]
+        ]
+    ]
+}

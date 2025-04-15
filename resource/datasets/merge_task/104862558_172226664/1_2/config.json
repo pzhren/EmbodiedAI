@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the cozy kitchen from the kids room to the booksheld in the living room",
+        "Could you please take the Cozy Kitchen toy from the kids room and place it onto the Jumbo Toy Bin in the kitchen"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Cozy Kitchen - Item # COZYKIT_kids room')",
+            "Grab('Cozy Kitchen - Item # COZYKIT')",
+            "Move_to('Baybrin Bookshelf_living room')",
+            "Release('Cozy Kitchen - Item # COZYKIT')"
+        ],
+        [
+            "Move_to('Cozy Kitchen - Item # COZYKIT_kids room')",
+            "Grab('Cozy Kitchen - Item # COZYKIT')",
+            "Move_to('Jumbo Toy Bin_kitchen')",
+            "Release('Cozy Kitchen - Item # COZYKIT')"
+        ]
+    ],
+    "Scene": "104862558_172226664",
+    "Target": [
+        [
+            [
+                "66c31369764e529c59d1257905a165dfbca6ec4d",
+                "Cozy Kitchen - Item # COZYKIT",
+                "kids room"
+            ],
+            [
+                "2008d8ac79f55bb3bad47a4bc7af494f0a7fe9f8",
+                "Baybrin Bookshelf",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "66c31369764e529c59d1257905a165dfbca6ec4d",
+                "Cozy Kitchen - Item # COZYKIT",
+                "kids room"
+            ],
+            [
+                "3157a2905050ec0ecbe06723d968e1743c38e11d",
+                "Jumbo Toy Bin",
+                "kitchen"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Place the dining chair from the dining room onto the round ottoman in the living room",
+        "Could you please take the bowl of oranges from the dining room and place it on the coffee table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Bruin Dining Chair_dining room')",
+            "Grab('Bruin Dining Chair')",
+            "Move_to('Nassau 37\" Round Ottoman _living room')",
+            "Release('Nassau 37\" Round Ottoman ')"
+        ],
+        [
+            "Move_to('Bowl of Oranges_dining room')",
+            "Grab('Bowl of Oranges')",
+            "Move_to('Coffee table_living room')",
+            "Release('Bowl of Oranges')"
+        ]
+    ],
+    "Scene": "107734176_176000019",
+    "Target": [
+        [
+            [
+                "bbe458f78e3686c63a219a0b9a6fcd785b55cf3d",
+                "Bruin Dining Chair",
+                "dining room"
+            ],
+            [
+                "a58885b138c463870ae858aae6acd55ca46574c8",
+                "Nassau 37\" Round Ottoman ",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "e073e5a03b9554fbdd72ae7290dcf8c1a04431f1",
+                "Bowl of Oranges",
+                "dining room"
+            ],
+            [
+                "086ae0df95ac1b212fabe2f0b8bf5c63968dfb69",
+                "Coffee table",
+                "living room"
+            ]
+        ]
+    ]
+}

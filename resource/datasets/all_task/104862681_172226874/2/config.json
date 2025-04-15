@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Move the kitchen tool set from the kitchen and place it on the dining storage in the kitchen",
+    "Subtask list": [
+        "Move_to('Brabantia S- Line Kitchen Tool set_kitchen')",
+        "Grab('Brabantia S- Line Kitchen Tool set')",
+        "Move_to('Dining storage_kitchen')",
+        "Release('Brabantia S- Line Kitchen Tool set')"
+    ],
+    "Scene": "104862681_172226874",
+    "Target": [
+        [
+            "fc34254f2aac6da46964ede7efc727a33a755919",
+            "Brabantia S- Line Kitchen Tool set",
+            "kitchen"
+        ],
+        [
+            "cd4ffae2b879d72de5eb67e2876f7c3fd7a3a740",
+            "Dining storage",
+            "kitchen"
+        ]
+    ]
+}

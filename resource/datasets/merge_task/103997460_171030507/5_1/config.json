@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Transport the stylish barstool from the dining room to the sleek coffee table in the living room",
+        "Take the plant from the living room and place it on the bathroom shelf"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Oeste Barstool_dining room')",
+            "Grab('Oeste Barstool')",
+            "Move_to('Chamcha Wood Coffee Table_living room')",
+            "Release('Oeste Barstool')"
+        ],
+        [
+            "Move_to('Succulent Plant- 23x9x11 cms_living room')",
+            "Grab('Succulent Plant- 23x9x11 cms')",
+            "Move_to('Bathroom shelf_bathroom')",
+            "Release('Bathroom shelf')"
+        ]
+    ],
+    "Scene": "103997460_171030507",
+    "Target": [
+        [
+            [
+                "0b28920a9c0655a6061b47049d7a50d9c4918840",
+                "Oeste Barstool",
+                "dining room"
+            ],
+            [
+                "cad4f138344f6fc378d72b05e0584155649f1ad6",
+                "Chamcha Wood Coffee Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "14bdc1398760aef6d8757e2dd6a1c674d7851e66",
+                "Succulent Plant- 23x9x11 cms",
+                "living room"
+            ],
+            [
+                "2a4050fbd2bb666d909c45363867a8a4032985bd",
+                "Bathroom shelf",
+                "bathroom"
+            ]
+        ]
+    ]
+}

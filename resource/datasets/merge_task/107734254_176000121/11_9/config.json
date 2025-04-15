@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Elko Nightstand in the bedroom and place it near the Faux Succulents In Low Round Pot in the living room",
+        "Please take the Elko Nightstand from the bedroom and place it next to the Girard Coffee Table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Elko Nightstand_bedroom')",
+            "Grab('Elko Nightstand')",
+            "Move_to('Faux Succulents In Low Round Pot_living room')",
+            "Release('Elko Nightstand')"
+        ],
+        [
+            "Move_to('Elko Nightstand_bedroom')",
+            "Grab('Elko Nightstand')",
+            "Move_to('Girard Coffee Table_living room')",
+            "Release('Elko Nightstand')"
+        ]
+    ],
+    "Scene": "107734254_176000121",
+    "Target": [
+        [
+            [
+                "6eff75ec23c4c9c1f83c636bf6d6ea6993d7adde",
+                "Elko Nightstand",
+                "bedroom"
+            ],
+            [
+                "054a4edb60cf2145e98274ad3fcbfc212e6e2445",
+                "Faux Succulents In Low Round Pot",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "6eff75ec23c4c9c1f83c636bf6d6ea6993d7adde",
+                "Elko Nightstand",
+                "bedroom"
+            ],
+            [
+                "016556105b34152b96d7323eed7878bb8c142fbc",
+                "Girard Coffee Table",
+                "living room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please take the Circus trolley from the kitchen and place it next to the coffee table in the living room",
+        "Could you please move the Calla Lily Bouquet from the living room to the Brighton Queen Upholstered Bed in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Circus 03 trolley by Pierantonio Bonacina_kitchen')",
+            "Grab('Circus 03 trolley by Pierantonio Bonacina')",
+            "Move_to('Revolve Perro Coffee Table, Black Oak_living room')",
+            "Release('Circus 03 trolley by Pierantonio Bonacina')"
+        ],
+        [
+            "Move_to('CALLA LILY BOUQUET IN GLASS_living room')",
+            "Grab('CALLA LILY BOUQUET IN GLASS')",
+            "Move_to('Brighton Queen Upholstered Platform Bed By Nate Berkus And Jeremiah Brent_bedroom')",
+            "Release('CALLA LILY BOUQUET IN GLASS')"
+        ]
+    ],
+    "Scene": "102816786",
+    "Target": [
+        [
+            [
+                "1d39918807757bae1e51a42b54c044cda8d4cfeb",
+                "Circus 03 trolley by Pierantonio Bonacina",
+                "kitchen"
+            ],
+            [
+                "6b301d925f4f21f78a0f5efe391d699165ac398d",
+                "Revolve Perro Coffee Table, Black Oak",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "fd99e8af0aab94cafa5ec73787d55cfb330623fa",
+                "CALLA LILY BOUQUET IN GLASS",
+                "living room"
+            ],
+            [
+                "cb88813ef78001887105294c74675cc7438c8e17",
+                "Brighton Queen Upholstered Platform Bed By Nate Berkus And Jeremiah Brent",
+                "bedroom"
+            ]
+        ]
+    ]
+}

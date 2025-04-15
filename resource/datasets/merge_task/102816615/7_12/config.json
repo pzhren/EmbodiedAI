@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Can you please take the small nesting table from the living room and place it beside the large terracotta planter in the same room",
+        "Pick up the Mid Century Modern End Table in the living room and place it beside the Blanc Doeuf Waste Bin in the bathroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Radleigh Small Nesting Table_living room')",
+            "Grab('Radleigh Small Nesting Table')",
+            "Move_to('Jara Terracotta Planter with Stand, Large_living room')",
+            "Release('Radleigh Small Nesting Table')"
+        ],
+        [
+            "Move_to('Mid Century Modern End Table_living room')",
+            "Grab('Mid Century Modern End Table')",
+            "Move_to('Blanc Doeuf Waste Bin_bathroom')",
+            "Release('Mid Century Modern End Table')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "1a4841c613e9f5c2ba492107fb6aff4692c564a4",
+                "Radleigh Small Nesting Table",
+                "living room"
+            ],
+            [
+                "0e3f31820718c4195b9884dbdf9015035f66dae0",
+                "Jara Terracotta Planter with Stand, Large",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "2b39e8c2237ea1f0ba7417b2ec96d2aca51ee17b",
+                "Mid Century Modern End Table",
+                "living room"
+            ],
+            [
+                "5f42b2ef37446d00652bccc1fea78258518a807e",
+                "Blanc Doeuf Waste Bin",
+                "bathroom"
+            ]
+        ]
+    ]
+}

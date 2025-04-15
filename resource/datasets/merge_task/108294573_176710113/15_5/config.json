@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the handblown carved glass vase from the living room and place it on the Maisie Stool in the bedroom",
+        "Take the small set of candles from the living room and place them on top of the toilet in the bathroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('HANDBLOWN CARVED GLASS VASE_living room')",
+            "Grab('HANDBLOWN CARVED GLASS VASE')",
+            "Move_to('Maisie Stool_bedroom')",
+            "Release('HANDBLOWN CARVED GLASS VASE')"
+        ],
+        [
+            "Move_to('baltic pillar candle, set of 2_living room')",
+            "Grab('baltic pillar candle, set of 2')",
+            "Move_to('Toilette/toilette Casual_bathroom')",
+            "Release('baltic pillar candle, set of 2')"
+        ]
+    ],
+    "Scene": "108294573_176710113",
+    "Target": [
+        [
+            [
+                "db8288398b2513371f31aff4e2e6271dd08476af",
+                "HANDBLOWN CARVED GLASS VASE",
+                "living room"
+            ],
+            [
+                "5562de4568952a7f72318fff93085d7f5e98aba9",
+                "Maisie Stool",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "52b86c8bfd1804c6bed56b1d51c0d95e2f6ae285",
+                "baltic pillar candle, set of 2",
+                "living room"
+            ],
+            [
+                "5368e6e4bb682ba841fb69dc471f5c048a33fa48",
+                "Toilette/toilette Casual",
+                "bathroom"
+            ]
+        ]
+    ]
+}

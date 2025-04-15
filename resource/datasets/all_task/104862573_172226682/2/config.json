@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Take the Tropical Plant from the living room and place it on the Mango Wood Upholstered Hallway Bench in the living room, dining room",
+    "Subtask list": [
+        "Move_to('Tropical Plant_living room')",
+        "Grab('Tropical Plant')",
+        "Move_to('Mango Wood Upholstered Hallway Bench_living room,dining room')",
+        "Release('Tropical Plant')"
+    ],
+    "Scene": "104862573_172226682",
+    "Target": [
+        [
+            "fc3a8896e25e5cc58df58d8e24a75c935ca161ba",
+            "Tropical Plant",
+            "living room"
+        ],
+        [
+            "962c8e355adf204032a9c724483ee0a2d388dbf5",
+            "Mango Wood Upholstered Hallway Bench",
+            "living room,dining room"
+        ]
+    ]
+}

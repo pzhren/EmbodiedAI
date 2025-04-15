@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the handblown carved glass vase from the living room and place it on the kitchen island in the kitchen",
+        "Take the black and gold vanity from the shared bedroom-living room space and place it on the table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('HANDBLOWN CARVED GLASS VASE_living room')",
+            "Grab('HANDBLOWN CARVED GLASS VASE')",
+            "Move_to('Cooks Kitchen Island_kitchen')",
+            "Release('HANDBLOWN CARVED GLASS VASE')"
+        ],
+        [
+            "Move_to('Black + Gold Vanity_bedroom,living room')",
+            "Grab('Black + Gold Vanity')",
+            "Move_to('Rowan Sofa Table_living room')",
+            "Release('Black + Gold Vanity')"
+        ]
+    ],
+    "Scene": "108294573_176710113",
+    "Target": [
+        [
+            [
+                "db8288398b2513371f31aff4e2e6271dd08476af",
+                "HANDBLOWN CARVED GLASS VASE",
+                "living room"
+            ],
+            [
+                "edac4829501b7064951b3e1b3ac2aaae5c1fe251",
+                "Cooks Kitchen Island",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "467413f215daba3f0a88b154b17ccd1fb7ecb48d",
+                "Black + Gold Vanity",
+                "bedroom,living room"
+            ],
+            [
+                "4a43310877336ce42f4e18c88b4effb3e7a5b7f4",
+                "Rowan Sofa Table",
+                "living room"
+            ]
+        ]
+    ]
+}

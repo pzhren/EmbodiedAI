@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Dualit Cream Pro Blender from the kitchen and place it on the Kase 66 Inch Executive Desk in the office",
+        "Take the plush bathmat from the bathroom and place it near the vegan leather desk chair in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Dualit Cream Pro Blender 1.5L_kitchen')",
+            "Grab('Dualit Cream Pro Blender 1.5L')",
+            "Move_to('Kase 66 Inch Executive Desk_office')",
+            "Release('Dualit Cream Pro Blender 1.5L')"
+        ],
+        [
+            "Move_to('DWR Plush Bathmat, Grey_bathroom')",
+            "Grab('DWR Plush Bathmat, Grey')",
+            "Move_to('Channeled Vegan Leather Desk Chair, Gold And White_office')",
+            "Release('DWR Plush Bathmat, Grey')"
+        ]
+    ],
+    "Scene": "106366134_174226362",
+    "Target": [
+        [
+            [
+                "6be4d96de50b8749ae932608719b2290a585f9ce",
+                "Dualit Cream Pro Blender 1.5L",
+                "kitchen"
+            ],
+            [
+                "1619e2e6a18d5d374963a3a4280f7a6d76356079",
+                "Kase 66 Inch Executive Desk",
+                "office"
+            ]
+        ],
+        [
+            [
+                "bbdc1b4f72d1347d144887c3b5d4d614737d3737",
+                "DWR Plush Bathmat, Grey",
+                "bathroom"
+            ],
+            [
+                "265114799460fcd58e282c00c5e60be3ab5e9148",
+                "Channeled Vegan Leather Desk Chair, Gold And White",
+                "office"
+            ]
+        ]
+    ]
+}

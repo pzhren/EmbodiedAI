@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please move the Wine Cabinet from the kitchen to the Wyatt Outdoor Sectional in the living room",
+        "Please take the Dualit Lite 2 Slot Toaster from the kitchen and place it on the kitchen island"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Jaxon Wine Cabinet, Grey_kitchen')",
+            "Grab('Jaxon Wine Cabinet, Grey')",
+            "Move_to('Wyatt Outdoor 5 Piece U Shape Sectional_living room')",
+            "Release('Jaxon Wine Cabinet, Grey')"
+        ],
+        [
+            "Move_to('Dualit Lite 2 Slot Toaster Black_kitchen')",
+            "Grab('Dualit Lite 2 Slot Toaster Black')",
+            "Move_to('Kitchen island, 90x150x90_kitchen')",
+            "Release('Dualit Lite 2 Slot Toaster Black')"
+        ]
+    ],
+    "Scene": "102817053",
+    "Target": [
+        [
+            [
+                "eedc60093cc3519ed6b7891469ad7097bd9867c0",
+                "Jaxon Wine Cabinet, Grey",
+                "kitchen"
+            ],
+            [
+                "efae3a49f3ac0374763ed6407520bdeb699df4b8",
+                "Wyatt Outdoor 5 Piece U Shape Sectional",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "9c5db6e77b1207d689e035d957bff9216d1615e5",
+                "Dualit Lite 2 Slot Toaster Black",
+                "kitchen"
+            ],
+            [
+                "c1eb50298ff734470f53763d12f8bebde8d61764",
+                "Kitchen island, 90x150x90",
+                "kitchen"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "please pick up the storage stool from the bedroom and place it on the console table in the living room",
+        "Could you please take the house cleaning set from the kids room and place it on the coffee table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Melrose Storage Stool_bedroom')",
+            "Grab('Melrose Storage Stool')",
+            "Move_to('Lexington Console Table_living room')",
+            "Release('Melrose Storage Stool')"
+        ],
+        [
+            "Move_to('House Cleaning Set - 7 Pieces- Item # MESSY_kids room')",
+            "Grab('House Cleaning Set - 7 Pieces- Item # MESSY')",
+            "Move_to('Coffee table_living room')",
+            "Release('House Cleaning Set - 7 Pieces- Item # MESSY')"
+        ]
+    ],
+    "Scene": "105515505_173104584",
+    "Target": [
+        [
+            [
+                "aa3980e5647496394070f4591cff9cd143a067c0",
+                "Melrose Storage Stool",
+                "bedroom"
+            ],
+            [
+                "44689bfbf34013ad3ff7f8b05eb2cede29ff9f4e",
+                "Lexington Console Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "6a00ec1d0608d4df771a01042f5c902e15a42aa2",
+                "House Cleaning Set - 7 Pieces- Item # MESSY",
+                "kids room"
+            ],
+            [
+                "1663b946dd2c160317930f5b2eb724549409e6b0",
+                "Coffee table",
+                "living room"
+            ]
+        ]
+    ]
+}

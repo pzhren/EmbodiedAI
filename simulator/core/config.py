@@ -25,6 +25,9 @@ class NPCConfig(BaseConfig):
 
 
 class MetricConfig(BaseConfig):
+    type: str
+    name: str
+    collision_threshold: Optional[float] = 0.5
     pass
 
 
@@ -76,7 +79,7 @@ class RobotConfig(BaseConfig):
     init_joints: Optional[List[float]] = None
     # common config
     position: Optional[List[float]] = [.0, .0, .0]
-    orientation: Optional[List[float]] = [.0, .0, .0, 1.0]
+    orientation: Optional[List[float]] = [1.0, .0, .0, 0.0]
     scale: Optional[List[float]] = [1.0, 1.0, 1.0]
 
     # Parameters
@@ -108,12 +111,14 @@ class TaskConfig(BaseConfig):
     offset: Optional[List[float]] = None
 
     ### Navigate
-    start_points: Optional[List[float]] = [.0, .0, .0]
-    goal_points: Optional[List[float]] = [.0, .0, .0]
+    start_points: Optional[List] = []
+    goal_points: Optional[List] = []
     max_steps: Optional[int] = 1000
     goal_threshold: Optional[float] = 0.8 # m
     task_path: Optional[str] = "" # 任务的json路径，可以拿来获取物品ID
     map_path: Optional[str] = "" # 地图文件路径
+    task_instruction: Optional[str] = ""
+    goal_image_path: Optional[List[str]] = []
 
 
 class SimulatorConfig(BaseConfig):

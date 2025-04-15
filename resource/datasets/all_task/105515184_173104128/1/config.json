@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you please take the Springfield Night Stand from the bedroom and place it on the Allen Corner Desk in the office",
+    "Subtask list": [
+        "Move_to('Springfield Night Stand-L.Oak/A.Silver_bedroom')",
+        "Grab('Springfield Night Stand-L.Oak/A.Silver')",
+        "Move_to('Allen Corner Desk_office')",
+        "Release('Springfield Night Stand-L.Oak/A.Silver')"
+    ],
+    "Scene": "105515184_173104128",
+    "Target": [
+        [
+            "d161f89dbda03dc3ff807fd144e448fa6bbc32ca",
+            "Springfield Night Stand-L.Oak/A.Silver",
+            "bedroom"
+        ],
+        [
+            "7be120511a688df6f496e04384b9ede07f151b8d",
+            "Allen Corner Desk",
+            "office"
+        ]
+    ]
+}

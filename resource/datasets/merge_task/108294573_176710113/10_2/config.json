@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the black XL faux leather bean bag from the living room to the Palmer desk in the office",
+        "take the HANDBLOWN CARVED GLASS VASE from the living room to the Palmer Desk in the office"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('XL Faux Leather Bean bag BLACK_living room')",
+            "Grab('XL Faux Leather Bean bag BLACK')",
+            "Move_to('Palmer Desk_office')",
+            "Release('XL Faux Leather Bean bag BLACK')"
+        ],
+        [
+            "Move_to('HANDBLOWN CARVED GLASS VASE_living room')",
+            "Grab('HANDBLOWN CARVED GLASS VASE')",
+            "Move_to('Palmer Desk_office')",
+            "Release('HANDBLOWN CARVED GLASS VASE')"
+        ]
+    ],
+    "Scene": "108294573_176710113",
+    "Target": [
+        [
+            [
+                "5dce7508b43c39e7dba018156a05a29483bff5f7",
+                "XL Faux Leather Bean bag BLACK",
+                "living room"
+            ],
+            [
+                "7e54244342d7a8716e723311313adf7d5ba1620e",
+                "Palmer Desk",
+                "office"
+            ]
+        ],
+        [
+            [
+                "db8288398b2513371f31aff4e2e6271dd08476af",
+                "HANDBLOWN CARVED GLASS VASE",
+                "living room"
+            ],
+            [
+                "7e54244342d7a8716e723311313adf7d5ba1620e",
+                "Palmer Desk",
+                "office"
+            ]
+        ]
+    ]
+}

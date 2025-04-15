@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Move the Frosted pen pot from the office to the kitchen cabinet with a sink in the kitchen",
+    "Subtask list": [
+        "Move_to('Frosted pen pot_office')",
+        "Grab('Frosted pen pot')",
+        "Move_to('Kitchen Cabinet with sink, 2 doors_kitchen')",
+        "Release('Frosted pen pot')"
+    ],
+    "Scene": "104862534_172226625",
+    "Target": [
+        [
+            "24dcf1f353b54d43bf12bcf17266f2685091318d",
+            "Frosted pen pot",
+            "office"
+        ],
+        [
+            "6a5c779b2deee1af83e7d2f85605fe0a1d39f665",
+            "Kitchen Cabinet with sink, 2 doors",
+            "kitchen"
+        ]
+    ]
+}

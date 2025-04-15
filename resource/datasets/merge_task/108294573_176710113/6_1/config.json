@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the small cactus plant from the living room and place it on the vanity in the bathroom",
+        "Please take the black faux leather bean bag from the living room and place it next to the Chester footrest in the shared area between the bedroom and living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Cactus Plant in Round Pot_living room')",
+            "Grab('Cactus Plant in Round Pot')",
+            "Move_to('Loosli Vanity-Tribute/Similor TWINPLUS/Bodenschatz wood 2_bathroom')",
+            "Release('Cactus Plant in Round Pot')"
+        ],
+        [
+            "Move_to('XL Faux Leather Bean bag BLACK_living room')",
+            "Grab('XL Faux Leather Bean bag BLACK')",
+            "Move_to('CHESTER Footrest_bedroom,living room')",
+            "Release('XL Faux Leather Bean bag BLACK')"
+        ]
+    ],
+    "Scene": "108294573_176710113",
+    "Target": [
+        [
+            [
+                "c461ecb62efa4ef74eb34fb8152acf8cc8ac427d",
+                "Cactus Plant in Round Pot",
+                "living room"
+            ],
+            [
+                "2af49526b00696ff2449c5e19f44d6b8e653a1b4",
+                "Loosli Vanity-Tribute/Similor TWINPLUS/Bodenschatz wood 2",
+                "bathroom"
+            ]
+        ],
+        [
+            [
+                "5dce7508b43c39e7dba018156a05a29483bff5f7",
+                "XL Faux Leather Bean bag BLACK",
+                "living room"
+            ],
+            [
+                "495ec825e5a1a1a5f1d5aae2098bc6e4ba049e4f",
+                "CHESTER Footrest",
+                "bedroom,living room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Move the Dualit Lite 2 Slot Toaster from the kitchen to the Metal And Wood Round Accent Table in the living room",
+    "Subtask list": [
+        "Move_to('Dualit Lite 2 Slot Toaster Cream_kitchen')",
+        "Grab('Dualit Lite 2 Slot Toaster Cream')",
+        "Move_to('Metal And Wood Round Accent Table_living room')",
+        "Release('Metal And Wood Round Accent Table')"
+    ],
+    "Scene": "107734479_176000442",
+    "Target": [
+        [
+            "712e8b6769bebb2dde5302e3de78d2c28d639759",
+            "Dualit Lite 2 Slot Toaster Cream",
+            "kitchen"
+        ],
+        [
+            "1520f695cc022d759701159cfea0c0f75aaa92c6",
+            "Metal And Wood Round Accent Table",
+            "living room"
+        ]
+    ]
+}

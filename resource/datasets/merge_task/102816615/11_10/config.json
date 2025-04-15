@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Potted Sansevieria in the living room and place it on the Envy Nightstand in the bedroom",
+        "Take the Potted Sansevieria from the living room and place it on the Summit Mirror in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Potted Sansevieria_living room')",
+            "Grab('Potted Sansevieria')",
+            "Move_to('Envy Nightstand_bedroom')",
+            "Release('Potted Sansevieria')"
+        ],
+        [
+            "Move_to('Potted Sansevieria_living room')",
+            "Grab('Potted Sansevieria')",
+            "Move_to('Summit Mirror, Black_bedroom')",
+            "Release('Potted Sansevieria')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "26a38271fb04e01cc4ae5f6cabad71f37a69231b",
+                "Potted Sansevieria",
+                "living room"
+            ],
+            [
+                "03639dab61b6903ff319e047b008cb6abec971c6",
+                "Envy Nightstand",
+                "bedroom"
+            ]
+        ],
+        [
+            [
+                "26a38271fb04e01cc4ae5f6cabad71f37a69231b",
+                "Potted Sansevieria",
+                "living room"
+            ],
+            [
+                "853e4e301305a0884e64b17efb9ada196bbfcf87",
+                "Summit Mirror, Black",
+                "bedroom"
+            ]
+        ]
+    ]
+}

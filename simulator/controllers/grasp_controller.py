@@ -1,10 +1,10 @@
 from simulator.core.config import ControllerConfig
 from simulator.core.register import registry
 from simulator.core.controller import BaseController
-from simulator.core.utils.grasp_utils import transform_to_base, transform_to_world, rpy2R
+from simulator.utils.grasp_utils import transform_to_base, transform_to_world, rpy2R
 from transformations import euler_from_quaternion, quaternion_from_euler
 from lazyimport import lazyimport
-
+from typing import List
 lazyimport(
     globals(),
     """
@@ -15,6 +15,7 @@ lazyimport(
 
 import math
 import numpy as np
+from gym import spaces
 
 @registry.register_controller
 class StretchGraspController(BaseController):
@@ -34,7 +35,7 @@ class StretchGraspController(BaseController):
         self.obj_prim = None
 
     def get_action(self, command: List, robot=None) -> np.ndarray:
-        if command != None:
+        if command != None and command[1]!=0:
                 self.obj_prim = command[1]
                 target_obj = self.obj_prim.get_world_pose()
                 # self.release_by_target(robot, self.obj_prim.get_world_pose(), world)
@@ -42,12 +43,12 @@ class StretchGraspController(BaseController):
         else:
                 return None, None
     
-    def step(self, robot, world, command: str):
+    def step(self, robot, world, command: str, grasped_object={}):
         command = self.get_action(command, robot)
-        if command[0] == "grasp":
-            self.grasp_by_target(robot, command[1], world)
+        if command[0] == "grasp" and len(grasped_object) == 0:
+            self.grasp_by_target(robot.isaac_robot, command[1], world)
         elif command[0] == "release":
-            self.release_by_target(robot, command[1], world)
+            self.release_by_target(robot.isaac_robot, command[1], world)
     
 
     def grasp_by_target(self, robot, target, world):
@@ -259,3 +260,13 @@ class StretchGraspController(BaseController):
     @property
     def grasp_arm3(self):
         return self.get_arm_names()[1]
+
+    @property
+    def action_space(self) -> spaces.Tuple:
+        """
+        Returns the action space of the task.
+        """
+        return spaces.Tuple((
+            spaces.Discrete(1),  # 动作类型索引
+            spaces.Box(low=0, high=1, shape=(1,), dtype=np.float32)  # 参数值
+        ))

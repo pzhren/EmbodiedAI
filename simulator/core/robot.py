@@ -10,8 +10,10 @@ lazyimport(
     """
     from omni.isaac.core.robots import Robot as OmniBaseRobot
     from omni.isaac.core.prims import XFormPrim
+    from simulator.utils.gym_utils import flatten_tuple_spaces
     """
 )
+
 
 class BaseRobot(ABC):
     def __init__(self, robot_config: RobotConfig):
@@ -24,14 +26,20 @@ class BaseRobot(ABC):
         self.scale = robot_config.scale
         self.init_joints = robot_config.init_joints
         self.action_dim = 0
+        self.action_space = None
+        self.action_space_list = []
         if robot_config.controllers is not None:
             # self.controllers = []
             self.controllers = [make_controller(controller.type, controller) for controller in robot_config.controllers if controller is not None]
             for controller in self.controllers:
                 self.action_dim += controller.action_dim
+                self.action_space_list.append(controller.action_space)
+            self.action_space = flatten_tuple_spaces(self.action_space_list)
+                
         if robot_config.sensors is not None:
             # self.sensors = []
             self.sensors = [make_sensor(sensor.type, sensor) for sensor in robot_config.sensors if sensor is not None]
+            
     def apply_action(self, action):
         return self.isaac_robot.apply_action(action)
     
@@ -45,7 +53,13 @@ class BaseRobot(ABC):
         """
         Get the world pose of the robot
         """
-        return self.Xform.get_world_pose()
+        return self.Xform.get_world_pose()[0]
+
+    def get_world_orientation(self) -> np.ndarray:
+        """
+        Get the world orientation of the robot
+        """
+        return self.Xform.get_world_pose()[1]
     
     def reset(self):
         """

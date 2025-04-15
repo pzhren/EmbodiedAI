@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you please bring the wall hanging from the living room to the folding trolley in the living room",
+        "Take the mixed numbers wall clock from the living room and place it on the side table in the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Moments - Wall Hanging_living room')",
+            "Grab('Moments - Wall Hanging')",
+            "Move_to('Beech Folding Trolley_living room')",
+            "Release('Moments - Wall Hanging')"
+        ],
+        [
+            "Move_to('Mixed numbers Wall Clock Red_living room')",
+            "Grab('Mixed numbers Wall Clock Red')",
+            "Move_to('Mixed up side table_living room')",
+            "Release('Mixed numbers Wall Clock Red')"
+        ]
+    ],
+    "Scene": "102344250",
+    "Target": [
+        [
+            [
+                "b10620e794a96839cce5f37974578229667b89b7",
+                "Moments - Wall Hanging",
+                "living room"
+            ],
+            [
+                "fcd4cfd15f790272e5ce95bab3c62de87beb3142",
+                "Beech Folding Trolley",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "573c6477f0f3067edcd1e9fb52c558a4291f0c5c",
+                "Mixed numbers Wall Clock Red",
+                "living room"
+            ],
+            [
+                "9bf6552ba4cba1cdb6819e60bc3f416807a4eeec",
+                "Mixed up side table",
+                "living room"
+            ]
+        ]
+    ]
+}

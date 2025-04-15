@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the Black Rattan Woven Round Basket from the living room to the sink cabinet in the kitchen",
+        "Please take the Black Rattan Woven Round Basket from the living room and place it next to the Envy Bed in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Black Rattan Woven Round Basket_living room')",
+            "Grab('Black Rattan Woven Round Basket')",
+            "Move_to('Kitchen cabinet with sink, double_kitchen')",
+            "Release('Black Rattan Woven Round Basket')"
+        ],
+        [
+            "Move_to('Black Rattan Woven Round Basket_living room')",
+            "Grab('Black Rattan Woven Round Basket')",
+            "Move_to('Envy Bed_bedroom')",
+            "Release('Black Rattan Woven Round Basket')"
+        ]
+    ],
+    "Scene": "102344094",
+    "Target": [
+        [
+            [
+                "xxxx028e6297xba22x4718xb4cbx1470a69a0bd6",
+                "Black Rattan Woven Round Basket",
+                "living room"
+            ],
+            [
+                "048d80c36ddc6ac63785ca08ccf231431195717c",
+                "Kitchen cabinet with sink, double",
+                "kitchen"
+            ]
+        ],
+        [
+            [
+                "xxxx028e6297xba22x4718xb4cbx1470a69a0bd6",
+                "Black Rattan Woven Round Basket",
+                "living room"
+            ],
+            [
+                "e91f9db75c0e3679b4bdd1d012ceb0819bb287f5",
+                "Envy Bed",
+                "bedroom"
+            ]
+        ]
+    ]
+}

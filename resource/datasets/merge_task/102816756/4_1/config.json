@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Frosted pen pot from the office and place it on the Dining Table in the living room, dining room area",
+        "Please take the tissue box cover from the bedroom to the end table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Frosted pen pot_office')",
+            "Grab('Frosted pen pot')",
+            "Move_to('Palerma Extendable Dining Table, White_living room,dining room')",
+            "Release('Palerma Extendable Dining Table, White')"
+        ],
+        [
+            "Move_to('Cleo Rectangle Tissue Box Cover_bedroom,living room')",
+            "Grab('Cleo Rectangle Tissue Box Cover')",
+            "Move_to('Revolve Grange End Table_living room')",
+            "Release('Cleo Rectangle Tissue Box Cover')"
+        ]
+    ],
+    "Scene": "102816756",
+    "Target": [
+        [
+            [
+                "24dcf1f353b54d43bf12bcf17266f2685091318d",
+                "Frosted pen pot",
+                "office"
+            ],
+            [
+                "786845ecaee2a43d135f922f4d617da02c8543b6",
+                "Palerma Extendable Dining Table, White",
+                "living room,dining room"
+            ]
+        ],
+        [
+            [
+                "efc0201c33f516285eea7f5ad4516fed892a4ba6",
+                "Cleo Rectangle Tissue Box Cover",
+                "bedroom,living room"
+            ],
+            [
+                "e773f6b54137ce8acdf013c000fc8dbf29071e1d",
+                "Revolve Grange End Table",
+                "living room"
+            ]
+        ]
+    ]
+}

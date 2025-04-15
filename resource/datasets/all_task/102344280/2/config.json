@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the succulent plant from the living room and place it on the white 3 drawer accent chest located in the bedroom, living room area",
+    "Subtask list": [
+        "Move_to('Succulent Plant- 23x9x11 cms_living room')",
+        "Grab('Succulent Plant- 23x9x11 cms')",
+        "Move_to('White 3 Drawer Accent Chest_bedroom,living room')",
+        "Release('Succulent Plant- 23x9x11 cms')"
+    ],
+    "Scene": "102344280",
+    "Target": [
+        [
+            "14bdc1398760aef6d8757e2dd6a1c674d7851e66",
+            "Succulent Plant- 23x9x11 cms",
+            "living room"
+        ],
+        [
+            "61d4155613cdff2e36558a2c210452232eea676f",
+            "White 3 Drawer Accent Chest",
+            "bedroom,living room"
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "move the Blanc Doeuf Waste Bin from the bathroom to the Mid Century Modern Cocktail Table in the living room",
+        "Take the Potted Sansevieria from the living room to the Bamboo Towel ladder Rail in the bathroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Blanc Doeuf Waste Bin_bathroom')",
+            "Grab('Blanc Doeuf Waste Bin')",
+            "Move_to('Mid Century Modern Cocktail Table_living room')",
+            "Release('Blanc Doeuf Waste Bin')"
+        ],
+        [
+            "Move_to('Potted Sansevieria_living room')",
+            "Grab('Potted Sansevieria')",
+            "Move_to('Bamboo Towel ladder Rail_bathroom')",
+            "Release('Potted Sansevieria')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "5f42b2ef37446d00652bccc1fea78258518a807e",
+                "Blanc Doeuf Waste Bin",
+                "bathroom"
+            ],
+            [
+                "7025cd14a948f491902ef12724f0fe6e4ce672af",
+                "Mid Century Modern Cocktail Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "26a38271fb04e01cc4ae5f6cabad71f37a69231b",
+                "Potted Sansevieria",
+                "living room"
+            ],
+            [
+                "96977a358791fbe57563c80b13f229625ad614ad",
+                "Bamboo Towel ladder Rail",
+                "bathroom"
+            ]
+        ]
+    ]
+}

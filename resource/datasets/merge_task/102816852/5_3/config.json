@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "take the FICUS plant in the living room to the LOMMARP cabinet in the living room",
+        "Please take the Lianne Chinoiserie Box on Stand from the living room and place it on the Shelburn Cherry Rect Mirror in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('FICUS MICROCARPA GINSENG_living room')",
+            "Grab('FICUS MICROCARPA GINSENG')",
+            "Move_to('LOMMARP Cabinet, Dark Blue-Green_living room')",
+            "Release('LOMMARP Cabinet, Dark Blue-Green')"
+        ],
+        [
+            "Move_to('Lianne Chinoiserie Box on Stand_living room')",
+            "Grab('Lianne Chinoiserie Box on Stand')",
+            "Move_to('Shelburn Cherry Rect Mirror_bedroom')",
+            "Release('Lianne Chinoiserie Box on Stand')"
+        ]
+    ],
+    "Scene": "102816852",
+    "Target": [
+        [
+            [
+                "1943726018bc88e96a8fa16fd6f8d88523d75abc",
+                "FICUS MICROCARPA GINSENG",
+                "living room"
+            ],
+            [
+                "b87936a4a52e2a0b805369a0763a536c719ca7d6",
+                "LOMMARP Cabinet, Dark Blue-Green",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "18907e173849a4276315f8932a121033906d5c70",
+                "Lianne Chinoiserie Box on Stand",
+                "living room"
+            ],
+            [
+                "b35a7b24cc984d6e9d6a15dd55bb64f2359eb845",
+                "Shelburn Cherry Rect Mirror",
+                "bedroom"
+            ]
+        ]
+    ]
+}

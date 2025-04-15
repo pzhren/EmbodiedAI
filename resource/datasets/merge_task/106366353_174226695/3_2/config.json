@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the artificial flowers from the living room and place them on the side table in the living room",
+        "Please take the artificial flowers in the living room and place them on the dresser in the combined bedroom and living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Bloom White Rose Artificial Flowers_living room')",
+            "Grab('Bloom White Rose Artificial Flowers')",
+            "Move_to('Habibi Side Table_living room')",
+            "Release('Bloom White Rose Artificial Flowers')"
+        ],
+        [
+            "Move_to('Bloom White Rose Artificial Flowers_living room')",
+            "Grab('Bloom White Rose Artificial Flowers')",
+            "Move_to('Sinclair Dresser/Mirror, Pebble_bedroom,living room')",
+            "Release('Bloom White Rose Artificial Flowers')"
+        ]
+    ],
+    "Scene": "106366353_174226695",
+    "Target": [
+        [
+            [
+                "0eaeb0a2cb5c912b76c0bb825a67dc80c27781b4",
+                "Bloom White Rose Artificial Flowers",
+                "living room"
+            ],
+            [
+                "4b410e0f052d226f5d429064000e29e1cae39d8a",
+                "Habibi Side Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "0eaeb0a2cb5c912b76c0bb825a67dc80c27781b4",
+                "Bloom White Rose Artificial Flowers",
+                "living room"
+            ],
+            [
+                "2c6ab6266f1d11711743b89a00b0f7ff7d64edde",
+                "Sinclair Dresser/Mirror, Pebble",
+                "bedroom,living room"
+            ]
+        ]
+    ]
+}

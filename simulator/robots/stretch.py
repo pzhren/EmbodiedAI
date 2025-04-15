@@ -11,7 +11,7 @@ class Stretch(BaseRobot):
         self.prim_path = "/World/Robot/Stretch" if self.prim_path==None else robot_config.prim_path
         self.use_position = robot_config.use_position if robot_config.use_position is not None else False
         self.grasped_object = {}
-     
+        self.plan_length = []
         pass
     
     
@@ -21,17 +21,8 @@ class Stretch(BaseRobot):
         robot's type, e.g. "Wheel", "Leg", "Arm", "Drone"
         '''
         return "Wheel"
-    
-    
-    
-    @property
-    def get_world_pose(self):
-        '''
-        Get the state of the robot, position, pose
-        '''
-        return self.isaac_robot.get_world_pose()
-    
-    
+
+
     @property
     def get_wheel_names(self) -> list[str]:
         '''
@@ -95,7 +86,12 @@ class Stretch(BaseRobot):
             dim = controller.action_dim
             # command = controller.get_action(action_instruct[id:id+dim], robot=self.prim_path)
             # id+=dim
-            return_dict = controller.step(self.isaac_robot, world, action_instruct[id:id+dim], self.grasped_object)
+            if len(action_instruct[id:id+dim]) != dim:
+                action = [0 for _ in range(dim)]
+            else:
+                action = action_instruct[id:id+dim]
+            
+            return_dict = controller.step(self, world, action, self.grasped_object)
             if return_dict is not None and isinstance(return_dict, dict):
                 for k,v in return_dict.items():
                     setattr(self, k, v)
@@ -107,5 +103,7 @@ class Stretch(BaseRobot):
 
     def reset(self):
         self.grasped_object = {}
-
+    
+    def get_path_length(self):
+        return sum(self.plan_length)
     

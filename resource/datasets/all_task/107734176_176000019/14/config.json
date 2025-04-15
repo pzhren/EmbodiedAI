@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Could you please take the Bowl of Oranges from the dining room and place it on the Mercer Down II Sectional in the living room",
+    "Subtask list": [
+        "Move_to('Bowl of Oranges_dining room')",
+        "Grab('Bowl of Oranges')",
+        "Move_to('Mercer Down II 3 Piece Sectional With Double Chaise_living room')",
+        "Release('Bowl of Oranges')"
+    ],
+    "Scene": "107734176_176000019",
+    "Target": [
+        [
+            "e073e5a03b9554fbdd72ae7290dcf8c1a04431f1",
+            "Bowl of Oranges",
+            "dining room"
+        ],
+        [
+            "f75c49f9bed26c64c3ada2c8623fda53583d3025",
+            "Mercer Down II 3 Piece Sectional With Double Chaise",
+            "living room"
+        ]
+    ]
+}

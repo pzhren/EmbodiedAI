@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the princess castle clock from the kids room and place it on the Kendall desk in the office",
+        "Move the cozy kitchen from the kids room to the booksheld in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Princess Castle Clock_kids room')",
+            "Grab('Princess Castle Clock')",
+            "Move_to('Kendall Desk, Green_office')",
+            "Release('Princess Castle Clock')"
+        ],
+        [
+            "Move_to('Cozy Kitchen - Item # COZYKIT_kids room')",
+            "Grab('Cozy Kitchen - Item # COZYKIT')",
+            "Move_to('Baybrin Bookshelf_living room')",
+            "Release('Cozy Kitchen - Item # COZYKIT')"
+        ]
+    ],
+    "Scene": "104862558_172226664",
+    "Target": [
+        [
+            [
+                "e33d9290a0833c81db2e7e55a80d86ea0aea6082",
+                "Princess Castle Clock",
+                "kids room"
+            ],
+            [
+                "1f3cb2b9ca2bbeab98947de6f076ac212474c494",
+                "Kendall Desk, Green",
+                "office"
+            ]
+        ],
+        [
+            [
+                "66c31369764e529c59d1257905a165dfbca6ec4d",
+                "Cozy Kitchen - Item # COZYKIT",
+                "kids room"
+            ],
+            [
+                "2008d8ac79f55bb3bad47a4bc7af494f0a7fe9f8",
+                "Baybrin Bookshelf",
+                "living room"
+            ]
+        ]
+    ]
+}

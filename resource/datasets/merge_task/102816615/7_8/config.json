@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Can you please take the small nesting table from the living room and place it beside the large terracotta planter in the same room",
+        "Could you please move the black wing chair from the dining room to the end table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Radleigh Small Nesting Table_living room')",
+            "Grab('Radleigh Small Nesting Table')",
+            "Move_to('Jara Terracotta Planter with Stand, Large_living room')",
+            "Release('Radleigh Small Nesting Table')"
+        ],
+        [
+            "Move_to('Revolve Britania Wing Chair, Black_dining room')",
+            "Grab('Revolve Britania Wing Chair, Black')",
+            "Move_to('Mid Century Modern End Table_living room')",
+            "Release('Mid Century Modern End Table')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "1a4841c613e9f5c2ba492107fb6aff4692c564a4",
+                "Radleigh Small Nesting Table",
+                "living room"
+            ],
+            [
+                "0e3f31820718c4195b9884dbdf9015035f66dae0",
+                "Jara Terracotta Planter with Stand, Large",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "2f8b1869ffc23806afac2e98ecc61cffb6c94ffc",
+                "Revolve Britania Wing Chair, Black",
+                "dining room"
+            ],
+            [
+                "2b39e8c2237ea1f0ba7417b2ec96d2aca51ee17b",
+                "Mid Century Modern End Table",
+                "living room"
+            ]
+        ]
+    ]
+}

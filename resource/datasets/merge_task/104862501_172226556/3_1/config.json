@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Could you take the small trash bin from the kitchen and place it in the living room, please",
+        "Transfer the pedal bin from the kitchen to the nightstand in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('(109348) Brabantia Pedal Bin 3L White - Plastic Bucket_kitchen')",
+            "Grab('(109348) Brabantia Pedal Bin 3L White - Plastic Bucket')",
+            "Move_to('Danyon Coffee Table_living room')",
+            "Release('(109348) Brabantia Pedal Bin 3L White - Plastic Bucket')"
+        ],
+        [
+            "Move_to('(109348) Brabantia Pedal Bin 3L White - Plastic Bucket_kitchen')",
+            "Grab('(109348) Brabantia Pedal Bin 3L White - Plastic Bucket')",
+            "Move_to('Elko Nightstand_bedroom')",
+            "Release('(109348) Brabantia Pedal Bin 3L White - Plastic Bucket')"
+        ]
+    ],
+    "Scene": "104862501_172226556",
+    "Target": [
+        [
+            [
+                "ba0a85ecf536d064a00330d7bf4ac2d6a89dc11c",
+                "(109348) Brabantia Pedal Bin 3L White - Plastic Bucket",
+                "kitchen"
+            ],
+            [
+                "7ceb5e714002bb2cd99eb99da280b555db07c476",
+                "Danyon Coffee Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "ba0a85ecf536d064a00330d7bf4ac2d6a89dc11c",
+                "(109348) Brabantia Pedal Bin 3L White - Plastic Bucket",
+                "kitchen"
+            ],
+            [
+                "6eff75ec23c4c9c1f83c636bf6d6ea6993d7adde",
+                "Elko Nightstand",
+                "bedroom"
+            ]
+        ]
+    ]
+}

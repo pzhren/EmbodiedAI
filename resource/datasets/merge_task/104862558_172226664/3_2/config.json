@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Jumbo Toy Bin from the kitchen and place it on the Princess Chest in the bedroom connected to the living room",
+        "Could you please take the Cozy Kitchen toy from the kids room and place it onto the Jumbo Toy Bin in the kitchen"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Jumbo Toy Bin_kitchen')",
+            "Grab('Jumbo Toy Bin')",
+            "Move_to('Princess Chest_bedroom,living room')",
+            "Release('Jumbo Toy Bin')"
+        ],
+        [
+            "Move_to('Cozy Kitchen - Item # COZYKIT_kids room')",
+            "Grab('Cozy Kitchen - Item # COZYKIT')",
+            "Move_to('Jumbo Toy Bin_kitchen')",
+            "Release('Cozy Kitchen - Item # COZYKIT')"
+        ]
+    ],
+    "Scene": "104862558_172226664",
+    "Target": [
+        [
+            [
+                "3157a2905050ec0ecbe06723d968e1743c38e11d",
+                "Jumbo Toy Bin",
+                "kitchen"
+            ],
+            [
+                "848c2cc9428329445b3de7dc982469c583b16c1d",
+                "Princess Chest",
+                "bedroom,living room"
+            ]
+        ],
+        [
+            [
+                "66c31369764e529c59d1257905a165dfbca6ec4d",
+                "Cozy Kitchen - Item # COZYKIT",
+                "kids room"
+            ],
+            [
+                "3157a2905050ec0ecbe06723d968e1743c38e11d",
+                "Jumbo Toy Bin",
+                "kitchen"
+            ]
+        ]
+    ]
+}

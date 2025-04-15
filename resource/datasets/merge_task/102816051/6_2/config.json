@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the bike in the kids room and place it in the living room near the sofa",
+        "Pick up the toy stove unit from the kids room and place it on the nightstand in the bedroom"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Hot Wheels 14'' Bike_kids room')",
+            "Grab('Hot Wheels 14'' Bike')",
+            "Move_to('Brooke 3-cushion sofa_living room')",
+            "Release('Hot Wheels 14'' Bike')"
+        ],
+        [
+            "Move_to('TOY SINK/STOVE UNIT_kids room')",
+            "Grab('TOY SINK/STOVE UNIT')",
+            "Move_to('Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent_bedroom')",
+            "Release('TOY SINK/STOVE UNIT')"
+        ]
+    ],
+    "Scene": "102816051",
+    "Target": [
+        [
+            [
+                "de69a7b4e62b31f695624352494a14893148eae3",
+                "Hot Wheels 14'' Bike",
+                "kids room"
+            ],
+            [
+                "7b1858c043bad608f981a6b33cff7db51b80b420",
+                "Brooke 3-cushion sofa",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "0add22cc4b991c0b80e94a36eb72687f44ccb3ba",
+                "TOY SINK/STOVE UNIT",
+                "kids room"
+            ],
+            [
+                "2b9af0f16b5f1e6b7621bfa05afb45b3581e0736",
+                "Brighton Open 29'' Nightstand By Nate Berkus And Jeremiah Brent",
+                "bedroom"
+            ]
+        ]
+    ]
+}

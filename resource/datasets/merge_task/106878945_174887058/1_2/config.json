@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the Laurel stool from the bedroom and place it on the pitch end table in the living room",
+        "Please take the Laurel Stool which is in the bedroom and place it next to the Hisa Dining Table Large located in the living room and dining room area"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Laurel Stool - Walnut_bedroom')",
+            "Grab('Laurel Stool - Walnut')",
+            "Move_to('Pitch End Table_living room')",
+            "Release('Laurel Stool - Walnut')"
+        ],
+        [
+            "Move_to('Laurel Stool - Walnut_bedroom')",
+            "Grab('Laurel Stool - Walnut')",
+            "Move_to('Hisa Dining Table Large_living room,dining room')",
+            "Release('Laurel Stool - Walnut')"
+        ]
+    ],
+    "Scene": "106878945_174887058",
+    "Target": [
+        [
+            [
+                "9267a60171a5eac802ab37b443aef369fd258c8d",
+                "Laurel Stool - Walnut",
+                "bedroom"
+            ],
+            [
+                "7dbb455ef151c027281e60b7e83f4ea141e2b85e",
+                "Pitch End Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "9267a60171a5eac802ab37b443aef369fd258c8d",
+                "Laurel Stool - Walnut",
+                "bedroom"
+            ],
+            [
+                "bf112cb3224ed0184b57c3b35aca759d18eb7eb3",
+                "Hisa Dining Table Large",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

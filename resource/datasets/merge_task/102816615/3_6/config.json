@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "move the Blanc Doeuf Waste Bin from the bathroom to the Mid Century Modern Cocktail Table in the living room",
+        "Could you help me move the pothos tree from the living room to that modern dining table in the dining room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Blanc Doeuf Waste Bin_bathroom')",
+            "Grab('Blanc Doeuf Waste Bin')",
+            "Move_to('Mid Century Modern Cocktail Table_living room')",
+            "Release('Blanc Doeuf Waste Bin')"
+        ],
+        [
+            "Move_to('Pothos Tree in Pot 152 cms_living room')",
+            "Grab('Pothos Tree in Pot 152 cms')",
+            "Move_to('Mid Century Modern Rectangular Dining Table_dining room')",
+            "Release('Pothos Tree in Pot 152 cms')"
+        ]
+    ],
+    "Scene": "102816615",
+    "Target": [
+        [
+            [
+                "5f42b2ef37446d00652bccc1fea78258518a807e",
+                "Blanc Doeuf Waste Bin",
+                "bathroom"
+            ],
+            [
+                "7025cd14a948f491902ef12724f0fe6e4ce672af",
+                "Mid Century Modern Cocktail Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "4dbb221926b856e5c1c07a26b133690d47cd818d",
+                "Pothos Tree in Pot 152 cms",
+                "living room"
+            ],
+            [
+                "bf3c644c0686ef3f380f199a533d65d5d71e8bf0",
+                "Mid Century Modern Rectangular Dining Table",
+                "dining room"
+            ]
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the easy chair from the living room and place it next to the twin bed in the bedroom, kids room area",
+        "Take the mixed numbers wall clock from the living room and place it on the side table in the same room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('VILLSTAD Easy chair_living room')",
+            "Grab('VILLSTAD Easy chair')",
+            "Move_to('Namaste Twin Bed_bedroom,kids room')",
+            "Release('VILLSTAD Easy chair')"
+        ],
+        [
+            "Move_to('Mixed numbers Wall Clock Red_living room')",
+            "Grab('Mixed numbers Wall Clock Red')",
+            "Move_to('Mixed up side table_living room')",
+            "Release('Mixed numbers Wall Clock Red')"
+        ]
+    ],
+    "Scene": "102344250",
+    "Target": [
+        [
+            [
+                "7731b27a33dba3816bd7bc321cf47bc12facc109",
+                "VILLSTAD Easy chair",
+                "living room"
+            ],
+            [
+                "3869fc2dbbfe2c95d7dc93081dc9df573d96fb88",
+                "Namaste Twin Bed",
+                "bedroom,kids room"
+            ]
+        ],
+        [
+            [
+                "573c6477f0f3067edcd1e9fb52c558a4291f0c5c",
+                "Mixed numbers Wall Clock Red",
+                "living room"
+            ],
+            [
+                "9bf6552ba4cba1cdb6819e60bc3f416807a4eeec",
+                "Mixed up side table",
+                "living room"
+            ]
+        ]
+    ]
+}

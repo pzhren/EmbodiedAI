@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the tissue box cover from the bedroom to the succulent plant in the living room",
+        "Please take the tissue box cover from the bedroom and place it on a table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Cleo Rectangle Tissue Box Cover_bedroom,living room')",
+            "Grab('Cleo Rectangle Tissue Box Cover')",
+            "Move_to('Potted Faux Succulent White Pot 14\"_living room')",
+            "Release('Cleo Rectangle Tissue Box Cover')"
+        ],
+        [
+            "Move_to('Cleo Rectangle Tissue Box Cover_bedroom,living room')",
+            "Grab('Cleo Rectangle Tissue Box Cover')",
+            "Move_to('Plinth Tall Side Table, Carrara_living room')",
+            "Release('Cleo Rectangle Tissue Box Cover')"
+        ]
+    ],
+    "Scene": "102816756",
+    "Target": [
+        [
+            [
+                "efc0201c33f516285eea7f5ad4516fed892a4ba6",
+                "Cleo Rectangle Tissue Box Cover",
+                "bedroom,living room"
+            ],
+            [
+                "3c163391afeb4130eadacb6ef9b6e5930329a32b",
+                "Potted Faux Succulent White Pot 14\"",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "efc0201c33f516285eea7f5ad4516fed892a4ba6",
+                "Cleo Rectangle Tissue Box Cover",
+                "bedroom,living room"
+            ],
+            [
+                "c95a77cb5c2b67768b566f45b25ccd726be5bead",
+                "Plinth Tall Side Table, Carrara",
+                "living room"
+            ]
+        ]
+    ]
+}

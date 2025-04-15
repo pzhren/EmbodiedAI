@@ -1,0 +1,22 @@
+{
+    "Task instruction": "Please take the folding trolley from the living room and put it next to the bathmat in the bathroom",
+    "Subtask list": [
+        "Move_to('Beech Folding Trolley_living room')",
+        "Grab('Beech Folding Trolley')",
+        "Move_to('Aristocrat Plush Bathmat - 60x90 cms, Yellow_bathroom')",
+        "Release('Beech Folding Trolley')"
+    ],
+    "Scene": "102344250",
+    "Target": [
+        [
+            "fcd4cfd15f790272e5ce95bab3c62de87beb3142",
+            "Beech Folding Trolley",
+            "living room"
+        ],
+        [
+            "4578e276bf903ec43d98e86f181851c87aff9fc1",
+            "Aristocrat Plush Bathmat - 60x90 cms, Yellow",
+            "bathroom"
+        ]
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Take the princess castle clock from the kids room and place it on the Kendall desk in the office",
+        "Take the Princess Chest from the bedroom-living room area and place it on the Hartley 2 Piece Sectional in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Princess Castle Clock_kids room')",
+            "Grab('Princess Castle Clock')",
+            "Move_to('Kendall Desk, Green_office')",
+            "Release('Princess Castle Clock')"
+        ],
+        [
+            "Move_to('Princess Chest_bedroom,living room')",
+            "Grab('Princess Chest')",
+            "Move_to('Hartley 2 Piece Sectional_living room')",
+            "Release('Princess Chest')"
+        ]
+    ],
+    "Scene": "104862558_172226664",
+    "Target": [
+        [
+            [
+                "e33d9290a0833c81db2e7e55a80d86ea0aea6082",
+                "Princess Castle Clock",
+                "kids room"
+            ],
+            [
+                "1f3cb2b9ca2bbeab98947de6f076ac212474c494",
+                "Kendall Desk, Green",
+                "office"
+            ]
+        ],
+        [
+            [
+                "848c2cc9428329445b3de7dc982469c583b16c1d",
+                "Princess Chest",
+                "bedroom,living room"
+            ],
+            [
+                "66ec4fc576cf716a9e41f389a8ab27b103edfa9f",
+                "Hartley 2 Piece Sectional",
+                "living room"
+            ]
+        ]
+    ]
+}

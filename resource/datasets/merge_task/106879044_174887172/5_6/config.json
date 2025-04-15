@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Please take the Premium Cashmere Throw, Oyster from the area shared by the bedroom and living room, and place it onto the Mid Century Modern Cocktail Table in the living room",
+        "Take the Kitchen wall cabinet with 2 glass doors in the kitchen and place it on the Danish table in the dining room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Premium Cashmere Throw, Oyster_bedroom,living room')",
+            "Grab('Premium Cashmere Throw, Oyster')",
+            "Move_to('Mid Century Modern Cocktail Table_living room')",
+            "Release('Premium Cashmere Throw, Oyster')"
+        ],
+        [
+            "Move_to('Kitchen wall cabinet with 2 glass doors_kitchen')",
+            "Grab('Kitchen wall cabinet with 2 glass doors')",
+            "Move_to('Established Sons M5 Dining Table_living room,dining room')",
+            "Release('Kitchen wall cabinet with 2 glass doors')"
+        ]
+    ],
+    "Scene": "106879044_174887172",
+    "Target": [
+        [
+            [
+                "e7c0a88838318f18b932d3d165f939ad19a2d8cc",
+                "Premium Cashmere Throw, Oyster",
+                "bedroom,living room"
+            ],
+            [
+                "7025cd14a948f491902ef12724f0fe6e4ce672af",
+                "Mid Century Modern Cocktail Table",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "89934a7354b8a59b3fe2bbe22ffe7964a0b8db4b",
+                "Kitchen wall cabinet with 2 glass doors",
+                "kitchen"
+            ],
+            [
+                "eedc440b949be844592cf2de757aa728f882ab11",
+                "Established Sons M5 Dining Table",
+                "living room,dining room"
+            ]
+        ]
+    ]
+}

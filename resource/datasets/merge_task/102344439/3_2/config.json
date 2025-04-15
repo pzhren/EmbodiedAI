@@ -1,0 +1,47 @@
+{
+    "Task instruction": [
+        "Move the family laundry hamper in the bathroom to the bar cart in the living room",
+        "Please take the bamboo bath mat from the bathroom and place it onto the pop-up storage coffee table in the living room"
+    ],
+    "Subtask list": [
+        [
+            "Move_to('Family Laundry Hamper_bathroom')",
+            "Grab('Family Laundry Hamper')",
+            "Move_to('Round Mirrored Gold Bar Cart_living room')",
+            "Release('Family Laundry Hamper')"
+        ],
+        [
+            "Move_to('Bamboo Bath Mat_bathroom')",
+            "Grab('Bamboo Bath Mat')",
+            "Move_to('Mid Century Pop-Up Storage Coffee Table, Marble/Walnut by WestElm_living room')",
+            "Release('Bamboo Bath Mat')"
+        ]
+    ],
+    "Scene": "102344439",
+    "Target": [
+        [
+            [
+                "bfb4b2a7d105c96efa8bb813240a3361ad15bd69",
+                "Family Laundry Hamper",
+                "bathroom"
+            ],
+            [
+                "b6702f1ede249b45a791de9bbb4719ac6063bae9",
+                "Round Mirrored Gold Bar Cart",
+                "living room"
+            ]
+        ],
+        [
+            [
+                "ad1c7575fa2367a9087858da0624554d0b6e7ba8",
+                "Bamboo Bath Mat",
+                "bathroom"
+            ],
+            [
+                "f8a1e9ad71428615e74490c8fe10d309b527ee55",
+                "Mid Century Pop-Up Storage Coffee Table, Marble/Walnut by WestElm",
+                "living room"
+            ]
+        ]
+    ]
+}

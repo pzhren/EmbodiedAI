@@ -76,7 +76,7 @@ class Registry(metaclass=Singleton):
     
     @classmethod
     def register_metric(cls,to_register, *, name:Optional[str] = None):
-        from simulator.core.task import BaseMetric
+        from simulator.core.metric import BaseMetric
         return cls._register_impl("metrics", to_register, name, assert_type=BaseMetric)
     
     @classmethod
