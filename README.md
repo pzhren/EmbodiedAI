@@ -1,3 +1,4 @@
+[TOC]
 # Isaac Sim 搭建基础指南
 
 - 官方教程：https://docs.omniverse.nvidia.com/isaacsim/latest/installation/requirements.html#system-requirements
@@ -127,3 +128,6 @@ SimReady 下载方式与 Isaac Sim 类似，在Omniverse Launch里下载，具�
 - URDF 文件一般放在库目录中 `isaac-sim-4.0.0/extscahe/omni.impoter.urdf-1.14.1+106.0.0.wx64.r.cp310/data/urdf` 目录下；
 - 实例脚本代码以及相关文档可在库目录中 `isaac-sim-4.0.0` 中找到；
 - 官方文档链接：[What Is Isaac Sim? — Omniverse IsaacSim latest documentation (nvidia.com)](https://docs.omniverse.nvidia.com/isaacsim/latest/index.html)
+
+# API接口
+[Simulator API](https://github.com/pzhren/EmbodiedAI/tree/main/simulator)
