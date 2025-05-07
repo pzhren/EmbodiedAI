@@ -90,7 +90,7 @@ agent.reset()
 action = agent.act(Observation=None)
 observation, info, reward, done = env.step(action)
 ```
-You can define your own agent to process observations and generate actions for evaluation. Like [test_agent.py](./tests/test_scene/test_agent.py)
+You can define your own agent to process observations and generate actions for evaluation. Like [test_agent.py](../tests/test_scene/test_agent.py)
 
 #### **Base Usage**
 
