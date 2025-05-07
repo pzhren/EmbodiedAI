@@ -12,6 +12,8 @@ We provide a Docker image with our simulator interface already installed. You ca
 docker pull twilighted/embodiedai
 ```
 
+And then you can start the docker by [docker_start.sh](../scripts/docker_start.sh)
+
 ## Base Modules and Classes
 ###  **1. Environment**
 #### **EnvConfig**
