@@ -1,4 +1,4 @@
-# Isaac Sim 搭建基础指南
+# IsaacSim 搭建基础指南
 
 - 官方教程：https://docs.omniverse.nvidia.com/isaacsim/latest/installation/requirements.html#system-requirements
 - Nvidia驱动：https://www.nvidia.cn/drivers/lookup/
