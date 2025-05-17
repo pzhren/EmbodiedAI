@@ -79,7 +79,7 @@ class DatasetLoader:
             "task":{
                 "type": "NavigateTask",
                 "robots":self.make_robot_config(config_data["Start"]),
-                "instructions": config_data["Task instruction"],
+                "task_instruction": config_data["Task instruction"],
                 "goal_points": config_data["End"],
                 "reference_path": config_data["Reference path"],
                 "goal_image_path": self._find_png_files(os.path.dirname(config_path)),

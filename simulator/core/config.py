@@ -23,6 +23,10 @@ class BaseConfig(BaseModel):
 class NPCConfig(BaseConfig):
     pass
 
+class AgentConfig(BaseConfig):
+    type: str
+    name: str
+    checkpoint_path: Optional[str] = None
 
 class MetricConfig(BaseConfig):
     type: str
@@ -35,8 +39,8 @@ class ControllerConfig(BaseConfig):
     type: str
     input_limit: Optional[str|List] = "default"
     output_limit: Optional[str|List] = "default"
-    forward_m: Optional[float] = 0.02
-    angle_yaw: Optional[float] = 0.02
+    forward_m: Optional[float] = 1.5
+    angle_yaw: Optional[float] = np.pi/2
 
     pass
 
@@ -114,7 +118,7 @@ class TaskConfig(BaseConfig):
     start_points: Optional[List] = []
     goal_points: Optional[List] = []
     max_steps: Optional[int] = 1000
-    goal_threshold: Optional[float] = 0.8 # m
+    goal_threshold: Optional[float] = 0.5 # m
     task_path: Optional[str] = "" # 任务的json路径，可以拿来获取物品ID
     map_path: Optional[str] = "" # 地图文件路径
     task_instruction: Optional[str] = ""

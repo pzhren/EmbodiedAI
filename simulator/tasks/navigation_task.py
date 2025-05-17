@@ -7,9 +7,11 @@ from simulator.utils.navigate_utils.navigate import *
 from simulator.utils.navigate_utils.dstar_lite import *
 from simulator.utils.navigate_utils.discretize_map import *
 from lazyimport import lazyimport
+from scipy.spatial.transform import Rotation as R
 from transformations import euler_from_quaternion,quaternion_from_euler
 import json
-
+from simulator.utils.navigate_utils.navigate import *
+from simulator.utils.navigate_utils.check_utils import check_wall_block
 lazyimport(globals(), """
     from omni.isaac.core.prims import XFormPrim
     from omni.isaac.core.robots import Robot
@@ -72,12 +74,24 @@ class NavigateTask(BaseTask):
         Get the name of the robot in the task
         '''
         return self.task_config["robot_name"]
+
+    def quaternion_to_euler(self, quaternion):
+        '''
+        Convert quaternion to euler angle
+        '''
+        q_xyzw = [quaternion[1], quaternion[2], quaternion[3], quaternion[0]]
+        euler = R.from_quat(q_xyzw).as_euler('xyz', degrees=False)
+        return euler
     
     def get_observations(self):
         obs = {}
         for robot in self.robots:
             for sensor in robot.sensors:
                 obs.update({sensor.name:sensor.data})
+
+        obs["instruction"] = self.task_instruction
+        obs["position"] = [robot.get_world_pose() for robot in self.robots]
+        obs["yaw"] = [self.quaternion_to_euler(robot.get_world_orientation())[2] for robot in self.robots]
         return obs
 
     def get_shortest_path(self, start_point, goal_point):
@@ -154,7 +168,7 @@ class NavigateTask(BaseTask):
             return False
 
 
-    def _is_at_goal(self, position, id, goal_threshold=0.8):
+    def _is_at_goal(self, position, id, goal_threshold=0.5):
         """
         检查机器人是否到达目标点
         """
@@ -162,9 +176,12 @@ class NavigateTask(BaseTask):
             goal_point = self.goal_points[id][self.stage[id]][0]
         else:
             goal_point = self.goal_points[self.stage[id]][0]
+        goal_point = [goal_point[0], goal_point[1]]
         distance = ((position[0] - goal_point[0]) ** 2 +
                     (position[1] - goal_point[1]) ** 2) ** 0.5
-        return distance < self.goal_threshold
+        print(f"distance: {distance}")
+        block = check_wall_block(self.map_path,  goal_point, position)
+        return distance < self.goal_threshold and not block
 
     def individual_reset(self):
         """
