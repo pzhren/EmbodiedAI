@@ -3,6 +3,7 @@ from simulator.core.config import EnvConfig
 from simulator.core.env import BaseEnv
 from simulator.core.dataset import DatasetLoader
 from simulator.scenes import Interactive_Scene
+import numpy as np
 from simulator.utils.scene_utils import extract_target_ids
 from lazyimport import lazyimport
 lazyimport(globals(), """
@@ -26,8 +27,9 @@ cfg.task.robots[0].position= [-10, 6, 0]
 print(cfg)
 env = BaseEnv(cfg)
 env.reset()
-
+i=0
 while env.is_running:
+  # for i in range(10):
         env.sim._warm_up()
         # print(cfg.config.task.task_path)
         target_ids = extract_target_ids(cfg.task.task_path)
@@ -47,8 +49,8 @@ while env.is_running:
         # 这里很奇怪，要全部加负号才正常
         goal_pose1 = [-goal_pos1[0], -goal_pos1[1]]
         # distance, action, action_value = env.task[0].get_distance(goal_pose1)
-        action = "w"
-        action_value = 0.02
+        action = "d"
+        action_value = np.pi/3
         # print("distance, action", distance, action, action_value)
         obs, info, reward, done = env.step([[action, action_value]])
         # 把obs的观测数据按照图片保存下来
@@ -62,7 +64,10 @@ while env.is_running:
         
         # 将这些图片保存下来，利用Pillow库
         from PIL import Image
-        Image.fromarray(rgb1).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb1.png")
-        Image.fromarray(rgb2).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb2.png")
-        Image.fromarray(rgb3).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb3.png")
-        i+=1
+        Image.fromarray(rgb1).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb1_{i}.png")
+        Image.fromarray(rgb2).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb2_{i}.png")
+        Image.fromarray(rgb3).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb3_{i}.png")
+        print(i)
+        i+=1 
+        if i>12:
+          break
