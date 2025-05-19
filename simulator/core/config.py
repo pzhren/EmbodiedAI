@@ -39,8 +39,8 @@ class ControllerConfig(BaseConfig):
     type: str
     input_limit: Optional[str|List] = "default"
     output_limit: Optional[str|List] = "default"
-    forward_m: Optional[float] = 1.5
-    angle_yaw: Optional[float] = np.pi/2
+    forward_m: Optional[float] = 10
+    angle_yaw: Optional[float] = np.pi
 
     pass
 

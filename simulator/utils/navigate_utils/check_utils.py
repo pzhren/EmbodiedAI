@@ -7,17 +7,17 @@ import math
 import pandas as pd
 import os
 
-def check_wall_block(img_path,obj_world_pos,robot_world_pos,scene_offset=None):
+def check_wall_block(hm, navigator ,obj_world_pos,robot_world_pos,scene_offset=None):
     '''
     Check if there are any walls blocking the path between two positions.
     Walls are represented by a gray value of 2 in the map.
     If the line connecting the two points passes through a gray value of 2, it indicates a wall, and the check fails.
     '''
-    hm = HeightMap(img_path) # Define the map class
+    # hm = HeightMap(img_path) # Define the map class
     xy_range = hm.compute_range()
     hm.make_map()
     hm_map = hm.get_map()
-    navigator = Navigator(area_range=xy_range, map=hm_map, scale_ratio=1)  # Define the navigator class
+    # navigator = Navigator(area_range=xy_range, map=hm_map, scale_ratio=1)  # Define the navigator class
     navigator.planner.compute_cost_map()
 
     # Get the map coordinates of the object and the robot
@@ -40,7 +40,7 @@ def check_wall_block(img_path,obj_world_pos,robot_world_pos,scene_offset=None):
         err = dx / 2.0
         while x != x1:
             if hm_map[x][y] == 2:  # Check if it is a gray region
-                print("Wall detected,fail,x,y",x,y)  
+                # print("Wall detected,fail,x,y",x,y)  
                 return False
             err -= dy
             if err < 0:
@@ -51,7 +51,7 @@ def check_wall_block(img_path,obj_world_pos,robot_world_pos,scene_offset=None):
         err = dy / 2.0
         while y != y1:
             if hm_map[x][y] == 2:
-                print("Wall detected,fail,x,y",x,y)  
+                # print("Wall detected,fail,x,y",x,y)  
                 return False
             err -= dx
             if err < 0:

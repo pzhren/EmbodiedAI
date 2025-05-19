@@ -18,11 +18,11 @@ class ReferencePathAgent(BaseAgent):
             "move backward": 1,
             "turn left": 2,
             "turn right": 3,
-            "stop": 0,
+            "stop": 4,
         }
 
     def act(self, observation):
-        if self.step > len(self.path):
+        if self.step >= len(self.path):
             return np.array([0, 0])
         action = self.action_map[self.path[self.step][0]]
         

@@ -134,7 +134,7 @@ class BaseEnv:
         task = self.task[scene_id]
         obs, info, done = task.step()
         reward = info["NE"] if info is not None else 0
-        return obs, info, reward, done
+        return obs, reward, done, info
 
     def step(self, action):
         # if isinstance(action, Iterable) and not isinstance(action, (dict, OrderedDict)):
@@ -157,12 +157,13 @@ class BaseEnv:
         done_list = []
 
         for i in range(self.scene_num):
-            obs_list.append(self._post_step(scene_id=i)[0])
-            info_list.append(self._post_step(scene_id=i)[1])
-            reward_list.append(self._post_step(scene_id=i)[2])
-            done_list.append(self._post_step(scene_id=i)[3])
+            results = self._post_step(scene_id=i)
+            obs_list.append(results[0])
+            info_list.append(results[3])
+            reward_list.append(results[1])
+            done_list.append(results[2])
         # Run final post-processing
-        return obs_list, info_list, reward_list, done_list
+        return obs_list, reward_list, done_list, info_list
     
     def find_object_around(self, position, scene_id=0):
         return self.sim.find_object_around(self.scenes[scene_id], position)

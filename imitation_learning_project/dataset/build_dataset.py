@@ -5,6 +5,7 @@ from PIL import Image
 import shutil
 from tqdm import tqdm
 import re
+import argparse
 
 def is_valid_demo_dir(dirname):
     """检查目录名是否为数字和下划线的组合"""
@@ -172,6 +173,8 @@ def build_dataset(data_root, output_dir, train_ratio=0.8):
     print(f"Validation samples: {sum(len(s) for s in val_samples)}")
 
 if __name__ == "__main__":
-    data_root = "/mnt/SSD/pengzhen/data4lora2"
-    output_dir = "./data"
-    build_dataset(data_root, output_dir) 
+    parser = argparse.ArgumentParser(description="Build imitation learning dataset.")
+    parser.add_argument('--data_root', type=str, required=True, help='Root directory of the data')
+    parser.add_argument('--output_dir', type=str, required=True, help='Directory to save the output dataset')
+    args = parser.parse_args()
+    build_dataset(args.data_root, args.output_dir) 

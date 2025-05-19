@@ -33,7 +33,7 @@ class NavigateTask(BaseTask):
         self.goal_threshold = config.goal_threshold
         self.object_ids = extract_target_ids(config.task_path)
         self.map_path = config.map_path
-        self.get_map(self.map_path)
+        self.get_navigator(self.map_path)
         self.goal_image_path = config.goal_image_path
         
         # self.robot_path_length = [0 for _ in range(len(self.robots))]
@@ -92,6 +92,7 @@ class NavigateTask(BaseTask):
         obs["instruction"] = self.task_instruction
         obs["position"] = [robot.get_world_pose() for robot in self.robots]
         obs["yaw"] = [self.quaternion_to_euler(robot.get_world_orientation())[2] for robot in self.robots]
+        # obs["stage_success"] = [self.stage]
         return obs
 
     def get_shortest_path(self, start_point, goal_point):
@@ -140,6 +141,7 @@ class NavigateTask(BaseTask):
 
         self.update_metrics()
         self.steps+=1
+        self._info["stage_success"] = self._success
         # self.is_done()
         return observations, self._info, self._done
 
@@ -153,19 +155,23 @@ class NavigateTask(BaseTask):
             if self._is_at_goal(robot_position, robot_id):
                 self.reached_goal = True
                 self._success[robot_id][self.stage] = True
-                self.stage += 1
+                self.stage[robot_id] += 1
                 self._done = False
-                if self.stage==2:
-                    self._done = True
-                return True
+                # if self.stage==2:
+                #     self._done = True
+        
         else:
             self.reached_goal = False
             self._done = False
-
+        
+        self._done = all(self._success)
         # 检查是否超过最大步数
         if self.steps >= self.max_steps:
             self._done = True
             return False
+
+        else:
+            return all(self._success)
 
 
     def _is_at_goal(self, position, id, goal_threshold=0.5):
@@ -180,7 +186,8 @@ class NavigateTask(BaseTask):
         distance = ((position[0] - goal_point[0]) ** 2 +
                     (position[1] - goal_point[1]) ** 2) ** 0.5
         print(f"distance: {distance}")
-        block = check_wall_block(self.map_path,  goal_point, position)
+        ### TODO: 检测是否在墙内
+        block = check_wall_block(self.hm, self.navigator,  goal_point, position)
         return distance < self.goal_threshold and not block
 
     def individual_reset(self):
@@ -226,16 +233,16 @@ class NavigateTask(BaseTask):
         roll, pitch, yaw = euler_from_quaternion(quaternion)
         return position, roll, pitch, yaw
     
-    def get_map(self, map_path):
+    def get_navigator(self, map_path):
         self.map_path = map_path
-        hm = HeightMap(map_path)
-        xy_range = hm.compute_range()
-        hm.make_map()
-        hm_map = hm.get_map()
+        self.hm = HeightMap(map_path)
+        xy_range = self.hm.compute_range()
+        self.hm.make_map()
+        self.hm_map = self.hm.get_map()
 
-        self.navigator = Navigator(area_range=xy_range, map=hm_map, scale_ratio=1)
+        self.navigator = Navigator(area_range=xy_range, map=self.hm_map, scale_ratio=1)
         self.navigator.planner.compute_cost_map()
-        return self.navigator
+        
 
     def get_distance(self, goal_pos, robot_id =0):
         '''
@@ -276,9 +283,9 @@ class NavigateTask(BaseTask):
         angle_diff = math.atan2(next_path_point[1] - robot_pos[1], next_path_point[0] - robot_pos[0])
         angle_diff = self.trans2pi(angle_diff)
         _, _, _, yaw  = self.trans_pos()
-        print("yaw", yaw)
+        # print("yaw", yaw)
         final_angle_diff = self.trans2pi(angle_diff - yaw)
-        print("final_angle_diff", final_angle_diff)
+        # print("final_angle_diff", final_angle_diff)
         if -0.015 < final_angle_diff < 0.015:
             action = "w"
             action_value = np.linalg.norm(np.array(next_path_point) - np.array(robot_pos))
