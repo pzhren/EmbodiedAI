@@ -20,9 +20,12 @@ class NE(BaseMetric):
 
         if self.goal_pos is None:
             self.goal_pos = [task.objects[0].get_world_pose(), task.objects[1].get_world_pose()]
-        self.ne = [[0 for _ in range(len(task.objects))] for _ in range(len(task.robots))]
+        if self.ne is None:
+            self.ne = [[0 for _ in range(len(task.objects))] for _ in range(len(task.robots))]
         for i in range(len(task.robots)):
             pos = task.robots[i].get_world_pose()
+            if task.stage[i] ==2:
+                return self.ne
             self.ne[i][task.stage[i]] = self.calculate_metrics(pos,self.goal_pos[task.stage[i]][0])
         return self.ne
     
@@ -47,23 +50,25 @@ class SPL(BaseMetric):
         self.config = config
         self.first_success = False
         self.second_success = False
+        self.spl = None
+
     
     @property  
     def name(self):
         return "SPL"
     
     def update(self, task):
-        self.spl = [[0, 0] for _ in range(len(task.robots))]
+        if self.spl is None:
+             self.spl = [[0, 0] for _ in range(len(task.robots))]
         for i in range(len(task.robots)):
-            if task.stage[i] != 0 and not self.first_success:
-                self.spl[i][task.stage[i]-1] = self.calculate_metrics(task.robot[i].get_path_length(), task.optimal_length[i][task.stage[i]-1], task.is_done())
-                if task.is_success:
-                    self.first_success = True
-            if task.stage[i] == 2 and not self.second_success:
-                self.spl[i][task.stage[i]-1] = self.calculate_metrics(task.robot[i].get_path_length(), task.optimal_length[i][task.stage[i]-1], task.is_done())
-                if task.is_success:
-                    self.second_success = True
+            if task.stage[i] == 1 and task._success[i][0] and self.first_success!=True:
+                self.spl[i][task.stage[i]-1] = self.calculate_metrics(task.robots[i].get_path_length(), task.optimal_length[i][task.stage[i]-1], task._success[i][0])
+                self.first_success = True
+            if task.stage[i] == 2 and task._success[i][1] and self.second_success!=True:
+                self.spl[i][task.stage[i]-1] = self.calculate_metrics(task.robots[i].get_path_length(), task.optimal_length[i][task.stage[i]-1], task._success[i][1])
+                self.second_success = True
         return self.spl
+    
     def calculate_metrics(self, path_length: float, optimal_length: float, is_success: bool) -> float:
         """Compute Success weighted by Path Length (SPL) metric.
         Args:
@@ -99,7 +104,7 @@ class PL(BaseMetric):
                 self.init_pos.append(task.robots[0].get_world_pose())
             else:
                 self.abs_path_length[i] = self.calculate_metrics(self.init_pos[i], task.robots[i].get_world_pose())
-
+                self.geo_path_length[i] = task.robots[i].get_path_length()
         return self.abs_path_length, self.geo_path_length
 
     def calculate_metrics(self, start_point, final_point):

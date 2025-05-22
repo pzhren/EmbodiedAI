@@ -81,6 +81,7 @@ class DatasetLoader:
                 "robots":self.make_robot_config(config_data["Start"]),
                 "task_instruction": config_data["Task instruction"],
                 "goal_points": config_data["End"],
+                "start_points": config_data["Start"],
                 "reference_path": config_data["Reference path"],
                 "goal_image_path": self._find_png_files(os.path.dirname(config_path)),
                 "map_path":self._find_png_files(os.path.join(self.scene_path, config_data["Scene"]))[0],

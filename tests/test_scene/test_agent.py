@@ -23,7 +23,6 @@ agent = ReferencePathAgent(cfg)
 # agent = BCAgent(config)
 
 
-
 obs = env.reset()
 agent.reset()
 i = 0
@@ -47,8 +46,8 @@ while env.is_running:
     rgb1 = obs[0]["robot0_front_camera"]["rgb"]
     rgb2 = obs[0]["robot0_left_camera"]["rgb"]
     rgb3 = obs[0]["robot0_right_camera"]["rgb"]
-    print(info)
-    done = done[0]
+    print(info, done[0])
+   #  done = done[0]
     from PIL import Image
     Image.fromarray(rgb1).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb1_{i}.png")
     Image.fromarray(rgb2).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb2_{i}.png")
