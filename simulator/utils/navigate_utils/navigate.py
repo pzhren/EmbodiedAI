@@ -44,7 +44,7 @@ class Navigator:
         goal = np.array(self.validate_goal(goal))  # Validate goal
         pos = np.array(pos)   # Robot's current position and orientation
         self.yaw = None
-        print('------------------navigation_start----------------------')
+        # print('------------------navigation_start----------------------')
 
         path = self.planner.planning(pos, goal)
 
@@ -59,7 +59,7 @@ class Navigator:
         goal = np.array(self.planner.map2real(goal))
         pos = np.array(pos)  # Robot's current position and orientation
         self.yaw = None
-        print('------------------navigation_start----------------------')
+        # print('------------------navigation_start----------------------')
 
         path = self.planner.planning(pos, goal)
 
@@ -74,7 +74,7 @@ class Navigator:
         goal = np.array(self.planner.map2real(goal))
         pos = np.array(self.planner.map2real(pos))  # Robot's current position and orientation
         self.yaw = None
-        print('------------------navigation_start----------------------')
+        # print('------------------navigation_start----------------------')
 
         path = self.planner.planning(pos, goal)
 

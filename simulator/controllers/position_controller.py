@@ -45,29 +45,40 @@ class PositionController(BaseController):
         if command[0] == 'w' or command[0]==0:
             length = min(self._max_forward_m, command[1]) # in meters
             target_pos = position + length * x_dir
+            new_yaw = yaw
 
         elif command[0] == 's' or command[0]==1:
             length = min(self._max_forward_m, command[1]) # in meters
             target_pos = position - length * x_dir
-        else:
+            new_yaw = yaw
+
+        elif command[0] == 'p' or command[0]==4:
             target_pos = position
-        
-        new_yaw = yaw
-        if command[0] == 'a' or command[0]==2:
+            new_yaw = yaw
+
+        elif command[0] == 'a' or command[0]==2:
             angle_yaw = min(self._max_angle_yaw,command[1]) # in radians
+            target_pos = position
             new_yaw = (yaw + angle_yaw) % (2 * math.pi)
+
         elif command[0] == 'd' or command[0]==3:
             angle_yaw = min(self._max_angle_yaw,command[1])
+            target_pos = position
             new_yaw = (yaw - angle_yaw) % (2 * math.pi)
-        
+
+        else:
+            target_pos = position
+            new_yaw = yaw
+            
         euler = quaternion_from_euler(roll, pitch, new_yaw)
         return target_pos, euler
     
     def step(self, robot, world, command, grasped_object):
         target_pos, euler = self.get_action(command, robot)
-        if command[0]=="w":
+        if command[0]=="w" or command[0]==0:
             robot.plan_length.append(command[1])
         robot.Xform.set_world_pose(position = target_pos, orientation = euler)
+        world.step(render=True)
         if grasped_object is not None:
             for k,v in grasped_object:
                 target_pos, euler = self.get_action(command, v)

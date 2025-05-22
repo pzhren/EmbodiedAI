@@ -109,8 +109,8 @@ class HeightMap:
         max_x = self.X + self.height*self.resolution
         min_y = self.Y
         max_y = self.Y + self.width*self.resolution
-        print("min x: %f, max x: %f" % (min_x, max_x))
-        print("min y: %f, max y: %f" % (min_y, max_y))
+        # print("min x: %f, max x: %f" % (min_x, max_x))
+        # print("min y: %f, max y: %f" % (min_y, max_y))
         return [min_x, max_x, min_y, max_y]
 
 

@@ -12,6 +12,7 @@ import wandb
 import yaml
 import gc
 from torch.cuda.amp import autocast, GradScaler
+import argparse
 
 from models.bc_transformer import BCTransformer
 from dataset.dataset import get_dataloader
@@ -232,7 +233,7 @@ def train(config, train_loader, val_loader, model, optimizer, scheduler, device,
             wandb.run.summary['best_val_loss'] = best_val_loss
             wandb.run.summary['best_epoch'] = epoch + 1
 
-def main():
+def main(data_root, save_dir):
     # 设置设备
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     logging.info(f"Using device: {device}")
@@ -249,16 +250,12 @@ def main():
     config = ModelConfig()
     
     # 设置保存目录
-    save_dir = "no_gen_scene_checkpoints"
-    # save_dir = "checkpoints"
     os.makedirs(save_dir, exist_ok=True)
     
     # 设置wandb
     wandb = setup_wandb(config)
     
     # 加载数据
-    data_root = "/home/wangy/renpengzhen/linmin/imitation_learning_project/only_hssd_data"
-    # data_root = "/home/wangy/renpengzhen/linmin/imitation_learning_project/data"
     train_loader = get_dataloader(data_root, "train.json", batch_size=config.batch_size)
     val_loader = get_dataloader(data_root, "val.json", batch_size=config.batch_size, shuffle=False)
     
@@ -285,5 +282,9 @@ def main():
     wandb.finish()
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Train imitation learning model.")
+    parser.add_argument('--data_root', type=str, default="/home/wangy/renpengzhen/linmin/imitation_learning_project/only_hssd_data", help='Root directory of the data')
+    parser.add_argument('--save_dir', type=str, default="no_gen_scene_checkpoints", help='Directory to save checkpoints')
+    args = parser.parse_args()
     logger = setup_logging()
-    main() 
+    main(args.data_root, args.save_dir) 

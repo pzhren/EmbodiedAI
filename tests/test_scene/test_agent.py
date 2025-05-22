@@ -11,24 +11,23 @@ scene_path="/data1/linmin/NPC/hssd_test_scene",
 robot_path="/data1/linmin/EmbodiedAI/resource/robots/stretch/stretch_pos.usd",
 headless = True)
 print("total len:",len(loader))
-cfg = loader[422]
+cfg = loader[1]
 env = BaseEnv(cfg)
 
-# agent = ReferencePathAgent(cfg)
+agent = ReferencePathAgent(cfg)
 # # Create config with checkpoint path
-config = AgentConfig(name="bc_agent", type="bc_agent", checkpoint_path="")
-config.checkpoint_path = "/data1/linmin/imitation_learning_project/no_gen_scene_checkpoints/checkpoint_epoch_95.pt"  # Update this path
+# config = AgentConfig(name="bc_agent", type="bc_agent", checkpoint_path="")
+# config.checkpoint_path = "/data1/linmin/imitation_learning_project/no_gen_scene_checkpoints/checkpoint_epoch_95.pt"  # Update this path
 
 # Create agent
-agent = BCAgent(config)
-
+# agent = BCAgent(config)
 
 
 obs = env.reset()
 agent.reset()
 i = 0
 done = False
-while env.is_running and not done:
+while env.is_running:
     i+=1
     target_ids = extract_target_ids(cfg.task.task_path)
     objs_xformprim = env.sim.find_object_by_id(env.scenes[0], target_ids)
@@ -37,15 +36,18 @@ while env.is_running and not done:
     print("goal_pos1", goal_pos1)
     action = agent.act(obs[0])
     print(action)
-    if i>80:
-        print(i)
+    if action[0] == 4:
+       print(i)
+    print("-------------------")
     print(obs[0]["position"])
+    print(obs[0]["yaw"])
+    print("-------------------")
     obs, reward, done, info = env.step([action])
     rgb1 = obs[0]["robot0_front_camera"]["rgb"]
     rgb2 = obs[0]["robot0_left_camera"]["rgb"]
     rgb3 = obs[0]["robot0_right_camera"]["rgb"]
-    print(info)
-    done = done[0]
+    print(info, done[0])
+   #  done = done[0]
     from PIL import Image
     Image.fromarray(rgb1).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb1_{i}.png")
     Image.fromarray(rgb2).save(f"/data1/linmin/EmbodiedAI/tests/obs/rgb2_{i}.png")

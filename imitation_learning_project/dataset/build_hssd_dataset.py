@@ -5,6 +5,7 @@ from PIL import Image
 import shutil
 from tqdm import tqdm
 import re
+import argparse
 
 def is_valid_hssd_dir(dirname):
     """检查目录名是否只包含数字和单个下划线"""
@@ -169,6 +170,8 @@ def build_hssd_dataset(data_root, output_dir, train_ratio=0.8):
     print(f"Validation samples: {len(val_samples)}")
 
 if __name__ == "__main__":
-    data_root = "/mnt/SSD/pengzhen/data4lora2"
-    output_dir = "/home/wangy/renpengzhen/linmin/imitation_learning_project/only_hssd_data"
-    build_hssd_dataset(data_root, output_dir) 
+    parser = argparse.ArgumentParser(description="Build HSSD imitation learning dataset.")
+    parser.add_argument('--data_root', type=str, required=True, help='Root directory of the data')
+    parser.add_argument('--output_dir', type=str, required=True, help='Directory to save the output dataset')
+    args = parser.parse_args()
+    build_hssd_dataset(args.data_root, args.output_dir) 

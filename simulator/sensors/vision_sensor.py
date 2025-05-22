@@ -46,7 +46,22 @@ class VisionSensor(BaseSensor):
         self.camera.add_motion_vectors_to_frame()
         # self.camera.add_distance_to_camera_to_frame()
         self.camera.add_distance_to_image_plane_to_frame()
+        self.camera.set_focal_length(1.0)
         pass
+    
+    def get_world_pose(self) -> np.ndarray:
+        """
+        Get the world pose of the camera
+        """
+        state = self.camera.get_default_state()
+        return state.position
+
+    def get_world_orientation(self) -> np.ndarray:
+        """
+        Get the world orientation of the camera
+        """
+        state = self.camera.get_default_state()
+        return state.orientation
 
     def update(self) -> Dict:
         obs = {}
