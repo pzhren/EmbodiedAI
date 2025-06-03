@@ -27,6 +27,7 @@ python dataset/build_dataset.py --data_root <raw_data_directory> --output_dir <o
 
 - `--data_root`: Root directory containing the original demo folders
 - `--output_dir`: Directory to save the generated `train.json` and `val.json`
+- `raw_data_directory`: Download link here [Baidu Netdisk](https://pan.baidu.com/s/1gsVBloZ-c4d2o9h4-Clz2A?pwd=6666) or [Hugging Face](https://huggingface.co/datasets/Jerry2003/SMM_data2/tree/main)
 
 ### 2. Build HSSD Dataset (Single Underscore Demos Only)
 
